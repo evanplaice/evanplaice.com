@@ -12,7 +12,8 @@
   "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-aws": "^0.4.0"
+    "grunt-aws": "^0.4.0",
+    "grunt-release": "^0.11.0"
   },
   "private": "true"
 }
