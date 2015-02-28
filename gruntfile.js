@@ -6,10 +6,10 @@
     credentials: grunt.file.readJSON('credentials.json'),
     s3: {
       options: {
-        accessKeyId: "<%= credentials.aws.accessKeyId %>",
-        secretAccessKey: "<%= credentials.aws.secretAccessKey %>",
-        region: "us-west-2",
-        bucket: "evanplaice.com"
+        accessKeyId: '<%= credentials.aws.accessKeyId %>',
+        secretAccessKey: '<%= credentials.aws.secretAccessKey %>',
+        region: 'us-west-2',
+        bucket: 'evanplaice.com'
       },
       build: {
         cwd: "",
@@ -34,8 +34,8 @@
     }
   });
 
-  grunt.loadNpmTasks("grunt-aws");
-  grunt.loadNpmTasks("grunt-release");
+  grunt.loadNpmTasks('grunt-aws');
+  grunt.loadNpmTasks('grunt-release');
 
   grunt.registerTask('sync', ['s3']);
   grunt.registerTask('bump', ['release']);
