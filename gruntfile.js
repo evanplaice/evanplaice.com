@@ -19,6 +19,7 @@
     release: {
       options: {
         file: 'package.json',
+        additionalFiles: ['bower.json'],
         add: true,
         commit: true,
         tag: true,
