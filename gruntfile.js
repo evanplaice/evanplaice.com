@@ -12,6 +12,7 @@
         bucket: 'evanplaice.com'
       },
       build: {
+        cwd: 'public',
         src: [
           '**/*',
           '!node_modules/**',
@@ -38,12 +39,54 @@
           passwordVar: '<%= credentials.github.password %>',
         }
       }
+    },
+    connect: {
+      all: {
+        options:{
+          port: 9000,
+          hostname: '0.0.0.0',
+          livereload: true
+        }
+      }
+    },
+    open: {
+      all: {
+        path: 'http://localhost:<%= connect.all.options.port%>/index.html'
+      }
+    },
+    sass: {
+      dev: {
+        options: {
+          style: 'expanded',
+          sourcemap: 'none'
+        },
+        files: {
+          'styles/main.css': 'styles/main.sass'
+        }
+      }
+    },
+    watch: {
+      options: {
+        livereload: true
+      },
+      all: {
+        files: ['**.*']
+      },
+      sass: {
+        files: ['**/*.sass'],
+        tasks: ['sass'],
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-aws');
   grunt.loadNpmTasks('grunt-release');
+  grunt.loadNpmTasks('grunt-open');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('sync', ['s3']);
   grunt.registerTask('bump', ['release']);
+  grunt.registerTask('start', ['open', 'connect', 'watch']);
 }
