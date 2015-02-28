@@ -1,2 +1,4 @@
 node_modules
+.sass-cache
+public/components
 credentials.json
