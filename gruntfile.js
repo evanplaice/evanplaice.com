@@ -12,8 +12,14 @@
         bucket: 'evanplaice.com'
       },
       build: {
-        cwd: "",
-        src: "index.html"
+        src: [
+          '**/*',
+          '!node_modules/**',
+          '!package.json',
+          '!bower.json',
+          '!credentials.json',
+          '!gruntfile.js',
+        ]
       }
     },
     release: {
