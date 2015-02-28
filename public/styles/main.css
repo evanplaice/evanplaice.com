@@ -1,0 +1,41 @@
+.middle {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.header {
+  height: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.active {
+  background-color: #404040;
+}
+
+.darkBG {
+  background-color: #686868;
+}
+
+.darkerBG {
+  background-color: #404040;
+}
+
+.darkestBG {
+  background-color: #202020;
+}
+
+.dark {
+  color: #686868;
+}
+
+.darker {
+  color: #404040;
+}
+
+.darkest {
+  color: #202020;
+}
