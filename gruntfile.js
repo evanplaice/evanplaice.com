@@ -13,14 +13,7 @@
       },
       build: {
         cwd: 'public',
-        src: [
-          '**/*',
-          '!node_modules/**',
-          '!package.json',
-          '!bower.json',
-          '!credentials.json',
-          '!gruntfile.js',
-        ]
+        src: ['**/*']
       }
     },
     release: {
@@ -45,13 +38,14 @@
         options:{
           port: 9000,
           hostname: '0.0.0.0',
+          base: 'public',
           livereload: true
         }
       }
     },
     open: {
       all: {
-        path: 'http://localhost:<%= connect.all.options.port%>/index.html'
+        path: 'http://localhost:<%= connect.all.options.port%>'
       }
     },
     sass: {
@@ -70,10 +64,10 @@
         livereload: true
       },
       all: {
-        files: ['**.*']
+        files: ['public/**.*']
       },
       sass: {
-        files: ['**/*.sass'],
+        files: ['public/**/*.sass'],
         tasks: ['sass'],
       }
     }
