@@ -1,6 +1,8 @@
 'use strict';
 
-var app = angular.module('app', ['ngResource', 'ngRoute']).config(config);
+var app = angular.module('app', ['ngResource', 'ngRoute'])
+  .config(config)
+  .run(run);
 
 config.$inject = ['$routeProvider', '$locationProvider'];
 
@@ -26,4 +28,18 @@ function config($routeProvider, $locationProvider) {
       controller: 'Projects'
     })
     .otherwise({redirectTo: '/'});
+};
+
+run.$inject = ['$rootScope'];
+
+function run($rootScope) {
+  $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+    $rootScope.title = current.title;
+  });
+
+  if (history.pushState) {
+    history.pushState({}, document.title, location.href);
+  } else {
+    window.location.hash = location.href;
+  }
 };
