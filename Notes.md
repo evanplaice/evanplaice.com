@@ -4,6 +4,7 @@ Roadmap
 * Add angular.js routing for S3 using html5 mode
 	* [Angular JS Gotcha #2 - HTML5 Mode](http://blog.releaseboard.com/2013/12/angular-js-gotcha-2-html5-mode.html)
 	* [S3 Static Website Hosting Route All Paths to Index.html](http://stackoverflow.com/q/16267339/290340)
+	* [How do I have an S3 bucket return 404 (instead of 403) for a key that does not exist in the bucket](http://stackoverflow.com/q/19037664/290340)
 * Build a 'CV' (curriculum vitae) page
 * Build a 'Journal' section using markdown as the post format
 	* Will likely require [AngularJS dynamic routing](http://stackoverflow.com/q/13681116/290340)
