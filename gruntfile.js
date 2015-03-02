@@ -1,19 +1,26 @@
  'use strict';
 
  module.exports = function(grunt) {
-   grunt.initConfig({
+  grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     credentials: grunt.file.readJSON('credentials.json'),
-    s3: {
+    aws_s3: {
       options: {
         accessKeyId: '<%= credentials.aws.accessKeyId %>',
         secretAccessKey: '<%= credentials.aws.secretAccessKey %>',
         region: 'us-west-2',
-        bucket: 'evanplaice.com'
+        uploadConcurrency: 5,
+        downloadConcurrency: 5
       },
-      build: {
-        cwd: 'public',
-        src: ['**/*']
+      production: {
+        options: {
+          bucket: 'evanplaice.com',
+          differential: true,
+          gzipRename: 'ext'
+        },
+        files: [
+          { expand: true, cwd: 'public/', src: ['**'], dest: '/' }
+        ]
       }
     },
     release: {
@@ -34,18 +41,19 @@
       }
     },
     connect: {
-      all: {
-        options:{
-          port: 9000,
-          hostname: '0.0.0.0',
+      livereload: {
+        options: {
+          open: true,
+          port: 8080,
+          hostname: 'localhost',
           base: 'public',
-          livereload: true
+          livereload: true,
+          middleware: function (connect, options) {
+            var optBase = (typeof options.base === 'string') ? [options.base] : options.base;
+            return [require('connect-modrewrite')(['!(\\..+)$ / [L]'])]
+              .concat(optBase.map(function(path){ return connect.static(path); }));
+          }
         }
-      }
-    },
-    open: {
-      all: {
-        path: 'http://localhost:<%= connect.all.options.port%>'
       }
     },
     sass: {
@@ -64,7 +72,10 @@
         livereload: true
       },
       all: {
-        files: ['public/**.*']
+        files: [
+        'public/*.*',
+        'public/**/*.*'
+        ]
       },
       sass: {
         files: ['public/**/*.sass'],
@@ -73,14 +84,14 @@
     }
   });
 
-  grunt.loadNpmTasks('grunt-aws');
+
+  grunt.loadNpmTasks('grunt-aws-s3');
   grunt.loadNpmTasks('grunt-release');
-  grunt.loadNpmTasks('grunt-open');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('sync', ['s3']);
+  grunt.registerTask('sync', ['aws_s3:production']);
   grunt.registerTask('bump', ['release']);
-  grunt.registerTask('start', ['open', 'connect', 'watch']);
+  grunt.registerTask('start', ['connect', 'watch']);
 }
