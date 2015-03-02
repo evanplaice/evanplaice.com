@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="app">
   <head>
-    <title>Welcome to the homepage of Evan Plaice</title>
+    <title data-ng-bind="title">EvanPlaice.com</title>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="styles/main.css">
+    <script type="text/javascript">
+      //history.pushState({}, "entry page", location.hash.substring(1));
+      //console.log(location.hash.substring(1));
+    </script>
   </head>
   <body>
-    <h1 class="darkest">Welcome</h1>
+    
+    <header ng-include="'partials/header.html'"></header>
+    <section ng-view></section>
+    <footer ng-include="'partials/footer.html'"></footer>
+
+    <script type="text/javascript" src="components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="components/angular/angular.js"></script>
+    <script type="text/javascript" src="components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="components/angular-resource/angular-resource.js"></script>
+    <script type="text/javascript" src="components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
   </body>
 </html>
