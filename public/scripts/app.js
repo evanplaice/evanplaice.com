@@ -25,7 +25,12 @@ function config($routeProvider, $locationProvider) {
     .when('/projects', {
       title: 'Projects',
       templateUrl: 'partials/projects.html',
-      controller: 'Projects'
+      //controller: 'Projects'
+    })
+    .when('/contact', {
+      title: 'Contact',
+      templateUrl: 'partials/contact.html',
+      //controller: ''
     })
     .otherwise({redirectTo: '/'});
 };
