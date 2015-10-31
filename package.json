@@ -18,7 +18,8 @@
   "homepage": "https://github.com/evanplaice/evanplaice.com#readme",
   "jspm": {
     "dependencies": {
-      "angular2": "npm:angular2@^2.0.0-alpha.45"
+      "angular2": "npm:angular2@^2.0.0-alpha.45",
+      "zone.js": "npm:zone.js@^0.5.8"
     },
     "devDependencies": {
       "traceur": "github:jmcriffey/bower-traceur@0.0.92",
