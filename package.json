@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/evanplaice/evanplaice.com#readme",
   "jspm": {
+    "dependencies": {
+      "angular2": "npm:angular2@^2.0.0-alpha.45"
+    },
     "devDependencies": {
       "traceur": "github:jmcriffey/bower-traceur@0.0.92",
       "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.92"
