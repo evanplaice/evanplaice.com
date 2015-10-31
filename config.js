@@ -9,6 +9,7 @@ System.config({
 
   map: {
     "angular2": "npm:angular2@2.0.0-alpha.45",
+    "reflect-metadata": "npm:reflect-metadata@0.1.2",
     "traceur": "github:jmcriffey/bower-traceur@0.0.92",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.92",
     "zone.js": "npm:zone.js@0.5.8",
