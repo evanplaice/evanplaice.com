@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/evanplaice/evanplaice.com/issues"
   },
-  "homepage": "https://github.com/evanplaice/evanplaice.com#readme"
+  "homepage": "https://github.com/evanplaice/evanplaice.com#readme",
+  "jspm": {
+    "devDependencies": {
+      "traceur": "github:jmcriffey/bower-traceur@0.0.92",
+      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.92"
+    }
+  }
 }
