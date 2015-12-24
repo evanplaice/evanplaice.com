@@ -12,6 +12,7 @@ import { FooterComponent } from 'app/components/footer/footer';
 import { ThoughtsComponent } from 'app/components/thoughts/thoughts';
 import { DesignsComponent } from 'app/components/designs/designs';
 import { ProjectsComponent} from 'app/components/projects/projects';
+import { VitaeComponent } from 'app/components/vitae/vitae';
 
 
 @Component({
@@ -40,6 +41,11 @@ import { ProjectsComponent} from 'app/components/projects/projects';
 		path: '/projects',
 		component: ProjectsComponent,
 		as: 'Projects'
+	},
+	{
+		path: '/vitae',
+		component: VitaeComponent,
+		as: 'Vitae'
 	},
 	{
 		path: '/',
