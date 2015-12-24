@@ -10,6 +10,7 @@ import {
 import { HeaderComponent } from 'app/components/header/header';
 import { FooterComponent } from 'app/components/footer/footer';
 import { ThoughtsComponent } from 'app/components/thoughts/thoughts';
+import { DesignsComponent } from 'app/components/designs/designs';
 
 
 @Component({
@@ -28,6 +29,11 @@ import { ThoughtsComponent } from 'app/components/thoughts/thoughts';
 		path: '/thoughts',
 		component: ThoughtsComponent,
 		as: 'Thoughts'
+	},
+	{
+		path: '/designs',
+		component: DesignsComponent,
+		as: 'Designs'
 	},
 	{
 		path: '/',
