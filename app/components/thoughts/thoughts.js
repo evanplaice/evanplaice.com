@@ -1,7 +1,7 @@
 import {
   Component,
   View
-} from 'angular2';
+} from 'angular2/core';
 
 @Component ({
   selector: 'thoughts'

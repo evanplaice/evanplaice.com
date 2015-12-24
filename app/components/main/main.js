@@ -1,7 +1,7 @@
 import {
 	Component,
 	View
-} from 'angular2';
+} from 'angular2/core';
 import {
 	ROUTER_DIRECTIVES,
 	ROUTER_PROVIDERS,
@@ -29,27 +29,24 @@ import { VitaeComponent } from 'app/components/vitae/vitae';
 @RouteConfig([
 	{
 		path: '/thoughts',
+		name: 'Thoughts',
 		component: ThoughtsComponent,
-		as: 'Thoughts'
+		useAsDefault: true
 	},
 	{
 		path: '/designs',
-		component: DesignsComponent,
-		as: 'Designs'
+		name: 'Designs',
+		component: DesignsComponent
 	},
 	{
 		path: '/projects',
-		component: ProjectsComponent,
-		as: 'Projects'
+		name: 'Projects',
+		component: ProjectsComponent
 	},
 	{
 		path: '/vitae',
-		component: VitaeComponent,
-		as: 'Vitae'
-	},
-	{
-		path: '/',
-		redirectTo: '/thoughts'
+		name: 'Vitae',
+		component: VitaeComponent
 	}
 ])
 export class MainComponent {
