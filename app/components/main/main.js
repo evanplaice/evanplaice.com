@@ -11,6 +11,7 @@ import { HeaderComponent } from 'app/components/header/header';
 import { FooterComponent } from 'app/components/footer/footer';
 import { ThoughtsComponent } from 'app/components/thoughts/thoughts';
 import { DesignsComponent } from 'app/components/designs/designs';
+import { ProjectsComponent} from 'app/components/projects/projects';
 
 
 @Component({
@@ -34,6 +35,11 @@ import { DesignsComponent } from 'app/components/designs/designs';
 		path: '/designs',
 		component: DesignsComponent,
 		as: 'Designs'
+	},
+	{
+		path: '/projects',
+		component: ProjectsComponent,
+		as: 'Projects'
 	},
 	{
 		path: '/',
