@@ -15,7 +15,9 @@
   "homepage": "https://github.com/evanplaice/evanplaice.com#readme",
   "scripts": {
     "start": "live-server",
-    "build": "jspm bundle-sfx --minify reflect-metadata + zone.js + app/main.js app/main.min.js"
+    "build": "jspm bundle-sfx --minify reflect-metadata + zone.js + app/main.js app/main.min.js",
+    "grunt": "grunt",
+    "sync": "grunt sync"
   },
   "jspm": {
     "dependencies": {
@@ -29,6 +31,9 @@
     }
   },
   "devDependencies": {
+    "dotenv": "^1.2.0",
+    "grunt": "^0.4.5",
+    "grunt-aws-s3": "^0.14.3",
     "live-server": "^0.8.2"
   }
 }
