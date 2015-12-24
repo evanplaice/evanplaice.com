@@ -3,6 +3,7 @@ import {
 	View
 } from 'angular2';
 import { HeaderComponent } from 'app/components/header/header';
+import { FooterComponent } from 'app/components/footer/footer';
 
 
 @Component({
@@ -10,7 +11,8 @@ import { HeaderComponent } from 'app/components/header/header';
 })
 @View({
 	directives: [
-		HeaderComponent
+		HeaderComponent,
+		FooterComponent
 	],
 	templateUrl: 'app/components/main/main.html',
 })
