@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "Web portfolio of Evan Plaice",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/evanplaice/evanplaice.com.git"
@@ -16,6 +13,10 @@
     "url": "https://github.com/evanplaice/evanplaice.com/issues"
   },
   "homepage": "https://github.com/evanplaice/evanplaice.com#readme",
+  "scripts": {
+    "start": "live-server",
+    "build": "jspm bundle-sfx --minify reflect-metadata + zone.js + app/main.js app/main.min.js"
+  },
   "jspm": {
     "dependencies": {
       "angular2": "npm:angular2@^2.0.0-alpha.45",
@@ -29,8 +30,5 @@
   },
   "devDependencies": {
     "live-server": "^0.8.2"
-  },
-  "scripts": {
-    "start": "live-server"
   }
 }
