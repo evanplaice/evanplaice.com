@@ -1,4 +1,7 @@
-/* TODO: add custom fonts */
+@import url(https://fonts.googleapis.com/css?family=Orbitron:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);
+
 
 main {
   margin-top: 40px;
