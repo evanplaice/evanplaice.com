@@ -50,7 +50,5 @@ import { VitaeComponent } from 'app/components/vitae/vitae';
 	}
 ])
 export class MainComponent {
-	constructor() {
-	  this.title = 'test';
-	}
+	constructor() {}
 }

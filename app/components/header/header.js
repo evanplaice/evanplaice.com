@@ -6,7 +6,6 @@ import { ROUTER_DIRECTIVES } from 'angular2/router';
 
 @Component ({
   selector: 'header',
-  properties: ['title']
 })
 @View ({
   templateUrl: 'app/components/header/header.html',
