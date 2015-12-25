@@ -15,9 +15,14 @@ System.config({
   map: {
     "angular2": "npm:angular2@2.0.0-beta.0",
     "reflect-metadata": "npm:reflect-metadata@0.1.2",
+    "semantic-ui": "github:Semantic-Org/Semantic-UI@2.1.7",
     "traceur": "github:jmcriffey/bower-traceur@0.0.92",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.92",
     "zone.js": "npm:zone.js@0.5.10",
+    "github:Semantic-Org/Semantic-UI@2.1.7": {
+      "css": "github:systemjs/plugin-css@0.1.20",
+      "jquery": "github:components/jquery@2.1.4"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
