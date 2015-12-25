@@ -2,6 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);
 
+/* Layout
+-------------------------------------- */
 
 main {
   margin-top: 40px;
@@ -25,4 +27,39 @@ main {
   -moz-background-size:cover;
   -o-background-size:cover;
   box-shadow: rgba(0,0,0,0.20) 0 5px 10px;
+}
+
+/* Typeography
+-------------------------------------- */
+
+/* Document level adjustments */
+html {
+  font-size: 17px;
+}
+@media (max-width: 900px) {
+  html { font-size: 15px; }
+}
+@media (max-width: 400px) {
+  html { font-size: 13px; }
+}
+
+/* Type will scale with document */
+h1 {
+  font-family: 'Orbitron', Helvetica, sans-serif !important;
+  font-size: 3rem !important;
+}
+h2 {
+  font-size: 2.5rem !important;
+}
+h3 {
+  font-size: 2rem !important;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;;
+  font-size: 1.1em;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace !important;
 }
