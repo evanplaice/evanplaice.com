@@ -1,0 +1,14 @@
+/* TODO: add custom fonts */
+
+/* TODO: make the masthead responsive */
+#masthead {
+  height: 365px;
+  background-image: url('../images/sailboatraces.png');
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  box-shadow: rgba(0,0,0,0.20) 0 5px 10px;
+}
