@@ -2,7 +2,7 @@ import {
   Component,
   View
 } from 'angular2/core';
-import { ROUTER_DIRECTIVES } from 'angular2/router';
+import { ROUTER_DIRECTIVES, Location} from 'angular2/router';
 
 @Component ({
   selector: 'header',
@@ -12,7 +12,17 @@ import { ROUTER_DIRECTIVES } from 'angular2/router';
   directives: ROUTER_DIRECTIVES
 })
 export class HeaderComponent {
-  constructor() {
+  // ES7 dependency injection
+  static get parameters() {
+    return [[Location]];
+  }
+
+  constructor(location) {
     console.log('header');
+    this.location = location;
+  }
+
+  getLinkStyle(path) {
+    return this.location.path().indexOf(path) > -1;
   }
 }
