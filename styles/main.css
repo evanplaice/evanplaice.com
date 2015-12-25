@@ -5,6 +5,12 @@ main {
   margin-bottom: 40px;
 }
 
+#social > a {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
 /* TODO: make the masthead responsive */
 #masthead {
   height: 365px;
