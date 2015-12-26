@@ -17,7 +17,9 @@
     "start": "live-server",
     "build": "jspm bundle-sfx --minify reflect-metadata + zone.js + app/main.js app/main.min.js",
     "grunt": "grunt",
-    "sync": "grunt sync"
+    "development": "grunt development",
+    "staging": "grunt staging",
+    "production": "grunt production"
   },
   "jspm": {
     "dependencies": {
