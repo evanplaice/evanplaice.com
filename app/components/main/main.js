@@ -5,7 +5,8 @@ import {
 import {
 	ROUTER_DIRECTIVES,
 	ROUTER_PROVIDERS,
-	RouteConfig
+	RouteConfig,
+	Location
 } from 'angular2/router';
 import { HeaderComponent } from 'app/components/header/header';
 import { FooterComponent } from 'app/components/footer/footer';
@@ -50,5 +51,17 @@ import { VitaeComponent } from 'app/components/vitae/vitae';
 	}
 ])
 export class MainComponent {
-	constructor() {}
+  // ES7 dependency injection
+  static get parameters() {
+    return [[Location]];
+  }
+
+  constructor(location) {
+    this.location = location;
+    let hash = this.location.platformStrategy._platformLocation.hash;
+    if (hash) {
+      let path = hash.substring(1);
+      location.go(path);
+    }
+  }
 }
