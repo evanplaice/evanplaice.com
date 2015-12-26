@@ -57,11 +57,14 @@ export class MainComponent {
   }
 
   constructor(location) {
-    this.location = location;
-    let hash = this.location.platformStrategy._platformLocation.hash;
-    if (hash) {
-      let path = hash.substring(1);
-      location.go(path);
-    }
+  	resolveHashURL(location);
+  }
+}
+
+function resolveHashURL(location) {
+  let hash = location.platformStrategy._platformLocation.hash;
+  if (hash) {
+    let path = hash.substring(1);
+    location.go(path);
   }
 }
