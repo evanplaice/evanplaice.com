@@ -1,12 +1,12 @@
 import {
-	Component,
-	View
+  Component,
+  View
 } from 'angular2/core';
 import {
-	ROUTER_DIRECTIVES,
-	ROUTER_PROVIDERS,
-	RouteConfig,
-	Location
+  ROUTER_DIRECTIVES,
+  ROUTER_PROVIDERS,
+  RouteConfig,
+  Location
 } from 'angular2/router';
 import { HeaderComponent } from 'app/components/header/header';
 import { FooterComponent } from 'app/components/footer/footer';
@@ -17,38 +17,38 @@ import { VitaeComponent } from 'app/components/vitae/vitae';
 
 
 @Component({
-	selector: 'app'
+  selector: 'app'
 })
 @View({
-	directives: [
-		HeaderComponent,
-		FooterComponent,
-		ROUTER_DIRECTIVES
-	],
-	templateUrl: 'app/components/main/main.html',
+  directives: [
+    HeaderComponent,
+    FooterComponent,
+    ROUTER_DIRECTIVES
+  ],
+  templateUrl: 'app/components/main/main.html',
 })
 @RouteConfig([
-	{
-		path: '/thoughts',
-		name: 'Thoughts',
-		component: ThoughtsComponent,
-		useAsDefault: true
-	},
-	{
-		path: '/designs',
-		name: 'Designs',
-		component: DesignsComponent
-	},
-	{
-		path: '/projects',
-		name: 'Projects',
-		component: ProjectsComponent
-	},
-	{
-		path: '/vitae',
-		name: 'Vitae',
-		component: VitaeComponent
-	}
+  {
+    path: '/thoughts',
+    name: 'Thoughts',
+    component: ThoughtsComponent,
+    useAsDefault: true
+  },
+  {
+    path: '/designs',
+    name: 'Designs',
+    component: DesignsComponent
+  },
+  {
+    path: '/projects',
+    name: 'Projects',
+    component: ProjectsComponent
+  },
+  {
+    path: '/vitae',
+    name: 'Vitae',
+    component: VitaeComponent
+  }
 ])
 export class MainComponent {
   // ES7 dependency injection
@@ -57,7 +57,7 @@ export class MainComponent {
   }
 
   constructor(location) {
-  	resolveHashURL(location);
+    resolveHashURL(location);
   }
 }
 
