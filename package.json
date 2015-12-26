@@ -19,7 +19,8 @@
     "grunt": "grunt",
     "development": "grunt development",
     "staging": "grunt staging",
-    "production": "grunt production"
+    "production": "grunt production",
+    "checkstyle" : "semistandard || true"
   },
   "jspm": {
     "dependencies": {
@@ -35,9 +36,17 @@
     }
   },
   "devDependencies": {
+    "babel-eslint": "^4.1.6",
     "dotenv": "^1.2.0",
     "grunt": "^0.4.5",
     "grunt-aws-s3": "^0.14.3",
-    "live-server": "^0.8.2"
+    "live-server": "^0.8.2",
+    "semistandard": "^7.0.4"
+  },
+  "semistandard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "config.js"
+    ]
   }
 }
