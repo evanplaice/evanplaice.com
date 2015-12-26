@@ -3,14 +3,14 @@ import {
   View
 } from 'angular2/core';
 
-@Component ({
+@Component({
   selector: 'footer'
 })
-@View ({
+@View({
   templateUrl: 'app/components/footer/footer.html'
 })
 export class FooterComponent {
-  constructor() {
-    console.log('footer')
+  constructor () {
+    console.log('footer');
   }
 }

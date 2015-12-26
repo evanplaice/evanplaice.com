@@ -7,26 +7,26 @@ import {
   Location
 } from 'angular2/router';
 
-@Component ({
+@Component({
   selector: 'header'
 })
-@View ({
+@View({
   templateUrl: 'app/components/header/header.html',
   directives: [ ROUTER_DIRECTIVES ]
 })
 export class HeaderComponent {
   // ES7 dependency injection
-  static get parameters() {
+  static get parameters () {
     return [[Location]];
   }
 
-  constructor(location) {
+  constructor (location) {
     console.log('header');
     this.location = location;
   }
 
   // adds an 'active' class to the currently selected link
-  isActive(path) {
+  isActive (path) {
     return this.location.path().indexOf(path) > -1;
   }
 }

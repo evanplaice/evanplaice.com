@@ -3,14 +3,14 @@ import {
   View
 } from 'angular2/core';
 
-@Component ({
+@Component({
   selector: 'designs'
 })
-@View ({
+@View({
   templateUrl: 'app/components/designs/designs.html'
 })
 export class DesignsComponent {
-  constructor() {
-    console.log('designs')
+  constructor () {
+    console.log('designs');
   }
 }

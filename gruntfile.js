@@ -1,9 +1,9 @@
 'use strict';
 
 // load the environmental variables from .env
-require('dotenv').load()
+require('dotenv').load();
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.initConfig({
     aws_s3: {
       options: {
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
           gzipRename: 'ext'
         },
         files: [
-          { expand: true, cwd: 'jspm_packages/', src: ['**'], dest: '/jspm_packages'},
+          { expand: true, cwd: 'jspm_packages/', src: ['**'], dest: '/jspm_packages' },
           { expand: true, cwd: 'app/', src: ['**'], dest: '/app' },
           { expand: true, cwd: 'assets/', src: ['**'], dest: '/assets' },
           { expand: true, cwd: 'images/', src: ['**'], dest: '/images' },
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
           gzipRename: 'ext'
         },
         files: [
-          { expand: true, cwd: 'jspm_packages/', src: ['**'], dest: '/jspm_packages'},
+          { expand: true, cwd: 'jspm_packages/', src: ['**'], dest: '/jspm_packages' },
           { expand: true, cwd: 'app/', src: ['**'], dest: '/app' },
           { expand: true, cwd: 'assets/', src: ['**'], dest: '/assets' },
           { expand: true, cwd: 'images/', src: ['**'], dest: '/images' },
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
           gzipRename: 'ext'
         },
         files: [
-          { expand: true, cwd: 'jspm_packages/', src: ['**'], dest: '/jspm_packages'},
+          { expand: true, cwd: 'jspm_packages/', src: ['**'], dest: '/jspm_packages' },
           { expand: true, cwd: 'app/', src: ['**'], dest: '/app' },
           { expand: true, cwd: 'assets/', src: ['**'], dest: '/assets' },
           { expand: true, cwd: 'images/', src: ['**'], dest: '/images' },
@@ -75,4 +75,4 @@ module.exports = function(grunt) {
   grunt.registerTask('development', ['aws_s3:development']);
   grunt.registerTask('staging', ['aws_s3:staging']);
   grunt.registerTask('production', ['aws_s3:production']);
-}
+};

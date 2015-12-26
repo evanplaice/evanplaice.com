@@ -15,9 +15,8 @@ import { FooterComponent } from 'app/components/footer/footer';
 // route components
 import { ThoughtsComponent } from 'app/components/thoughts/thoughts';
 import { DesignsComponent } from 'app/components/designs/designs';
-import { ProjectsComponent} from 'app/components/projects/projects';
+import { ProjectsComponent } from 'app/components/projects/projects';
 import { VitaeComponent } from 'app/components/vitae/vitae';
-
 
 @Component({
   selector: 'app'
@@ -28,7 +27,7 @@ import { VitaeComponent } from 'app/components/vitae/vitae';
     ROUTER_DIRECTIVES,
     HeaderComponent,
     FooterComponent
-  ],
+  ]
 })
 @RouteConfig([
   {
@@ -55,18 +54,18 @@ import { VitaeComponent } from 'app/components/vitae/vitae';
 ])
 export class MainComponent {
   // ES7 dependency injection
-  static get parameters() {
+  static get parameters () {
     return [[Location]];
   }
 
-  constructor(location) {
+  constructor (location) {
     resolveHashURL(location);
   }
 }
 
 // redirects in inbound HashURL to its corresponding route
 //  ex. evanplaice.com/#/designs => evanplaice.com/designs
-function resolveHashURL(location) {
+function resolveHashURL (location) {
   let hash = location.platformStrategy._platformLocation.hash;
   if (hash) {
     let path = hash.substring(1);
