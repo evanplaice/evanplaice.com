@@ -22,7 +22,7 @@ export class HeaderComponent {
     this.location = location;
   }
 
-  getLinkStyle(path) {
+  isActive(path) {
     return this.location.path().indexOf(path) > -1;
   }
 }
