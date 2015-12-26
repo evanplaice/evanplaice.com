@@ -57,9 +57,15 @@ h3 {
 
 p {
   font-family: 'Open Sans', sans-serif;;
-  font-size: 1.1em;
+  font-size: 1.25em;
 }
 
 code {
   font-family: 'Source Code Pro', monospace !important;
 }
+
+p, code, pre {
+  line-height: 1.5 !important;
+  margin-bottom: 1.5em !important;
+}
+
