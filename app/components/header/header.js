@@ -2,14 +2,17 @@ import {
   Component,
   View
 } from 'angular2/core';
-import { ROUTER_DIRECTIVES, Location} from 'angular2/router';
+import {
+  ROUTER_DIRECTIVES,
+  Location
+} from 'angular2/router';
 
 @Component ({
-  selector: 'header',
+  selector: 'header'
 })
 @View ({
   templateUrl: 'app/components/header/header.html',
-  directives: ROUTER_DIRECTIVES
+  directives: [ ROUTER_DIRECTIVES ]
 })
 export class HeaderComponent {
   // ES7 dependency injection
@@ -22,6 +25,7 @@ export class HeaderComponent {
     this.location = location;
   }
 
+  // adds an 'active' class to the currently selected link
   isActive(path) {
     return this.location.path().indexOf(path) > -1;
   }

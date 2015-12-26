@@ -4,12 +4,15 @@ import {
 } from 'angular2/core';
 import {
   ROUTER_DIRECTIVES,
-  ROUTER_PROVIDERS,
   RouteConfig,
   Location
 } from 'angular2/router';
+
+// layout components
 import { HeaderComponent } from 'app/components/header/header';
 import { FooterComponent } from 'app/components/footer/footer';
+
+// route components
 import { ThoughtsComponent } from 'app/components/thoughts/thoughts';
 import { DesignsComponent } from 'app/components/designs/designs';
 import { ProjectsComponent} from 'app/components/projects/projects';
@@ -20,12 +23,12 @@ import { VitaeComponent } from 'app/components/vitae/vitae';
   selector: 'app'
 })
 @View({
-  directives: [
-    HeaderComponent,
-    FooterComponent,
-    ROUTER_DIRECTIVES
-  ],
   templateUrl: 'app/components/main/main.html',
+  directives: [
+    ROUTER_DIRECTIVES,
+    HeaderComponent,
+    FooterComponent
+  ],
 })
 @RouteConfig([
   {
@@ -61,6 +64,8 @@ export class MainComponent {
   }
 }
 
+// redirects in inbound HashURL to its corresponding route
+//  ex. evanplaice.com/#/designs => evanplaice.com/designs
 function resolveHashURL(location) {
   let hash = location.platformStrategy._platformLocation.hash;
   if (hash) {
