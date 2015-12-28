@@ -69,6 +69,7 @@ function resolveHashURL (location) {
   let hash = location.platformStrategy._platformLocation.hash;
   if (hash) {
     let path = hash.substring(1);
+    console.log('RedirectTo: ' + path);
     location.go(path);
   }
 }
