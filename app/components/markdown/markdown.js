@@ -3,8 +3,8 @@ import {
   ElementRef
 } from 'angular2/core';
 import {
-  Http,
-  Headers
+  HTTP_PROVIDERS,
+  Http
 } from 'angular2/http';
 
 // external
@@ -14,37 +14,59 @@ import 'prism/themes/prism-okaidia.css!';
 
 @Directive({
   selector: 'ng2-markdown',
-  inputs: [ 'src' ]
+  inputs: [ 'src' ],
+  providers: [ HTTP_PROVIDERS ]
 })
 export class MarkdownComponent {
-  constructor (elementRef) {
+  constructor (elementRef, http) {
     console.log('markdown');
 
+    // used for http requests
+    this.http = http;
+    // used for markdown->html conversion
+    this.converter = new showdown.converter();
     // reference to the HTML element
     this.element = elementRef.nativeElement;
   }
 
   ngOnInit () {
-    // RAW markdown parsing
-    this.convertRAW();
-    this.style();
+    // element with 'src' attribute set
+    if (this.src) {
+      this.convertFile();
+      this.style();
+    }
 
-    // TODO: implement .md file parsing
-    console.log(this.src);
+    // element containing markdown
+    if (!this.src) {
+      this.convertRAW();
+    }
   }
 
   // ES7 dependency injection
   static get parameters () {
-    return [[ElementRef]];
+    return [[ElementRef], [Http]];
   }
 
+  convertFile () {
+    this.http.get(this.src).toPromise()
+    .then((res) => {
+      this.element.innerHTML = res._body;
+    })
+    .then(() => {
+      this.convertRAW();
+    });
+  }
+
+  // converts markdown->HTML and saves
+  //  saves the result in element.innerHTML
   convertRAW () {
-    var converter = new showdown.converter();
-    this.element.innerHTML = converter.makeHtml(
+    this.element.innerHTML = this.converter.makeHtml(
       this.element.innerHTML.split('\n').map((line) => line.trim()).join('\n')
     );
+    this.style();
   }
 
+  // styles markdown source code
   style () {
     prism.highlightAll(this.element.querySelectorAll('code'));
   }
