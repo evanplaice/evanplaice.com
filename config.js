@@ -15,7 +15,6 @@ System.config({
   map: {
     "angular2": "npm:angular2@2.0.0-beta.0",
     "css": "github:systemjs/plugin-css@0.1.20",
-    "markdown-component": "github:guybedford/markdown-component@0.1.0",
     "prism": "github:PrismJS/prism@gh-pages",
     "reflect-metadata": "npm:reflect-metadata@0.1.2",
     "rxjs": "npm:rxjs@5.0.0-beta.0",
@@ -27,11 +26,6 @@ System.config({
     "github:Semantic-Org/Semantic-UI@2.1.7": {
       "css": "github:systemjs/plugin-css@0.1.20",
       "jquery": "github:components/jquery@2.1.4"
-    },
-    "github:guybedford/markdown-component@0.1.0": {
-      "css": "github:systemjs/plugin-css@0.1.0",
-      "prism": "github:PrismJS/prism@gh-pages",
-      "showdown": "github:showdownjs/showdown@0.3.4"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
