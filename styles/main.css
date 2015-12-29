@@ -34,6 +34,7 @@ main {
 
 /* Document level adjustments */
 html {
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 17px;
 }
 @media (max-width: 900px) {
@@ -44,15 +45,18 @@ html {
 }
 
 /* Type will scale with document */
-h1 {
+h1, h2, h3 {
   font-family: 'Orbitron', Helvetica, sans-serif !important;
-  font-size: 3rem !important;
+}
+
+h1 {
+  font-size: 4.5rem !important;
 }
 h2 {
-  font-size: 2.5rem !important;
+  font-size: 2rem !important;
 }
 h3 {
-  font-size: 2rem !important;
+  font-size: 1rem !important;
 }
 
 p {
