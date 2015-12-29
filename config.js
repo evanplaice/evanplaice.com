@@ -18,6 +18,7 @@ System.config({
     "markdown-component": "github:guybedford/markdown-component@0.1.0",
     "prism": "github:PrismJS/prism@gh-pages",
     "reflect-metadata": "npm:reflect-metadata@0.1.2",
+    "rxjs": "npm:rxjs@5.0.0-beta.0",
     "semantic-ui": "github:Semantic-Org/Semantic-UI@2.1.7",
     "showdown": "github:showdownjs/showdown@0.3.4",
     "traceur": "github:jmcriffey/bower-traceur@0.0.92",

@@ -1,4 +1,5 @@
 import 'reflect-metadata';
+import 'rxjs';
 import 'semantic-ui';
 import 'styles/main.css!';
 import { bootstrap } from 'angular2/platform/browser';
