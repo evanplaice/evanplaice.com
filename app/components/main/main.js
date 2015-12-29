@@ -53,13 +53,13 @@ import { VitaeComponent } from 'app/components/vitae/vitae';
   }
 ])
 export class MainComponent {
+  constructor (location) {
+    resolveHashURL(location);
+  }
+
   // ES7 dependency injection
   static get parameters () {
     return [[Location]];
-  }
-
-  constructor (location) {
-    resolveHashURL(location);
   }
 }
 

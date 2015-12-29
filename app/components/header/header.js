@@ -15,14 +15,14 @@ import {
   directives: [ ROUTER_DIRECTIVES ]
 })
 export class HeaderComponent {
-  // ES7 dependency injection
-  static get parameters () {
-    return [[Location]];
-  }
-
   constructor (location) {
     console.log('header');
     this.location = location;
+  }
+
+  // ES7 dependency injection
+  static get parameters () {
+    return [[Location]];
   }
 
   // adds an 'active' class to the currently selected link

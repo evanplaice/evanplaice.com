@@ -2,6 +2,10 @@ import {
   Directive,
   ElementRef
 } from 'angular2/core';
+import {
+  Http,
+  Headers
+} from 'angular2/http';
 
 // external
 import showdown from 'showdown';
@@ -20,7 +24,7 @@ export class MarkdownComponent {
     this.element = elementRef.nativeElement;
   }
 
-  ngOnInit() {
+  ngOnInit () {
     // RAW markdown parsing
     this.convertRAW();
     this.style();
@@ -34,14 +38,14 @@ export class MarkdownComponent {
     return [[ElementRef]];
   }
 
-  convertRAW() {
+  convertRAW () {
     var converter = new showdown.converter();
     this.element.innerHTML = converter.makeHtml(
       this.element.innerHTML.split('\n').map((line) => line.trim()).join('\n')
     );
-  };
+  }
 
-  style() {
+  style () {
     prism.highlightAll(this.element.querySelectorAll('code'));
-  };
+  }
 }
