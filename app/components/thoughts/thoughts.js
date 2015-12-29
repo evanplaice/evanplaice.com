@@ -18,6 +18,6 @@ import { MarkdownComponent } from 'app/components/markdown/markdown';
 export class ThoughtsComponent {
   constructor () {
     console.log('thoughts');
-    this.src = 'assets/Design.md';
+    this.src = 'assets/sample.md';
   }
 }
