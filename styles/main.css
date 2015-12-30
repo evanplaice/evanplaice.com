@@ -7,7 +7,7 @@
 
 main {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 #social > a {
@@ -77,14 +77,21 @@ ng2-markdown > h1, ng2-markdown > h2, ng2-markdown > h3 {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
 }
 
-ng2-markdown h1 {
+ng2-markdown > h1 {
   font-size: 2.5rem !important;
 }
 
-ng2-markdown h2 {
+ng2-markdown > h2 {
   font-size: 2rem !important;
 }
 
-ng2-markdown h3 {
+ng2-markdown > h3 {
   font-size: 1.75rem !important;
+}
+
+ng2-markdown  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 3px 3px 3px #777;
 }
