@@ -18,7 +18,7 @@ import { MarkdownComponent } from 'app/components/markdown/markdown';
 export class ThoughtsComponent {
   constructor () {
     console.log('thoughts');
-    this.src = 'documents/first-post.md';
+    this.src = 'documents/hello-world.md';
     this.gitHubLink = 'http://github.com/evanplaice/evanplaice.com/blob/master' + this.src;
   }
 }
