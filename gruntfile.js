@@ -26,6 +26,7 @@ module.exports = function (grunt) {
           { expand: true, cwd: 'assets/', src: ['**'], dest: '/assets' },
           { expand: true, cwd: 'images/', src: ['**'], dest: '/images' },
           { expand: true, cwd: 'styles/', src: ['**'], dest: '/styles' },
+          { expand: true, cwd: 'documents/', src: ['**'], dest: '/documents' },
           { expand: true, src: 'index.html', dest: '/' },
           { expand: true, src: 'config.js', dest: '/' },
           { dest: '/', cwd: './', action: 'delete' }
@@ -44,6 +45,7 @@ module.exports = function (grunt) {
           { expand: true, cwd: 'assets/', src: ['**'], dest: '/assets' },
           { expand: true, cwd: 'images/', src: ['**'], dest: '/images' },
           { expand: true, cwd: 'styles/', src: ['**'], dest: '/styles' },
+          { expand: true, cwd: 'documents/', src: ['**'], dest: '/documents' },
           { expand: true, src: 'index.html', dest: '/' },
           { expand: true, src: 'config.js', dest: '/' },
           { dest: '/', cwd: './', action: 'delete' }
@@ -62,6 +64,7 @@ module.exports = function (grunt) {
           { expand: true, cwd: 'assets/', src: ['**'], dest: '/assets' },
           { expand: true, cwd: 'images/', src: ['**'], dest: '/images' },
           { expand: true, cwd: 'styles/', src: ['**'], dest: '/styles' },
+          { expand: true, cwd: 'documents/', src: ['**'], dest: '/documents' },
           { expand: true, src: 'index.html', dest: '/' },
           { expand: true, src: 'config.js', dest: '/' },
           { dest: '/', cwd: './', action: 'delete' }
