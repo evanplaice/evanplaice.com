@@ -6,8 +6,15 @@
 
 <div class="ui center aligned container">
   <h2><a href="http://strikegrouptest.appspot.com">StrikeGroup.org</a></h2>
-  <div class="ui divider"></div>
+  <a href="http://strikegrouptest.appspot.com/_typefaces">Design Guide</a>
 </div>
+<div class="ui divider"></div>
+<p>I initially took on this project to provide a complete end-to-end redesign. The initial requirements included adding new pages as well as resetting the main navigation links to point to them. The original creator implemented the site as flat HTML files using Microsoft FrontPage. In short, the layout and stying was consistently inconsistent.</p>
+<p>The first step involved re-creating and resetting the layout using a dynamic templating engine. I chose Google App Engine (ala Python+Django+Jinja2) as the development platform due to the zero-maintenance and built-in one-click-deploy features.</p>
+<p>The client's site was already hosted on a shared hosting LAMP stack, so I created a simple crawler script used to compile the dynamic site to static HTML. Including Apache rewrite rules to provide a clean/consistent URL structure.</p>
+<p>Regular content and style updates were applied over time to meet business needs. The most significant being the addition of the <a href="http://strikegrouptest.appspot.com/seaport-e#/">Seaport-E</a> section. Seaport-E is a hard requirement for certain military contracts and the window for implementing the changes following the contract award was small. Since the update would require the addition of a second level of navigation I opted to use Angular to handle the SubNav routing.</p>
+<p>Hosting the development version of the site on Google App Engine turned out to be a huge win. Reviews took place over conference calls with my colleagues located in multiple regions across the US. With GAE, I was able to immediately apply and deploy changes in direct response to the feedback/suggestions received during the review.</p>
+<div class="ui divider"></div>
 <div class="ui three column grid design">
   <div class="column">
     <img class="ui small image" src="/images/designs/strikegroup-thumbs/about-us.png">
