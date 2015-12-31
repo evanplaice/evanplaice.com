@@ -40,6 +40,7 @@
     "dotenv": "^1.2.0",
     "grunt": "^0.4.5",
     "grunt-aws-s3": "^0.14.3",
+    "grunt-cli": "^0.1.13",
     "live-server": "^0.8.2",
     "semistandard": "^7.0.4"
   },
