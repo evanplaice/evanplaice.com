@@ -44,12 +44,6 @@ html {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 17px;
 }
-@media (max-width: 900px) {
-  html { font-size: 15px; }
-}
-@media (max-width: 400px) {
-  html { font-size: 13px; }
-}
 
 /* Type will scale with document */
 h1, h2, h3 {
@@ -101,4 +95,78 @@ ng2-markdown  img {
   margin-left: auto;
   margin-right: auto;
   box-shadow: 3px 3px 3px #777;
+}
+
+/* Responsive
+-------------------------------------- */
+
+/* Not Huge Desktop */
+@media (max-width: 900px) {
+  html { font-size: 15px; }
+}
+
+/* Mobile */
+@media (max-width: 400px) {
+  html { font-size: 13px; }
+}
+
+/*Not Mobile*/
+@media screen and (min-width: 401px) and (max-width: 1024px) {
+  /*ui fixed large menu*/
+  #topnav{
+    /* display: flex; */
+    /* position: fixed; */
+    /* flex-direction: row; */
+    /* -webkit-box-orient: horizontal; */
+  }
+}
+
+/*Mobile*/
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  /* layout adjustments
+     ---------------------- */
+
+  /*ui fluid vertical menu */
+  #topnav {
+    display: block;
+    position: relative;
+    flex-direction: column;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+  }
+
+  /* center links on mobile */
+  #topnav > .item {
+    display: block;
+    text-align: center;
+  }
+
+  /* space out social links to look nicer */
+  #social a {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* typography adjustments
+     ---------------------- */
+
+  h1 {
+    font-size: 3.5rem !important;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.75rem !important;
+  }
+  h3 {
+    font-size: 1rem !important;
+  }
+
+  p, code, pre {
+    font-size: 1.1rem;
+  }
+
+  ng2-markdown  img {
+    width: 80%;
+  }
 }
