@@ -20,7 +20,9 @@
     "development": "grunt development",
     "staging": "grunt staging",
     "production": "grunt production",
-    "checkstyle": "semistandard || true"
+    "checkstyle": "semistandard || true",
+    "build-dev": "jspm bundle app/app app/app.dev.js --minify --inject",
+    "build-prod": "jspm bundle-sfx app/app app/app.min.js --minify"
   },
   "jspm": {
     "dependencies": {

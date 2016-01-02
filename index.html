@@ -13,7 +13,16 @@
     <app><div class="ui active centered large inline loader" style="margin-top:75px;"></div></app>
 
     <script>
-      System.import('app/app');
+      console.log(location.hostname);
+      // Production mode - use self-executing bundle
+      if (location.hostname == "evanplaice.com") {
+        console.log("Running in PRODUCTION");
+        System.import('app/app.min');
+      }
+      // Development mode - transpile on-the-fly
+      else {
+        System.import('app/app');
+      }
     </script>
   </body>
 </html>
