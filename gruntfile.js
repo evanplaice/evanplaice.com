@@ -37,6 +37,8 @@ module.exports = function (grunt) {
           gzipRename: 'ext'
         },
         files: [
+          { dest: 'app/app.min.js', cwd: './', 'action': 'delete' },
+          { dest: 'app/app.min.js.map', cwd: './', 'action': 'delete' },
           { expand: true, cwd: 'jspm_packages/', src: ['**'], dest: '/jspm_packages' },
           { expand: true, cwd: 'app/', src: ['**'], dest: '/app' },
           { expand: true, cwd: 'content/', src: ['**'], dest: '/content' },
