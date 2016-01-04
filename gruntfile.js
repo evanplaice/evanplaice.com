@@ -44,6 +44,7 @@ module.exports = function (grunt) {
           { expand: true, cwd: 'content/', src: ['**'], dest: '/content' },
           { expand: true, src: 'index.html', dest: '/' },
           { expand: true, src: 'config.js', dest: '/' },
+          { expand: true, src: 'sitemap.xml', dest: '/' },
           { expand: true, src: 'google8178f9c6a9119ad1.html', dest: '/' },
           { dest: '/', cwd: './', action: 'delete' }
         ]
