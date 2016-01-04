@@ -19,7 +19,7 @@ main {
 /* TODO: make the masthead responsive */
 #masthead {
   height: 365px;
-  background-image: url('../images/sailboatraces.png');
+  background-image: url('../content/sailboatraces.png');
   background-repeat: no-repeat;
   background-position:center center;
   background-size:cover;
@@ -27,6 +27,10 @@ main {
   -moz-background-size:cover;
   -o-background-size:cover;
   box-shadow: rgba(0,0,0,0.20) 0 5px 10px;
+}
+
+.project {
+  margin-top: 20px !important;
 }
 
 .design > div > img {
