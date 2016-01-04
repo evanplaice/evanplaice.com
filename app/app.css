@@ -110,12 +110,12 @@ ng2-markdown  img {
 }
 
 /* Mobile */
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   html { font-size: 13px; }
 }
 
 /*Not Mobile*/
-@media screen and (min-width: 401px) and (max-width: 1024px) {
+@media screen and (min-width: 414px) and (max-width: 1024px) {
   /*ui fixed large menu*/
   #topnav{
     /* display: flex; */
@@ -126,7 +126,7 @@ ng2-markdown  img {
 }
 
 /*Mobile*/
-@media screen and (min-width: 0px) and (max-width: 400px) {
+@media screen and (min-width: 0px) and (max-width: 414px) {
   /* layout adjustments
      ---------------------- */
 
