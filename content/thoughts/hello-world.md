@@ -2,7 +2,7 @@ Welcome... This will (hopefully) be the first of many posts. Some will be inform
 
 This site has been a long-time coming. I mean a *really* *really* long time coming. See, I couldn't just throw up a WordPress blarg like some pleb. It had to be something 'special'. A reflection of my passion for chasing the bleeding edge. A Frankenstein of web technologies and best practices that's both interesting and horrifying. 
 
-![You're putting the website on a pedestal](images/onapedestal.jpg)
+![You're putting the website on a pedestal](content/thoughts/images/onapedestal.jpg)
 
 **First, I had some overcome some cognitive dissonance**
 
