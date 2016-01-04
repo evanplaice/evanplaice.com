@@ -23,29 +23,7 @@ module.exports = function (grunt) {
         files: [
           { expand: true, cwd: 'jspm_packages/', src: ['**'], dest: '/jspm_packages' },
           { expand: true, cwd: 'app/', src: ['**'], dest: '/app' },
-          { expand: true, cwd: 'assets/', src: ['**'], dest: '/assets' },
-          { expand: true, cwd: 'images/', src: ['**'], dest: '/images' },
-          { expand: true, cwd: 'styles/', src: ['**'], dest: '/styles' },
-          { expand: true, cwd: 'documents/', src: ['**'], dest: '/documents' },
-          { expand: true, src: 'index.html', dest: '/' },
-          { expand: true, src: 'config.js', dest: '/' },
-          { dest: '/', cwd: './', action: 'delete' }
-        ]
-      },
-      staging: {
-        options: {
-          bucket: 'staging.evanplaice.com',
-          overwrite: true,
-          differential: true,
-          gzipRename: 'ext'
-        },
-        files: [
-          { expand: true, cwd: 'jspm_packages/', src: ['**'], dest: '/jspm_packages' },
-          { expand: true, cwd: 'app/', src: ['**'], dest: '/app' },
-          { expand: true, cwd: 'assets/', src: ['**'], dest: '/assets' },
-          { expand: true, cwd: 'images/', src: ['**'], dest: '/images' },
-          { expand: true, cwd: 'styles/', src: ['**'], dest: '/styles' },
-          { expand: true, cwd: 'documents/', src: ['**'], dest: '/documents' },
+          { expand: true, cwd: 'content/', src: ['**'], dest: '/content' },
           { expand: true, src: 'index.html', dest: '/' },
           { expand: true, src: 'config.js', dest: '/' },
           { dest: '/', cwd: './', action: 'delete' }
@@ -61,12 +39,10 @@ module.exports = function (grunt) {
         files: [
           { expand: true, cwd: 'jspm_packages/', src: ['**'], dest: '/jspm_packages' },
           { expand: true, cwd: 'app/', src: ['**'], dest: '/app' },
-          { expand: true, cwd: 'assets/', src: ['**'], dest: '/assets' },
-          { expand: true, cwd: 'images/', src: ['**'], dest: '/images' },
-          { expand: true, cwd: 'styles/', src: ['**'], dest: '/styles' },
-          { expand: true, cwd: 'documents/', src: ['**'], dest: '/documents' },
+          { expand: true, cwd: 'content/', src: ['**'], dest: '/content' },
           { expand: true, src: 'index.html', dest: '/' },
           { expand: true, src: 'config.js', dest: '/' },
+          { expand: true, src: 'google8178f9c6a9119ad1.html', dest: '/' },
           { dest: '/', cwd: './', action: 'delete' }
         ]
       }
