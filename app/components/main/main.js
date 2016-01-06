@@ -18,6 +18,7 @@ import { DesignsComponent } from 'app/components/designs/designs';
 import { ProjectsComponent } from 'app/components/projects/projects';
 import { VitaeComponent } from 'app/components/vitae/vitae';
 import { NowComponent } from 'app/components/now/now';
+import { TypefacesComponent } from 'app/components/typefaces/typefaces';
 
 @Component({
   selector: 'app'
@@ -56,6 +57,11 @@ import { NowComponent } from 'app/components/now/now';
     path: '/now',
     name: 'Now',
     component: NowComponent
+  },
+  {
+    path: '/_typefaces',
+    name: 'Typefaces',
+    component: TypefacesComponent
   }
 ])
 export class MainComponent {
