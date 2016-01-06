@@ -16,7 +16,7 @@ import { MarkdownComponent } from 'app/components/markdown/markdown';
   ]
 })
 export class NowComponent {
-  constructor() {
+  constructor () {
     console.log('now');
     this.src = 'content/now/now.md';
     this.gitHubLink = 'http://github.com/evanplaice/evanplaice.com/blob/master/' + this.src;
