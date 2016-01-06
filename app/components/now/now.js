@@ -2,9 +2,9 @@ import {
   Component,
   View
 } from 'angular2/core';
-
-// extension components
-import { MarkdownComponent } from 'app/components/markdown/markdown';
+import {
+  MarkdownComponent
+} from 'ng2-markdown-component';
 
 @Component({
   selector: 'now'

@@ -2,10 +2,9 @@ import {
   Component,
   View
 } from 'angular2/core';
-
 import {
   MarkdownComponent
-} from 'app/components/markdown/markdown';
+} from 'ng2-markdown-component';
 
 @Component({
   selector: 'typefaces'
