@@ -1,20 +1,21 @@
 
 ## jquery-csv (Open Source - Author)
 
-jquery-csv is the first fully [RFC 4180][rfc-4180] compliant CSV parser for Javascript. It can parse RAW CSV to Javascript data structures and vice-versa. The JS representation of CSV data can be either a 2D array or an array of Objects. Parsing is accomplished using a DFM (Deterministic Finite-State Machine) covering every edge case outlined in the spec.
+jquery-csv is the first fully [RFC 4180][rfc-4180] compliant CSV parser for Javascript. It can parse RAW CSV to Javascript data structures and vice-versa. The JS representation of CSV data can be either a 2D array or an array of Objects. Parsing is accomplished using a DFM (Deterministic Finite-State Machine) covering every edge case outlined in the spec, plus a few that *should* be included.
 
 <div class="ui two column stackable grid container">
   <div class="column">
     <h3>Development</h3>
     <ul>
       <li>parse CSV to a 2D array</li>
-      <li>format a 2D array as CSV</li>
       <li>parse CSV to an array of objects</li>
+      <li>format a 2D array as CSV</li>
       <li>format an array of objects as CSV</li>
       <li>support customizable delimiter/separator/newline chars</li>
       <li>allow the injection of additional code at every step</li>
       <li>end-to-end unit testing coverage</li>
       <li>useful interactive demos/examples for others</li>
+      <li>optimize for performance</li>
     </ul>
   </div>
   <div class="column">
@@ -49,27 +50,27 @@ var data = $.csv.toArrays(csv);
 
 **Motivations:**
 
-Work was slow, feast or famine cycles are common in the military. I wanted to pitch a MVP to the president of my company to replace our existing (and terrible) logistics tracking system. The concept would provide a web-based UI with a PostgreSQL back-end.
+Work was slow, feast or famine cycles are common in the military. I attempted to pitch a MVP to the president of my company to replace our existing (terrible) logistics tracking system. The concept would provide a web-based UI with a PostgreSQL back-end.
 
-To enable the quick/efficient import/export of tabular data would require a robust CSV parser. I think I searched and read over 100+ different blogs/websites looking in search of a good example. The results, everybody sucks at parsing CSV.
+To enable the quick/efficient import/export of tabular data would require a robust CSV parser. I probably searched and read over 100+ different blogs/websites in search of a good example. The results, everybody sucks at parsing CSV and the JS dev community is riddled with amateurs who love ridiculous titles such as 'guru' or 'ninja'.
 
-I received pushback on my proposal at work in the form of, and I quote "we don't want to get involved with technology." So, I dropped the MVP and redirected my focus on creating something useful for others.
+I received pushback on my proposal in the form of, and I quote "we don't want to get involved with technology." I had time to burn (ie I can't stand being idle) so I dropped the product MVP and redirected my focus on creating something useful for others. My goal, to write the first fully RFC compliant CSV parser for client-side CSV. 
 
-As a result I decided to write the first, fully RFC compliant CSV parser for client-side CSV. I thought, a robust RegEx *should* work (plus I wanted an excuse to learn regex). I found a 20 line monster on Stack Overflow and tweaked it to my uses only to discover that regular expressions would never be able to cover one essential use case.
+It began with the poor assumption, 'RegEx *should* be capable of parsing CSV'. I found a 20 line monster on Stack Overflow and tweaked it for extensibility. Only to discover that -- by design -- the RegEx parser will always break on values that contain escaped newline characters.
 
-I went back to the drawing board. Read everything I could find about parsers, Chomsky types, finite state machines, then sat down and mapped out every single state and transition.
+Back to the drawing board. I read everything I could find about parsers, Chomsky types, EBNF, parser generators, finite state machines, etc. Then, and only then, I sat down and mapped out every single state and transition as a DFA (Deterministic Finite-State Automata). The foundation that would become the new feature-complete CSV parser.
 
 **Outcome:**
 
-The popularity of the library exploded with a little marketing help. Piggybacking on jquery didn't hurt either. Ironically, the library doesn't actually depend on jQuery. The original intent was to make it compatible with jQuery method chaining.
+The popularity of the library exploded with a little marketing help. Piggybacking on jquery didn't hurt either. Ironically, the library doesn't actually depend on jQuery.
 
 Tons of people started using it so it took very little time for users to root out most of the bugs. It was really an intrinsically rewarding experience to have something I created be adopted by so many.
 
 Anyway, the feast-or-famine pace at work switched directions and I left the project on autopilot. The project is mostly dead now. GoogleCode shutdown and the migration to GitHub left years of valuable history behind. In retrospect, I wish I had tried GitHub sooner. The collaborative nature of forks/pull-requests is simply... better.
 
-I love writing code in Javascript. It pained me to see so many self-proclaimed 'JS Ninjas' churning out bullshit, misinformation, and low quality code. It took a lot of effort to 'do things right' but I like to think that my work helped to raise the bar just a little.
+I love writing code in Javascript. It pained me to see so many self-proclaimed 'JS Ninjas' churning out bullshit, misinformation, and low quality code. It took some effort to 'do things right' but I like to think that my work helped to raise the bar just a little.
 
-To date, the project has had almost 500K downloads. Competing CSV parser libraries have cropped up since and I'm happy to say they all targeted [RFC 4180][rfc-4180] compliance as the baseline.
+To date, the project has had almost 500K downloads. Competing CSV parser libraries have cropped up since and I'm happy to say they all target [RFC 4180][rfc-4180] compliance as the baseline.
 
 [rfc-4180]: https://tools.ietf.org/html/rfc4180
 
@@ -187,6 +188,10 @@ Flight simulation time is booked at the rate of about $350/pilot/hour and flight
 
 Our update would rip out all of the existing hardware and replace it with 3 beautiful modern touchscreens running a UI designed to match their other flight simulators in look-an-feel as closely as possible.
 
+**Motivations:**
+
+Money (ie 250K revenue), a challenge, a great learning experience. We didn't have any other contracts lined up at the time. Developing a relevant software product would open up a lot of new potential business.
+
 **Constraints:**
 
 With this project came a significant number of challenges. The simulator itself was built in the early 80s (ie before I was born). The host computer is an Encore/SEL 32/77 Workstation (ie refrigerator-esque) running proprietary version of AIX (ie IBM flavored Unix), with no networking support, and a bolt-on FPU (Floating Point Unit) that uses a non-standard floating point format.
@@ -267,8 +272,6 @@ You may ask, what was my co-developer doing the whole time? A lot actually. He d
 
 I have some pretty massive brass ones but -- even by my standards -- the project was a massive risk. At one point, there was a 3 1/2 stretch where I slept on the floor of my office and worked 18-20 hours/day.
 
-All in all, we delivered on-time and met our SLA of 99.9% uptime over a 3 month period. Not bad for a rookie.
+**Outcome:**
 
-**Motivations:**
-
-Money (ie 250K revenue), a challenge, a great learning experience. The first one paid for all the development and R&D costs. If my Father hadn't passed, we could have sold more integrations at a huge profit.
+All in all, we delivered on-time. Integration testing was stressful, we only had a week of dedicated downtime to get everything running and fix any last minute bugs. Fortunately, we met our acceptance SLA of 99.9% uptime over a 3 month period. Not bad for a rookie.
