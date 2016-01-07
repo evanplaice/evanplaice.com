@@ -1,6 +1,28 @@
+
 ## pypreprocessor (Open Source - Author)
 
 PyPreprocessor is a small library that adds c-style preprocessor macro support to Python. The library can either load and preprocess and external file, or work execute in a self-consuming manner.
+
+<div class="ui two column stackable grid container">
+  <div class="column">
+    <h3>Development</h3>
+    <ul>
+      <li>preprocess external files</li>
+      <li>preprocess by self-consuming the source</li>
+      <li>basic functional tests</li>
+      <li>useful examples for others</li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3>Stack</h3>
+    <ul>
+      <li>Python 2/3</li>
+      <li>Google Code -> GitHub</li>
+      <li>Mercurial -> Git</li>
+      <li>PyPi Package Release</li>
+    </ul>
+  </div>
+</div>
 
 **Usage:**
 
