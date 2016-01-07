@@ -17,7 +17,7 @@ PyPreprocessor is a small library that adds c-style preprocessor macro support t
     <h3>Stack</h3>
     <ul>
       <li>Python 2/3</li>
-      <li>Google Code -> GitHub</li>
+      <li>GoogleCode -> GitHub</li>
       <li>Mercurial -> Git</li>
       <li>PyPi Package Release</li>
     </ul>
