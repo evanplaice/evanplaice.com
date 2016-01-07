@@ -1,4 +1,80 @@
 
+## jquery-csv (Open Source - Author)
+
+jquery-csv is the first fully [RFC 4180][rfc-4180] compliant CSV parser for Javascript. It can parse RAW CSV to Javascript data structures and vice-versa. The JS representation of CSV data can be either a 2D array or an array of Objects. Parsing is accomplished using a DFM (Deterministic Finite-State Machine) covering every edge case outlined in the spec.
+
+<div class="ui two column stackable grid container">
+  <div class="column">
+    <h3>Development</h3>
+    <ul>
+      <li>parse CSV to a 2D array</li>
+      <li>format a 2D array as CSV</li>
+      <li>parse CSV to an array of objects</li>
+      <li>format an array of objects as CSV</li>
+      <li>support customizable delimiter/separator/newline chars</li>
+      <li>allow the injection of additional code at every step</li>
+      <li>end-to-end unit testing coverage</li>
+      <li>useful interactive demos/examples for others</li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3>Stack</h3>
+    <ul>
+      <li>Javascript/HTML + Node.js</li>
+      <li>JSUnit + Mocha/Chai</li>
+      <li>GoogleCode -> GitHub</li>
+      <li>Git</li>
+      <li>Grunt: htmlhint + jshint + uglify</li>
+    </ul>
+  </div>
+</div>
+
+**Usage:**
+```language-javascript
+// sample csv (could be loaded via file/ajax, etc)
+var csv = `
+"All work","and no play","makes Jack","a dull boy..."
+"All work","and no play","makes Jack","a dull boy..."
+`;
+
+// parse the csv
+var data = $.csv.toArrays(csv);
+
+// the 'data' variable will contain
+// [
+//     ['All work', 'and no play', 'makes Jack', 'a dull boy...'],
+//     ['All work', 'and no play', 'makes Jack', 'a dull boy...']
+// ]
+```
+
+**Motivations:**
+
+Work was slow, feast or famine cycles are common in the military. I wanted to pitch a MVP to the president of my company to replace our existing (and terrible) logistics tracking system. The concept would provide a web-based UI with a PostgreSQL back-end.
+
+To enable the quick/efficient import/export of tabular data would require a robust CSV parser. I think I searched and read over 100+ different blogs/websites looking in search of a good example. The results, everybody sucks at parsing CSV.
+
+I received pushback on my proposal at work in the form of, and I quote "we don't want to get involved with technology." So, I dropped the MVP and redirected my focus on creating something useful for others.
+
+As a result I decided to write the first, fully RFC compliant CSV parser for client-side CSV. I thought, a robust RegEx *should* work (plus I wanted an excuse to learn regex). I found a 20 line monster on Stack Overflow and tweaked it to my uses only to discover that regular expressions would never be able to cover one essential use case.
+
+I went back to the drawing board. Read everything I could find about parsers, Chomsky types, finite state machines, then sat down and mapped out every single state and transition.
+
+**Outcome:**
+
+The popularity of the library exploded with a little marketing help. Piggybacking on jquery didn't hurt either. Ironically, the library doesn't actually depend on jQuery. The original intent was to make it compatible with jQuery method chaining.
+
+Tons of people started using it so it took very little time for users to root out most of the bugs. It was really an intrinsically rewarding experience to have something I created be adopted by so many.
+
+Anyway, the feast-or-famine pace at work switched directions and I left the project on autopilot. The project is mostly dead now. GoogleCode shutdown and the migration to GitHub left years of valuable history behind. In retrospect, I wish I had tried GitHub sooner. The collaborative nature of forks/pull-requests is simply... better.
+
+I love writing code in Javascript. It pained me to see so many self-proclaimed 'JS Ninjas' churning out bullshit, misinformation, and low quality code. It took a lot of effort to 'do things right' but I like to think that my work helped to raise the bar just a little.
+
+To date, the project has had almost 500K downloads. Competing CSV parser libraries have cropped up since and I'm happy to say they all targeted [RFC 4180][rfc-4180] compliance as the baseline.
+
+[rfc-4180]: https://tools.ietf.org/html/rfc4180
+
+-----
+
 ## pypreprocessor (Open Source - Author)
 
 PyPreprocessor is a small library that adds c-style preprocessor macro support to Python. The library can either load and preprocess and external file, or work execute in a self-consuming manner.
