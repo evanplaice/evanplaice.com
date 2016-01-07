@@ -31,7 +31,7 @@ Packet.Net is a parser lib used by SharpPcap to parse RAW network frames into st
   </div>
 </div>
 
-*Motivations:*
+**Motivations:**
 
 Anybody attempting to work with low-level network protocols in Windows will quickly discover that it's not possible. For 'security reasons' the default network drivers packaged with Windows won't let you peek at anything below the Transport Layer (ex TCP/UDP).
 
@@ -102,13 +102,13 @@ We were simply following the same recipe that we had been following for 4 years 
   <div class="column">
     <h3>Hardware</h3>
     <ul>
-      <li>6 19" ELO commercial touchscreen displays (3 for development</li>
+      <li>6 19" ELO commercial touchscreen displays (3 prod, 3 dev)</li>
       <li>a triple-monitor stand for the testing setup</li>
-      <li>1 17" cheapo monitor for the console</li>
+      <li>2 15" cheapo monitors for the console</li>
       <li>3 custom 3U bolt-on PC (1 prod, 1 hot spare, 1 dev)</li>
-      <li>2 2-port video cards for the displays</li>
-      <li>1 serial card for the touch screen inputs</li>
-      <li>2 hot-swap hard drive bays</li>
+      <li>6 2-port video cards for the displays</li>
+      <li>3 serial card for the touch screen inputs</li>
+      <li>6 hot-swap hard drive bays</li>
       <li>4 additional hard drive bays for backup</li>
       <li>3 KVM-over-ethernet devices</li>
     </ul>
@@ -120,17 +120,21 @@ We were simply following the same recipe that we had been following for 4 years 
       <li>WinForms (really sucky UI)</li>
       <li>Visual Studio 2008 Pro</li>
       <li>Windows XP Pro</li>
-      <li>MS SQL</li>
+      <li>MS SQL (database)</li>
       <li>NUnit (testing)</li>
-      <li>SharpPcap/Packet.Net (low-level networking library)</li>
+      <li>SharpPcap/Packet.Net (low-level networking lib)</li>
       <li>Subversion (SCM)</li>
       <li>MediaWiki (wiki)</li>
     </ul>
   </div>
 </div>
 
-You may ask, what was my co-developer doing the whole time. A lot actually. He designed and developed: the dynamic 2D map plot that displays radio stations and runways; The data middle-layer in the main application, consisting of hundreds of data symbols; as well as about 75 pages of UI.
+You may ask, what was my co-developer doing the whole time? A lot actually. He designed and developed: the dynamic 2D map plot that displays radio stations and runways; the main application's data middle-layer, consisting of hundreds of data symbols; as well as about 75-80 pages of UI.
 
 I have some pretty massive brass ones but -- even by my standards -- the project was a massive risk. At one point, there was a 3 1/2 stretch where I slept on the floor of my office and worked 18-20 hours/day.
 
 All in all, we delivered on-time and met our SLA of 99.9% uptime over a 3 month period. Not bad for a rookie.
+
+**Motivations:**
+
+Money (ie 250K revenue), a challenge, a great learning experience. The first one paid for all the development and R&D costs. If my Father hadn't passed, we could have sold more integrations at a huge profit.
