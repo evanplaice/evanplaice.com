@@ -9,40 +9,36 @@
   <a href="http://strikegrouptest.appspot.com/_typefaces">Design Guide</a>
 </div>
 <div class="ui divider"></div>
-<p>I initially took on this project to provide a complete end-to-end redesign. The initial requirements included adding new pages as well as resetting the main navigation links to point to them. The original creator implemented the site as flat HTML files using Microsoft FrontPage. In short, the layout and stying was consistently inconsistent.</p>
-<p>The first step involved re-creating and resetting the layout using a dynamic templating engine. I chose Google App Engine (ala Python+Django+Jinja2) as the development platform due to the zero-maintenance and built-in one-click-deploy features.</p>
-<p>The client's site was already hosted on a shared hosting LAMP stack, so I created a simple crawler script used to compile the dynamic site to static HTML. Including Apache rewrite rules to provide a clean/consistent URL structure.</p>
-<p>Regular content and style updates were applied over time to meet business needs. The most significant being the addition of the <a href="http://strikegrouptest.appspot.com/seaport-e#/">Seaport-E</a> section. Seaport-E is a hard requirement for certain military contracts and the window for implementing the changes following the contract award was small. Since the update would require the addition of a second level of navigation I opted to use Angular to handle the SubNav routing.</p>
-<p>Hosting the development version of the site on Google App Engine turned out to be a huge win. Reviews took place over conference calls with my colleagues located in multiple regions across the US. With GAE, I was able to immediately apply and deploy changes in direct response to the feedback/suggestions received during the review.</p>
+<ng2-markdown [src]="'content/designs/strikegroup/description.md'"></ng2-markdown>
 <div class="ui divider"></div>
 <div class="ui three column grid design">
   <div class="column">
-    <img class="ui small image" src="/content/designs/strikegroup-thumbs/about-us.png">
+    <img class="ui small image" src="/content/designs/strikegroup/thumbs/about-us.png">
   </div>
   <div class="column">
-    <img class="ui small image" src="/content/designs/strikegroup-thumbs/strategic-sourcing.png">
+    <img class="ui small image" src="/content/designs/strikegroup/thumbs/strategic-sourcing.png">
   </div>
   <div class="column">
-    <img class="ui small image" src="/content/designs/strikegroup-thumbs/government-projects.png">
-  </div>
-</div>
-<div class="ui three column grid design">
-  <div class="column">
-    <img class="ui small image" src="/content/designs/strikegroup-thumbs/commercial-projects.png">
-  </div>
-  <div class="column">
-    <img class="ui small image" src="/content/designs/strikegroup-thumbs/information-technology.png">
-  </div>
-  <div class="column">
-    <img class="ui small image" src="/content/designs/strikegroup-thumbs/seaport-e.png">
+    <img class="ui small image" src="/content/designs/strikegroup/thumbs/government-projects.png">
   </div>
 </div>
 <div class="ui three column grid design">
   <div class="column">
-    <img class="ui small image" src="/content/designs/strikegroup-thumbs/careers.png">
+    <img class="ui small image" src="/content/designs/strikegroup/thumbs/commercial-projects.png">
   </div>
   <div class="column">
-    <img class="ui small image" src="/content/designs/strikegroup-thumbs/contact-us.png">
+    <img class="ui small image" src="/content/designs/strikegroup/thumbs/information-technology.png">
+  </div>
+  <div class="column">
+    <img class="ui small image" src="/content/designs/strikegroup/thumbs/seaport-e.png">
+  </div>
+</div>
+<div class="ui three column grid design">
+  <div class="column">
+    <img class="ui small image" src="/content/designs/strikegroup/thumbs/careers.png">
+  </div>
+  <div class="column">
+    <img class="ui small image" src="/content/designs/strikegroup/thumbs/contact-us.png">
   </div>
   <div class="column">
   </div>
@@ -55,52 +51,54 @@
   <a href="http://jpasims:evannn@jpasims.appspot.com/_typefaces">Design Guide</a>
 </div>
 <div class="ui divider"></div>
-<p>JPASims is the site I <a href="http://www.urbandictionary.com/define.php?term=cut+my+teeth">'cut my teeth'</a> on web development. It started out as a side project between contracts and gradually grew to be a vital tool to for promoting our business and landing new contracts.</p>
-<p>The first iteration was developed during the 'dark ages of the internet' when table-based layouts were the norm and web standards support was laughably inconsistent between browsers. It went through many iterations. Including: table based layout; CSS layout; dynamic Javascript; XML 1.0; dynamic PHP templating; xml content injection; and finally a MySQL back-end with an inventory search interface.</p>
-<p>For the final version, I converted everything to be hosted freely on Google App Engine as a sort of memorial to my late father and the many years of amazing work experiences we shared.</p>
-<p>In retrospect, having unlimited creativity allowed for some very interesting and unique characteristics. There used to be 3 levels of navigation complete with breadcrumns. It provided responsive design prior to the implementation of CSS media queries by detecting the client's screen resolution and dynamically loading different CSS files. It provided a consistent (via numerous hacks) pixel-perfect layout despite a the inconsistent box model between browsers. It has had numerous different dynamic image galleries, including the current 2 (ie Lightbox and a custom one)</p>
-<p>All in all, it was a great learning experience. It has been interesting to see the evolution of the web and I'm genuinely grateful for the new web standards and frameworks that make building sites so much easier.</p>
+<ng2-markdown [src]="'content/designs/jpasims/description.md'"></ng2-markdown>
 <div class="ui divider"></div>
 <div class="ui three column grid design">
   <div class="column">
-    <img class="ui small image" src="/content/designs/jpasims-thumbs/home.png">
+    <img class="ui small image" src="/content/designs/jpasims/thumbs/home.png">
   </div>
   <div class="column">
-    <img class="ui small image" src="/content/designs/jpasims-thumbs/about-us.png">
+    <img class="ui small image" src="/content/designs/jpasims/thumbs/about-us.png">
   </div>
   <div class="column">
-    <img class="ui small image" src="/content/designs/jpasims-thumbs/press-releases.png">
+    <img class="ui small image" src="/content/designs/jpasims/thumbs/press-releases.png">
   </div>
 </div>
 <div class="ui three column grid design">
   <div class="column">
-    <img class="ui small image" src="/content/designs/jpasims-thumbs/projects.png">
+    <img class="ui small image" src="/content/designs/jpasims/thumbs/projects.png">
   </div>
   <div class="column">
-    <img class="ui small image" src="/content/designs/jpasims-thumbs/sim-products.png">
+    <img class="ui small image" src="/content/designs/jpasims/thumbs/sim-products.png">
   </div>
   <div class="column">
-    <img class="ui small image" src="/content/designs/jpasims-thumbs/sims-for-sale.png">
+    <img class="ui small image" src="/content/designs/jpasims/thumbs/sims-for-sale.png">
   </div>
 </div>
 <div class="ui three column grid design">
   <div class="column">
-    <img class="ui small image" src="/content/designs/jpasims-thumbs/parts-for-sale.png">
+    <img class="ui small image" src="/content/designs/jpasims/thumbs/parts-for-sale.png">
   </div>
   <div class="column">
-    <img class="ui small image" src="/content/designs/jpasims-thumbs/devices-for-sale.png">
+    <img class="ui small image" src="/content/designs/jpasims/thumbs/devices-for-sale.png">
   </div>
   <div class="column">
-    <img class="ui small image" src="/content/designs/jpasims-thumbs/consulting.png">
+    <img class="ui small image" src="/content/designs/jpasims/thumbs/consulting.png">
   </div>
 </div>
 <div class="ui three column grid design">
   <div class="column">
-    <img class="ui small image" src="/content/designs/jpasims-thumbs/links.png">
+    <img class="ui small image" src="/content/designs/jpasims/thumbs/links.png">
   </div>
   <div class="column">
-    <img class="ui small image" src="/content/designs/jpasims-thumbs/contact-us.png">
+    <img class="ui small image" src="/content/designs/jpasims/thumbs/contact-us.png">
   </div>
   <div class="column">
   </div>
 </div>
+
+<!--
+<div class="ui divider"></div>
+
+<design *ngFor="#design of designs" [design]="design">
+-->
