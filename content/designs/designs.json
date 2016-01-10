@@ -1,6 +1,7 @@
 [
   {
     "name": "evanplaice",
+    "hidden": true,
     "title": "EvanPlaice.com",
     "link": "",
     "styleguide": "",
