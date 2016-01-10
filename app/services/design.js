@@ -29,8 +29,10 @@ export class DesignService {
     })
     .then((items) => {
       items.map((item) => {
-        let design = new DesignModel(item);
-        this.designs.push(design);
+        if (!item.hidden) {
+          let design = new DesignModel(item);
+          this.designs.push(design);
+        }
       });
     });
   }
