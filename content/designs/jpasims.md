@@ -1,0 +1,9 @@
+JPASims is the site I <a href="http://www.urbandictionary.com/define.php?term=cut+my+teeth">'cut my teeth'</a> on web development. It started out as a side project between contracts and gradually grew to be a vital tool to for promoting our business and landing new contracts.
+
+The first iteration was developed during the 'dark ages of the internet' when table-based layouts were the norm and web standards support was laughably inconsistent between browsers. It went through many iterations. Including: table based layout; CSS layout; dynamic Javascript; XML 1.0; dynamic PHP templating; xml content injection; and finally a MySQL back-end with an inventory search interface.
+
+For the final version, I converted everything to be hosted freely on Google App Engine as a sort of memorial to my late father and the many years of amazing work experiences we shared.
+
+In retrospect, having unlimited creativity allowed for some very interesting and unique characteristics. There used to be 3 levels of navigation complete with breadcrumns. It provided responsive design prior to the implementation of CSS media queries by detecting the client's screen resolution and dynamically loading different CSS files. It provided a consistent (via numerous hacks) pixel-perfect layout despite a the inconsistent box model between browsers. It has had numerous different dynamic image galleries, including the current 2 (ie Lightbox and a custom one)
+
+All in all, it was a great learning experience. It has been interesting to see the evolution of the web and I'm genuinely grateful for the new web standards and frameworks that make building sites so much easier.
