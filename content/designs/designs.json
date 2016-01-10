@@ -1,0 +1,47 @@
+[
+  {
+    "name": "evanplaice",
+    "title": "EvanPlaice.com",
+    "link": "",
+    "styleguide": "",
+    "description": "",
+    "images": []
+  },
+  {
+    "name": "strikegroup",
+    "title": "StrikeGroup.org",
+    "link": "http://strikegrouptest.appspot.com/",
+    "styleguide": "http://strikegrouptest.appspot.com/_typefaces",
+    "description": "content/designs/strikegroup.md",
+    "images": [
+      "about-us.png",
+      "strategic-sourcing.png",
+      "government-projects.png",
+      "commercial-projects.png",
+      "information-technology.png",
+      "seaport-e.png",
+      "careers.png",
+      "contact-us.png"
+    ]
+  },
+  {
+    "name": "jpasims",
+    "title": "JPASims.com",
+    "link": "http://jpasims.appspot.com/",
+    "styleguide": "http://jpasims:evannn@jpasims.appspot.com/_typefaces",
+    "description": "content/designs/jpasims.md",
+    "images": [
+      "home.png",
+      "about-us.png",
+      "press-releases.png",
+      "projects.png",
+      "sim-products.png",
+      "sims-for-sale.png",
+      "parts-for-sale.png",
+      "devices-for-sale.png",
+      "consulting.png",
+      "links.png",
+      "contact-us.png"
+    ]
+  }
+]
