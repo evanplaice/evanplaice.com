@@ -1,4 +1,5 @@
 export class DesignModel {
+  name = '';
   title = '';
   link = '';
   styleguide = '';
@@ -6,6 +7,7 @@ export class DesignModel {
   images = [];
 
   constructor(item) {
+    this.name = item.name;
     this.title = item.title;
     this.link = item.link;
     this.styleguide = item.styleguide;
