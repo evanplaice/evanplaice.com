@@ -11,7 +11,7 @@ import {
 
 @Injectable()
 export class ProjectService {
-  designs = [];
+  projects = [];
 
   constructor(@Inject(Http) http) {
     this.http = http;
