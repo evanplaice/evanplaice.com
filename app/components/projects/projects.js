@@ -12,6 +12,9 @@ import {
 
 @Component({
   selector: 'projects',
+  providers: [
+    ProjectService
+  ],
   injectables: [
     ProjectService
   ]

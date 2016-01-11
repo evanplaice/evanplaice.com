@@ -12,6 +12,9 @@ import {
 
 @Component({
   selector: 'designs',
+  providers: [
+    DesignService
+  ],
   injectables: [
     DesignService
   ]
