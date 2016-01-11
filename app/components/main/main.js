@@ -1,4 +1,4 @@
-import { Component, View } from 'angular2/core';
+import { Component, View, Inject } from 'angular2/core';
 import { ROUTER_DIRECTIVES, RouteConfig, Location } from 'angular2/router';
 
 // layout components
@@ -54,13 +54,8 @@ import { TypefacesComponent } from 'app/components/typefaces/typefaces';
   }
 ])
 export class MainComponent {
-  constructor (location) {
+  constructor (@Inject(Location) location) {
     resolveHashURL(location);
-  }
-
-  // ES7 dependency injection
-  static get parameters () {
-    return [[Location]];
   }
 }
 
