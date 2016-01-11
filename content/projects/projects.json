@@ -1,0 +1,87 @@
+[
+  {
+    "hidden": true,
+    "name": "ng2-markdown-component",
+    "title": "<ng2-markdown-component>",
+    "category": "Open Source Software",
+    "role": "Author",
+    "link": "https://github.com/evanplaice/ng2-markdown-component",
+    "description": "ng2-markdown-component.md"
+  },
+  {
+    "hidden": true,
+    "name": "virtualbox-windows",
+    "title": "VirtualBox-Windows",
+    "category": "Open Source Software",
+    "role": "Author",
+    "link": "https://github.com/evanplaice/virtualbox-windows",
+    "description": "virtualbox-windows.md"
+  },
+  {
+    "hidden": true,
+    "name": "virtualbox-osx",
+    "title": "VirtualBox-OSX",
+    "category": "Open Source Software",
+    "role": "Author",
+    "link": "https://github.com/evanplaice/virtualbox-osx",
+    "description": "virtualbox-osx.md"
+  },
+  {
+    "hidden": true,
+    "name": "sublime-text-seed",
+    "title": "Sublime-Text-Seed",
+    "category": "Open Source Software",
+    "role": "Author",
+    "link": "https://github.com/evanplaice/sublime-text-seed",
+    "description": "sublime-text-seed.md"
+  },
+  {
+    "hidden": true,
+    "name": "grunt-ftpsync",
+    "title": "Grunt-FTPSync",
+    "category": "Open Source Software",
+    "role": "Author",
+    "link": "https://github.com/evanplaice/grunt-ftpsync",
+    "description": "grunt-ftpsync.md"
+  },
+  {
+    "hidden": true,
+    "name": "node-ftpsync",
+    "title": "Node-FTPSync",
+    "category": "Open Source Software",
+    "role": "Author",
+    "link": "https://github.com/evanplaice/node-ftpsync",
+    "description": "node-ftpsync.md"
+  },
+  {
+    "name": "jquery-csv",
+    "title": "jQuery-CSV",
+    "category": "Open Source Software",
+    "role": "Author",
+    "link": "https://code.google.com/p/jquery-csv",
+    "description": "jquery-csv.md"
+  },
+  {
+    "name": "pypreprocessor",
+    "title": "PyPreprocessor",
+    "category": "Open Source Software",
+    "role": "Author",
+    "link": "https://code.google.com/p/pypreprocessor",
+    "description": "pypreprocessor.md"
+  },
+  {
+    "name": "packet-dotnet",
+    "title": "SharpPcap/Packet.Net",
+    "category": "Open Source Software",
+    "role": "Contributor",
+    "link": "http://sourceforge.net/projects/packetnet",
+    "description": "packet-dotnet.md"
+  },
+  {
+    "name": "rios",
+    "title": "RIOS",
+    "category": "Proprietary",
+    "role": "Co-Developer",
+    "description": "rios.md"
+  }
+]
