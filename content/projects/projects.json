@@ -70,12 +70,12 @@
     "description": "pypreprocessor.md"
   },
   {
-    "name": "packet-dotnet",
+    "name": "sharppcap-packetnet",
     "title": "SharpPcap/Packet.Net",
     "category": "Open Source Software",
     "role": "Contributor",
     "link": "http://sourceforge.net/projects/packetnet",
-    "description": "packet-dotnet.md"
+    "description": "sharppcap-packetnet.md"
   },
   {
     "name": "rios",
