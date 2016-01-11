@@ -1,0 +1,65 @@
+<div class="ui center aligned container">
+  <h2><a [href]="design.link">{{ design.title }}</a></h2>
+  <a [href]="design.styleguide">Design Guide</a>
+</div>
+<div class="ui divider"></div>
+<ng2-markdown [src]="descLink()"></ng2-markdown>
+<div *ngIf="design.images.length > 0"class="gallery">
+  <div class="ui divider"></div>
+  <div  class="ui three column grid design">
+    <div class="column">
+      <img *ngIf="design.images[0]" class="ui small image" src="{{ thumbLink(0) }}">
+    </div>
+    <div class="column">
+      <img *ngIf="design.images[1]" class="ui small image" src="{{ thumbLink(1) }}">
+    </div>
+    <div class="column">
+      <img *ngIf="design.images[2]" class="ui small image" src="{{ thumbLink(2) }}">
+    </div>
+  </div>
+  <div *ngIf="design.images.length > 3" class="ui three column grid design">
+    <div class="column">
+      <img *ngIf="design.images[3]" class="ui small image" src="{{ thumbLink(3) }}">
+    </div>
+    <div class="column">
+      <img *ngIf="design.images[4]" class="ui small image" src="{{ thumbLink(4) }}">
+    </div>
+    <div class="column">
+      <img *ngIf="design.images[5]" class="ui small image" src="{{ thumbLink(5) }}">
+    </div>
+  </div>
+  <div *ngIf="design.images.length > 6" class="ui three column grid design">
+    <div class="column">
+      <img *ngIf="design.images[6]" class="ui small image" src="{{ thumbLink(6) }}">
+    </div>
+    <div class="column">
+      <img *ngIf="design.images[7]" class="ui small image" src="{{ thumbLink(7) }}">
+    </div>
+    <div class="column">
+      <img *ngIf="design.images[8]" class="ui small image" src="{{ thumbLink(8) }}">
+    </div>
+  </div>
+  <div *ngIf="design.images.length > 9" class="ui three column grid design">
+    <div class="column">
+      <img *ngIf="design.images[9]" class="ui small image" src="{{ thumbLink(9) }}">
+    </div>
+    <div class="column">
+      <img *ngIf="design.images[10]" class="ui small image" src="{{ thumbLink(10) }}">
+    </div>
+    <div class="column">
+      <img *ngIf="design.images[11]" class="ui small image" src="{{ thumbLink(11) }}">
+    </div>
+  </div>
+    <div *ngIf="design.images.length > 12" class="ui three column grid design">
+    <div class="column">
+      <img *ngIf="design.images[12]" class="ui small image" src="{{ thumbLink(12) }}">
+    </div>
+    <div class="column">
+      <img *ngIf="design.images[13]" class="ui small image" src="{{ thumbLink(13) }}">
+    </div>
+    <div class="column">
+      <img *ngIf="design.images[14]" class="ui small image" src="{{ thumbLink(14) }}">
+    </div>
+  </div>
+</div>
+<div *ngIf="!last" class="ui divider"></div>
