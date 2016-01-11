@@ -6,7 +6,7 @@ export class DesignModel {
   description ='';
   images = [];
 
-  constructor(design) {
+  constructor (design) {
     this.name = design.name;
     this.title = design.title;
     this.link = design.link;

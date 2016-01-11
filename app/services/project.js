@@ -13,16 +13,16 @@ import {
 export class ProjectService {
   projects = [];
 
-  constructor(@Inject(Http) http) {
+  constructor (@Inject(Http) http) {
     this.http = http;
     this.loadProjects();
   }
 
-  getProjects() {
+  getProjects () {
     return this.projects;
   }
 
-  loadProjects() {
+  loadProjects () {
     this.http.get('content/projects/projects.json').toPromise()
     .then((res) => {
       return JSON.parse(res._body);

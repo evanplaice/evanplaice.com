@@ -6,7 +6,7 @@ export class ProjectModel {
   link = '';
   description ='';
 
-  constructor(project) {
+  constructor (project) {
     this.name = project.name;
     this.title = project.title;
     this.category = project.category;

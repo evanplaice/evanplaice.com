@@ -28,12 +28,13 @@ import {
   ]
 })
 export class ProjectComponent {
-  constructor() {
+  constructor () {
     console.log('project');
   }
 
-  descLink() {
-    if (this.project.description)
-    return 'content/projects/' + this.project.description;
+  descLink () {
+    if (this.project.description) {
+      return 'content/projects/' + this.project.description;
+    }
   }
 }

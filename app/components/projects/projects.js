@@ -29,7 +29,7 @@ export class ProjectsComponent {
   constructor (@Inject(ProjectService) projectService) {
     console.log('projects');
 
-    // fetch the design data
+    // fetch the project data
     this.projects = projectService.getProjects();
   }
 }

@@ -21,16 +21,17 @@ import {
 })
 
 export class DesignComponent {
-  constructor() {
+  constructor () {
     console.log('design');
   }
 
-  descLink() {
-    if (this.design.description)
-    return 'content/designs/' + this.design.name + '/' + this.design.description;
+  descLink () {
+    if (this.design.description) {
+      return 'content/designs/' + this.design.name + '/' + this.design.description;
+    }
   }
 
-  thumbLink(i) {
+  thumbLink (i) {
     if (this.design.images[i]) {
       return 'content/designs/' + this.design.name + '/thumbs/' + this.design.images[i];
     }
