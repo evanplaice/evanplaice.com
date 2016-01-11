@@ -1,24 +1,32 @@
 import {
   Component,
-  View
+  View,
+  Inject
 } from 'angular2/core';
 import {
-  MarkdownComponent
-} from 'ng2-markdown-component';
+  DesignComponent
+} from 'app/components/design/design';
+import {
+  DesignService
+} from 'app/services/design';
 
 @Component({
-  selector: 'designs'
+  selector: 'designs',
+  injectables: [
+    DesignService
+  ]
 })
 @View({
   templateUrl: 'app/components/designs/designs.html',
   directives: [
-    MarkdownComponent
+    DesignComponent
   ]
 })
 export class DesignsComponent {
-  constructor () {
+  constructor (@Inject(DesignService) designService) {
     console.log('designs');
-    this.strikegroup = 'content/designs/strikegroup.md';
-    this.jpasims = 'content/designs/jpasims.md';
+
+    // fetch the design data
+    this.designs = designService.getDesigns();
   }
 }
