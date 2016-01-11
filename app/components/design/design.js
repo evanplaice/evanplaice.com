@@ -22,7 +22,7 @@ import {
 
 export class DesignComponent {
   constructor () {
-    console.log('design');
+    // console.log('design');
   }
 
   descLink () {

@@ -15,4 +15,8 @@ import {
     MarkdownComponent
   ]
 })
-export class TypefacesComponent {}
+export class TypefacesComponent {
+  constructor() {
+    // console.log('typefaces');
+  }
+}

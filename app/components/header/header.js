@@ -16,7 +16,7 @@ import {
 })
 export class HeaderComponent {
   constructor (location) {
-    console.log('header');
+    // console.log('header');
     this.location = location;
   }
 

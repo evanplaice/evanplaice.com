@@ -27,7 +27,7 @@ import {
 })
 export class ProjectsComponent {
   constructor (@Inject(ProjectService) projectService) {
-    console.log('projects');
+    // console.log('projects');
 
     // fetch the project data
     this.projects = projectService.getProjects();

@@ -27,7 +27,7 @@ import {
 })
 export class DesignsComponent {
   constructor (@Inject(DesignService) designService) {
-    console.log('designs');
+    // console.log('designs');
 
     // fetch the design data
     this.designs = designService.getDesigns();

@@ -11,6 +11,6 @@ import {
 })
 export class VitaeComponent {
   constructor () {
-    console.log('vitae');
+    // console.log('vitae');
   }
 }

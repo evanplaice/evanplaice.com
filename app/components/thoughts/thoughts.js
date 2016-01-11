@@ -17,7 +17,7 @@ import {
 })
 export class ThoughtsComponent {
   constructor () {
-    console.log('thoughts');
+    // console.log('thoughts');
     this.src = 'content/thoughts/hello-world.md';
     this.gitHubLink = 'http://github.com/evanplaice/evanplaice.com/blob/master/' + this.src;
   }

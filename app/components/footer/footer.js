@@ -15,6 +15,6 @@ import {
 })
 export class FooterComponent {
   constructor () {
-    console.log('footer');
+    // console.log('footer');
   }
 }

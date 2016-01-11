@@ -29,7 +29,7 @@ import {
 })
 export class ProjectComponent {
   constructor () {
-    console.log('project');
+    // console.log('project');
   }
 
   descLink () {
