@@ -15,7 +15,6 @@
   "homepage": "https://github.com/evanplaice/evanplaice.com#readme",
   "scripts": {
     "start": "live-server",
-    "build": "jspm bundle-sfx --minify reflect-metadata + zone.js + app/main.js app/main.min.js",
     "grunt": "grunt",
     "checkstyle": "semistandard || true",
     "build-dev": "jspm bundle app/app app/app.dev.js --minify --inject",
