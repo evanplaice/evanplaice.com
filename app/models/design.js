@@ -6,12 +6,12 @@ export class DesignModel {
   description ='';
   images = [];
 
-  constructor(item) {
-    this.name = item.name;
-    this.title = item.title;
-    this.link = item.link;
-    this.styleguide = item.styleguide;
-    this.description = item.description;
-    this.images = item.images;
+  constructor(design) {
+    this.name = design.name;
+    this.title = design.title;
+    this.link = design.link;
+    this.styleguide = design.styleguide;
+    this.description = design.description;
+    this.images = design.images;
   }
 }
