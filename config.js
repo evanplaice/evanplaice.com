@@ -16,7 +16,7 @@ System.config({
     "angular2": "npm:angular2@2.0.0-beta.0",
     "clean-css": "npm:clean-css@3.4.8",
     "css": "github:systemjs/plugin-css@0.1.20",
-    "ng2-markdown-component": "github:evanplaice/ng2-markdown-component@0.1.0",
+    "ng2-markdown-component": "github:evanplaice/ng2-markdown-component@0.1.1",
     "reflect-metadata": "npm:reflect-metadata@0.1.2",
     "rxjs": "npm:rxjs@5.0.0-beta.0",
     "semantic-ui": "github:Semantic-Org/Semantic-UI@2.1.7",
@@ -27,7 +27,7 @@ System.config({
       "css": "github:systemjs/plugin-css@0.1.20",
       "jquery": "github:components/jquery@2.1.4"
     },
-    "github:evanplaice/ng2-markdown-component@0.1.0": {
+    "github:evanplaice/ng2-markdown-component@0.1.1": {
       "css": "github:systemjs/plugin-css@0.1.20",
       "prism": "github:PrismJS/prism@gh-pages",
       "showdown": "github:showdownjs/showdown@0.3.4"
