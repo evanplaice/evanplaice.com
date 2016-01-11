@@ -13,7 +13,7 @@
     "title": "StrikeGroup.org",
     "link": "http://strikegrouptest.appspot.com/",
     "styleguide": "http://strikegrouptest.appspot.com/_typefaces",
-    "description": "content/designs/strikegroup.md",
+    "description": "description.md",
     "images": [
       "about-us.png",
       "strategic-sourcing.png",
@@ -30,7 +30,7 @@
     "title": "JPASims.com",
     "link": "http://jpasims.appspot.com/",
     "styleguide": "http://jpasims:evannn@jpasims.appspot.com/_typefaces",
-    "description": "content/designs/jpasims.md",
+    "description": "description.md",
     "images": [
       "home.png",
       "about-us.png",
