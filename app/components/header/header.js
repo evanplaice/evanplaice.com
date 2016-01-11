@@ -1,11 +1,5 @@
-import {
-  Component,
-  View
-} from 'angular2/core';
-import {
-  ROUTER_DIRECTIVES,
-  Location
-} from 'angular2/router';
+import { Component, View } from 'angular2/core';
+import { ROUTER_DIRECTIVES, Location } from 'angular2/router';
 
 @Component({
   selector: 'header'

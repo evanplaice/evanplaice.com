@@ -1,29 +1,15 @@
-import {
-  Component,
-  View,
-  Inject
-} from 'angular2/core';
-import {
-  DesignComponent
-} from 'app/components/design/design';
-import {
-  DesignService
-} from 'app/services/design';
+import { Component, View, Inject } from 'angular2/core';
+import { DesignComponent } from 'app/components/design/design';
+import { DesignService } from 'app/services/design';
 
 @Component({
   selector: 'designs',
-  providers: [
-    DesignService
-  ],
-  injectables: [
-    DesignService
-  ]
+  providers: [ DesignService ],
+  injectables: [ DesignService ]
 })
 @View({
   templateUrl: 'app/components/designs/designs.html',
-  directives: [
-    DesignComponent
-  ]
+  directives: [ DesignComponent ]
 })
 export class DesignsComponent {
   constructor (@Inject(DesignService) designService) {

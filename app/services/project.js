@@ -1,13 +1,6 @@
-import {
-  Injectable,
-  Inject
-} from 'angular2/core';
-import {
-  Http
-} from 'angular2/http';
-import {
-  ProjectModel
-} from 'app/models/project';
+import { Injectable, Inject } from 'angular2/core';
+import { Http } from 'angular2/http';
+import { ProjectModel } from 'app/models/project';
 
 @Injectable()
 export class ProjectService {

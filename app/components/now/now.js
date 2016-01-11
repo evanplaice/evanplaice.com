@@ -1,19 +1,12 @@
-import {
-  Component,
-  View
-} from 'angular2/core';
-import {
-  MarkdownComponent
-} from 'ng2-markdown-component';
+import { Component, View } from 'angular2/core';
+import { MarkdownComponent } from 'ng2-markdown-component';
 
 @Component({
   selector: 'now'
 })
 @View({
   templateUrl: 'app/components/now/now.html',
-  directives: [
-    MarkdownComponent
-  ]
+  directives: [ MarkdownComponent ]
 })
 export class NowComponent {
   constructor () {

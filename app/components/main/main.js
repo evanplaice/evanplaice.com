@@ -1,12 +1,5 @@
-import {
-  Component,
-  View
-} from 'angular2/core';
-import {
-  ROUTER_DIRECTIVES,
-  RouteConfig,
-  Location
-} from 'angular2/router';
+import { Component, View } from 'angular2/core';
+import { ROUTER_DIRECTIVES, RouteConfig, Location } from 'angular2/router';
 
 // layout components
 import { HeaderComponent } from 'app/components/header/header';
@@ -25,11 +18,7 @@ import { TypefacesComponent } from 'app/components/typefaces/typefaces';
 })
 @View({
   templateUrl: 'app/components/main/main.html',
-  directives: [
-    ROUTER_DIRECTIVES,
-    HeaderComponent,
-    FooterComponent
-  ]
+  directives: [ ROUTER_DIRECTIVES, HeaderComponent, FooterComponent ]
 })
 @RouteConfig([
   {

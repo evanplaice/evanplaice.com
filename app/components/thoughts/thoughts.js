@@ -1,19 +1,12 @@
-import {
-  Component,
-  View
-} from 'angular2/core';
-import {
-  MarkdownComponent
-} from 'ng2-markdown-component';
+import { Component, View } from 'angular2/core';
+import { MarkdownComponent } from 'ng2-markdown-component';
 
 @Component({
   selector: 'thoughts'
 })
 @View({
   templateUrl: 'app/components/thoughts/thoughts.html',
-  directives: [
-    MarkdownComponent
-  ]
+  directives: [ MarkdownComponent ]
 })
 export class ThoughtsComponent {
   constructor () {
