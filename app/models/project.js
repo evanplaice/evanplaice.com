@@ -2,7 +2,7 @@ export class ProjectModel {
   name = '';
   title = '';
   category = '';
-  role = ''
+  role = '';
   link = '';
   description ='';
 
