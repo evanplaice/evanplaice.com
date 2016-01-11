@@ -1,24 +1,32 @@
 import {
   Component,
-  View
+  View,
+  Inject
 } from 'angular2/core';
 import {
-  MarkdownComponent
-} from 'ng2-markdown-component';
+  ProjectComponent
+} from 'app/components/project/project';
+import {
+  ProjectService
+} from 'app/services/project';
 
 @Component({
-  selector: 'projects'
+  selector: 'projects',
+  injectables: [
+    ProjectService
+  ]
 })
 @View({
   templateUrl: 'app/components/projects/projects.html',
   directives: [
-    MarkdownComponent
+    ProjectComponent
   ]
 })
 export class ProjectsComponent {
-  constructor () {
+  constructor (@Inject(ProjectService) projectService) {
     console.log('projects');
-    this.src = 'content/projects/projects.md';
-    this.gitHubLink = 'http://github.com/evanplaice/evanplaice.com/blob/master/' + this.src;
+
+    // fetch the design data
+    this.projects = projectService.getProjects();
   }
 }
