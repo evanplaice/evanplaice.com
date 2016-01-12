@@ -1,0 +1,264 @@
+{
+  "name": "Your Name",
+  "meta": {
+    "format": "FRESH@0.3.0",
+    "version": "0.1.0"
+  },
+  "info": {
+    "label": "Your Profession",
+    "brief": "A brief description of yourself as a candidate, with or without **Markdown** and/or <strong>HTML</strong> formatting.",
+    "image": ""
+  },
+  "contact": {
+    "website": "http://your-website.com",
+    "phone": "1-999-999-9999",
+    "email": "your-email@your-website.com",
+    "other": []
+  },
+  "location": {
+    "address": "123 Somewhere Lane",
+    "city": "Castle Rock",
+    "region": "State, province, or region",
+    "code": "90210",
+    "country": "US"
+  },
+  "social": [
+    {
+      "label": "",
+      "network": "GitHub",
+      "user": "your-github-username",
+      "url": "https://github.com/your-github-username"
+    }
+  ],
+  "employment": {
+    "summary": "",
+    "history": [
+      {
+        "employer": "Most Recent Employer",
+        "url": "http://employer-website.com",
+        "position": "Head Honcho",
+        "summary": "A summary of your role in this position. Can include **Markdown** and inline <strong>HTML</strong> formatting.",
+        "start": "2013-10",
+        "keywords": [],
+        "highlights": [
+          "Increased profits on left-handed spin widgets by 35%.",
+          "Participated in iterative/incremental tiddlywink development.",
+          "Promoted to Head Ninja after 500 successful cage matches."
+        ]
+      },
+      {
+        "employer": "Previous Employer",
+        "url": "http://employer-website.com",
+        "position": "Worker Bee",
+        "summary": "A summary of your previous role. Can include **Markdown** and inline <strong>HTML</strong> formatting.",
+        "start": "2009-07",
+        "end": "2013-10",
+        "keywords": [],
+        "highlights": [
+          "Highlight #1.",
+          "Highlight #2.",
+          "Highlight #3."
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "Awesome Project #1",
+      "category": "FOSS",
+      "url": "http://project-page.org",
+      "repo": "https://project-repo.com",
+      "media": [],
+      "role": "Contributor",
+      "summary": "A summary of your role on the project. Can include **Markdown** and inline <strong>HTML</strong> formatting.",
+      "description": "A description of the project. Can include **Markdown** and inline <strong>HTML</strong> formatting.",
+      "highlights": [],
+      "keywords": []
+    }
+  ],
+  "education": {
+    "summary": "Optional overall education summary. Not used in most themes.",
+    "level": "degree",
+    "degree": "BSCS",
+    "history": [
+      {
+        "institution": "School of Life",
+        "url": "http://your-college.edu",
+        "start": "2004-09",
+        "end": "2009-06",
+        "grade": "",
+        "summary": "",
+        "curriculum": []
+      }
+    ]
+  },
+  "service": {
+    "summary": "",
+    "history": [
+      {
+        "flavor": "volunteer",
+        "position": "Volunteer Coordinator",
+        "organization": "The Mommies Network",
+        "url": "http://themommiesnetwork.org",
+        "start": "2006-06",
+        "summary": "A summary of your volunteer experience at this organization. Can include **Markdown** and inline <strong>HTML</strong> formatting.",
+        "highlights": []
+      },
+      {
+        "flavor": "military",
+        "position": "MOS",
+        "organization": "Air Force",
+        "url": "https://service-website.mil",
+        "start": "2004",
+        "summary": "A summary of your service experience with this organization. Can include **Markdown** and inline <strong>HTML</strong> formatting.",
+        "highlights": []
+      }
+    ]
+  },
+  "skills": {
+    "sets": [
+      {
+        "name": "Web Development",
+        "level": "advanced",
+        "skills": [
+          "LAMP",
+          "JavaScript",
+          "HTML 5",
+          "Angular.js",
+          "jQuery",
+          "Sass",
+          "LESS"
+        ]
+      },
+      {
+        "name": "Ninjitsu",
+        "level": "intermediate",
+        "skills": [
+          "Tokagure Ryu",
+          "Shuriken",
+          "Yogen"
+        ]
+      }
+    ],
+    "list": []
+  },
+  "samples": [
+    {
+      "title": "Work Sample",
+      "summary": "Description or summary of the work sample.",
+      "url": "http://project-repo.com",
+      "date": "2015"
+    }
+  ],
+  "writing": [
+    {
+      "title": "",
+      "flavor": "",
+      "date": "",
+      "publisher": {
+        "name": "",
+        "url": ""
+      },
+      "url": ""
+    }
+  ],
+  "reading": [
+    {
+      "title": "Other Copenhagens",
+      "flavor": "book",
+      "url": "http://www.amazon.com/Other-Copenhagens-And-Stories/dp/0984749209",
+      "author": "Edmund Jorgensen"
+    },
+    {
+      "title": "r/programming",
+      "flavor": "website",
+      "url": "https://www.reddit.com/r/programming"
+    },
+    {
+      "title": "Hacker News",
+      "flavor": "website",
+      "url": "https://news.ycombinator.com/"
+    }
+  ],
+  "recognition": [
+    {
+      "flavor": "award",
+      "from": "HackMyResume",
+      "title": "Awesomeness Award",
+      "event": "HMR Release",
+      "date": "2016",
+      "summary": "For being a HackMyResume or FluentCV user."
+    },
+    {
+      "flavor": "industry",
+      "from": "Big Software",
+      "title": "MVP: SpinWidget Technology",
+      "event": "Yearly Roundup",
+      "date": "2015-08-03",
+      "summary": "For work in promotion and popularization of SpinWidget technology."
+    }
+  ],
+  "references": [
+    {
+      "name": "John Doe",
+      "flavor": "professional",
+      "private": true,
+      "contact": [
+        {
+          "flavor": "email",
+          "value": "john.doe@somewhere.com"
+        }
+      ]
+    },
+    {
+      "name": "Jane Q. Fullstacker",
+      "flavor": "technical",
+      "private": true,
+      "contact": [
+        {
+          "flavor": "email",
+          "value": "jane.fullstacker@somewhere.com"
+        }
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "John Doe",
+      "flavor": "technical",
+      "quote": "Such-and-such is awesome! I'd hire him/her in a second!"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "native"
+    },
+    {
+      "language": "Spanish",
+      "level": "advanced"
+    }
+  ],
+  "interests": [
+    {
+      "name": "GitHub",
+      "summary": "Regular GitHub user and tinkerer.",
+      "keywords": [
+        "GitHub",
+        "git",
+        "GitHub Desktop (OS X)",
+        "LFS",
+        "GitHub API"
+      ]
+    },
+    {
+      "name": "chess",
+      "summary": "Avid chess player.",
+      "keywords": [
+        "Sicilian",
+        "King's Gambit",
+        "Ruy Lopez"
+      ]
+    }
+  ]
+}
