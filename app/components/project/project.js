@@ -7,14 +7,15 @@ import { MarkdownComponent } from 'ng2-markdown-component';
 })
 @View({
   templateUrl: 'app/components/project/project.html',
-  style: `
+  styles: [`
     h2, h3 {
       margin-bottom: 10px;
     }
     h3 {
       margin-top: 10px;
+
     }
-  `,
+  `],
   directives: [ MarkdownComponent ]
 })
 export class ProjectComponent {
