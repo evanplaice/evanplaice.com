@@ -4,7 +4,6 @@ import { DesignService } from 'app/services/design';
 
 @Component({
   selector: 'designs',
-  providers: [ DesignService ],
   injectables: [ DesignService ]
 })
 @View({
