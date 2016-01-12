@@ -9,7 +9,7 @@ import { MarkdownComponent } from 'ng2-markdown-component';
   templateUrl: 'app/components/project/project.html',
   styles: [`
     h2, h3 {
-      margin-bottom: 10px;
+      margin-bottom: 10px !important;
     }
     h3 {
       margin-top: 10px;

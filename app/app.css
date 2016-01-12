@@ -160,14 +160,18 @@ ng2-markdown  img {
   }
 
   h2 {
-    font-size: 1.75rem !important;
+    font-size: 1.5rem !important;
   }
   h3 {
     font-size: 1rem !important;
   }
 
-  p, code, pre {
+  p {
     font-size: 1.1rem;
+  }
+
+  code, pre {
+    font-size: .8rem !important;
   }
 
   ng2-markdown  img {
