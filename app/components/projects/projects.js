@@ -4,7 +4,6 @@ import { ProjectService } from 'app/services/project';
 
 @Component({
   selector: 'projects',
-  providers: [ ProjectService ],
   injectables: [ ProjectService ]
 })
 @View({
