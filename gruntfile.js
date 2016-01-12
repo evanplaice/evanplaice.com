@@ -48,7 +48,19 @@ module.exports = function (grunt) {
           { expand: true, src: 'google8178f9c6a9119ad1.html', dest: '/' },
           { dest: '/', cwd: './', action: 'delete' }
         ]
-      }
+      },
+      content: {
+        options: {
+          bucket: 'evanplaice.com',
+          overwrite: true,
+          differential: true,
+          gzipRename: 'ext'
+        },
+        files: [
+          { expand: true, cwd: 'content/', src: ['**'], dest: '/content' },
+          { dest: 'content/', cwd: './content/', action: 'delete' }
+        ]
+      },
     }
   });
   // load tasks
@@ -57,4 +69,5 @@ module.exports = function (grunt) {
   grunt.registerTask('development', ['aws_s3:development']);
   grunt.registerTask('staging', ['aws_s3:staging']);
   grunt.registerTask('production', ['aws_s3:production']);
+  grunt.registerTask('content', ['aws_s3:content']);
 };
