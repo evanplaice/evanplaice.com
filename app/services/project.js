@@ -18,9 +18,7 @@ export class ProjectService {
   loadProjects () {
     this.http.get('content/projects/projects.json').toPromise()
     .then((res) => {
-      return JSON.parse(res._body);
-    })
-    .then((items) => {
+      let items = JSON.parse(res._body);
       items.map((item) => {
         if (!item.hidden) {
           let project = new ProjectModel(item);

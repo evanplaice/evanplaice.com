@@ -18,9 +18,7 @@ export class DesignService {
   loadDesigns () {
     this.http.get('content/designs/designs.json').toPromise()
     .then((res) => {
-      return JSON.parse(res._body);
-    })
-    .then((items) => {
+      let items = JSON.parse(res._body);
       items.map((item) => {
         if (!item.hidden) {
           let design = new DesignModel(item);
