@@ -6,13 +6,15 @@ import { FRESHModel } from 'app/models/fresh';
 @Injectable()
 export class VitaeService {
   vitae$;
-  data;
+  data = new FRESHModel();
   _observer;
 
   constructor (@Inject(Http) http) {
     this.http = http;
+
+    // observer to load data asynchronously
     this.vitae$ = new Observable(observer => this._observer = observer);
-    this.data = new FRESHModel();
+    // pre-load the data
     this.loadVitae();
   }
 
