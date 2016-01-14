@@ -1,4 +1,5 @@
 import { Component, View, Inject } from 'angular2/core';
+import { MarkdownComponent } from 'ng2-markdown-component';
 import { VitaeService } from 'app/services/vitae';
 import { DerpPipe } from 'app/pipes/derp';
 
@@ -8,6 +9,7 @@ import { DerpPipe } from 'app/pipes/derp';
 })
 @View({
   templateUrl: 'app/components/vitae/vitae.html',
+  directives: [ MarkdownComponent ],
   pipes: [ DerpPipe ]
 })
 export class VitaeComponent {
