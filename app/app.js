@@ -1,6 +1,5 @@
 import 'reflect-metadata';
 import 'rxjs';
-import 'semantic-ui';
 import { enableProdMode } from 'angular2/core';
 import { bootstrap } from 'angular2/platform/browser';
 import { ROUTER_PROVIDERS } from 'angular2/router';

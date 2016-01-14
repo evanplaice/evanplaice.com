@@ -4,6 +4,7 @@
     <base href="/">
     <title>Thoughts and Works by Evan Plaice</title>
     <meta name="viewport" content="width=device-width" />
+    <!-- <link rel="stylesheet" href="jspm_packages/github/Semantic-Org/Semantic-UI@2.1.7/semantic.min.css"> -->
     <link rel="stylesheet" href="app/app.css">
     <script src="jspm_packages/npm/zone.js@0.5.10/dist/zone.min.js"></script>
     <script src="jspm_packages/system.js"></script>
@@ -16,11 +17,13 @@
       // Production mode - use self-executing bundle
       if (location.hostname == "evanplaice.com") {
         console.log("Running in PRODUCTION");
+        System.import('semantic-ui');
         System.import('app/app.min');
       }
       // Development mode - transpile on-the-fly
       else {
         console.log("Running in DEVELOPMENT");
+        System.import('semantic-ui');
         System.import('app/app');
       }
     </script>
