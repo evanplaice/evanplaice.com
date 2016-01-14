@@ -14,7 +14,7 @@ export class ProjectsComponent {
   constructor (@Inject(ProjectService) projectService) {
     // console.log('projects');
 
-    // fetch the project data
-    this.projects = projectService.getProjects();
+    // observable provided by ProjectService
+    projectService.projects$.subscribe(update => this.projects = update);
   }
 }
