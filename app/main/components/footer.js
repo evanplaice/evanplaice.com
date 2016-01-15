@@ -5,7 +5,7 @@ import { ROUTER_DIRECTIVES } from 'angular2/router';
   selector: 'footer'
 })
 @View({
-  templateUrl: 'app/components/footer/footer.html',
+  templateUrl: 'app/main/components/footer.html',
   directives: [ ROUTER_DIRECTIVES ]
 })
 export class FooterComponent {

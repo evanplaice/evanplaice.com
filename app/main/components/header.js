@@ -5,7 +5,7 @@ import { ROUTER_DIRECTIVES, Location } from 'angular2/router';
   selector: 'header'
 })
 @View({
-  templateUrl: 'app/components/header/header.html',
+  templateUrl: 'app/main/components/header.html',
   directives: [ ROUTER_DIRECTIVES ]
 })
 export class HeaderComponent {
