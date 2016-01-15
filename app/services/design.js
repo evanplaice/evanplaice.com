@@ -18,6 +18,10 @@ export class DesignService {
     this.loadDesigns();
   }
 
+  getDesigns() {
+    this._observer.next(this.data);
+  }
+
   loadDesigns () {
     this.http.get('content/designs/designs.json')
     .map(res => res.json())
@@ -27,7 +31,6 @@ export class DesignService {
         items = items.filter(item => !item.hidden);
         // convert value to model
         items = items.map(item => new DesignModel(item));
-        console.log(items);
         // update observers
         this._observer.next(this.data = items);
       },

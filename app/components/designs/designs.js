@@ -16,5 +16,6 @@ export class DesignsComponent {
 
     // observable provided by ProjectService
     designService.designs$.subscribe(update => this.designs = update);
+    designService.getDesigns();
   }
 }

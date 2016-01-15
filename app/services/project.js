@@ -18,6 +18,10 @@ export class ProjectService {
     this.loadProjects();
   }
 
+  getProjects() {
+    this._observer.next(this.data);
+  }
+
   loadProjects () {
     this.http.get('content/projects/projects.json')
     .map(res => res.json())
