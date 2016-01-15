@@ -6,7 +6,7 @@ import { ROUTER_PROVIDERS } from 'angular2/router';
 import { HTTP_PROVIDERS } from 'angular2/http';
 import { MainComponent } from './main/components/main';
 import { DesignService } from './designs/services/design';
-import { ProjectService } from './services/project';
+import { ProjectService } from './projects/services/project';
 import { VitaeService } from './services/vitae';
 
 enableProdMode();
