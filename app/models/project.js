@@ -7,11 +7,13 @@ export class ProjectModel {
   description ='';
 
   constructor (project) {
-    this.name = project.name;
-    this.title = project.title;
-    this.category = project.category;
-    this.role = project.role;
-    this.link = project.link;
-    this.description = project.description;
+    if (project) {
+      this.name = project.name;
+      this.title = project.title;
+      this.category = project.category;
+      this.role = project.role;
+      this.link = project.link;
+      this.description = project.description;
+    }
   }
 }
