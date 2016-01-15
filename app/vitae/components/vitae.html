@@ -1,24 +1,7 @@
-<h1>projects</h1>
+<h1>Curriculim Vitae</h1>
 
 <h4 class="ui horizontal divider header">
   <i class="fork icon large" style="margin-right: 0rem !important;"></i>
 </h4>
 
-
-<h2>{{ vitae.name }}</h2>
-<h3>{{ vitae.info.label }}</h3>
-<h3>{{ vitae.location.city }}, {{ vitae.location.region }}</h3>
-
-<h3>Social:</h3>
-<ul *ngFor="#profile of vitae.social | derp">
-  <li>{{ profile.network }}: <a href="{{ profile.url }}">{{ profile.user }}</a></li>
-</ul>
-
-<h3>Employment:</h3>
-
-<ng2-mardown>
-*Social:*
-{{ vitae.name }}
-
-</ng2-mardown>
-
+<resume [resume]='resume'></resume>
