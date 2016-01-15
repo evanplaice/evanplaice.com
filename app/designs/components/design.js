@@ -6,7 +6,7 @@ import { MarkdownComponent } from 'ng2-markdown-component';
   inputs: [ 'design', 'last' ]
 })
 @View({
-  templateUrl: 'app/components/design/design.html',
+  templateUrl: 'app/designs/components/design.html',
   directives: [ MarkdownComponent ]
 })
 
