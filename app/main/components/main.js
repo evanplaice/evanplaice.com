@@ -6,7 +6,7 @@ import { HeaderComponent } from 'app/main/components/header';
 import { FooterComponent } from 'app/main/components/footer';
 
 // route components
-import { ThoughtsComponent } from 'app/components/thoughts/thoughts';
+import { ThoughtsComponent } from 'app/thoughts/components/thoughts';
 import { DesignsComponent } from 'app/components/designs/designs';
 import { ProjectsComponent } from 'app/components/projects/projects';
 import { VitaeComponent } from 'app/components/vitae/vitae';

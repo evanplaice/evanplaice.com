@@ -5,7 +5,7 @@ import { MarkdownComponent } from 'ng2-markdown-component';
   selector: 'thoughts'
 })
 @View({
-  templateUrl: 'app/components/thoughts/thoughts.html',
+  templateUrl: 'app/thoughts/components/thoughts.html',
   directives: [ MarkdownComponent ]
 })
 export class ThoughtsComponent {
