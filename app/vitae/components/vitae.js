@@ -1,14 +1,14 @@
 import { Component, View, Inject } from 'angular2/core';
 import { MarkdownComponent } from 'ng2-markdown-component';
-import { VitaeService } from 'app/services/vitae';
-import { DerpPipe } from 'app/pipes/derp';
+import { VitaeService } from 'app/vitae/services/vitae';
+import { DerpPipe } from 'app/vitae/pipes/derp';
 
 @Component({
   selector: 'vitae',
   injectables: [ VitaeService ]
 })
 @View({
-  templateUrl: 'app/components/vitae/vitae.html',
+  templateUrl: 'app/vitae/components/vitae.html',
   directives: [ MarkdownComponent ],
   pipes: [ DerpPipe ]
 })

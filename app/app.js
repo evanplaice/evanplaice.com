@@ -7,7 +7,7 @@ import { HTTP_PROVIDERS } from 'angular2/http';
 import { MainComponent } from './main/components/main';
 import { DesignService } from './designs/services/design';
 import { ProjectService } from './projects/services/project';
-import { VitaeService } from './services/vitae';
+import { VitaeService } from './vitae/services/vitae';
 
 enableProdMode();
 bootstrap(MainComponent, [
