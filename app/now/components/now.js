@@ -5,7 +5,7 @@ import { MarkdownComponent } from 'ng2-markdown-component';
   selector: 'now'
 })
 @View({
-  templateUrl: 'app/components/now/now.html',
+  templateUrl: 'app/now/components/now.html',
   directives: [ MarkdownComponent ]
 })
 export class NowComponent {

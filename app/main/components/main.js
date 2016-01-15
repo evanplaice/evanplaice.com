@@ -10,7 +10,7 @@ import { ThoughtsComponent } from 'app/thoughts/components/thoughts';
 import { DesignsComponent } from 'app/designs/components/designs';
 import { ProjectsComponent } from 'app/projects/components/projects';
 import { VitaeComponent } from 'app/vitae/components/vitae';
-import { NowComponent } from 'app/components/now/now';
+import { NowComponent } from 'app/now/components/now';
 import { TypefacesComponent } from 'app/components/typefaces/typefaces';
 
 @Component({
