@@ -5,7 +5,7 @@ import { MarkdownComponent } from 'ng2-markdown-component';
   selector: 'typefaces'
 })
 @View({
-  templateUrl: 'app/components/typefaces/typefaces.html',
+  templateUrl: 'app/typefaces/components/typefaces.html',
   directives: [ MarkdownComponent ]
 })
 export class TypefacesComponent {
