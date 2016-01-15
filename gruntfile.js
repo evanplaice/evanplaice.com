@@ -60,7 +60,7 @@ module.exports = function (grunt) {
           { expand: true, cwd: 'content/', src: ['**'], dest: '/content' },
           { dest: 'content/', cwd: './content/', action: 'delete' }
         ]
-      },
+      }
     }
   });
   // load tasks

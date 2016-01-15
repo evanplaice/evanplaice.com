@@ -5,14 +5,14 @@ import { Pipe } from 'angular2/core';
 
   Tranlates a dictionary into an array of values.
 
-  # Usage: 
+  # Usage:
   ```
   <div *ng-for="#value of object | values"> </div>
   ```
 */
 @Pipe({ name: 'values' })
 export class ValuesPipe {
-  transform(value, args) {
+  transform (value, args) {
     return Object.keys(value).map(key => value[key]);
   }
 }

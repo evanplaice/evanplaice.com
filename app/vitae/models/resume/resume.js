@@ -1,5 +1,5 @@
 // import { BasicsModel } from 'app/models/basics';
-import { LocationModel } from 'app/models/location';
+import { LocationModel } from 'app/vitae/models/resume/location';
 
 export class ResumeModel {
   basics = {

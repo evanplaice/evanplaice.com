@@ -10,14 +10,14 @@ import { Pipe } from 'angular2/core';
   Angular2's change checker freaks out when you ngFor an array that's a subset
     of a larger data structure.
 
-  # Usage: 
+  # Usage:
   ```
   <div *ng-for="#value of arrayOfObjects | derp"> </div>
   ```
 */
 @Pipe({ name: 'derp' })
 export class DerpPipe {
-  transform(value, args) {
+  transform (value, args) {
     return Array.from(value);
   }
 }
