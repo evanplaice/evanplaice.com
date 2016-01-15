@@ -17,7 +17,7 @@ export class VitaeComponent {
     // console.log('vitae');
 
     // initialize the data (ie to avoid uninitialized errors)
-    this.vitae = vitaeService.data;
     vitaeService.vitae$.subscribe(update => this.vitae = update);
+    vitaeService.getVitae();
   }
 }

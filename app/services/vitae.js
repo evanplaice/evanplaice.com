@@ -10,12 +10,16 @@ export class VitaeService {
   _observer;
 
   constructor (@Inject(Http) http) {
+    // http bindings for a GET request
     this.http = http;
-
     // observer to load data asynchronously
     this.vitae$ = new Observable(observer => this._observer = observer);
     // pre-load the data
     this.loadVitae();
+  }
+
+  getVitae() {
+    this._observer.next(this.data);
   }
 
   loadVitae () {
@@ -23,7 +27,8 @@ export class VitaeService {
     .map(res => res.json())
     .subscribe(
       json => {
-        this._observer.next(new FRESHModel(json));
+        // update observers
+        this._observer.next(this.data = new FRESHModel(json));
       },
       error => console.log(error),
       () => {
