@@ -3,6 +3,7 @@ import { Component, View, ViewEncapsulation } from 'angular2/core';
 import { DurationComponent } from 'app/resume/components/duration';
 import { HighlightsComponent } from 'app/resume/components/highlights';
 import { CurriculumComponent } from 'app/resume/components/curriculum';
+import { KeywordsComponent } from 'app/resume/components/keywords';
 import { DerpPipe } from 'app/resume/pipes/derp';
 
 @Component({
@@ -16,6 +17,7 @@ import { DerpPipe } from 'app/resume/pipes/derp';
     DurationComponent,
     HighlightsComponent,
     CurriculumComponent,
+    KeywordsComponent
   ],
   pipes: [ DerpPipe ],
   encapsulation: ViewEncapsulation.Native
