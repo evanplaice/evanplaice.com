@@ -27,6 +27,7 @@
     "dependencies": {
       "angular2": "npm:angular2@^2.0.0-beta.0",
       "css": "github:systemjs/plugin-css@^0.1.20",
+      "font-awesome": "npm:font-awesome@^4.5.0",
       "ng2-markdown-component": "github:evanplaice/ng2-markdown-component@^0.1.2",
       "reflect-metadata": "npm:reflect-metadata@^0.1.2",
       "rxjs": "npm:rxjs@5.0.0-beta.0",
