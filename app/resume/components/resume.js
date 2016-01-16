@@ -1,5 +1,6 @@
 import { Component, View, ViewEncapsulation } from 'angular2/core';
 
+import { DurationComponent } from 'app/resume/components/duration';
 import { DerpPipe } from 'app/resume/pipes/derp';
 
 @Component({
@@ -9,6 +10,9 @@ import { DerpPipe } from 'app/resume/pipes/derp';
 @View({
   templateUrl: 'app/resume/themes/modern/modern.html',
   styleUrls: [ 'app/resume/themes/modern/modern.css' ],
+  directives: [
+    DurationComponent,
+  ],
   pipes: [ DerpPipe ],
   encapsulation: ViewEncapsulation.Native
 })
