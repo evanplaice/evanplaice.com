@@ -1,63 +1,103 @@
 {
-  "name": "Your Name",
+  "name": "Evan Plaice",
   "meta": {
     "format": "FRESH@0.3.0",
     "version": "0.1.0"
   },
   "info": {
-    "label": "Your Profession",
-    "brief": "A brief description of yourself as a candidate, with or without **Markdown** and/or <strong>HTML</strong> formatting.",
+    "label": "Full Stack Developer",
+    "brief": "TODO: fill this in",
     "image": ""
   },
   "contact": {
-    "website": "http://your-website.com",
-    "phone": "1-999-999-9999",
-    "email": "your-email@your-website.com",
+    "website": "http://evanplaice.com",
+    "phone": "",
+    "email": "evanplaice@gmail.com",
     "other": []
   },
   "location": {
-    "address": "123 Somewhere Lane",
-    "city": "Castle Rock",
-    "region": "State, province, or region",
-    "code": "90210",
+    "address": "2445 Torrejon Pl",
+    "city": "San Diego",
+    "region": "CA",
+    "code": "92009",
     "country": "US"
   },
   "social": [
     {
       "label": "",
       "network": "GitHub",
-      "user": "your-github-username",
-      "url": "https://github.com/your-github-username"
+      "user": "evanplaice",
+      "url": "https://github.com/evanplaice"
+    },
+    {
+      "label": "",
+      "network": "Twitter",
+      "user": "@evanplaice",
+      "url": "https://twitter.com/evanplaice"
+    },
+    {
+      "label": "",
+      "network": "StackOverflow",
+      "user": "evanplaice",
+      "url": "http://stackoverflow.com/users/290340/evan-plaice"
+    },
+    {
+      "label": "",
+      "network": "HackerNews",
+      "user": "evanplaice",
+      "url": "https://news.ycombinator.com/user?id=EvanPlaice"
     }
   ],
   "employment": {
     "summary": "",
     "history": [
       {
-        "employer": "Most Recent Employer",
-        "url": "http://employer-website.com",
-        "position": "Head Honcho",
-        "summary": "A summary of your role in this position. Can include **Markdown** and inline <strong>HTML</strong> formatting.",
-        "start": "2013-10",
-        "keywords": [],
+        "employer": "Strike Group LLC.",
+        "url": "http://strikegroup.org.com",
+        "position": "Field Service Representative",
+        "summary": "TODO: fill this out",
+        "start": "2011-04",
+        "end": "2015-05",
+        "keywords": [
+          "military",
+          "TODO: add keywords"
+        ],
         "highlights": [
-          "Increased profits on left-handed spin widgets by 35%.",
-          "Participated in iterative/incremental tiddlywink development.",
-          "Promoted to Head Ninja after 500 successful cage matches."
+          "TODO: add highlights"
         ]
       },
       {
-        "employer": "Previous Employer",
-        "url": "http://employer-website.com",
-        "position": "Worker Bee",
-        "summary": "A summary of your previous role. Can include **Markdown** and inline <strong>HTML</strong> formatting.",
-        "start": "2009-07",
-        "end": "2013-10",
-        "keywords": [],
+        "employer": "Joel Plaice & Associates Inc.",
+        "url": "http://jpasims.com",
+        "position": "Electrical Design Technician/Software Developer",
+        "summary": "Hacking on commercial full flight simulators for fun and profit",
+        "start": "2004-07",
+        "end": "2010-02",
+        "keywords": [
+          "engineering",
+          "electrical-technician",
+          "electrical-design",
+          "web-development",
+          "systems-design",
+          "software-architecture",
+          "c#",
+          "mssql"
+        ],
         "highlights": [
-          "Highlight #1.",
-          "Highlight #2.",
-          "Highlight #3."
+          "Designed and imlemented various avionics and aircraft systems updates",
+          "Full Stack development of a website + database backend using HTML/CSS/JS/PHP/MySQL",
+          "Product design/architecture/development (full lifecycle) of a turnkey replacement instructor operating system"
+        ]
+      },
+      {
+        "employer": "Spiral Aviation Training Company",
+        "position": "Flight Simulator Production Specialist",
+        "summary": "I worked as a technician building avionics cabling, populating instrument panels, hooking up I/O, and calibrating the systems post installation.",
+        "start": "2003-12",
+        "end": "2004-07",
+        "keywords": [
+          "electrical-technician",
+          "quality-assurance"
         ]
       }
     ]
@@ -118,36 +158,60 @@
   "skills": {
     "sets": [
       {
-        "name": "Web Development",
-        "level": "advanced",
+        "name": "Web Frontend Development",
+        "level": "intermediate",
         "skills": [
-          "LAMP",
-          "JavaScript",
-          "HTML 5",
+          "Angular2",
           "Angular.js",
+          "HTML5",
           "jQuery",
           "Sass",
-          "LESS"
+          "jQuery-UI",
+          "Bootstrap",
+          "Semantic-UI",
+          "Flot"
         ]
       },
       {
-        "name": "Ninjitsu",
-        "level": "intermediate",
+        "name": "Web Backend Development",
+        "level": "advanced",
         "skills": [
-          "Tokagure Ryu",
-          "Shuriken",
-          "Yogen"
+          "Javascript",
+          "Node.js",
+          "MongoDB",
+          "Python",
+          "Google App Engine",
+          "Google Data Store",
+          "MySQL",
+          "PHP"
+        ]
+      },
+      {
+        "name": "Graphic Design",
+        "level": "beginner",
+        "skills": [
+          "Photoshop",
+          "Illustrator",
+          "Mockups",
+          "Logo Design"
         ]
       }
     ],
-    "list": []
+    "list": [
+      "Javascript",
+      "Python",
+      "C#",
+      "Java",
+      "HTML5",
+      "CSS"
+    ]
   },
   "samples": [
     {
-      "title": "Work Sample",
-      "summary": "Description or summary of the work sample.",
-      "url": "http://project-repo.com",
-      "date": "2015"
+      "title": "Joel Plaice and Associates Inc.",
+      "summary": "A website to share ",
+      "url": "http://jpasims.appspot.com",
+      "date": "2004-2010"
     }
   ],
   "writing": [
@@ -164,10 +228,10 @@
   ],
   "reading": [
     {
-      "title": "Other Copenhagens",
+      "title": "Gödel, Escher, Bach: an Eternal Golden Braid",
       "flavor": "book",
-      "url": "http://www.amazon.com/Other-Copenhagens-And-Stories/dp/0984749209",
-      "author": "Edmund Jorgensen"
+      "url": "http://www.amazon.com/G%C3%B6del-Escher-Bach-Eternal-Golden/dp/0465026567",
+      "author": "Douglas R. Hofstadter"
     },
     {
       "title": "r/programming",
@@ -178,24 +242,21 @@
       "title": "Hacker News",
       "flavor": "website",
       "url": "https://news.ycombinator.com/"
+    },
+    {
+      "title": "High Scalability",
+      "flavor": "website",
+      "url": "http://highscalability.com/"
     }
   ],
   "recognition": [
     {
-      "flavor": "award",
-      "from": "HackMyResume",
-      "title": "Awesomeness Award",
-      "event": "HMR Release",
-      "date": "2016",
-      "summary": "For being a HackMyResume or FluentCV user."
-    },
-    {
-      "flavor": "industry",
-      "from": "Big Software",
-      "title": "MVP: SpinWidget Technology",
-      "event": "Yearly Roundup",
-      "date": "2015-08-03",
-      "summary": "For work in promotion and popularization of SpinWidget technology."
+      "flavor": "Commendation",
+      "from": "USMC",
+      "title": "Exemplary performance and support of the first successful tactical deployment of TIPSv3",
+      "event": "Desert Scimitar",
+      "date": "2014",
+      "summary": "Acted as the onsite SME to support and assist with the first deployment of the Tactical Imagery Production System V3.0. The exercise 'Desert Scimitar 14' took place in the Mojave Desert near 29 Palms."
     }
   ],
   "references": [
