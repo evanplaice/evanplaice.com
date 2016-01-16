@@ -19,13 +19,6 @@ body {
   padding: 0;
 }
 
-/* Typical page borders are awkward when rendered to PDF. */
-body.pdf {
-  background-color: #FFFFFF;
-}
-
-/* Adobe or wkhtmltopdf has issues with the <main> tag, so we use <div> for
-the PDF case, <main> for the HTML case, and style both via an ID. */
 #main {
   background-color: #FFF;
   margin: 10px;
@@ -33,17 +26,9 @@ the PDF case, <main> for the HTML case, and style both via an ID. */
   border: 1px solid #E6E6E6;
 }
 
-body.pdf > #main {
-  border: none;
-}
-
 #container > header {
   padding-top: 6em;
   padding-bottom: 1em;
-}
-
-body.pdf #container > header {
-  padding: 0;
 }
 
 #main > #container > section {
