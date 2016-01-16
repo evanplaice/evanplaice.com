@@ -55,15 +55,10 @@
         <a *ngIf="job.url" href="{{ job.url }}">{{ job.employer }}</a>
         <template [ngIf]="!job.url">{{ job.employer }}</template>
       </h3>
-      <span *ngIf="job.start && job.end" class="tenure">{{ job.start }} - {{ job.end }}</span>
-      <span *ngIf="job.start && !job.end" class="tenure">{{ job.start }}</span>
+      <duration [start]="job.start" [end]="job.end"></duration>
       <p>{{ job.summary }}</p>
-      <ul *ngIf="job.highlights">
-        <li *ngFor="#highlight of job.highlights">{{ highlight }}</li>
-      </ul>
-      <template [ngIf]="job.keywords">
-      <span class="keywords"><template ngFor #keyword="$implicit" [ngForOf]="job.keywords">{{ keyword }} </template></span>
-      </template>
+      <highlights [highlights]="job.highlights"></highlights>
+      <keywords [keywords]="job.keywords"></keywords>
     </div>
   </div>
 </section>
@@ -79,14 +74,9 @@
       <a *ngIf="project.url" href="{{ project.url }}">{{ project.title }}</a>
       <template [ngIf]="!project.url">{{ project.title }}</template>
     </h3>
-    <span *ngIf="project.start" class="tenure">{{ project.start }}</span>
-    {{ project.summary }}
-    <ul *ngIf="project.highlights">
-        <li *ngFor="#highlight of project.highlights">{{ highlight }}</li>
-    </ul>
-    <template [ngIf]="project.keywords">
-    <span class="keywords"><template ngFor #keyword="$implicit" [ngForOf]="project.keywords">{{ keyword }} </template></span>
-    </template>
+    <p>{{ project.summary }}<p>
+    <highlights [highlights]="project.highlights"></highlights>
+    <keywords [keywords]="project.keywords"></keywords>
   </div>
 </section>
 
@@ -98,12 +88,9 @@
   <span class="fa fa-lg fa-mortar-board"></span>
   <div *ngFor="#school of resume.education.history">
     <h3><template [ngIf]="school.title">{{ school.title }}, </template>{{ school.institution }}</h3>
-    <span *ngIf="school.start && school.end" class="tenure">{{ school.start }} - {{ school.end }}</span>
-    <span *ngIf="school.start && !school.end" class="tenure">{{ school.start }}</span>
-    {{ school.summary }}
-    <ul *ngIf="school.highlights">
-      <li *ngFor="#highlight of school.highlights">{{ highlight }}</li>
-    </ul>
+    <duration [start]="school.start" [end]="school.end"></duration>
+    <p>{{ school.summary }}<p>
+    <curriculum [curriculum]="school.curriculum"></curriculum>
   </div>
 </section>
 
