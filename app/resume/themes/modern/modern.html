@@ -127,10 +127,27 @@
   </div>
 </section>
 
+<hr>
+<section id="writing">
+  <header>
+    <h2>Writing</h2>
+  </header>
+  <span class="fa fa-lg fa-pencil"></span>
+  <div *ngFor="#piece of resume.writing | derp">
+    <h3 *ngIf="piece.title">
+      <em><a *ngIf="piece.url" href="{{ piece.url }}">{{ piece.title }}, </a></em>
+      <template [ngIf]="!piece.url"><em>{{ piece.title }}, </em></template>
+      <span *ngIf="piece.publisher.name">
+        <a *ngIf="piece.publisher.url" href="{{ piece.publisher.url }}">{{ piece.publisher.name }}</a>
+        <template [ngIf]="!piece.publisher.url">{{ piece.publisher.name }}</template>
+      </span>
+    </h3>
+    <span *ngIf="piece.date" class="tenure">{{ piece.date }}</span>
+
+  </div>
+</section>
 
 <!--
-
-{{#*inline "icon-writing"}}<span class="fa fa-lg fa-pencil"></span>{{/inline}}
 {{#*inline "icon-recognition"}}<span class="fa fa-lg fa-trophy"></span>{{/inline}}
 {{#*inline "icon-speaking"}}<span class="fa fa-lg fa-users"></span>{{/inline}}
 {{#*inline "icon-testimonials"}}<span class="fa fa-lg fa-thumbs-o-up"></span>{{/inline}}
