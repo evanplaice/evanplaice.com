@@ -6,6 +6,8 @@ import { CurriculumComponent } from 'app/resume/components/curriculum';
 import { KeywordsComponent } from 'app/resume/components/keywords';
 import { DerpPipe } from 'app/resume/pipes/derp';
 
+import 'font-awesome/css/font-awesome.min.css!css';
+
 @Component({
   selector: 'resume',
   inputs: [ 'resume' ]
