@@ -94,10 +94,42 @@
   </div>
 </section>
 
+<hr>
+<section id="service">
+  <header>
+    <h2>Service</h2>
+  </header>
+  <span class="fa fa-lg fa-child"></span>
+  <div *ngFor="#role of resume.service.history">
+    <h3 *ngIf="role.organization"><em>{{ role.organization }}</em>,
+      <a *ngIf="role.url" href="{{ role.url }}">{{ role.position }}</a>
+      <template [ngIf]="!role.url">{{ role.position }}</template>
+    </h3>
+    <duration [start]="role.start" [end]="role.end"></duration>
+    <p>{{ role.summary }}</p>
+    <highlights [highlights]="role.highlights"></highlights>
+  </div>
+</section>
+
+<hr>
+<section id="samples">
+  <header>
+    <h2>Samples</h2>
+  </header>
+  <span class="fa fa-lg fa-share"></span>
+  <div *ngFor="#sample of resume.samples | derp">
+    <h3 *ngIf="sample.title">
+      <a *ngIf="sample.url" href="{{ sample.url }}">{{ sample.title }}</a>
+      <template [ngIf]="!sample.url">{{ role.title }}</template>
+    </h3>
+    <span *ngIf="sample.date" class="tenure">{{ sample.date }}</span>
+    <p>{{ sample.summary }}</p>
+  </div>
+</section>
+
 
 <!--
-{{#*inline "icon-service"}}<span class="fa fa-lg fa-child"></span>{{/inline}}
-{{#*inline "icon-samples"}}<span class="fa fa-lg fa-share"></span>{{/inline}}
+
 {{#*inline "icon-writing"}}<span class="fa fa-lg fa-pencil"></span>{{/inline}}
 {{#*inline "icon-recognition"}}<span class="fa fa-lg fa-trophy"></span>{{/inline}}
 {{#*inline "icon-speaking"}}<span class="fa fa-lg fa-users"></span>{{/inline}}
