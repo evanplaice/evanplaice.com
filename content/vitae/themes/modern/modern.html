@@ -1,0 +1,123 @@
+<body>
+<main id="main">
+<div id="container">
+
+<header>
+  <h1>{{ resume.name }}</h1>
+  <div id="contact">
+    <div *ngIf="resume.contact.email" class="email"><a href="mailto:{{ resume.contact.email }}">{{ resume.contact.email }}</a></div>
+    <div *ngIf="resume.contact.phone" class="phone">{{ resume.contact.phone }}</div>
+    <div *ngIf="resume.contact.website" class="website"><a href="{{ resume.contact.website }}">{{ resume.contact.website }}</a></div>
+  </div>
+</header>
+
+<template [ngIf]="resume.info.brief">
+<hr>
+<section id="summary">
+  <h2>About</h2>
+  <span class="fa fa-lg fa-user"></span>
+  {{ resume.info.brief }}
+</section>
+</template>
+
+<hr>
+<section id="skills">
+  <header>
+    <h2>Skills</h2>
+  </header>
+  <span class="fa fa-lg fa-code"></span>
+  <ul *ngFor="#set of resume.skills.sets" class="list-unstyled">
+    <li class="card card-nested card-skills">
+      <div class="skill-level" rel="tooltip" title="{{ set.level }}" data-placement="left">
+        <div class="skill-progress {{ set.level | lowercase }}"></div>
+      </div>
+      <div class="skill-info">
+        <strong>{{ set.name }}</strong>
+        <div class="space-top labels">
+          <span *ngIf="set.skills">
+            <span *ngFor="#skill of set.skills" class="label label-keyword">{{ skill }}</span>
+          </span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<hr>
+<section id="employment">
+  <header>
+    <h2>Employment</h2>
+  </header>
+  <span class="fa fa-lg fa-building"></span>
+  <div *ngFor="#job of resume.employment.history">
+    <div>
+      <h3><em>{{ job.position }}</em>,
+        <a *ngIf="job.url" href="{{ job.url }}">{{ job.employer }}</a>
+        <template [ngIf]="!job.url">{{ job.employer }}</template>
+      </h3>
+      <span *ngIf="job.start && job.end" class="tenure">{{ job.start }} - {{ job.end }}</span>
+      <span *ngIf="job.start && !job.end" class="tenure">{{ job.start }}</span>
+      <p>{{ job.summary }}</p>
+      <ul *ngIf="job.highlights">
+        <li *ngFor="#highlight of job.highlights">{{ highlight }}</li>
+      </ul>
+      <template [ngIf]="job.keywords">
+      <span class="keywords"><template ngFor #keyword="$implicit" [ngForOf]="job.keywords">{{ keyword }} </template></span>
+      </template>
+    </div>
+  </div>
+</section>
+
+<hr>
+<section id="projects">
+  <header>
+    <h2>Projects</h2>
+  </header>
+  <span class="fa fa-lg fa-star"></span>
+  <div *ngFor="#project of resume.projects | derp">
+    <h3 *ngIf="project.role"><em>{{ project.role }}</em>,
+      <a *ngIf="project.url" href="{{ project.url }}">{{ project.title }}</a>
+      <template [ngIf]="!project.url">{{ project.title }}</template>
+    </h3>
+    <span *ngIf="project.start" class="tenure">{{ project.start }}</span>
+    {{ project.summary }}
+    <ul *ngIf="project.highlights">
+        <li *ngFor="#highlight of project.highlights">{{ highlight }}</li>
+    </ul>
+    <template [ngIf]="project.keywords">
+    <span class="keywords"><template ngFor #keyword="$implicit" [ngForOf]="project.keywords">{{ keyword }} </template></span>
+    </template>
+  </div>
+</section>
+
+<hr>
+<section id="education">
+  <header>
+    <h2>Education</h2>
+  </header>
+  <span class="fa fa-lg fa-mortar-board"></span>
+  <div *ngFor="#school of resume.education.history">
+    <h3><template [ngIf]="school.title">{{ school.title }}, </template>{{ school.institution }}</h3>
+    <span *ngIf="school.start && school.end" class="tenure">{{ school.start }} - {{ school.end }}</span>
+    <span *ngIf="school.start && !school.end" class="tenure">{{ school.start }}</span>
+    {{ school.summary }}
+    <ul *ngIf="school.highlights">
+      <li *ngFor="#highlight of school.highlights">{{ highlight }}</li>
+    </ul>
+  </div>
+</section>
+
+
+<!--
+{{#*inline "icon-service"}}<span class="fa fa-lg fa-child"></span>{{/inline}}
+{{#*inline "icon-samples"}}<span class="fa fa-lg fa-share"></span>{{/inline}}
+{{#*inline "icon-writing"}}<span class="fa fa-lg fa-pencil"></span>{{/inline}}
+{{#*inline "icon-recognition"}}<span class="fa fa-lg fa-trophy"></span>{{/inline}}
+{{#*inline "icon-speaking"}}<span class="fa fa-lg fa-users"></span>{{/inline}}
+{{#*inline "icon-testimonials"}}<span class="fa fa-lg fa-thumbs-o-up"></span>{{/inline}}
+{{#*inline "icon-references"}}<span class="fa fa-lg fa-thumbs-o-up"></span>{{/inline}}
+-->
+
+</div>
+</main>
+</body>
