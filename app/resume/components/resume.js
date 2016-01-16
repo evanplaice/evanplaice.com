@@ -1,13 +1,14 @@
 import { Component, View, ViewEncapsulation } from 'angular2/core';
-import { DerpPipe } from 'app/vitae/pipes/derp';
+
+import { DerpPipe } from 'app/resume/pipes/derp';
 
 @Component({
   selector: 'resume',
   inputs: [ 'resume' ]
 })
 @View({
-  templateUrl: 'content/vitae/themes/modern/modern.html',
-  styleUrls: [ 'content/vitae/themes/modern/modern.css' ],
+  templateUrl: 'app/resume/themes/modern/modern.html',
+  styleUrls: [ 'app/resume/themes/modern/modern.css' ],
   pipes: [ DerpPipe ],
   encapsulation: ViewEncapsulation.Native
 })
