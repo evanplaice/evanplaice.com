@@ -15,8 +15,7 @@ export class VitaeComponent {
   constructor (@Inject(VitaeService) vitaeService) {
     // console.log('vitae');
 
-    // initialize the data (ie to avoid uninitialized errors)
+    // link to the vitae data
     vitaeService.vitae$.subscribe(update => this.resume = update);
-    vitaeService.getVitae();
   }
 }

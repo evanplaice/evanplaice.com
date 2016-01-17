@@ -6,34 +6,18 @@ import { FRESHModel } from 'app/vitae/models/fresh';
 @Injectable()
 export class VitaeService {
   vitae$;
-  data = new FRESHModel();
-  _observer;
 
   constructor (@Inject(Http) http) {
     // http bindings for a GET request
     this.http = http;
-    // observer to load data asynchronously
-    this.vitae$ = new Observable(observer => this._observer = observer);
+
     // pre-load the data
-    this.loadVitae();
+    this.vitae$ = this.loadVitae();
   }
 
-  getVitae() {
-    this._observer.next(this.data);
-  }
-
-  loadVitae () {
-    this.http.get('content/vitae/resume.json')
-    .map(res => res.json())
-    .subscribe(
-      json => {
-        // update observers
-        this._observer.next(this.data = new FRESHModel(json));
-      },
-      error => console.log(error),
-      () => {
-        // console.log('Vitae loaded successfully');
-      }
-    );
+  loadVitae() {
+    return this.vitae$ = this.http.get('content/vitae/resume.json')
+    .map(res => new FRESHModel(res.json()))
+    .startWith(new FRESHModel())
   }
 }
