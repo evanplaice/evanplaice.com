@@ -6,8 +6,8 @@ import { Component, View } from 'angular2/core';
 })
 @View({
   template: `
-    <template [ngIf]="title"><h2>{{ title }}</h2></template>
     <ng-content></ng-content>
+    <template [ngIf]="title"><h2>{{ title }}</h2></template>
   `
 })
 export class HeaderComponent {}
