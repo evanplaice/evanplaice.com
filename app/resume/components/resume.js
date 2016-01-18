@@ -4,6 +4,7 @@ import { TEMPLATE_DIRECTIVES } from '../themes/default/default';
 import { DerpPipe } from 'app/resume/pipes/derp';
 
 import { EmploymentComponent } from '../themes/default/partials/employment';
+import { ProjectsComponent } from '../themes/default/partials/projects';
 import 'font-awesome/css/font-awesome.min.css!css';
 
 @Component({
@@ -16,6 +17,7 @@ import 'font-awesome/css/font-awesome.min.css!css';
   directives: [
     TEMPLATE_DIRECTIVES,
     EmploymentComponent,
+    ProjectsComponent,
   ],
   pipes: [ DerpPipe ],
   encapsulation: ViewEncapsulation.Native
