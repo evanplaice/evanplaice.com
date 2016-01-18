@@ -103,7 +103,7 @@
       <a *ngIf="sample.url" href="{{ sample.url }}">{{ sample.title }}</a>
       <template [ngIf]="!sample.url">{{ role.title }}</template>
     </h3>
-    <span *ngIf="sample.date" class="tenure">{{ sample.date }}</span>
+    <duration [start]="sample.date"></duration>
     <p>{{ sample.summary }}</p>
   </div>
 </section>
@@ -120,7 +120,7 @@
         <template [ngIf]="!piece.publisher.url">{{ piece.publisher.name }}</template>
       </span>
     </h3>
-    <span *ngIf="piece.date" class="tenure">{{ piece.date }}</span>
+    <duration [start]="piece.date"></duration>
 
   </div>
 </section>
