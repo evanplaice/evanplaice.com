@@ -125,6 +125,19 @@
   </div>
 </section>
 
+<hr>
+<section id="recognition">
+  <header title="Recognition"><span class="fa fa-lg fa-trophy"></span></header>
+  <div *ngFor="#award of resume.recognition | derp">
+    <h3>
+      <span *ngIf="award.from">{{ award.title }}, {{ award.from }}</span>
+      <template [ngIf]="!award.from">{{ award.title }}</template>
+    </h3>
+    <duration [start]="award.date"></duration>
+    <p>{{ award.summary }}</p>
+  </div>
+</section>
+
 <!--
 {{#*inline "icon-recognition"}}<span class="fa fa-lg fa-trophy"></span>{{/inline}}
 {{#*inline "icon-speaking"}}<span class="fa fa-lg fa-users"></span>{{/inline}}
