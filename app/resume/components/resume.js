@@ -12,6 +12,7 @@ import { SamplesComponent } from '../themes/default/partials/samples';
 import { WritingComponent } from '../themes/default/partials/writing';
 import { RecognitionComponent } from '../themes/default/partials/recognition';
 import { SpeakingComponent } from '../themes/default/partials/speaking';
+import { TestimonialsComponent } from '../themes/default/partials/testimonials';
 
 import 'font-awesome/css/font-awesome.min.css!css';
 
@@ -33,6 +34,7 @@ import 'font-awesome/css/font-awesome.min.css!css';
     WritingComponent,
     RecognitionComponent,
     SpeakingComponent,
+    TestimonialsComponent,
   ],
   pipes: [ DerpPipe ],
   encapsulation: ViewEncapsulation.Native
