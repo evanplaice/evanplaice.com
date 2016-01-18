@@ -6,8 +6,10 @@
   },
   "info": {
     "label": "Full Stack Developer",
+    "class": "",
+    "image": "",
     "brief": "TODO: fill this in",
-    "image": ""
+    "quote": ""
   },
   "contact": {
     "website": "http://evanplaice.com",
@@ -24,25 +26,21 @@
   },
   "social": [
     {
-      "label": "",
       "network": "GitHub",
       "user": "evanplaice",
       "url": "https://github.com/evanplaice"
     },
     {
-      "label": "",
       "network": "Twitter",
       "user": "@evanplaice",
       "url": "https://twitter.com/evanplaice"
     },
     {
-      "label": "",
       "network": "StackOverflow",
       "user": "evanplaice",
       "url": "http://stackoverflow.com/users/290340/evan-plaice"
     },
     {
-      "label": "",
       "network": "HackerNews",
       "user": "evanplaice",
       "url": "https://news.ycombinator.com/user?id=EvanPlaice"
@@ -55,15 +53,19 @@
         "employer": "Strike Group LLC.",
         "url": "http://strikegroup.org.com",
         "position": "Field Service Representative",
-        "summary": "TODO: fill this out",
+        "summary": "Acted as the sole West Coast FSR for MARCORSYSCOM Combat Camera. Logistics tracking and support of the tactical systems.",
         "start": "2011-04",
         "end": "2015-05",
-        "keywords": [
-          "military",
-          "TODO: add keywords"
-        ],
         "highlights": [
-          "TODO: add highlights"
+          "Fielded, tracked, and supported $5+ million in military hardware",
+          "Supported 11 units across 6 military installations",
+          "Technical SME for the TIPS (Tactical Imagery Production System)",
+          "Acted as the onsite technical SME for 2 tactical field exercises",
+          "Led semi-annual field traning events for the TIPS",
+          "Certified Xerox MFD field technician",
+          "Setup and trained a non-technical team on the use of S3",
+          "Authored automation tools for Excel->PDF form filling",
+          "Website redesign to use dynamic templating w/ a custom static html compliler"
         ]
       },
       {
@@ -105,56 +107,44 @@
   "projects": [
     {
       "title": "Awesome Project #1",
-      "category": "FOSS",
+      "category": "Open Source",
       "url": "http://project-page.org",
       "repo": "https://project-repo.com",
-      "media": [],
-      "role": "Contributor",
+      "role": "Author",
       "summary": "A summary of your role on the project. Can include **Markdown** and inline <strong>HTML</strong> formatting.",
-      "description": "A description of the project. Can include **Markdown** and inline <strong>HTML</strong> formatting.",
-      "highlights": [],
+      "highlights": [
+        "automated all the things",
+        "merit +5"
+      ]
+    },
+    {
+      "title": "jquery-csv",
+      "category": "Open Source",
+      "url": "http://code.google.com/p/jquery-csv",
+      "repo": "http://github.com/evanplaice/jquery-csv",
+      "role": "Author",
+      "summary": "The first RFC 4180 complete parser for Javascript",
+      "highlights": [
+        "450K downloads and counting",
+        "Published to Bower",
+        "first lexer/parser implementation"
+      ]
+    },
+    {
+      "title": "Replacement Instructor Operating Station",
+      "category": "Proprietary",
+      "role": "Co-developer, System Architect",
+      "summary": "A multi-touchscreen interface for commercial flight simulators.",
+      "highlights": [
+        "First full lifecycle greenfield product development",
+        "250K in revenue",
+        "Architect of all systems, components, IPC, and network communications",
+        "First turnkey hardware product implementation",
+        "Successful acceptance - 3mos @ 99.9% uptime"
+      ],
       "keywords": []
     }
   ],
-  "education": {
-    "summary": "Optional overall education summary. Not used in most themes.",
-    "level": "degree",
-    "degree": "BSCS",
-    "history": [
-      {
-        "institution": "School of Life",
-        "url": "http://your-college.edu",
-        "start": "2004-09",
-        "end": "2009-06",
-        "grade": "",
-        "summary": "",
-        "curriculum": []
-      }
-    ]
-  },
-  "service": {
-    "summary": "",
-    "history": [
-      {
-        "flavor": "volunteer",
-        "position": "Volunteer Coordinator",
-        "organization": "The Mommies Network",
-        "url": "http://themommiesnetwork.org",
-        "start": "2006-06",
-        "summary": "A summary of your volunteer experience at this organization. Can include **Markdown** and inline <strong>HTML</strong> formatting.",
-        "highlights": []
-      },
-      {
-        "flavor": "military",
-        "position": "MOS",
-        "organization": "Air Force",
-        "url": "https://service-website.mil",
-        "start": "2004",
-        "summary": "A summary of your service experience with this organization. Can include **Markdown** and inline <strong>HTML</strong> formatting.",
-        "highlights": []
-      }
-    ]
-  },
   "skills": {
     "sets": [
       {
@@ -208,22 +198,16 @@
   },
   "samples": [
     {
+      "title": "StrikeGroup.org",
+      "summary": "The online presence for Strike Group LLC.",
+      "url": "http://jpasims.appspot.com",
+      "date": "2012-2015"
+    },
+    {
       "title": "Joel Plaice and Associates Inc.",
-      "summary": "A website to share ",
+      "summary": "The online presence for JPA. Incl backend inventory database.",
       "url": "http://jpasims.appspot.com",
       "date": "2004-2010"
-    }
-  ],
-  "writing": [
-    {
-      "title": "",
-      "flavor": "",
-      "date": "",
-      "publisher": {
-        "name": "",
-        "url": ""
-      },
-      "url": ""
     }
   ],
   "reading": [
@@ -232,11 +216,6 @@
       "flavor": "book",
       "url": "http://www.amazon.com/G%C3%B6del-Escher-Bach-Eternal-Golden/dp/0465026567",
       "author": "Douglas R. Hofstadter"
-    },
-    {
-      "title": "r/programming",
-      "flavor": "website",
-      "url": "https://www.reddit.com/r/programming"
     },
     {
       "title": "Hacker News",
@@ -253,73 +232,26 @@
     {
       "flavor": "Commendation",
       "from": "USMC",
-      "title": "Exemplary performance and support of the first successful tactical deployment of TIPSv3",
-      "event": "Desert Scimitar",
+      "title": "Commendation for Exemplary Performance",
+      "event": "Desert Scimitar 14",
       "date": "2014",
-      "summary": "Acted as the onsite SME to support and assist with the first deployment of the Tactical Imagery Production System V3.0. The exercise 'Desert Scimitar 14' took place in the Mojave Desert near 29 Palms."
-    }
-  ],
-  "references": [
-    {
-      "name": "John Doe",
-      "flavor": "professional",
-      "private": true,
-      "contact": [
-        {
-          "flavor": "email",
-          "value": "john.doe@somewhere.com"
-        }
-      ]
-    },
-    {
-      "name": "Jane Q. Fullstacker",
-      "flavor": "technical",
-      "private": true,
-      "contact": [
-        {
-          "flavor": "email",
-          "value": "jane.fullstacker@somewhere.com"
-        }
-      ]
-    }
-  ],
-  "testimonials": [
-    {
-      "name": "John Doe",
-      "flavor": "technical",
-      "quote": "Such-and-such is awesome! I'd hire him/her in a second!"
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "level": "native"
-    },
-    {
-      "language": "Spanish",
-      "level": "advanced"
+      "summary": "Acted as the onsite technical SME to support and assist with the first deployment of the Tactical Imagery Production System V3.0. The exercise 'Desert Scimitar 14' took place in the Mojave Desert near 29 Palms."
     }
   ],
   "interests": [
     {
-      "name": "GitHub",
-      "summary": "Regular GitHub user and tinkerer.",
-      "keywords": [
-        "GitHub",
-        "git",
-        "GitHub Desktop (OS X)",
-        "LFS",
-        "GitHub API"
-      ]
+      "name": "Open Source Software",
+      "summary": "Regular GitHub user, author/maintainer of many libraries"
     },
     {
-      "name": "chess",
-      "summary": "Avid chess player.",
-      "keywords": [
-        "Sicilian",
-        "King's Gambit",
-        "Ruy Lopez"
-      ]
+
+      "name": "Rock Climbing",
+      "summary": "Rock climb in local gyms, have been on trips to Holcomb Valley; Red Rocks, NV; and 29 Palms"
+    },
+    {
+
+      "name": "Snowboarding",
+      "summary": "Grew up snowboarding. Hoping to make it back home to CO soon to hit the slopes."
     }
   ]
 }
