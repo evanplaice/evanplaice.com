@@ -3,6 +3,7 @@ import { Component, View, ViewEncapsulation } from 'angular2/core';
 import { TEMPLATE_DIRECTIVES } from '../themes/default/default';
 import { DerpPipe } from 'app/resume/pipes/derp';
 
+import { EmploymentComponent } from '../themes/default/partials/employment';
 import 'font-awesome/css/font-awesome.min.css!css';
 
 @Component({
@@ -14,6 +15,7 @@ import 'font-awesome/css/font-awesome.min.css!css';
   styleUrls: [ 'app/resume/themes/modern/modern.css' ],
   directives: [
     TEMPLATE_DIRECTIVES,
+    EmploymentComponent,
   ],
   pipes: [ DerpPipe ],
   encapsulation: ViewEncapsulation.Native
