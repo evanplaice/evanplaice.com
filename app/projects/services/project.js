@@ -36,7 +36,7 @@ export class ProjectService {
       },
       error => console.log(error),
       () => {
-        // console.log('Vitae loaded successfully');
+        // console.log('Projects loaded successfully');
       }
     );
   }

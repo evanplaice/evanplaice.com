@@ -36,7 +36,7 @@ export class DesignService {
       },
       error => console.log(error),
       () => {
-        // console.log('Vitae loaded successfully');
+        // console.log('Designs loaded successfully');
       }
     );
   }
