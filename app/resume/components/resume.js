@@ -7,6 +7,7 @@ import { SkillsComponent} from '../themes/modern/partials/skills';
 import { EmploymentComponent } from '../themes/default/partials/employment';
 import { ProjectsComponent } from '../themes/default/partials/projects';
 import { EducationComponent } from '../themes/default/partials/education';
+import { ServiceComponent } from '../themes/default/partials/service';
 
 import 'font-awesome/css/font-awesome.min.css!css';
 
@@ -23,6 +24,7 @@ import 'font-awesome/css/font-awesome.min.css!css';
     EmploymentComponent,
     ProjectsComponent,
     EducationComponent,
+    ServiceComponent,
   ],
   pipes: [ DerpPipe ],
   encapsulation: ViewEncapsulation.Native
