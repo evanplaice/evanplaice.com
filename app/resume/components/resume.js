@@ -1,5 +1,6 @@
 import { Component, View, ViewEncapsulation } from 'angular2/core';
 
+import { HeaderComponent } from 'app/resume/components/header.js';
 import { DurationComponent } from 'app/resume/components/duration';
 import { HighlightsComponent } from 'app/resume/components/highlights';
 import { CurriculumComponent } from 'app/resume/components/curriculum';
@@ -16,6 +17,7 @@ import 'font-awesome/css/font-awesome.min.css!css';
   templateUrl: 'app/resume/themes/modern/modern.html',
   styleUrls: [ 'app/resume/themes/modern/modern.css' ],
   directives: [
+    HeaderComponent,
     DurationComponent,
     HighlightsComponent,
     CurriculumComponent,
