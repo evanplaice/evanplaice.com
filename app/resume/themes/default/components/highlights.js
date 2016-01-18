@@ -5,10 +5,10 @@ import { Component, View } from 'angular2/core';
   inputs: [ 'highlights' ]
 })
 @View({
-  template:  `
+  template: `
   <ul *ngIf="highlights">
     <li *ngFor="#highlight of highlights">{{ highlight }}</li>
   </ul>
   `
 })
-export class HighlightsComponent { }
+export class HighlightsComponent {}

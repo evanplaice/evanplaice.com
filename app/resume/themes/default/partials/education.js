@@ -8,7 +8,7 @@ import 'font-awesome/css/font-awesome.min.css!css';
   inputs: [ 'education' ]
 })
 @View({
-  template:  `
+  template: `
   <hr>
   <section id="education">
     <header title="Education"><span class="fa fa-lg fa-mortar-board"></span></header>

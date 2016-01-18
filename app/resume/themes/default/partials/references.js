@@ -6,7 +6,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/themes/default/d
   inputs: [ 'references' ]
 })
 @View({
-  template:  `
+  template: `
   <hr>
   <section id="references">
     <header title="References"><span class="fa fa-lg fa-thumbs-o-up"></span></header>

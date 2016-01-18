@@ -5,9 +5,9 @@ import { Component, View } from 'angular2/core';
   inputs: [ 'start', 'end' ]
 })
 @View({
-  template:  `
+  template: `
   <span *ngIf="start && end" class="tenure">{{ start }} - {{ end }}</span>
   <span *ngIf="start && !end" class="tenure">{{ start }}</span>
   `
 })
-export class DurationComponent { }
+export class DurationComponent {}

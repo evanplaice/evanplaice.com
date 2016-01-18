@@ -3,7 +3,7 @@ import { Component, View, ViewEncapsulation } from 'angular2/core';
 import { TEMPLATE_DIRECTIVES } from '../themes/default/default';
 import { DerpPipe } from 'app/resume/pipes/derp';
 
-import { SkillsComponent} from '../themes/modern/partials/skills';
+import { SkillsComponent } from '../themes/modern/partials/skills';
 import { EmploymentComponent } from '../themes/default/partials/employment';
 import { ProjectsComponent } from '../themes/default/partials/projects';
 import { EducationComponent } from '../themes/default/partials/education';
@@ -42,7 +42,7 @@ import 'font-awesome/css/font-awesome.min.css!css';
   encapsulation: ViewEncapsulation.Native
 })
 export class ResumeComponent {
-  constructor() {
-    console.log('resume');
+  constructor () {
+    // console.log('resume');
   }
 }

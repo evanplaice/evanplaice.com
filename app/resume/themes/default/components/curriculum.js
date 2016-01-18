@@ -5,10 +5,10 @@ import { Component, View } from 'angular2/core';
   inputs: [ 'curriculum' ]
 })
 @View({
-  template:  `
+  template: `
   <ul *ngIf="curriculum">
     <li *ngFor="#subject of curriculum">{{ subject }}</li>
   </ul>
   `
 })
-export class CurriculumComponent { }
+export class CurriculumComponent {}

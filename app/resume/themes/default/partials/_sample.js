@@ -6,7 +6,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/themes/default/d
   inputs: [ '_sample' ]
 })
 @View({
-  template:  ``,
+  template: ``,
   directives: [ TEMPLATE_DIRECTIVES ],
   pipes: [ TEMPLATE_PIPES ]
 })

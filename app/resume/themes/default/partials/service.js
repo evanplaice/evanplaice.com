@@ -6,7 +6,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/themes/default/d
   inputs: [ 'service' ]
 })
 @View({
-  template:  `
+  template: `
   <hr>
   <section id="service">
     <header title="Service"><span class="fa fa-lg fa-child"></span></header>

@@ -5,10 +5,10 @@ import { Component, View } from 'angular2/core';
   inputs: [ 'keywords' ]
 })
 @View({
-  template:  `
+  template: `
   <template [ngIf]="keywords">
   <span class="keywords"><template ngFor #keyword="$implicit" [ngForOf]="keywords">{{ keyword }} </template></span>
   </template>
   `
 })
-export class KeywordsComponent { }
+export class KeywordsComponent {}
