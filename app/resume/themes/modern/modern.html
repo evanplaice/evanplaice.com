@@ -11,11 +11,7 @@
   </div>
 </header>
 
-<hr>
-<section id="summary">
-  <header title="About"><span class="fa fa-lg fa-user"></span></header>
-  <p>{{ resume.info.brief }}</p>
-</section>
+<about [about]="resume.info.brief"></about>
 
 <skills [skills]="resume.skills"></skills>
 
