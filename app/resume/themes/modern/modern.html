@@ -14,18 +14,14 @@
 <template [ngIf]="resume.info.brief">
 <hr>
 <section id="summary">
-  <h2>About</h2>
-  <span class="fa fa-lg fa-user"></span>
-  {{ resume.info.brief }}
+  <header title="About"><span class="fa fa-lg fa-user"></span></header>
+  <p>{{ resume.info.brief }}</p>
 </section>
 </template>
 
 <hr>
 <section id="skills">
-  <header>
-    <h2>Skills</h2>
-  </header>
-  <span class="fa fa-lg fa-code"></span>
+  <header title="Skills"><span class="fa fa-lg fa-code"></span></header>
   <ul *ngFor="#set of resume.skills.sets" class="list-unstyled">
     <li class="card card-nested card-skills">
       <div class="skill-level" rel="tooltip" title="{{ set.level }}" data-placement="left">
@@ -45,10 +41,7 @@
 
 <hr>
 <section id="employment">
-  <header>
-    <h2>Employment</h2>
-  </header>
-  <span class="fa fa-lg fa-building"></span>
+  <header title="Employment"><span class="fa fa-lg fa-building"></span></header>
   <div *ngFor="#job of resume.employment.history">
     <div>
       <h3><em>{{ job.position }}</em>,
@@ -65,10 +58,7 @@
 
 <hr>
 <section id="projects">
-  <header>
-    <h2>Projects</h2>
-  </header>
-  <span class="fa fa-lg fa-star"></span>
+  <header title="Projects"><span class="fa fa-lg fa-star"></span></header>
   <div *ngFor="#project of resume.projects | derp">
     <h3 *ngIf="project.role"><em>{{ project.role }}</em>,
       <a *ngIf="project.url" href="{{ project.url }}">{{ project.title }}</a>
@@ -82,10 +72,7 @@
 
 <hr>
 <section id="education">
-  <header>
-    <h2>Education</h2>
-  </header>
-  <span class="fa fa-lg fa-mortar-board"></span>
+  <header title="Education"><span class="fa fa-lg fa-mortar-board"></span></header>
   <div *ngFor="#school of resume.education.history">
     <h3><template [ngIf]="school.title">{{ school.title }}, </template>{{ school.institution }}</h3>
     <duration [start]="school.start" [end]="school.end"></duration>
@@ -96,10 +83,7 @@
 
 <hr>
 <section id="service">
-  <header>
-    <h2>Service</h2>
-  </header>
-  <span class="fa fa-lg fa-child"></span>
+  <header title="Service"><span class="fa fa-lg fa-child"></span></header>
   <div *ngFor="#role of resume.service.history">
     <h3 *ngIf="role.organization"><em>{{ role.organization }}</em>,
       <a *ngIf="role.url" href="{{ role.url }}">{{ role.position }}</a>
@@ -113,10 +97,7 @@
 
 <hr>
 <section id="samples">
-  <header>
-    <h2>Samples</h2>
-  </header>
-  <span class="fa fa-lg fa-share"></span>
+  <header title="Samples"><span class="fa fa-lg fa-share"></span></header>
   <div *ngFor="#sample of resume.samples | derp">
     <h3 *ngIf="sample.title">
       <a *ngIf="sample.url" href="{{ sample.url }}">{{ sample.title }}</a>
@@ -129,10 +110,7 @@
 
 <hr>
 <section id="writing">
-  <header>
-    <h2>Writing</h2>
-  </header>
-  <span class="fa fa-lg fa-pencil"></span>
+  <header title="Writing"><span class="fa fa-lg fa-pencil"></span></header>
   <div *ngFor="#piece of resume.writing | derp">
     <h3 *ngIf="piece.title">
       <em><a *ngIf="piece.url" href="{{ piece.url }}">{{ piece.title }}, </a></em>
