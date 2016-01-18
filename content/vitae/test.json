@@ -1,0 +1,372 @@
+{
+  "name": "Evan Plaice",
+  "meta": {
+    "format": "FRESH@0.3.0",
+    "version": "0.1.0"
+  },
+  "info": {
+    "label": "Full Stack Developer",
+    "class": "",
+    "image": "",
+    "brief": "TODO: fill this in",
+    "quote": ""
+  },
+  "contact": {
+    "website": "http://evanplaice.com",
+    "phone": "",
+    "email": "evanplaice@gmail.com",
+    "other": []
+  },
+  "location": {
+    "address": "2445 Torrejon Pl",
+    "city": "San Diego",
+    "region": "CA",
+    "code": "92009",
+    "country": "US"
+  },
+  "social": [
+    {
+      "label": "",
+      "network": "GitHub",
+      "user": "evanplaice",
+      "url": "https://github.com/evanplaice"
+    },
+    {
+      "label": "",
+      "network": "Twitter",
+      "user": "@evanplaice",
+      "url": "https://twitter.com/evanplaice"
+    },
+    {
+      "label": "",
+      "network": "StackOverflow",
+      "user": "evanplaice",
+      "url": "http://stackoverflow.com/users/290340/evan-plaice"
+    },
+    {
+      "label": "",
+      "network": "HackerNews",
+      "user": "evanplaice",
+      "url": "https://news.ycombinator.com/user?id=EvanPlaice"
+    }
+  ],
+  "employment": {
+    "summary": "",
+    "history": [
+      {
+        "employer": "Strike Group LLC.",
+        "url": "http://strikegroup.org.com",
+        "position": "Field Service Representative",
+        "summary": "TODO: fill this out",
+        "start": "2011-04",
+        "end": "2015-05",
+        "keywords": [
+          "military",
+          "TODO: add keywords"
+        ],
+        "highlights": [
+          "TODO: add highlights"
+        ]
+      },
+      {
+        "employer": "Joel Plaice & Associates Inc.",
+        "url": "http://jpasims.com",
+        "position": "Electrical Design Technician/Software Developer",
+        "summary": "Hacking on commercial full flight simulators for fun and profit",
+        "start": "2004-07",
+        "end": "2010-02",
+        "keywords": [
+          "engineering",
+          "electrical-technician",
+          "electrical-design",
+          "web-development",
+          "systems-design",
+          "software-architecture",
+          "c#",
+          "mssql"
+        ],
+        "highlights": [
+          "Designed and imlemented various avionics and aircraft systems updates",
+          "Full Stack development of a website + database backend using HTML/CSS/JS/PHP/MySQL",
+          "Product design/architecture/development (full lifecycle) of a turnkey replacement instructor operating system"
+        ]
+      },
+      {
+        "employer": "Spiral Aviation Training Company",
+        "position": "Flight Simulator Production Specialist",
+        "summary": "I worked as a technician building avionics cabling, populating instrument panels, hooking up I/O, and calibrating the systems post installation.",
+        "start": "2003-12",
+        "end": "2004-07",
+        "keywords": [
+          "electrical-technician",
+          "quality-assurance"
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "Awesome Project #1",
+      "category": "FOSS",
+      "url": "http://project-page.org",
+      "repo": "https://project-repo.com",
+      "media": [],
+      "role": "Contributor",
+      "summary": "A summary of your role on the project. Can include **Markdown** and inline <strong>HTML</strong> formatting.",
+      "description": "A description of the project. Can include **Markdown** and inline <strong>HTML</strong> formatting.",
+      "highlights": [
+        "automated all the things",
+        "merit +5"
+      ],
+      "keywords": [
+        "change-the-world",
+        "disrupt-and-improve"
+      ]
+    },
+    {
+      "title": "Awesome Project #2",
+      "category": "proprietary",
+      "url": "",
+      "repo": "",
+      "media": [],
+      "role": "Architect Astronaut",
+      "summary": "Super serial biznass.",
+      "description": "If I told you I'd have to kill you.",
+      "highlights": [],
+      "keywords": []
+    }
+  ],
+  "education": {
+    "summary": "Optional overall education summary. Not used in most themes.",
+    "level": "degree",
+    "degree": "BSCS",
+    "history": [
+      {
+        "institution": "School of Life",
+        "url": "http://your-college.edu",
+        "start": "2004-09",
+        "end": "2009-06",
+        "grade": "A+",
+        "summary": "some summary",
+        "curriculum": [
+          "being awesome",
+          "bro-ing out"
+        ]
+      },
+      {
+        "institution": "School of Hard Knocks",
+        "url": "",
+        "start": "2004-09",
+        "end": "",
+        "grade": "",
+        "summary": "",
+        "curriculum": []
+      }
+    ]
+  },
+  "service": {
+    "summary": "",
+    "history": [
+      {
+        "flavor": "volunteer",
+        "position": "Volunteer Coordinator",
+        "organization": "The Mommies Network",
+        "url": "http://themommiesnetwork.org",
+        "start": "2006-06",
+        "summary": "A summary of your volunteer experience at this organization. Can include **Markdown** and inline <strong>HTML</strong> formatting.",
+        "highlights": []
+      },
+      {
+        "flavor": "military",
+        "position": "MOS",
+        "organization": "Air Force",
+        "url": "https://service-website.mil",
+        "start": "2004",
+        "summary": "A summary of your service experience with this organization. Can include **Markdown** and inline <strong>HTML</strong> formatting.",
+        "highlights": [
+          "some cool",
+          "stuff happened"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "sets": [
+      {
+        "name": "Web Frontend Development",
+        "level": "intermediate",
+        "skills": [
+          "Angular2",
+          "Angular.js",
+          "HTML5",
+          "jQuery",
+          "Sass",
+          "jQuery-UI",
+          "Bootstrap",
+          "Semantic-UI",
+          "Flot"
+        ]
+      },
+      {
+        "name": "Web Backend Development",
+        "level": "advanced",
+        "skills": [
+          "Javascript",
+          "Node.js",
+          "MongoDB",
+          "Python",
+          "Google App Engine",
+          "Google Data Store",
+          "MySQL",
+          "PHP"
+        ]
+      },
+      {
+        "name": "Graphic Design",
+        "level": "beginner",
+        "skills": [
+          "Photoshop",
+          "Illustrator",
+          "Mockups",
+          "Logo Design"
+        ]
+      }
+    ],
+    "list": [
+      "Javascript",
+      "Python",
+      "C#",
+      "Java",
+      "HTML5",
+      "CSS"
+    ]
+  },
+  "samples": [
+    {
+      "title": "Joel Plaice and Associates Inc.",
+      "summary": "A website to share ",
+      "url": "http://jpasims.appspot.com",
+      "date": "2004-2010"
+    }
+  ],
+  "writing": [
+    {
+      "title": "title",
+      "flavor": "flavor",
+      "date": "3000",
+      "publisher": {
+        "name": "publisher",
+        "url": "puburl"
+      },
+      "url": "url"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Gödel, Escher, Bach: an Eternal Golden Braid",
+      "flavor": "book",
+      "url": "http://www.amazon.com/G%C3%B6del-Escher-Bach-Eternal-Golden/dp/0465026567",
+      "author": "Douglas R. Hofstadter"
+    },
+    {
+      "title": "r/programming",
+      "flavor": "website",
+      "url": "https://www.reddit.com/r/programming"
+    },
+    {
+      "title": "Hacker News",
+      "flavor": "website",
+      "url": "https://news.ycombinator.com/"
+    },
+    {
+      "title": "High Scalability",
+      "flavor": "website",
+      "url": "http://highscalability.com/"
+    }
+  ],
+  "recognition": [
+    {
+      "flavor": "Commendation",
+      "from": "USMC",
+      "title": "Commendation for Exemplary Performance",
+      "event": "Desert Scimitar 14",
+      "date": "2014",
+      "summary": "Acted as the onsite technical SME to support and assist with the first deployment of the Tactical Imagery Production System V3.0. The exercise 'Desert Scimitar 14' took place in the Mojave Desert near 29 Palms."
+    }
+  ],
+  "references": [
+    {
+      "name": "John Doe",
+      "flavor": "professional",
+      "private": true,
+      "contact": [
+        {
+          "flavor": "email",
+          "value": "john.doe@somewhere.com"
+        }
+      ]
+    },
+    {
+      "name": "Jane Q. Fullstacker",
+      "flavor": "technical",
+      "private": true,
+      "contact": [
+        {
+          "flavor": "email",
+          "value": "jane.fullstacker@somewhere.com"
+        }
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "John Doe",
+      "flavor": "technical",
+      "quote": "Such-and-such is awesome! I'd hire him/her in a second!"
+    }
+  ],
+  "speaking": [
+    {
+      "title": "Drone Wars",
+      "event": "FooCon",
+      "location": "Does it matter?",
+      "date": "1970",
+      "highlights": [
+        "designing date formats for 2000",
+        "the spicy side of the cold war"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "native"
+    },
+    {
+      "language": "Spanish",
+      "level": "advanced"
+    }
+  ],
+  "interests": [
+    {
+      "name": "GitHub",
+      "summary": "Regular GitHub user and tinkerer.",
+      "keywords": [
+        "GitHub",
+        "git",
+        "GitHub Desktop (OS X)",
+        "LFS",
+        "GitHub API"
+      ]
+    },
+    {
+      "name": "chess",
+      "summary": "Avid chess player.",
+      "keywords": [
+        "Sicilian",
+        "King's Gambit",
+        "Ruy Lopez"
+      ]
+    }
+  ]
+}
