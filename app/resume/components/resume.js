@@ -10,6 +10,7 @@ import { EducationComponent } from '../themes/default/partials/education';
 import { ServiceComponent } from '../themes/default/partials/service';
 import { SamplesComponent } from '../themes/default/partials/samples';
 import { WritingComponent } from '../themes/default/partials/writing';
+import { RecognitionComponent } from '../themes/default/partials/recognition';
 
 import 'font-awesome/css/font-awesome.min.css!css';
 
@@ -29,6 +30,7 @@ import 'font-awesome/css/font-awesome.min.css!css';
     ServiceComponent,
     SamplesComponent,
     WritingComponent,
+    RecognitionComponent,
   ],
   pipes: [ DerpPipe ],
   encapsulation: ViewEncapsulation.Native
