@@ -31,10 +31,19 @@ body {
   padding-bottom: 1em;
 }
 
-#main > #container > section {
+section {
   margin-left: 5em;
   position: relative;
   display: block;
+}
+
+span.fa
+{
+  position: absolute;
+  top: 4px;
+  left: -50px;
+  font-size: 30px;
+  color: #BFC1C3;
 }
 
 span.fa
