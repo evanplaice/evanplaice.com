@@ -11,164 +11,33 @@
   </div>
 </header>
 
-<template [ngIf]="resume.info.brief">
 <hr>
 <section id="summary">
   <header title="About"><span class="fa fa-lg fa-user"></span></header>
   <p>{{ resume.info.brief }}</p>
 </section>
-</template>
 
-<hr>
-<section id="skills">
-  <header title="Skills"><span class="fa fa-lg fa-code"></span></header>
-  <ul *ngFor="#set of resume.skills.sets" class="list-unstyled">
-    <li class="card card-nested card-skills">
-      <div class="skill-level" rel="tooltip" title="{{ set.level }}" data-placement="left">
-        <div class="skill-progress {{ set.level | lowercase }}"></div>
-      </div>
-      <div class="skill-info">
-        <strong>{{ set.name }}</strong>
-        <div class="space-top labels">
-          <span *ngIf="set.skills">
-            <span *ngFor="#skill of set.skills" class="label label-keyword">{{ skill }}</span>
-          </span>
-        </div>
-      </div>
-    </li>
-  </ul>
-</section>
+<skills [skills]="resume.skills"></skills>
 
-<hr>
-<section id="employment">
-  <header title="Employment"><span class="fa fa-lg fa-building"></span></header>
-  <div *ngFor="#job of resume.employment.history">
-    <div>
-      <h3><em>{{ job.position }}</em>,
-        <a *ngIf="job.url" href="{{ job.url }}">{{ job.employer }}</a>
-        <template [ngIf]="!job.url">{{ job.employer }}</template>
-      </h3>
-      <duration [start]="job.start" [end]="job.end"></duration>
-      <p>{{ job.summary }}</p>
-      <highlights [highlights]="job.highlights"></highlights>
-      <keywords [keywords]="job.keywords"></keywords>
-    </div>
-  </div>
-</section>
+<employment [employment]="resume.employment"></employment>
 
-<hr>
-<section id="projects">
-  <header title="Projects"><span class="fa fa-lg fa-star"></span></header>
-  <div *ngFor="#project of resume.projects | derp">
-    <h3 *ngIf="project.role"><em>{{ project.role }}</em>,
-      <a *ngIf="project.url" href="{{ project.url }}">{{ project.title }}</a>
-      <template [ngIf]="!project.url">{{ project.title }}</template>
-    </h3>
-    <p>{{ project.summary }}<p>
-    <highlights [highlights]="project.highlights"></highlights>
-    <keywords [keywords]="project.keywords"></keywords>
-  </div>
-</section>
+<projects [projects]="resume.projects"></projects>
 
-<hr>
-<section id="education">
-  <header title="Education"><span class="fa fa-lg fa-mortar-board"></span></header>
-  <div *ngFor="#school of resume.education.history">
-    <h3><template [ngIf]="school.title">{{ school.title }}, </template>{{ school.institution }}</h3>
-    <duration [start]="school.start" [end]="school.end"></duration>
-    <p>{{ school.summary }}<p>
-    <curriculum [curriculum]="school.curriculum"></curriculum>
-  </div>
-</section>
+<education [education]="resume.education"></education>
 
-<hr>
-<section id="service">
-  <header title="Service"><span class="fa fa-lg fa-child"></span></header>
-  <div *ngFor="#role of resume.service.history">
-    <h3 *ngIf="role.organization"><em>{{ role.organization }}</em>,
-      <a *ngIf="role.url" href="{{ role.url }}">{{ role.position }}</a>
-      <template [ngIf]="!role.url">{{ role.position }}</template>
-    </h3>
-    <duration [start]="role.start" [end]="role.end"></duration>
-    <p>{{ role.summary }}</p>
-    <highlights [highlights]="role.highlights"></highlights>
-  </div>
-</section>
+<service [service]="resume.service"></service>
 
-<hr>
-<section id="samples">
-  <header title="Samples"><span class="fa fa-lg fa-share"></span></header>
-  <div *ngFor="#sample of resume.samples | derp">
-    <h3 *ngIf="sample.title">
-      <a *ngIf="sample.url" href="{{ sample.url }}">{{ sample.title }}</a>
-      <template [ngIf]="!sample.url">{{ role.title }}</template>
-    </h3>
-    <duration [start]="sample.date"></duration>
-    <p>{{ sample.summary }}</p>
-  </div>
-</section>
+<samples [samples]="resume.samples"></samples>
 
-<hr>
-<section id="writing">
-  <header title="Writing"><span class="fa fa-lg fa-pencil"></span></header>
-  <div *ngFor="#piece of resume.writing | derp">
-    <h3 *ngIf="piece.title">
-      <em><a *ngIf="piece.url" href="{{ piece.url }}">{{ piece.title }}, </a></em>
-      <template [ngIf]="!piece.url"><em>{{ piece.title }}, </em></template>
-      <span *ngIf="piece.publisher.name">
-        <a *ngIf="piece.publisher.url" href="{{ piece.publisher.url }}">{{ piece.publisher.name }}</a>
-        <template [ngIf]="!piece.publisher.url">{{ piece.publisher.name }}</template>
-      </span>
-    </h3>
-    <duration [start]="piece.date"></duration>
+<writing [writing]="resume.writing"></writing>
 
-  </div>
-</section>
+<recognition [recognition]="resume.recognition"></recognition>
 
-<hr>
-<section id="recognition">
-  <header title="Recognition"><span class="fa fa-lg fa-trophy"></span></header>
-  <div *ngFor="#award of resume.recognition | derp">
-    <h3>
-      <span *ngIf="award.from">{{ award.title }}, {{ award.from }}</span>
-      <template [ngIf]="!award.from">{{ award.title }}</template>
-    </h3>
-    <duration [start]="award.date"></duration>
-    <p>{{ award.summary }}</p>
-  </div>
-</section>
+<speaking [speaking]="resume.speaking"></speaking>
 
-<hr>
-<section id="speaking">
-  <header title="Speaking"><span class="fa fa-lg fa-users"></span></header>
-  <div *ngFor="#talk of resume.speaking">
-    <h3><template [ngIf]="talk.title">{{ talk.title }}, </template>{{ talk.event }}</h3>
-    <duration [start]="talk.date"></duration>
-    <highlights [highlights]="talk.highlights"></highlights>
-  </div>
-</section>
+<testimonials [testimonials]="resume.testimonials"></testimonials>
 
-<hr>
-<section id="testimonials">
-  <header title="Testimonials"><span class="fa fa-lg fa-thumbs-o-up"></span></header>
-  <div *ngFor="#testimonial of resume.testimonials | derp">
-    <h3>{{ testimonial.name }}</h3>
-    <p>{{ testimonial.quote }}</p>
-  </div>
-</section>
-
-<hr>
-<section id="references">
-  <header title="References"><span class="fa fa-lg fa-thumbs-o-up"></span></header>
-  <div *ngFor="#reference of resume.references | derp">
-    <h3>{{ reference.name }}</h3>
-    <template [ngIf]="reference.contact">
-      <ul *ngFor="#contact of reference.contact">
-        <li>{{ contact.flavor }} - {{ contact.value }}</li>
-      </ul>
-    </template>
-  </div>
-</section>
+<references [references]="resume.references"></references>
 
 </div>
 </main>
