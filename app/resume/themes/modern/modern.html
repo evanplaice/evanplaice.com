@@ -138,6 +138,37 @@
   </div>
 </section>
 
+<hr>
+<section id="speaking">
+  <header title="Speaking"><span class="fa fa-lg fa-users"></span></header>
+  <div *ngFor="#talk of resume.speaking">
+    <h3><template [ngIf]="talk.title">{{ talk.title }}, </template>{{ talk.event }}</h3>
+    <duration [start]="talk.date"></duration>
+    <highlights [highlights]="talk.highlights"></highlights>
+  </div>
+</section>
+
+<hr>
+<section id="testimonials">
+  <header title="Testimonials"><span class="fa fa-lg fa-thumbs-o-up"></span></header>
+  <div *ngFor="#testimonial of resume.testimonials | derp">
+    <h3>{{ testimonial.name }}</h3>
+    <p>{{ testimonial.quote }}</p>
+  </div>
+</section>
+
+<hr>
+<section id="references">
+  <header title="References"><span class="fa fa-lg fa-thumbs-o-up"></span></header>
+  <div *ngFor="#reference of resume.references | derp">
+    <h3>{{ reference.name }}</h3>
+    <template [ngIf]="reference.contact">
+      <ul *ngFor="#contact of reference.contact">
+        <li>{{ contact.flavor }} - {{ contact.value }}</li>
+      </ul>
+    </template>
+  </div>
+</section>
 
 </div>
 </main>
