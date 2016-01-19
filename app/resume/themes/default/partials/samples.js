@@ -7,6 +7,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/themes/default/d
 })
 @View({
   template: `
+  <template [ngIf]="!empty()">
   <hr>
   <section id="samples">
     <header title="Samples"><span class="fa fa-lg fa-share"></span></header>
@@ -19,8 +20,13 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/themes/default/d
       <p>{{ sample.summary }}</p>
     </div>
   </section>
+  </template>
   `,
   directives: [ TEMPLATE_DIRECTIVES ],
   pipes: [ TEMPLATE_PIPES ]
 })
-export class SamplesComponent {}
+export class SamplesComponent {
+  empty() {
+    return this.samples.length == 0;
+  }
+}

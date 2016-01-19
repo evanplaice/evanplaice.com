@@ -9,6 +9,7 @@ import 'font-awesome/css/font-awesome.min.css!css';
 })
 @View({
   template: `
+  <template [ngIf]="!empty()">
   <hr>
   <section id="education">
     <header title="Education"><span class="fa fa-lg fa-mortar-board"></span></header>
@@ -19,8 +20,13 @@ import 'font-awesome/css/font-awesome.min.css!css';
       <curriculum [curriculum]="school.curriculum"></curriculum>
     </div>
   </section>
+  </template>
   `,
   directives: [ TEMPLATE_DIRECTIVES ],
   pipes: [ TEMPLATE_PIPES ]
 })
-export class EducationComponent {}
+export class EducationComponent {
+  empty() {
+    return Object.keys(this.education).length == 0;
+  }
+}

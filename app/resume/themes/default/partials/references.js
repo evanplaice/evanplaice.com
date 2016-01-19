@@ -7,6 +7,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/themes/default/d
 })
 @View({
   template: `
+  <template [ngIf]="!empty()">
   <hr>
   <section id="references">
     <header title="References"><span class="fa fa-lg fa-thumbs-o-up"></span></header>
@@ -19,8 +20,13 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/themes/default/d
       </template>
     </div>
   </section>
+  </template>
   `,
   directives: [ TEMPLATE_DIRECTIVES ],
   pipes: [ TEMPLATE_PIPES ]
 })
-export class ReferencesComponent {}
+export class ReferencesComponent {
+  empty() {
+    return this.references.length == 0;
+  }
+}
