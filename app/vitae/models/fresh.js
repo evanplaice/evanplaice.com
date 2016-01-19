@@ -2,22 +2,27 @@ export class FRESHModel {
   name = '';
   meta = {};
   info = {};
+  disposition = {};
   contact = {};
   location = {};
-  social = {};
   employment = {};
   projects = {};
-  education = {};
-  service = {};
   skills = {};
-  samples = {};
+  service = {};
+  education = {};
+  social = {};
+  recognition = {};
   writing = {};
   reading = {};
-  recognition = {};
-  references = {};
-  testimonials = {};
+  speaking = [];
+  governance = [];
   languages = {};
-  interests = {};
+  samples = [];
+  references = [];
+  testimonials = [];
+  interests = [];
+  extracurricular = [];
+  affiliation = {};
 
   constructor (obj) {
     for (var prop in obj) this[prop] = obj[prop];
