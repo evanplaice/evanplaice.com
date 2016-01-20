@@ -17,12 +17,15 @@
     "start": "live-server",
     "grunt": "grunt",
     "checkstyle": "semistandard || true",
-    "build-dev": "jspm bundle app/app app/app.dev.js --minify --inject",
-    "build-prod": "jspm bundle-sfx app/app dist/app.min --minify",
-    "prepare-prod": "gzip -9 dist/app.min -S .js",
-    "sync-dev": "grunt development",
-    "sync-prod": "grunt production",
-    "sync-content": "grunt content"
+    "build:dev": "jspm bundle app/app app/app.dev.js --minify --inject",
+    "build:prod": "jspm bundle-sfx app/app dist/app.min.js --minify",
+    "prepare": "npm run gzip:app & npm run gzip:map & npm run gzip:css",
+    "sync:dev": "grunt development",
+    "sync:prod": "grunt production",
+    "sync:content": "grunt content",
+    "gzip:app": "gzip -9 dist/app.min.js && mv dist/app.min.js.gz dist/app.min.js",
+    "gzip:map": "gzip -9 dist/app.min.js.map && mv dist/app.min.js.map.gz dist/app.min.js.map",
+    "gzip:css": "cp app/app.css dist/app.css && gzip -9 dist/app.css && mv dist/app.css.gz dist/app.css"
   },
   "jspm": {
     "dependencies": {
