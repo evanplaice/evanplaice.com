@@ -1,5 +1,4 @@
-app/*.min.*
-app/*.dev.*
+dist
 node_modules
 jspm_packages
 .env
