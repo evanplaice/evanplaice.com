@@ -19,6 +19,7 @@
     "checkstyle": "semistandard || true",
     "build-dev": "jspm bundle app/app app/app.dev.js --minify --inject",
     "build-prod": "jspm bundle-sfx app/app dist/app.min --minify",
+    "prepare-prod": "gzip -9 dist/app.min -S .js",
     "sync-dev": "grunt development",
     "sync-prod": "grunt production",
     "sync-content": "grunt content"
