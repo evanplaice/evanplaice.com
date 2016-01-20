@@ -19,6 +19,7 @@
       // Production mode - use self-executing bundle
       if (location.hostname == "evanplaice.com") {
         console.log("Running in PRODUCTION");
+        System.import('dist/app.min');
       }
       // Development mode - transpile on-the-fly
       else {
