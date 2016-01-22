@@ -1,10 +1,13 @@
-import { ProjectsModel } from './projects';
+import { LocationModel } from './location';
+import { EmploymentModel } from './employment';
+import { ProjectModel } from './project';
+import { EducationModel } from './education';
 import { RecognitionModel } from './recognition';
 import { WritingModel } from './writing';
 import { SpeakingModel } from './speaking';
-import { SamplesModel } from './samples';
-import { ReferencesModel } from './references';
-import { TestimonialsModel } from './testimonials';
+import { SampleModel } from './sample';
+import { ReferenceModel } from './reference';
+import { TestimonialModel } from './testimonial';
 
 export class FreshModel {
   name = '';
@@ -62,16 +65,16 @@ export class FreshModel {
     }
 
     if (obj.location) {
-      this.location = obj.location;
+      this.location = new LocationModel(obj.location);
     }
 
     if (obj.employment) {
-      this.employment = obj.employment;
+      this.employment = new EmploymentModel(obj.employment);
     }
 
     if (obj.projects) {
       obj.projects.forEach((project) => {
-        this.projects.push(new ProjectsModel(project));
+        this.projects.push(new ProjectModel(project));
       });
     }
 
@@ -123,19 +126,19 @@ export class FreshModel {
 
     if (obj.samples) {
       obj.samples.forEach((sample) => {
-        this.samples.push(new SamplesModel(sample));
+        this.samples.push(new SampleModel(sample));
       })
     }
 
     if (obj.references) {
       obj.references.forEach((reference) => {
-        this.references.push(new ReferencesModel(reference));
+        this.references.push(new ReferenceModel(reference));
       });
     }
 
     if (obj.testimonials) {
       obj.testimonials.forEach((testimonial) => {
-        this.testimonials.push(new TestimonialsModel(testimonial));
+        this.testimonials.push(new TestimonialModel(testimonial));
       });
     }
 
