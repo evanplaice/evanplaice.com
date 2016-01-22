@@ -11,7 +11,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
   <hr>
   <section id="testimonials">
     <header title="Testimonials"><span class="fa fa-lg fa-thumbs-o-up"></span></header>
-    <div *ngFor="#testimonial of testimonials | derp">
+    <div *ngFor="#testimonial of testimonials">
       <h3>{{ testimonial.name }}</h3>
       <p>{{ testimonial.quote }}</p>
     </div>

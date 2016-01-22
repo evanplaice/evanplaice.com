@@ -11,7 +11,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
   <hr>
   <section id="projects">
     <header title="Projects"><span class="fa fa-lg fa-star"></span></header>
-    <div *ngFor="#project of projects | derp">
+    <div *ngFor="#project of projects">
       <h3 *ngIf="project.role"><em>{{ project.role }}</em>,
         <a *ngIf="project.url" href="{{ project.url }}">{{ project.title }}</a>
         <template [ngIf]="!project.url">{{ project.title }}</template>

@@ -11,7 +11,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
   <hr>
   <section id="recognition">
     <header title="Recognition"><span class="fa fa-lg fa-trophy"></span></header>
-    <div *ngFor="#award of recognition | derp">
+    <div *ngFor="#award of recognition">
       <h3>
         <span *ngIf="award.from">{{ award.title }}, {{ award.from }}</span>
         <template [ngIf]="!award.from">{{ award.title }}</template>

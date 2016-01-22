@@ -11,7 +11,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
   <hr>
   <section id="references">
     <header title="References"><span class="fa fa-lg fa-thumbs-o-up"></span></header>
-    <div *ngFor="#reference of references | derp">
+    <div *ngFor="#reference of references">
       <h3>{{ reference.name }}</h3>
       <template [ngIf]="reference.contact">
         <ul *ngFor="#contact of reference.contact">
