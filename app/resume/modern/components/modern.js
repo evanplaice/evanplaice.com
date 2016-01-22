@@ -1,5 +1,5 @@
 import { Component, View, ViewEncapsulation } from 'angular2/core';
-import { MODERN_DIRECTIVES } from '../default';
+import { MODERN_DIRECTIVES } from '../modern';
 
 import 'font-awesome/css/font-awesome.min.css!css';
 

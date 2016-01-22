@@ -1,6 +1,6 @@
 import { Component, View, Inject } from 'angular2/core';
 import { VitaeService } from 'app/vitae/services/vitae';
-import { MODERN_COMPONENT } from 'app/resume/modern/default';
+import { MODERN_COMPONENT } from 'app/resume/resume';
 
 @Component({
   selector: 'vitae',

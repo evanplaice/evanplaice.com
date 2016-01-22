@@ -1,5 +1,5 @@
 import { Component, View } from 'angular2/core';
-import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/shared/default';
+import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
 
 import 'font-awesome/css/font-awesome.min.css!css';
 
