@@ -1,0 +1,479 @@
+{
+  "name": "name",
+  "meta": {
+    "format": "format",
+    "version": "version"
+  },
+  "info": {
+    "label": "label",
+    "class": "class",
+    "image": "image",
+    "brief": "brief",
+    "quote": "quote"
+  },
+  "disposition": {
+    "travel": 9999,
+    "authorization": "authorization",
+    "commitment": [
+      "commitment",
+      "commitment"
+    ],
+    "remote": true,
+    "relocation": {
+      "willing": "willing",
+      "destinations": [
+        "desinations",
+        "desinations"
+      ]
+    }
+  },
+  "contact": {
+    "email": "email",
+    "phone": "phone",
+    "website": "website",
+    "other": [
+      {
+        "label": "label",
+        "flavor": "flavor",
+        "value": "value"
+      },
+      {
+        "label": "label",
+        "flavor": "flavor",
+        "value": "value"
+      }
+    ]
+  },
+  "location": {
+    "address": "address",
+    "code": "code",
+    "city": "city",
+    "country": "country",
+    "region": "region"
+  },
+  "employment": {
+    "summary": "summary",
+    "history": [
+      {
+        "employer": "employer",
+        "position": "position",
+        "url": "url",
+        "start": "start",
+        "end": "end",
+        "summary": "summary",
+        "highlights": [
+          "highlights",
+          "highlights"
+        ],
+        "location": "location",
+        "keywords": [
+          "keywords",
+          "keywords"
+        ]
+      },
+      {
+        "employer": "employer",
+        "position": "position",
+        "url": "url",
+        "start": "start",
+        "end": "end",
+        "summary": "summary",
+        "highlights": [
+          "highlights",
+          "highlights"
+        ],
+        "location": "location",
+        "keywords": [
+          "keywords",
+          "keywords"
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "title",
+      "category": "category",
+      "description": "description",
+      "summary": "summary",
+      "role": "role",
+      "url": "url",
+      "media": [
+        {
+          "category": "category",
+          "name": "name",
+          "url": "url"
+        },
+        {
+          "category": "category",
+          "name": "name",
+          "url": "url"
+        }
+      ],
+      "repo": "repo",
+      "start": "start",
+      "end": "end",
+       "highlights": [
+        "highlights",
+        "highlights"
+      ],
+      "location": "location",
+      "keywords": [
+        "keywords",
+        "keywords"
+      ]
+    }
+  ],
+  "skills": {
+    "sets": [
+      {
+        "name": "name",
+        "level": "level",
+        "skills": [
+          "skills",
+          "skills"
+        ]
+      },
+      {
+        "name": "name",
+        "level": "level",
+        "skills": [
+          "skills",
+          "skills"
+        ]
+      }
+    ],
+    "list": [
+      {
+        "name": "name",
+        "level": "level",
+        "summary": "summary",
+        "years": "years"
+      },
+      {
+        "name": "name",
+        "level": "level",
+        "summary": "summary",
+        "years": "years"
+      }
+    ]
+  },
+  "service": {
+    "summary": "summary",
+    "history": [
+      {
+        "flavor": "flavor",
+        "organization": "organization",
+        "position": "position",
+        "url": "url",
+        "start": "start",
+        "end": "end",
+        "summary": "summary",
+        "highlights": [
+          "highlights",
+          "highlights"
+        ],
+        "location": "location"
+      },
+      {
+        "flavor": "flavor",
+        "organization": "organization",
+        "position": "position",
+        "url": "url",
+        "start": "start",
+        "end": "end",
+        "summary": "summary",
+        "highlights": [
+          "highlights",
+          "highlights"
+        ],
+        "location": "location"
+      }
+    ]
+  },
+  "education": {
+    "summary": "summary",
+    "level": "level",
+    "degree": "degree",
+    "history": [
+      {
+        "title": "title",
+        "institution": "institution",
+        "area": "area",
+        "studyType": "studyType",
+        "start": "start",
+        "end": "end",
+        "grade": "grade",
+        "curriculum": [
+          "curriculum",
+          "curriculum"
+        ],
+        "url": "url",
+        "summary": "summary",
+        "location": "location"
+      },
+      {
+        "title": "title",
+        "institution": "institution",
+        "area": "area",
+        "studyType": "studyType",
+        "start": "start",
+        "end": "end",
+        "grade": "grade",
+        "curriculum": [
+          "curriculum",
+          "curriculum"
+        ],
+        "url": "url",
+        "summary": "summary",
+        "location": "location"
+      }
+    ]
+  },
+  "social": [
+    {
+      "network": "network",
+      "user": "user",
+      "url": "url",
+      "label": "label"
+    },
+    {
+      "network": "network",
+      "user": "user",
+      "url": "url",
+      "label": "label"
+    }
+  ],
+  "recognition": [
+    {
+      "flavor": "flavor",
+      "title": "title",
+      "date": "date",
+      "from": "from",
+      "summary": "summary",
+      "url": "url"
+    },
+    {
+      "flavor": "flavor",
+      "title": "title",
+      "date": "date",
+      "from": "from",
+      "summary": "summary",
+      "url": "url"
+    }
+  ],
+  "writing": [
+    {
+      "title": "title",
+      "flavor": "flavor",
+      "publisher": {
+        "name": "name",
+        "url": "url"
+      },
+      "date": "date",
+      "url": "url",
+      "summary": "summary"
+    },
+    {
+      "title": "title",
+      "flavor": "flavor",
+      "publisher": {
+        "name": "name",
+        "url": "url"
+      },
+      "date": "date",
+      "url": "url",
+      "summary": "summary"
+    }
+  ],
+  "reading": [
+    {
+      "title": "title",
+      "flavor": "flavor",
+      "url": "url",
+      "author": "author"
+    },
+    {
+      "title": "title",
+      "flavor": "flavor",
+      "url": "url",
+      "author": "author"
+    }
+  ],
+  "speaking": [
+    {
+      "title": "title",
+      "event": "event",
+      "location": "location",
+      "date": "date",
+      "highlights": [
+        "highlights",
+        "highlights"
+      ]
+    },
+    {
+      "title": "title",
+      "event": "event",
+      "location": "location",
+      "date": "date",
+      "highlights": [
+        "highlights",
+        "highlights"
+      ]
+    }
+  ],
+  "governance": [
+    {
+      "summary": "summary",
+      "flavor": "flavor",
+      "role": "role",
+      "organization": "organization",
+      "start": "start",
+      "end": "end",
+      "highlights": [
+        "highlights",
+        "highlights"
+      ]
+    },
+    {
+      "summary": "summary",
+      "flavor": "flavor",
+      "role": "role",
+      "organization": "organization",
+      "start": "start",
+      "end": "end",
+      "highlights": [
+        "highlights",
+        "highlights"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "language",
+      "level": "level",
+      "years": "years"
+    },
+    {
+      "language": "language",
+      "level": "level",
+      "years": "years"
+    }
+  ],
+  "samples": [
+    {
+      "title": "title",
+      "summary": "summary",
+      "url": "url",
+      "date": "date"
+    },
+    {
+      "title": "title",
+      "summary": "summary",
+      "url": "url",
+      "date": "date"
+    }
+  ],
+  "references": [
+    {
+      "name": "name",
+      "role": "role",
+      "category": "category",
+      "private": false,
+      "summary": "summary",
+      "contact": [
+        {
+          "label": "label",
+          "flavor": "flavor",
+          "value": "value"
+        },
+        {
+          "label": "label",
+          "flavor": "flavor",
+          "value": "value"
+        }
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "name",
+      "quote": "quote",
+      "flavor": "flavor",
+      "private": false
+    },
+    {
+      "name": "name",
+      "quote": "quote",
+      "flavor": "flavor",
+      "private": false
+    }
+  ],
+  "interests": [
+    {
+      "name": "name",
+      "summary": "summary",
+      "keywords": [
+        "keywords",
+        "keywords"
+      ]
+    },
+    {
+      "name": "name",
+      "summary": "summary",
+      "keywords": [
+        "keywords",
+        "keywords"
+      ]
+    }
+  ],
+  "extracurricular": [
+    {
+      "title": "title",
+      "activity": "activity",
+      "location": "location",
+      "start": "start",
+      "end": "end"
+    },
+    {
+      "title": "title",
+      "activity": "activity",
+      "location": "location",
+      "start": "start",
+      "end": "end"
+    }
+  ],
+  "affiliation": {
+    "summary": "summary",
+    "history": [
+      {
+        "category": "category",
+        "organization": "organization",
+        "role": "role",
+        "url": "url",
+        "start": "start",
+        "end": "end",
+        "summary": "summary",
+        "highlights": [
+          "highlights",
+          "highlights"
+        ],
+        "location": "location"
+      },
+      {
+        "category": "category",
+        "organization": "organization",
+        "role": "role",
+        "url": "url",
+        "start": "start",
+        "end": "end",
+        "summary": "summary",
+        "highlights": [
+          "highlights",
+          "highlights"
+        ],
+        "location": "location"
+      }
+    ]
+  }
+}
