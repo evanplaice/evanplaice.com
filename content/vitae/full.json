@@ -122,6 +122,38 @@
         "keywords",
         "keywords"
       ]
+    },
+    {
+      "title": "title",
+      "category": "category",
+      "description": "description",
+      "summary": "summary",
+      "role": "role",
+      "url": "url",
+      "media": [
+        {
+          "category": "category",
+          "name": "name",
+          "url": "url"
+        },
+        {
+          "category": "category",
+          "name": "name",
+          "url": "url"
+        }
+      ],
+      "repo": "repo",
+      "start": "start",
+      "end": "end",
+       "highlights": [
+        "highlights",
+        "highlights"
+      ],
+      "location": "location",
+      "keywords": [
+        "keywords",
+        "keywords"
+      ]
     }
   ],
   "skills": {
