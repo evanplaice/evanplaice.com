@@ -20,7 +20,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/themes/default/d
           <template [ngIf]="!piece.publisher.url">{{ piece.publisher.name }}</template>
         </span>
       </h3>
-      <duration [start]="piece.date"></duration>
+      <!--<duration [start]="piece.date"></duration>-->
     </div>
   </section>
   </template>
