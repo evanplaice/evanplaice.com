@@ -1,4 +1,4 @@
-export class SamplesModel {
+export class SampleModel {
   title = "";
   summary = "";
   url = "";
