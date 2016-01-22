@@ -1,7 +1,7 @@
 import { Injectable, Inject } from 'angular2/core';
 import { Http } from 'angular2/http';
 import { Observable } from 'rxjs/Observable';
-import { FRESHModel } from 'app/vitae/models/fresh';
+import { FreshModel } from 'app/vitae/models/fresh';
 
 @Injectable()
 export class VitaeService {
@@ -17,7 +17,7 @@ export class VitaeService {
 
   loadVitae() {
     return this.vitae$ = this.http.get('content/vitae/resume.json')
-    .map(res => new FRESHModel(res.json()))
-    .startWith(new FRESHModel())
+    .map(res => new FreshModel(res.json()))
+    .startWith(new FreshModel())
   }
 }
