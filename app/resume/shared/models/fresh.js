@@ -39,7 +39,7 @@ export class FreshModel {
     // initialize with data
     if (obj) {
       this.init(obj);
-      console.log(this);
+      // console.log(this);
     }
   }
 
@@ -49,18 +49,22 @@ export class FreshModel {
     }
 
     if (obj.meta) {
+      // TODO: implement a model for this
       this.meta = obj.meta;
     }
 
     if (obj.info) {
+      // TODO: implement a model for this
       this.info = obj.info;
     }
 
     if (obj.disposition) {
+      // TODO: implement a model for this
       this.disposition = obj.disposition;
     }
 
     if (obj.contact) {
+      // TODO: implement a model for this
       this.contact = obj.contact;
     }
 
@@ -79,10 +83,12 @@ export class FreshModel {
     }
 
     if (obj.skills) {
+      // TODO: implement a model for this
       this.skills = obj.skills;
     }
 
     if (obj.service) {
+      // TODO: implelment a model for this
       this.service = obj.service;
     }
 
@@ -91,6 +97,7 @@ export class FreshModel {
     }
 
     if (obj.social) {
+      // TODO: implement a model for this
       this.social = obj.social;
     }
 
@@ -107,6 +114,7 @@ export class FreshModel {
     }
 
     if (obj.reading) {
+      // TODO: implement a model for this
       this.reading = obj.reading;
     }
 
@@ -117,10 +125,12 @@ export class FreshModel {
     }
 
     if (obj.governance) {
+      // TODO: implement a model for this
       this.governance = obj.governance;
     }
 
     if (obj.languages) {
+      // TODO: implement a model for this
       this.languages = obj.languages;
     }
 
@@ -143,14 +153,17 @@ export class FreshModel {
     }
 
     if (obj.interests) {
+      // TODO: implement a model for this
       this.interests = obj.interests;
     }
 
     if (obj.extracurricular) {
+      // TODO: implement a model for this
       this.extracurricular = obj.extracurricular;
     }
 
     if (obj.affiliation) {
+      // TODO: implement a model for this
       this.affiliation = obj.affiliation;
     }
   }
