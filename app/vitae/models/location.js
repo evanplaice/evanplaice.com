@@ -5,11 +5,31 @@ export class LocationModel {
   code = '';
   country = '';
 
-  constructor (location) {
-    this.address = location.address;
-    this.city = location.city;
-    this.region = location.region;
-    this.code = location.code;
-    this.country = location.country;
+  constructor(obj) {
+    if (obj) {
+      this.init(obj);
+    }
+  }
+
+  init(obj) {
+    if (obj.address) {
+      this.address = obj.address;
+    }
+
+    if (obj.city) {
+      this.city = obj.city;
+    }
+
+    if (obj.region) {
+      this.region = obj.region;
+    }
+
+    if (obj.code) {
+      this.code = obj.code;
+    }
+
+    if (obj.country) {
+      this.country = obj.country;
+    }
   }
 }
