@@ -13,7 +13,7 @@ System.config({
   },
 
   map: {
-    "angular2": "npm:angular2@2.0.0-beta.1",
+    "angular2": "npm:angular2@2.0.0-beta.0",
     "clean-css": "npm:clean-css@3.4.8",
     "css": "github:systemjs/plugin-css@0.1.20",
     "font-awesome": "npm:font-awesome@4.5.0",
@@ -89,7 +89,7 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:angular2@2.0.0-beta.1": {
+    "npm:angular2@2.0.0-beta.0": {
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "es6-promise": "npm:es6-promise@3.0.2",
       "es6-shim": "npm:es6-shim@0.33.13",
