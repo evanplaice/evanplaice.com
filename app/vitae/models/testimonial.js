@@ -1,4 +1,4 @@
-export class TestimonialsModel {
+export class TestimonialModel {
   name = "";
   quote = "";
   flavor = "";
