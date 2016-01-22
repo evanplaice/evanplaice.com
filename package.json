@@ -25,7 +25,8 @@
     "sync:content": "grunt content",
     "gzip:app": "gzip -9 dist/app.min.js && mv dist/app.min.js.gz dist/app.min.js",
     "gzip:map": "gzip -9 dist/app.min.js.map && mv dist/app.min.js.map.gz dist/app.min.js.map",
-    "gzip:css": "cp app/app.css dist/app.css && gzip -9 dist/app.css && mv dist/app.css.gz dist/app.css"
+    "gzip:css": "cp app/app.css dist/app.css && gzip -9 dist/app.css && mv dist/app.css.gz dist/app.css",
+    "stats": "git diff --stat `git hash-object -t tree /dev/null`"
   },
   "jspm": {
     "dependencies": {
