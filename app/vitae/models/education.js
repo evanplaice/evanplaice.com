@@ -25,12 +25,12 @@ export class EducationModel {
 
     if (obj.history) {
       obj.history.forEach((school) => {
-        this.setSchool(school);
+        this.addSchool(school);
       });
     }
   }
 
-  setSchool(school) {
+  addSchool(school) {
     let tmp = {};
 
     if (school.title) {
