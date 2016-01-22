@@ -1,6 +1,3 @@
-// Template Component
-import { ModernComponent } from './components/modern';
-
 // Template partials
 import { AboutComponent } from '../default/components/about';
 import { EmploymentComponent } from '../default/components/employment';
@@ -21,8 +18,6 @@ import { TestimonialsComponent } from '../default/components/testimonials';
 // import { InterestsComponent } from '../default/components/interests';
 // import { ExtracurricularComponent } from '../default/components/extracurricular';
 // import { AffiliationComponent } from '../default/components/affiliation';
-
-export const MODERN_COMPONENT = [ ModernComponent ];
 
 export const MODERN_DIRECTIVES = [
   AboutComponent,
