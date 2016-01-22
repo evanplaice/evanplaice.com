@@ -84,7 +84,7 @@ export class FreshModel {
     }
 
     if (obj.education) {
-      this.education = obj.education;
+      this.education = new EducationModel(obj.education);
     }
 
     if (obj.social) {
