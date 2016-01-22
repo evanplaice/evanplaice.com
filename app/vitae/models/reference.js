@@ -1,4 +1,4 @@
-export class ReferencesModel {
+export class ReferenceModel {
   name = "";
   role = "";
   category = "";
