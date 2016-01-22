@@ -1,5 +1,5 @@
 import { Component, View } from 'angular2/core';
-import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/themes/default/default';
+import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/shared/default';
 
 @Component({
   selector: 'references',

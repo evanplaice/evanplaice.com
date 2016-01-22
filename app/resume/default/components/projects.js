@@ -1,5 +1,5 @@
 import { Component, View } from 'angular2/core';
-import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/themes/default/default';
+import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/shared/default';
 
 @Component({
   selector: 'projects',
@@ -17,8 +17,8 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/themes/default/d
         <template [ngIf]="!project.url">{{ project.title }}</template>
       </h3>
       <p>{{ project.summary }}<p>
-      <!--<highlights [highlights]="project.highlights"></highlights>-->
-      <!--<keywords [keywords]="project.keywords"></keywords>-->
+      <highlights [highlights]="project.highlights"></highlights>
+      <keywords [keywords]="project.keywords"></keywords>
     </div>
   </section>
   </template>

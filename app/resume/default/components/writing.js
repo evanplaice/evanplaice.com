@@ -1,5 +1,5 @@
 import { Component, View } from 'angular2/core';
-import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/themes/default/default';
+import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/shared/default';
 
 @Component({
   selector: 'writing',
@@ -20,7 +20,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/themes/default/d
           <template [ngIf]="!piece.publisher.url">{{ piece.publisher.name }}</template>
         </span>
       </h3>
-      <!--<duration [start]="piece.date"></duration>-->
+      <duration [start]="piece.date"></duration>
     </div>
   </section>
   </template>

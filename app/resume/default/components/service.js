@@ -1,5 +1,5 @@
 import { Component, View } from 'angular2/core';
-import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/themes/default/default';
+import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/shared/default';
 
 @Component({
   selector: 'service',
@@ -16,9 +16,9 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'app/resume/themes/default/d
         <a *ngIf="role.url" href="{{ role.url }}">{{ role.position }}</a>
         <template [ngIf]="!role.url">{{ role.position }}</template>
       </h3>
-      <!--<duration [start]="role.start" [end]="role.end"></duration>-->
+      <duration [start]="role.start" [end]="role.end"></duration>
       <p>{{ role.summary }}</p>
-      <!--<highlights [highlights]="role.highlights"></highlights>-->
+      <highlights [highlights]="role.highlights"></highlights>
     </div>
   </section>
   </template>

@@ -1,6 +1,6 @@
 import { Component, View, Inject } from 'angular2/core';
 import { VitaeService } from 'app/vitae/services/vitae';
-import { ResumeComponent } from 'app/resume/components/resume';
+import { MODERN_COMPONENT } from 'app/resume/modern/default';
 
 @Component({
   selector: 'vitae',
@@ -8,7 +8,7 @@ import { ResumeComponent } from 'app/resume/components/resume';
 })
 @View({
   templateUrl: 'app/vitae/components/vitae.html',
-  directives: [ ResumeComponent ]
+  directives: [ MODERN_COMPONENT ]
 })
 export class VitaeComponent {
 
