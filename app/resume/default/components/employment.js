@@ -14,7 +14,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
     <div *ngFor="#job of employment.history">
       <div>
         <h3><em>{{ job.position }}</em>,
-          <a *ngIf="job.url" href="{{ job.url }}">{{ job.employer }}</a>
+          <template [ngIf]="job.url"><a href="{{ job.url }}">{{ job.employer }}</a></template>
           <template [ngIf]="!job.url">{{ job.employer }}</template>
         </h3>
         <duration [start]="job.start" [end]="job.end"></duration>
