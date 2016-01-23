@@ -7,7 +7,7 @@ import { Component, View } from 'angular2/core';
 @View({
   template: `
   <ul *ngIf="curriculum">
-    <li *ngFor="#subject of curriculum">{{ subject }}</li>
+    <li *ngFor="#subject of curriculum" class="keywords">{{ subject }}</li>
   </ul>
   `
 })
