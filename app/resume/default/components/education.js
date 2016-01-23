@@ -26,7 +26,7 @@ import 'font-awesome/css/font-awesome.min.css!css';
   pipes: [ TEMPLATE_PIPES ]
 })
 export class EducationComponent {
-  empty() {
-    return Object.keys(this.education).length == 0;
+  empty () {
+    return Object.keys(this.education).length === 0;
   }
 }

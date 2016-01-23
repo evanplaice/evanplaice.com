@@ -1,6 +1,3 @@
-// modern component
-import { ModernComponent } from './components/modern';
-
 // modern directives
 import { AboutComponent } from '../default/components/about';
 import { EmploymentComponent } from '../default/components/employment';
@@ -38,7 +35,7 @@ export const MODERN_DIRECTIVES = [
   // LanguagesComponent,
   SamplesComponent,
   ReferencesComponent,
-  TestimonialsComponent,
+  TestimonialsComponent
   // InterestsComponent,
   // ExtracurricularComponent,
   // AffiliationComponent

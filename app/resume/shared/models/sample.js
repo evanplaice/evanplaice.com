@@ -1,16 +1,16 @@
 export class SampleModel {
-  title = "";
-  summary = "";
-  url = "";
-  date = "";
+  title = '';
+  summary = '';
+  url = '';
+  date = '';
 
-  constructor(obj) {
+  constructor (obj) {
     if (obj) {
       this.init(obj);
     }
   }
 
-  init(obj) {
+  init (obj) {
     if (obj.title) {
       this.title = obj.title;
     }

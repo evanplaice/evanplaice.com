@@ -43,7 +43,7 @@ export class FreshModel {
     }
   }
 
-  init(obj) {
+  init (obj) {
     if (obj.name) {
       this.name = obj.name;
     }
@@ -110,7 +110,7 @@ export class FreshModel {
     if (obj.writing) {
       obj.writing.forEach((piece) => {
         this.writing.push(new WritingModel(piece));
-      })
+      });
     }
 
     if (obj.reading) {
@@ -121,7 +121,7 @@ export class FreshModel {
     if (obj.speaking) {
       obj.speaking.forEach((talk) => {
         this.speaking.push(new SpeakingModel(talk));
-      })
+      });
     }
 
     if (obj.governance) {
@@ -137,7 +137,7 @@ export class FreshModel {
     if (obj.samples) {
       obj.samples.forEach((sample) => {
         this.samples.push(new SampleModel(sample));
-      })
+      });
     }
 
     if (obj.references) {

@@ -1,25 +1,25 @@
 export class ProjectModel {
-  title = "";
-  category = "";
-  description = "";
-  summary = "";
-  role =  "";
-  url = "";
+  title = '';
+  category = '';
+  description = '';
+  summary = '';
+  role = '';
+  url = '';
   media = [];
-  repo = "";
-  start = "";
-  end = "";
+  repo = '';
+  start = '';
+  end = '';
   highlights = [];
-  location = "";
+  location = '';
   keywords = [];
 
-  constructor(obj) {
+  constructor (obj) {
     if (obj) {
       this.init(obj);
     }
   }
 
-  init(obj) {
+  init (obj) {
     if (obj.title) {
       this.title = obj.title;
     }

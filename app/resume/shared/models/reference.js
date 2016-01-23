@@ -1,18 +1,18 @@
 export class ReferenceModel {
-  name = "";
-  role = "";
-  category = "";
+  name = '';
+  role = '';
+  category = '';
   private = false;
-  summary = "";
+  summary = '';
   contact = [];
 
-  constructor(obj) {
+  constructor (obj) {
     if (obj) {
       this.init(obj);
     }
   }
 
-  init(obj) {
+  init (obj) {
     if (obj.name) {
       this.name = obj.name;
     }

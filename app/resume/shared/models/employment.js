@@ -1,14 +1,14 @@
 export class EmploymentModel {
-  summary = "";
+  summary = '';
   history = [];
 
-  constructor(obj) {
+  constructor (obj) {
     if (obj) {
       this.init(obj);
     }
   }
 
-  init(obj) {
+  init (obj) {
     if (obj.summary) {
       this.summary = obj.summary;
     }
@@ -20,7 +20,7 @@ export class EmploymentModel {
     }
   }
 
-  addJob(job) {
+  addJob (job) {
     let tmp = {};
 
     if (job.employer) {

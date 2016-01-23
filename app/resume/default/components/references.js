@@ -26,7 +26,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
   pipes: [ TEMPLATE_PIPES ]
 })
 export class ReferencesComponent {
-  empty() {
-    return this.references.length == 0;
+  empty () {
+    return this.references.length === 0;
   }
 }

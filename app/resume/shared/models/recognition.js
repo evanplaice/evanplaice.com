@@ -1,18 +1,18 @@
 export class RecognitionModel {
-  flavor = "";
-  title = "";
-  date = "";
-  from = "";
-  summary = "";
-  url = "";
+  flavor = '';
+  title = '';
+  date = '';
+  from = '';
+  summary = '';
+  url = '';
 
-  constructor(obj) {
+  constructor (obj) {
     if (obj) {
       this.init(obj);
     }
   }
 
-  init(obj) {
+  init (obj) {
     if (obj.flavor) {
       this.flavor = obj.flavor;
     }

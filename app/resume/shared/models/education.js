@@ -1,16 +1,16 @@
 export class EducationModel {
-  summary = "";
-  level = "";
-  degree = "";
+  summary = '';
+  level = '';
+  degree = '';
   history = [];
 
-  constructor(obj) {
+  constructor (obj) {
     if (obj) {
       this.init(obj);
     }
   }
 
-  init(obj) {
+  init (obj) {
     if (obj.summary) {
       this.summary = obj.summary;
     }
@@ -30,7 +30,7 @@ export class EducationModel {
     }
   }
 
-  addSchool(school) {
+  addSchool (school) {
     let tmp = {};
 
     if (school.title) {

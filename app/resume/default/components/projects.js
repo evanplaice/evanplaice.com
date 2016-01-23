@@ -27,7 +27,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
   pipes: [ TEMPLATE_PIPES ]
 })
 export class ProjectsComponent {
-  empty() {
-    return Object.keys(this.projects).length == 0;
+  empty () {
+    return Object.keys(this.projects).length === 0;
   }
 }

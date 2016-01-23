@@ -34,7 +34,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
   pipes: [ TEMPLATE_PIPES ]
 })
 export class SkillsComponent {
-  empty() {
-    return Object.keys(this.skills).length == 0;
+  empty () {
+    return Object.keys(this.skills).length === 0;
   }
 }

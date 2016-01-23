@@ -1,18 +1,18 @@
 export class WritingModel {
-  title = "";
-  flavor = "";
+  title = '';
+  flavor = '';
   publisher = {};
-  date = "";
-  url = "";
-  writing = "";
+  date = '';
+  url = '';
+  writing = '';
 
-  constructor(obj) {
+  constructor (obj) {
     if (obj) {
       this.init(obj);
     }
   }
 
-  init(obj) {
+  init (obj) {
     if (obj.title) {
       this.title = obj.title;
     }

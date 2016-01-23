@@ -30,7 +30,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
   pipes: [ TEMPLATE_PIPES ]
 })
 export class EmploymentComponent {
-  empty() {
-    return Object.keys(this.employment).length == 0;
+  empty () {
+    return Object.keys(this.employment).length === 0;
   }
 }

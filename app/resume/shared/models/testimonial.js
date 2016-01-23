@@ -1,16 +1,16 @@
 export class TestimonialModel {
-  name = "";
-  quote = "";
-  flavor = "";
+  name = '';
+  quote = '';
+  flavor = '';
   private = false;
 
-  constructor(obj) {
+  constructor (obj) {
     if (obj) {
       this.init(obj);
     }
   }
 
-  init(obj) {
+  init (obj) {
     if (obj.name) {
       this.name = obj.name;
     }

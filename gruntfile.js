@@ -44,7 +44,7 @@ module.exports = function (grunt) {
           { dest: 'dist/app.css', cwd: './', action: 'delete' },
           { dest: 'dist/app.min.js', cwd: './', action: 'delete' },
           { dest: 'dist/app.min.map', cwd: './', action: 'delete' },
-          { expand: true, cwd: 'dist/', src: ['**'], dest: '/dist', params: { ContentEncoding: 'gzip' }},
+          { expand: true, cwd: 'dist/', src: ['**'], dest: '/dist', params: { ContentEncoding: 'gzip' } },
           { src: 'index.html', dest: '/' },
           { src: 'config.js', dest: '/' },
           { src: 'sitemap.xml', dest: '/' },

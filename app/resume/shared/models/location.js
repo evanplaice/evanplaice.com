@@ -5,13 +5,13 @@ export class LocationModel {
   code = '';
   country = '';
 
-  constructor(obj) {
+  constructor (obj) {
     if (obj) {
       this.init(obj);
     }
   }
 
-  init(obj) {
+  init (obj) {
     if (obj.address) {
       this.address = obj.address;
     }

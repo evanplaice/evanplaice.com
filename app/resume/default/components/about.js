@@ -19,7 +19,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
   pipes: [ TEMPLATE_PIPES ]
 })
 export class AboutComponent {
-  empty() {
+  empty () {
     return this.about === undefined;
   }
 }

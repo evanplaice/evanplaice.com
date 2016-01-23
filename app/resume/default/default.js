@@ -35,7 +35,7 @@ export const DEFAULT_DIRECTIVES = [
   // LanguagesComponent,
   SamplesComponent,
   ReferencesComponent,
-  TestimonialsComponent,
+  TestimonialsComponent
   // InterestsComponent,
   // ExtracurricularComponent,
   // AffiliationComponent
