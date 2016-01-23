@@ -12,13 +12,10 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
   <section id="writing">
     <header title="Writing"><span class="fa fa-lg fa-pencil"></span></header>
     <div *ngFor="#piece of writing">
-      <h3 *ngIf="piece.title">
-        <em><a *ngIf="piece.url" href="{{ piece.url }}">{{ piece.title }}, </a></em>
-        <template [ngIf]="!piece.url"><em>{{ piece.title }}, </em></template>
-        <span *ngIf="piece.publisher.name">
-          <a *ngIf="piece.publisher.url" href="{{ piece.publisher.url }}">{{ piece.publisher.name }}</a>
-          <template [ngIf]="!piece.publisher.url">{{ piece.publisher.name }}</template>
-        </span>
+      <h3>
+        <em>{{ piece.title }}</em>
+        <template [ngIf]="!piece.publisher.url">, {{ piece.publisher.name }}</template>
+        <template [ngIf]="piece.publisher.url">, <a href="{{ piece.publisher.url }}">{{ piece.publisher.name }}</a></template>
       </h3>
       <duration [start]="piece.date"></duration>
     </div>

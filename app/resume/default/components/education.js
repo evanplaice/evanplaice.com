@@ -15,7 +15,7 @@ import 'font-awesome/css/font-awesome.min.css!css';
     <header title="Education"><span class="fa fa-lg fa-mortar-board"></span></header>
     <div *ngFor="#school of education.history">
       <h3>
-        <template [ngIf]="school.title">{{ school.title }}, </template>{{ school.institution }}
+        <template [ngIf]="school.title"><em>{{ school.title }}</em>, </template>{{ school.institution }}
       </h3>
       <duration [start]="school.start" [end]="school.end"></duration>
       <p>{{ school.summary }}<p>

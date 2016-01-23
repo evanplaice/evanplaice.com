@@ -14,15 +14,13 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
     <div *ngFor="#award of recognition">
       <h3>
         <template [ngIf]="!award.from">
-          {{ award.title }}
+          <em>{{ award.title }}</em>
         </template>
         <template [ngIf]="award.from">
-          <span>{{ award.title }},
+          <em>{{ award.title }}, </em>
           <template [ngIf]="!award.url">{{ award.from }}</template>
           <template [ngIf]="award.url"> <a href="{{ award.url }}">{{ award.from }}</a></template>
-          </span>
         </template>
-
       </h3>
       <duration [start]="award.date"></duration>
       <p>{{ award.summary }}</p>

@@ -10,8 +10,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
   <template [ngIf]="!empty()">
   <hr>
   <section id="skills">
-    <header title="Skills"></header>
-    <span class="fa fa-lg fa-code"></span>
+    <header title="Skills"><span class="fa fa-lg fa-code"></span></header>
     <ul *ngFor="#set of skills.sets" class="list-unstyled">
       <li class="card card-nested card-skills">
         <div class="skill-level" rel="tooltip" title="{{ set.level }}" data-placement="left">
