@@ -1,11 +1,11 @@
-// Shared template partials
+// shared directives
 import { HeaderComponent } from './components/header';
 import { DurationComponent } from './components/duration';
 import { HighlightsComponent } from './components/highlights';
 import { CurriculumComponent } from './components/curriculum.js';
 import { KeywordsComponent } from './components/keywords';
 
-// Shared template models
+// shared models
 import { LocationModel } from './models/location';
 import { EmploymentModel } from './models/employment';
 import { ProjectModel } from './models/project';
@@ -17,7 +17,7 @@ import { SampleModel } from './models/sample';
 import { ReferenceModel } from './models/reference';
 import { TestimonialModel } from './models/testimonial';
 
-// Shared template pipes
+// shared pipes
 import { DerpPipe } from './pipes/derp';
 
 export const TEMPLATE_DIRECTIVES = [

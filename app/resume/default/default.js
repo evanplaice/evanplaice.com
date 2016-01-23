@@ -1,4 +1,4 @@
-// Default template partials
+// default directives
 import { AboutComponent } from './components/about';
 import { EmploymentComponent } from './components/employment';
 import { ProjectsComponent } from './components/projects';

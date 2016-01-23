@@ -1,4 +1,7 @@
-// Template partials
+// modern component
+import { ModernComponent } from './components/modern';
+
+// modern directives
 import { AboutComponent } from '../default/components/about';
 import { EmploymentComponent } from '../default/components/employment';
 import { ProjectsComponent } from '../default/components/projects';
