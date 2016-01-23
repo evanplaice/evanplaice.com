@@ -1,8 +1,9 @@
 // shared directives
-import { HeaderComponent } from './components/header';
+import { ContactsComponent } from './components/contacts';
+import { CurriculumComponent } from './components/curriculum';
 import { DurationComponent } from './components/duration';
+import { HeaderComponent } from './components/header';
 import { HighlightsComponent } from './components/highlights';
-import { CurriculumComponent } from './components/curriculum.js';
 import { KeywordsComponent } from './components/keywords';
 
 // shared models
@@ -34,10 +35,11 @@ import { AffiliationModel } from './models/affiliation';
 import { DerpPipe } from './pipes/derp';
 
 export const TEMPLATE_DIRECTIVES = [
-  HeaderComponent,
-  DurationComponent,
-  HighlightsComponent,
+  ContactsComponent,
   CurriculumComponent,
+  DurationComponent,
+  HeaderComponent,
+  HighlightsComponent,
   KeywordsComponent
 ];
 
