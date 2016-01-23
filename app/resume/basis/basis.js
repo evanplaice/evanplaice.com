@@ -1,6 +1,6 @@
 // basis directives
-import { InfoComponent } from '../default/components/info';
 import { AboutComponent } from '../default/components/about';
+import { InfoComponent } from '../default/components/info';
 import { EmploymentComponent } from '../default/components/employment';
 import { ProjectsComponent } from '../default/components/projects';
 import { SkillsComponent } from '../default/components/skills';
@@ -21,8 +21,8 @@ import { ExtracurricularComponent } from '../default/components/extracurricular'
 import { AffiliationsComponent } from '../default/components/affiliations';
 
 export const BASIS_DIRECTIVES = [
-  InfoComponent,
   AboutComponent,
+  InfoComponent,
   EmploymentComponent,
   ProjectsComponent,
   SkillsComponent,

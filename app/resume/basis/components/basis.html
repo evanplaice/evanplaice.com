@@ -1,17 +1,8 @@
 <body>
 <main>
 
-<header>
-  <h1>{{ resume.name }}</h1>
-  <div id="contact">
-    <div *ngIf="resume.contact.email" class="email"><a href="mailto:{{ resume.contact.email }}">{{ resume.contact.email }}</a></div>
-    <div *ngIf="resume.contact.phone" class="phone">{{ resume.contact.phone }}</div>
-    <div *ngIf="resume.contact.website" class="website"><a href="{{ resume.contact.website }}">{{ resume.contact.website }}</a></div>
-  </div>
-</header>
-
+<about [name]="resume.name" [contact]="resume.contact"></about>
 <info [info]="resume.info"></info>
-<about [about]="resume.info.brief"></about>
 <employment [employment]="resume.employment"></employment>
 <projects [projects]="resume.projects"></projects>
 <skills [skills]="resume.skills"></skills>
