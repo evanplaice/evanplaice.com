@@ -13,9 +13,10 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
     <header title="Projects"><span class="fa fa-lg fa-star"></span></header>
     <div *ngFor="#project of projects">
       <h3 *ngIf="project.role"><em>{{ project.role }}</em>,
-        <a *ngIf="project.url" href="{{ project.url }}">{{ project.title }}</a>
+        <template [ngIf]="project.url"><a href="{{ project.url }}">{{ project.title }}</a></template>
         <template [ngIf]="!project.url">{{ project.title }}</template>
       </h3>
+      <duration [start]="project.start" [end]="project.end"></duration>
       <p>{{ project.summary }}<p>
       <highlights [highlights]="project.highlights"></highlights>
       <keywords [keywords]="project.keywords"></keywords>
