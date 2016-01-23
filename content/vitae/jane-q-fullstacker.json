@@ -1,0 +1,288 @@
+{
+  "name": "Jane Q. Fullstacker",
+  "info": {
+    "label": "Senior Developer",
+    "image": "jane_doe.png",
+    "brief": "**Full-stack software developer with 6+ years industry experience** specializing in scalable cloud architectures for this, that, and the other. A native of southern CA, Jane enjoys hiking, mystery novels, and the company of Rufus, her two-year-old beagle."
+  },
+  "contact": {
+    "email": "jdoe@onecoolstartup.io",
+    "phone": "1-650-999-7777",
+    "website": "http://janef.me/blog"
+  },
+  "location": {
+    "address": "Jane Fullstacker\n123 Somewhere Rd.\nMountain View, CA 94035",
+    "code": "94035",
+    "city": "Mountain View",
+    "country": "US",
+    "region": "CA"
+  },
+  "social": [
+    {
+      "network": "GitHub",
+      "user": "janef-was-here",
+      "url": "https://github.com/janef-was-here"
+    },
+    {
+      "network": "Twitter",
+      "user": "janef-was-here",
+      "url": "https://twitter.com/janef-was-here"
+    }
+  ],
+  "employment": {
+    "history": [
+      {
+        "employer": "One Cool Startup",
+        "position": "Head Code Ninja",
+        "url": "https://onecool.io/does-not-exist",
+        "start": "2013-09",
+        "summary": "Development team manager for OneCoolApp and OneCoolWebsite, a free social network tiddlywink generator and lifestyle portal with over 200,000 users.",
+        "highlights": [
+          "Managed a 5-person development team",
+          "Accomplishment 2",
+          "Etc."
+        ]
+      },
+      {
+        "employer": "Veridian Dynamics",
+        "position": "Principal Developer",
+        "url": "https://en.wikipedia.org/wiki/Better_Off_Ted#Plot",
+        "start": "2011-07",
+        "end": "2013-08",
+        "summary": "Developer on numerous projects culminating in technical lead role for the [Jabberwocky project](http://betteroffted.wikia.com/wiki/Jabberwocky) and promotion to principal developer.",
+        "highlights": [
+          "Managed a 5-person development team",
+          "Accomplishment 2",
+          "Etc."
+        ]
+      },
+      {
+        "employer": "Stark Industries",
+        "position": "IT Administrator",
+        "start": "2008-10",
+        "end": "2011-06",
+        "summary": "Junior programmer with heavy code responsibilities. Promoted to intermediate role after 6 months.",
+        "highlights": [
+          "Promoted to intermediate developer after 6 months",
+          "Accomplishment 2",
+          "Etc."
+        ]
+      },
+      {
+        "employer": "Dunder Mifflin",
+        "position": "Intern",
+        "url": "url",
+        "start": "2008-06",
+        "end": "2008-09",
+        "summary": "Performed IT administration and deployments for Dunder Mifflin.",
+        "highlights": [
+          "Supervised roll-out of Dunder Mifflin Infinity website.",
+          "Performed mission-critical system backups and ",
+          "Etc."
+        ]
+      }
+    ]
+  },
+  "education": {
+    "summary": "summary",
+    "level": "level",
+    "degree": "degree",
+    "history": [
+      {
+        "institution": "Cornell University",
+        "start": "2005-09",
+        "end": "2008-05",
+        "grade": "3.5",
+        "curriculum": [
+          "Course 1",
+          "Course 2",
+          "Course 2"
+        ]
+      },
+      {
+        "institution": "Medfield College",
+        "start": "2003-09",
+        "end": "2005-06",
+        "grade": "3.2",
+        "curriculum": [
+          "Course 1",
+          "Course 2",
+          "Course 2"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "sets": [
+      {
+        "name": "Web Dev",
+        "skills": [
+          "JavaScript",
+          "HTML 5",
+          "CSS",
+          "LAMP",
+          "MVC",
+          "REST"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "skills": [
+          "Node.js",
+          "Angular.js",
+          "jQuery",
+          "Bootstrap",
+          "React.js",
+          "Backbone.js"
+        ]
+      },
+      {
+        "name": "Database",
+        "skills": [
+          "MySQL",
+          "PostgreSQL",
+          "NoSQL",
+          "ORM",
+          "Hibernate"
+        ]
+      },
+      {
+        "name": "Cloud",
+        "skills": [
+          "AWS",
+          "EC2",
+          "RDS",
+          "S3",
+          "Azure",
+          "Dropbox"
+        ]
+      },
+      {
+        "name": "Project",
+        "skills": [
+          "Agile",
+          "TFS",
+          "Unified Process",
+          "MS Project"
+        ]
+      }
+    ]
+  },
+  "service": {
+    "history": [
+      {
+        "organization": "Technology for Tots",
+        "position": "Technical Consultant",
+        "url": "http://technology-for-tots.org",
+        "start": "2003-11",
+        "end": "2005-06",
+        "summary": "Summary of this volunteer stint.",
+        "highlights": [
+          "Accomplishment 1",
+          "Accomplishment 2",
+          "etc"
+        ]
+      },
+      {
+        "organization": "US Army Reserves",
+        "position": "NCO",
+        "url": "http://www.usar.army.mil/",
+        "start": "1999-11",
+        "end": "2003-06",
+        "summary": "Summary of this military stint.",
+        "highlights": [
+          "Accomplishment 1",
+          "Accomplishment 2",
+          "etc"
+        ]
+      }
+    ]
+  },
+  "recognition": [
+    {
+      "title": "Honorable Mention",
+      "date": "2012",
+      "from": "Google"
+    },
+    {
+      "flavor": "flavor",
+      "title": "Summa cum laude",
+      "date": "2012",
+      "from": "Cornell University",
+      "summary": "summary",
+      "url": "url"
+    }
+  ],
+  "writing": [
+    {
+      "title": "Building User Interfaces with Electron and Atom",
+      "publisher": {
+        "name": "Code Project",
+        "url": "http://codeproject.com/build-ui-electron-atom.aspx"
+      },
+      "date": "2011"
+    },
+    {
+      "title": "Jane Fullstacker's Blog",
+      "publisher": {
+        "name": "self",
+        "url": "http://janef.me"
+      },
+      "date": "2011"
+    },
+    {
+      "title": "Teach Yourself GORFF in 21 Days",
+      "publisher": {
+        "name": "Amazon",
+        "url": "http://url.to.publication.com/blah"
+      },
+      "date": "2008",
+      "summary": "A primer on the programming language of GORFF, whose for loops are coterminous with all of time and space."
+    }
+  ],
+  "interests": [
+    {
+      "name": "reading",
+      "summary": "Jane is a fan of mystery novels and courtroom dramas including Agatha Christie and John Grisham.",
+      "keywords": [
+        "mystery",
+        "Agatha Christie",
+        "John Grisham"
+      ]
+    },
+    {
+      "name": "hiking",
+      "summary": "Jane enjoys hiking, light mountain climbing, and has four summits under her belt!"
+    },
+    {
+      "name": "yoga",
+      "summary": "summary"
+    }
+  ],
+
+  "references": [
+    {
+      "name": "John Davidson",
+      "summary": "Jane is awesome! I'd hire her again in a heartbeat."
+    },
+    {
+      "name": "Elias Fullstacker",
+      "summary": "I worked with Jane on Jabberwocky and can vouch for her awesome technical capabilities and attention to detail. Insta-hire."
+    },
+    {
+      "name": "Dana Nevins",
+      "summary": "I've known Jane personally and professionally for almost ten years. She is one in a million."
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "Spanish",
+      "level": "Moderate",
+      "years": "10"
+    }
+  ]
+}
