@@ -1,5 +1,6 @@
 // modern directives
 import { AboutComponent } from '../default/components/about';
+import { InfoComponent } from '../default/components/info';
 import { EmploymentComponent } from '../default/components/employment';
 import { ProjectsComponent } from '../default/components/projects';
 import { SkillsComponent } from './components/skills';
@@ -21,6 +22,7 @@ import { AffiliationsComponent } from '../default/components/affiliations';
 
 export const MODERN_DIRECTIVES = [
   AboutComponent,
+  InfoComponent,
   EmploymentComponent,
   ProjectsComponent,
   SkillsComponent,

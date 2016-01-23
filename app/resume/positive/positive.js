@@ -1,5 +1,6 @@
 // positive directives
 import { AboutComponent } from './components/about';
+import { InfoComponent } from '../default/components/info';
 import { EmploymentComponent } from '../default/components/employment';
 import { ProjectsComponent } from '../default/components/projects';
 import { SkillsComponent } from '../default/components/skills';
@@ -21,6 +22,7 @@ import { AffiliationsComponent } from '../default/components/affiliations';
 
 export const POSITIVE_DIRECTIVES = [
   AboutComponent,
+  InfoComponent,
   EmploymentComponent,
   ProjectsComponent,
   SkillsComponent,

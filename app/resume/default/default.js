@@ -1,6 +1,6 @@
 // default directives
-import { InfoComponent } from './components/info';
 import { AboutComponent } from './components/about';
+import { InfoComponent } from './components/info';
 import { EmploymentComponent } from './components/employment';
 import { ProjectsComponent } from './components/projects';
 import { SkillsComponent } from './components/skills';
@@ -21,8 +21,8 @@ import { ExtracurricularComponent } from './components/extracurricular';
 import { AffiliationsComponent } from './components/affiliations';
 
 export const DEFAULT_DIRECTIVES = [
-  InfoComponent,
   AboutComponent,
+  InfoComponent,
   EmploymentComponent,
   ProjectsComponent,
   SkillsComponent,
