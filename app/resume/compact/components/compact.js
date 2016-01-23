@@ -1,5 +1,4 @@
 import { Component, View, ViewEncapsulation } from 'angular2/core';
-import { TEMPLATE_PIPES } from '../../shared/shared';
 import { COMPACT_DIRECTIVES } from '../compact';
 
 import 'font-awesome/css/font-awesome.min.css!css';

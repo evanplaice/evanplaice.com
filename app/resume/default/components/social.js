@@ -1,5 +1,5 @@
 import { Component, View } from 'angular2/core';
-import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
+import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 
 @Component({
   selector: 'social',
@@ -7,8 +7,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
 })
 @View({
   template: ``, // TODO: implement this
-  directives: [ TEMPLATE_DIRECTIVES ],
-  pipes: [ TEMPLATE_PIPES ]
+  directives: [ TEMPLATE_DIRECTIVES ]
 })
 export class SocialComponent {
   empty () {

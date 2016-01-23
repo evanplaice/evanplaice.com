@@ -1,5 +1,5 @@
 import { Component, View } from 'angular2/core';
-import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
+import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 
 @Component({
   selector: 'speaking',
@@ -22,8 +22,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
   </section>
   </template>
   `,
-  directives: [ TEMPLATE_DIRECTIVES ],
-  pipes: [ TEMPLATE_PIPES ]
+  directives: [ TEMPLATE_DIRECTIVES ]
 })
 export class SpeakingComponent {
   empty () {

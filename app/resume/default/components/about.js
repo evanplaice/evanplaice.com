@@ -1,5 +1,4 @@
 import { Component, View } from 'angular2/core';
-import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 
 @Component({
   selector: 'about',

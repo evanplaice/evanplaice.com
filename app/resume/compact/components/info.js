@@ -1,5 +1,5 @@
 import { Component, View } from 'angular2/core';
-import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
+import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 
 @Component({
   selector: 'info',
