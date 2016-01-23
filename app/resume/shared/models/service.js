@@ -20,7 +20,7 @@ export class ServiceModel {
     }
   }
 
-  addRole(role) {
+  addRole (role) {
     let tmp = {};
 
     if (role.flavor) {

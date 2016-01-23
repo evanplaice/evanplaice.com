@@ -20,7 +20,7 @@ export class AffiliationModel {
     }
   }
 
-  addAssociation(assoc) {
+  addAssociation (assoc) {
     let tmp = {};
 
     if (assoc.category) {

@@ -10,7 +10,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
   <template [ngIf]="!empty()">
   <hr>
   <section id="info">
-    <header title="Info"></header>
+    <header title="Info"><span class="fa fa-lg fa-info"></span></header>
     {{ info.brief }}
   </section>
   </template>

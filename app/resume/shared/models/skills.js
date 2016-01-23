@@ -22,7 +22,7 @@ export class SkillsModel {
     }
   }
 
-  addSet(set) {
+  addSet (set) {
     let tmp = {};
 
     if (set.name) {
@@ -43,7 +43,7 @@ export class SkillsModel {
     this.sets.push(tmp);
   }
 
-  addSkill(skill) {
+  addSkill (skill) {
     let tmp = {};
 
     if (skill.name) {
