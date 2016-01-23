@@ -1,25 +1,20 @@
 import { Component, View } from 'angular2/core';
-import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
+import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 
 @Component({
   selector: 'about',
-  inputs: [ 'about' ]
+  inputs: [ 'name', 'contact' ]
 })
 @View({
   template: `
-  <template [ngIf]="!empty()">
-  <hr>
-  <section id="about">
-    <header title="About"><span class="fa fa-lg fa-user"></span></header>
-    <p>{{ about }}</p>
-  </section>
-  </template>
-  `,
-  directives: [ TEMPLATE_DIRECTIVES ],
-  pipes: [ TEMPLATE_PIPES ]
+  <header>
+    <h1 *ngIf="name">{{ name }}</h1>
+    <div id="contact">
+      <div *ngIf="contact.email" class="email"><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></div>
+      <div *ngIf="contact.phone" class="phone">{{ contact.phone }}</div>
+      <div *ngIf="contact.website" class="website"><a href="{{ contact.website }}">{{ contact.website }}</a></div>
+    </div>
+  </header>
+  `
 })
-export class AboutComponent {
-  empty () {
-    return this.about === undefined;
-  }
-}
+export class AboutComponent {}
