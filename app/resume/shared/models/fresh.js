@@ -1,6 +1,10 @@
+import { InfoModel } from './info';
+import { DispositionModel } from './disposition';
+import { ContactModel } from './contact';
 import { LocationModel } from './location';
 import { EmploymentModel } from './employment';
 import { ProjectModel } from './project';
+import { SkillsModel } from './skills';
 import { EducationModel } from './education';
 import { RecognitionModel } from './recognition';
 import { WritingModel } from './writing';
@@ -39,7 +43,7 @@ export class FreshModel {
     // initialize with data
     if (obj) {
       this.init(obj);
-      // console.log(this);
+      console.log(this);
     }
   }
 
@@ -54,18 +58,15 @@ export class FreshModel {
     }
 
     if (obj.info) {
-      // TODO: implement a model for this
-      this.info = obj.info;
+      this.info = new InfoModel(obj.info);
     }
 
     if (obj.disposition) {
-      // TODO: implement a model for this
-      this.disposition = obj.disposition;
+      this.disposition = new DispositionModel(obj.disposition);
     }
 
     if (obj.contact) {
-      // TODO: implement a model for this
-      this.contact = obj.contact;
+      this.contact = new ContactModel(obj.contact);
     }
 
     if (obj.location) {
@@ -83,8 +84,7 @@ export class FreshModel {
     }
 
     if (obj.skills) {
-      // TODO: implement a model for this
-      this.skills = obj.skills;
+      this.skills = new SkillsModel(obj.skills);
     }
 
     if (obj.service) {
