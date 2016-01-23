@@ -7,17 +7,17 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
 })
 @View({
   template: `
-  <template [ngIf]="!empty()">
+  <template [ngIf]="!empty() && !references.private">
   <hr>
   <section id="references">
     <header title="References"><span class="fa fa-lg fa-thumbs-o-up"></span></header>
     <div *ngFor="#reference of references">
-      <h3>{{ reference.name }}</h3>
-      <template [ngIf]="reference.contact">
-        <ul *ngFor="#contact of reference.contact">
-          <li>{{ contact.flavor }} - {{ contact.value }}</li>
-        </ul>
-      </template>
+      <h3>
+        <template [ngIf]="!reference.role"><em>{{ reference.name }}</em></template>
+        <template [ngIf]="reference.role"><em>{{ reference.name }}</em>, {{ reference.role }}</template>
+      </h3>
+      <contacts [contacts]="reference.contact"></contacts>
+      <p>{{ reference.summary }}</p>
     </div>
   </section>
   </template>
