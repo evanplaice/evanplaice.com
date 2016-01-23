@@ -13,8 +13,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
     <header title="Governance"></header>
     <div *ngFor="#position of governance">
       <h3>
-        <template [ngIf]="position.role"><em>{{ position.role }}</em> </template>
-        <template [ngIf]="position.organization">{{ position.organization }}</template>
+        <template [ngIf]="position.role"><em>{{ position.role }}</em><template [ngIf]="position.organization">, {{ position.organization }}</template></template>
       </h3>
     </div>
     <!--<duration [start]="position.start" [end]="position.end"></duration>-->

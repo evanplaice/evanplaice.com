@@ -13,9 +13,8 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
     <header title="Reading"></header>
     <div *ngFor="#piece of reading">
       <h3>
-        <template [ngIf]="!piece.url"><em>{{ piece.title }}</em></template>
-        <template [ngIf]="piece.url"><a href="piece.url"><em>{{ piece.title }}</em></a></template>
-        <template [ngIf]="piece.author">, {{ piece.author }}</template>
+        <template [ngIf]="!piece.url"><em>{{ piece.title }}</em><template [ngIf]="piece.author">, {{ piece.author }}</template></template>
+        <template [ngIf]="piece.url"><a href="piece.url"><em>{{ piece.title }}</em></a><template [ngIf]="piece.author">, {{ piece.author }}</template></template>
       </h3>
     </div>
   </section>

@@ -13,9 +13,8 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
     <header title="Affiliations"><span class="fa fa-lg fa-share-alt"></span></header>
     <div *ngFor="#association of affiliations.history">
       <h3>
-        <em>{{ association.role }}</em>
-        <template [ngIf]="!association.url">{{ association.organization }}</template>
-        <template [ngIf]="association.url"><a href="{{ association.url}}">{{ association.organization }}</a></template>
+        <template [ngIf]="!association.url"><em>{{ association.role }}</em>, {{ association.organization }}</template>
+        <template [ngIf]="association.url"><em>{{ association.role }}</em>, <a href="{{ association.url}}">{{ association.organization }}</a></template>
       </h3>
       <duration [start]="association.start" [end]="association.end"></duration>
       <p>{{ association.summary }}</p>
