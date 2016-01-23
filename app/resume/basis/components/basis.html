@@ -1,0 +1,35 @@
+<body>
+<main>
+
+<header>
+  <h1>{{ resume.name }}</h1>
+  <div id="contact">
+    <div *ngIf="resume.contact.email" class="email"><a href="mailto:{{ resume.contact.email }}">{{ resume.contact.email }}</a></div>
+    <div *ngIf="resume.contact.phone" class="phone">{{ resume.contact.phone }}</div>
+    <div *ngIf="resume.contact.website" class="website"><a href="{{ resume.contact.website }}">{{ resume.contact.website }}</a></div>
+  </div>
+</header>
+
+<info [info]="resume.info"></info>
+<about [about]="resume.info.brief"></about>
+<employment [employment]="resume.employment"></employment>
+<projects [projects]="resume.projects"></projects>
+<skills [skills]="resume.skills"></skills>
+<service [service]="resume.service"></service>
+<education [education]="resume.education"></education>
+<social [social]="resume.social"></social>
+<recognition [recognition]="resume.recognition"></recognition>
+<writing [writing]="resume.writing"></writing>
+<reading [reading]="resume.reading"></reading>
+<speaking [speaking]="resume.speaking"></speaking>
+<governance [governance]="resume.governance"></governance>
+<languages [languages]="resume.languages"></languages>
+<samples [samples]="resume.samples"></samples>
+<references [references]="resume.references"></references>
+<testimonials [testimonials]="resume.testimonials"></testimonials>
+<interests [interests]="resume.interests"></interests>
+<extracurricular [extracurricular]="resume.extracurricular"></extracurricular>
+<affiliations [affiliations]="resume.affiliation"></affiliations>
+
+</main>
+</body>
