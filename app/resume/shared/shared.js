@@ -6,13 +6,13 @@ import { CurriculumComponent } from './components/curriculum.js';
 import { KeywordsComponent } from './components/keywords';
 
 // shared models
-// import { InfoModel } from './models/info';
-// import { DispositionModel } from './models/disposition';
-// import { ContactModel } from './models/contact';
+import { InfoModel } from './models/info';
+import { DispositionModel } from './models/disposition';
+import { ContactModel } from './models/contact';
 import { LocationModel } from './models/location';
 import { EmploymentModel } from './models/employment';
 import { ProjectModel } from './models/project';
-// import { SkillsModel } from './models/skills';
+import { SkillsModel } from './models/skills';
 import { EducationModel } from './models/education';
 // import { SocialModel } from './models/social';
 import { RecognitionModel } from './models/recognition';
@@ -40,13 +40,13 @@ export const TEMPLATE_DIRECTIVES = [
 ];
 
 export const TEMPLATE_MODELS = [
-  // InfoModel,
-  // DispositionModel,
-  // ContactModel,
+  InfoModel,
+  DispositionModel,
+  ContactModel,
   LocationModel,
   EmploymentModel,
   ProjectModel,
-  // SkillsModel,
+  SkillsModel,
   EducationModel,
   // SocialModel,
   RecognitionModel,
