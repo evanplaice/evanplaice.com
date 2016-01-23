@@ -2,7 +2,7 @@ export class TestimonialModel {
   name = '';
   quote = '';
   flavor = '';
-  private = false;
+  private;
 
   constructor (obj) {
     if (obj) {
@@ -23,7 +23,7 @@ export class TestimonialModel {
       this.flavor = obj.flavor;
     }
 
-    if (obj.private === undefined) {
+    if (obj.private !== undefined) {
       this.private = obj.private;
     }
   }

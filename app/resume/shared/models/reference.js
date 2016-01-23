@@ -2,7 +2,7 @@ export class ReferenceModel {
   name = '';
   role = '';
   category = '';
-  private = false;
+  private;
   summary = '';
   contact = [];
 
@@ -25,7 +25,7 @@ export class ReferenceModel {
       this.category = obj.category;
     }
 
-    if (obj.private === undefined) {
+    if (obj.private !== undefined) {
       this.private = obj.private;
     }
 
