@@ -34,6 +34,7 @@ import { AffiliationModel } from './models/affiliation';
 // shared pipes
 import { DerpPipe } from './pipes/derp';
 import { NoLastPipe } from './pipes/no-last';
+import { LastPipe } from './pipes/last';
 
 export const TEMPLATE_DIRECTIVES = [
   ContactsComponent,
@@ -73,4 +74,5 @@ export const TEMPLATE_MODELS = [
 export const TEMPLATE_PIPES = [
   DerpPipe,
   NoLastPipe,
+  LastPipe
 ];
