@@ -12,9 +12,9 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
   <section id="service">
     <header title="Service"><span class="fa fa-lg fa-child"></span></header>
     <div *ngFor="#role of service.history">
-      <h3 *ngIf="role.organization"><em>{{ role.organization }}</em>,
-        <a *ngIf="role.url" href="{{ role.url }}">{{ role.position }}</a>
-        <template [ngIf]="!role.url">{{ role.position }}</template>
+      <h3 *ngIf="role.organization"><em>{{ role.position }}</em>,
+        <template [ngIf]="role.organization && !role.url">{{ role.organization }}</template>
+        <template [ngIf]="role.organization && role.url"><a href="{{ role.url }}">{{ role.organization }}</a></template>
       </h3>
       <duration [start]="role.start" [end]="role.end"></duration>
       <p>{{ role.summary }}</p>
