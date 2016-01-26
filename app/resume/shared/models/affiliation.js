@@ -51,11 +51,23 @@ export class AffiliationModel {
       tmp.summary = assoc.summary;
     }
 
+    if (assoc.location) {
+      tmp.location = assoc.location;
+    }
+
     if (assoc.highlights) {
       tmp.highlights = [];
 
       assoc.highlights.forEach((highlight) => {
         tmp.highlights.push(highlight);
+      });
+    }
+
+    if (assoc.keywords) {
+      tmp.keywords = [];
+
+      assoc.keywords.forEach((keyword) => {
+        tmp.keywords.push(keyword);
       });
     }
 

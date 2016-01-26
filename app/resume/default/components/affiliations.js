@@ -19,6 +19,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
       <duration [start]="association.start" [end]="association.end"></duration>
       <p>{{ association.summary }}</p>
       <highlights [highlights]="association.highlights"></highlights>
+      <keywords [keywords]="association.keywords"></keywords>
     </div>
   </section>
   </template>
