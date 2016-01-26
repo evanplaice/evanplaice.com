@@ -6,8 +6,10 @@ import { Component, View } from 'angular2/core';
 })
 @View({
   template: `
-  <span *ngIf="start && end" class="tenure">{{ start }} - {{ end }}</span>
+  <template [ngIf]="start">
   <span *ngIf="start && !end" class="tenure">{{ start }}</span>
+  <span *ngIf="start && end" class="tenure">{{ start }} - {{ end }}</span>
+  </template>
   `
 })
 export class DurationComponent {}
