@@ -32,7 +32,7 @@
     "other": [
       {
         "label": "",
-        "flavor": "",
+        "category": "",
         "value": ""
       } 
     ]
@@ -54,10 +54,10 @@
         "start": "",
         "end": "",
         "summary": "",
+        "location": "",
         "highlights": [
           ""
         ],
-        "location": "",
         "keywords": [
           ""
         ]
@@ -82,11 +82,10 @@
       "repo": "",
       "start": "",
       "end": "",
-       "highlights": [
-        "",
+      "location": "",
+      "highlights": [
         ""
       ],
-      "location": "",
       "keywords": [
         ""
       ]
@@ -115,17 +114,20 @@
     "summary": "",
     "history": [
       {
-        "flavor": "",
+        "category": "",
         "organization": "",
         "position": "",
         "url": "",
         "start": "",
         "end": "",
         "summary": "",
+        "location": "",
         "highlights": [
           ""
         ],
-        "location": ""
+        "keywords": [
+          ""
+        ]
       }
     ]
   },
@@ -147,7 +149,13 @@
         ],
         "url": "",
         "summary": "",
-        "location": ""
+        "location": "",
+        "highlights": [
+          ""
+        ],
+        "keywords": [
+          ""
+        ]
       }
     ]
   },
@@ -161,7 +169,7 @@
   ],
   "recognition": [
     {
-      "flavor": "",
+      "category": "",
       "title": "",
       "date": "",
       "from": "",
@@ -172,22 +180,24 @@
   "writing": [
     {
       "title": "",
-      "flavor": "",
+      "category": "",
       "publisher": {
         "name": "",
         "url": ""
       },
       "date": "",
       "url": "",
-      "writing": ""
+      "summary": ""
     }
   ],
   "reading": [
     {
       "title": "",
-      "flavor": "",
+      "category": "",
       "url": "",
-      "author": ""
+      "author": "",
+      "date": "",
+      "summary": ""
     }
   ],
   "speaking": [
@@ -196,20 +206,27 @@
       "event": "",
       "location": "",
       "date": "",
+      "summary": "",
       "highlights": [
         ""
+      ],
+      "keywords": [
+      ""
       ]
     }
   ],
   "governance": [
     {
       "summary": "",
-      "flavor": "",
+      "category": "",
       "role": "",
       "organization": "",
       "start": "",
       "end": "",
       "highlights": [
+        ""
+      ],
+      "keywords": [
         ""
       ]
     }
@@ -226,7 +243,13 @@
       "title": "",
       "summary": "",
       "url": "",
-      "date": ""
+      "date": "",
+      "highlights": [
+        ""
+      ],
+      "keywords": [
+        ""
+      ]
     }
   ],
   "references": [
@@ -239,7 +262,7 @@
       "contact": [
         {
           "label": "",
-          "flavor": "",
+          "category": "",
           "value": ""
         }
       ]
@@ -249,7 +272,7 @@
     {
       "name": "",
       "quote": "",
-      "flavor": "",
+      "category": "",
       "private": false
     }
   ],
@@ -282,10 +305,13 @@
         "start": "",
         "end": "",
         "summary": "",
+        "location": "",
         "highlights": [
           ""
         ],
-        "location": ""
+        "keywords": [
+          ""
+        ]
       }
     ]
   }
