@@ -34,12 +34,12 @@
     "other": [
       {
         "label": "label",
-        "flavor": "flavor",
+        "category": "category",
         "value": "value"
       },
       {
         "label": "label",
-        "flavor": "flavor",
+        "category": "category",
         "value": "value"
       }
     ]
@@ -61,11 +61,11 @@
         "start": "start",
         "end": "end",
         "summary": "summary",
+        "location": "location",
         "highlights": [
           "highlights",
           "highlights"
         ],
-        "location": "location",
         "keywords": [
           "keywords",
           "keywords"
@@ -78,11 +78,11 @@
         "start": "start",
         "end": "end",
         "summary": "summary",
+        "location": "location",
         "highlights": [
           "highlights",
           "highlights"
         ],
-        "location": "location",
         "keywords": [
           "keywords",
           "keywords"
@@ -113,11 +113,11 @@
       "repo": "repo",
       "start": "start",
       "end": "end",
+      "location": "location",
        "highlights": [
         "highlights",
         "highlights"
       ],
-      "location": "location",
       "keywords": [
         "keywords",
         "keywords"
@@ -145,11 +145,11 @@
       "repo": "repo",
       "start": "start",
       "end": "end",
+      "location": "location",
        "highlights": [
         "highlights",
         "highlights"
       ],
-      "location": "location",
       "keywords": [
         "keywords",
         "keywords"
@@ -194,32 +194,40 @@
     "summary": "summary",
     "history": [
       {
-        "flavor": "flavor",
+        "category": "category",
         "organization": "organization",
         "position": "position",
         "url": "url",
         "start": "start",
         "end": "end",
         "summary": "summary",
+        "location": "location",
         "highlights": [
           "highlights",
           "highlights"
         ],
-        "location": "location"
+        "keywords": [
+          "keywords",
+          "keywords"
+        ]
       },
       {
-        "flavor": "flavor",
+        "category": "category",
         "organization": "organization",
         "position": "position",
         "url": "url",
         "start": "start",
         "end": "end",
         "summary": "summary",
+        "location": "location",
         "highlights": [
           "highlights",
           "highlights"
         ],
-        "location": "location"
+        "keywords": [
+          "keywords",
+          "keywords"
+        ]
       }
     ]
   },
@@ -242,7 +250,15 @@
         ],
         "url": "url",
         "summary": "summary",
-        "location": "location"
+        "location": "location",
+        "highlights": [
+          "highlights",
+          "highlights"
+        ],
+        "keywords": [
+          "keywords",
+          "keywords"
+        ]
       },
       {
         "title": "title",
@@ -258,7 +274,15 @@
         ],
         "url": "url",
         "summary": "summary",
-        "location": "location"
+        "location": "location",
+        "highlights": [
+          "highlights",
+          "highlights"
+        ],
+        "keywords": [
+          "keywords",
+          "keywords"
+        ]
       }
     ]
   },
@@ -278,7 +302,7 @@
   ],
   "recognition": [
     {
-      "flavor": "flavor",
+      "category": "category",
       "title": "title",
       "date": "date",
       "from": "from",
@@ -286,7 +310,7 @@
       "url": "url"
     },
     {
-      "flavor": "flavor",
+      "category": "category",
       "title": "title",
       "date": "date",
       "from": "from",
@@ -297,7 +321,7 @@
   "writing": [
     {
       "title": "title",
-      "flavor": "flavor",
+      "category": "category",
       "publisher": {
         "name": "name",
         "url": "url"
@@ -308,7 +332,7 @@
     },
     {
       "title": "title",
-      "flavor": "flavor",
+      "category": "category",
       "publisher": {
         "name": "name",
         "url": "url"
@@ -321,15 +345,19 @@
   "reading": [
     {
       "title": "title",
-      "flavor": "flavor",
+      "category": "category",
       "url": "url",
-      "author": "author"
+      "author": "author",
+      "date": "date",
+      "summary": "summary"
     },
     {
       "title": "title",
-      "flavor": "flavor",
+      "category": "category",
       "url": "url",
-      "author": "author"
+      "author": "author",
+      "date": "date",
+      "summary": "summary"
     }
   ],
   "speaking": [
@@ -338,9 +366,14 @@
       "event": "event",
       "location": "location",
       "date": "date",
+      "summary": "summary",
       "highlights": [
         "highlights",
         "highlights"
+      ],
+      "keywords": [
+        "keywords",
+        "keywords"
       ]
     },
     {
@@ -348,16 +381,21 @@
       "event": "event",
       "location": "location",
       "date": "date",
+      "summary": "summary",
       "highlights": [
         "highlights",
         "highlights"
+      ],
+      "keywords": [
+        "keywords",
+        "keywords"
       ]
     }
   ],
   "governance": [
     {
       "summary": "summary",
-      "flavor": "flavor",
+      "category": "category",
       "role": "role",
       "organization": "organization",
       "start": "start",
@@ -365,11 +403,15 @@
       "highlights": [
         "highlights",
         "highlights"
+      ],
+      "keywords": [
+        "keywords",
+        "keywords"
       ]
     },
     {
       "summary": "summary",
-      "flavor": "flavor",
+      "category": "category",
       "role": "role",
       "organization": "organization",
       "start": "start",
@@ -377,6 +419,10 @@
       "highlights": [
         "highlights",
         "highlights"
+      ],
+      "keywords": [
+        "keywords",
+        "keywords"
       ]
     }
   ],
@@ -397,13 +443,29 @@
       "title": "title",
       "summary": "summary",
       "url": "url",
-      "date": "date"
+      "date": "date",
+      "highlights": [
+        "highlights",
+        "highlights"
+      ],
+      "keywords": [
+        "keywords",
+        "keywords"
+      ]
     },
     {
       "title": "title",
       "summary": "summary",
       "url": "url",
-      "date": "date"
+      "date": "date",
+      "highlights": [
+        "highlights",
+        "highlights"
+      ],
+      "keywords": [
+        "keywords",
+        "keywords"
+      ]
     }
   ],
   "references": [
@@ -416,12 +478,12 @@
       "contact": [
         {
           "label": "label",
-          "flavor": "flavor",
+          "category": "category",
           "value": "value"
         },
         {
           "label": "label",
-          "flavor": "flavor",
+          "category": "category",
           "value": "value"
         }
       ]
@@ -431,13 +493,13 @@
     {
       "name": "name",
       "quote": "quote",
-      "flavor": "flavor",
+      "category": "category",
       "private": false
     },
     {
       "name": "name",
       "quote": "quote",
-      "flavor": "flavor",
+      "category": "category",
       "private": false
     }
   ],
@@ -486,11 +548,15 @@
         "start": "start",
         "end": "end",
         "summary": "summary",
+        "location": "location",
         "highlights": [
           "highlights",
           "highlights"
         ],
-        "location": "location"
+        "keywords": [
+          "keywords",
+          "keywords"
+        ]
       },
       {
         "category": "category",
@@ -500,11 +566,15 @@
         "start": "start",
         "end": "end",
         "summary": "summary",
+        "location": "location",
         "highlights": [
           "highlights",
           "highlights"
         ],
-        "location": "location"
+        "keywords": [
+          "keywords",
+          "keywords"
+        ]
       }
     ]
   }
