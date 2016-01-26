@@ -1,10 +1,9 @@
 import { Component, View, Inject } from 'angular2/core';
-import { VitaeService } from 'app/vitae/services/vitae';
-import { MODERN_COMPONENT } from 'app/resume/resume';
+import { MODERN_COMPONENT, FreshService } from 'app/resume/resume';
 
 @Component({
   selector: 'vitae',
-  injectables: [ VitaeService ]
+  injectables: [ FreshService ]
 })
 @View({
   templateUrl: 'app/vitae/components/vitae.html',
@@ -12,10 +11,11 @@ import { MODERN_COMPONENT } from 'app/resume/resume';
 })
 export class VitaeComponent {
 
-  constructor (@Inject(VitaeService) vitaeService) {
+  constructor (@Inject(FreshService) resumeService) {
     // console.log('vitae');
 
     // link to the vitae data
-    vitaeService.vitae$.subscribe(update => this.resume = update);
+    resumeService.loadResume('content/vitae/full.json');
+    resumeService.resume$.subscribe(update => this.resume = update);
   }
 }
