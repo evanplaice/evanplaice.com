@@ -17,6 +17,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
         <template [ngIf]="piece.publisher.url"><em>{{ piece.title }}</em>, <a href="{{ piece.publisher.url }}">{{ piece.publisher.name }}</a></template>
       </h3>
       <duration [start]="piece.date"></duration>
+      <summary>{{ piece.summary }}</summary>
     </div>
   </section>
   </template>

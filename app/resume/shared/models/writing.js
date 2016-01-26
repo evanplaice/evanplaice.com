@@ -1,10 +1,10 @@
 export class WritingModel {
   title = '';
-  flavor = '';
+  category = '';
   publisher = {};
   date = '';
   url = '';
-  writing = '';
+  summary = '';
 
   constructor (obj) {
     if (obj) {
@@ -17,14 +17,15 @@ export class WritingModel {
       this.title = obj.title;
     }
 
-    if (obj.flavor) {
-      this.flavor = obj.flavor;
+    if (obj.category) {
+      this.category = obj.category;
     }
 
     if (obj.publisher) {
       if (obj.publisher.name) {
         this.publisher.name = obj.publisher.name;
       }
+
       if (obj.publisher.url) {
         this.publisher.url = obj.publisher.url;
       }
@@ -38,8 +39,8 @@ export class WritingModel {
       this.url = obj.url;
     }
 
-    if (obj.writing) {
-      this.writing = obj.writing;
+    if (obj.summary) {
+      this.summary = obj.summary;
     }
   }
 }
