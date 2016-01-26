@@ -4,20 +4,23 @@ import { Observable } from 'rxjs/Observable';
 import { FreshModel } from 'app/resume/shared/models/fresh';
 
 @Injectable()
-export class VitaeService {
-  vitae$;
+export class ResumeService {
+  resume$;
+  src;
 
   constructor (@Inject(Http) http) {
     // http bindings for a GET request
     this.http = http;
 
     // pre-load the data
-    this.vitae$ = this.loadVitae();
+    this.resume$ = this.loadResume();
   }
 
-  loadVitae() {
-    return this.vitae$ = this.http.get('content/vitae/resume.json')
-    .map(res => new FreshModel(res.json()))
-    .startWith(new FreshModel())
+  loadResume(path) {
+    if (path || this.src) {
+      return this.resume$ = this.http.get(path || this.src)
+      .map(res => new FreshModel(res.json()))
+      .startWith(new FreshModel());
+    }
   }
 }
