@@ -1,8 +1,10 @@
 export class ReadingModel {
   title = '';
-  flavor = '';
+  category = '';
   url = '';
   author = '';
+  date = '';
+  summary = '';
 
   constructor (obj) {
     if (obj) {
@@ -15,8 +17,8 @@ export class ReadingModel {
       this.title = obj.title;
     }
 
-    if (obj.flavor) {
-      this.flavor = obj.flavor;
+    if (obj.category) {
+      this.category = obj.category;
     }
 
     if (obj.url) {
@@ -25,6 +27,14 @@ export class ReadingModel {
 
     if (obj.author) {
       this.author = obj.author;
+    }
+
+    if (obj.date) {
+      this.date = obj.date;
+    }
+
+    if (obj.summary) {
+      this.summary = obj.summary;
     }
   }
 }
