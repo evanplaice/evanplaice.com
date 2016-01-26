@@ -9,8 +9,8 @@ export class ProjectModel {
   repo = '';
   start = '';
   end = '';
-  highlights = [];
   location = '';
+  highlights = [];
   keywords = [];
 
   constructor (obj) {
@@ -62,14 +62,14 @@ export class ProjectModel {
       this.end = obj.end;
     }
 
+    if (obj.location) {
+      this.location = obj.location;
+    }
+
     if (obj.highlights) {
       obj.highlights.forEach((highlight) => {
         this.highlights.push(highlight);
       });
-    }
-
-    if (obj.location) {
-      this.location = obj.location;
     }
 
     if (obj.keywords) {

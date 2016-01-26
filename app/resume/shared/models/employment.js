@@ -47,19 +47,21 @@ export class EmploymentModel {
       tmp.summary = job.summary;
     }
 
+    if (job.location) {
+      tmp.location = job.location;
+    }
+
     if (job.highlights) {
       tmp.highlights = [];
+
       job.highlights.forEach((highlight) => {
         tmp.highlights.push(highlight);
       });
     }
 
-    if (job.location) {
-      tmp.location = job.location;
-    }
-
     if (job.keywords) {
       tmp.keywords = [];
+
       job.keywords.forEach((keyword) => {
         tmp.keywords.push(keyword);
       });

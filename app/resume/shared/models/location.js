@@ -1,8 +1,8 @@
 export class LocationModel {
   address = '';
+  code = '';
   city = '';
   region = '';
-  code = '';
   country = '';
 
   constructor (obj) {
@@ -16,20 +16,20 @@ export class LocationModel {
       this.address = obj.address;
     }
 
-    if (obj.city) {
-      this.city = obj.city;
-    }
-
-    if (obj.region) {
-      this.region = obj.region;
-    }
-
     if (obj.code) {
       this.code = obj.code;
     }
 
+    if (obj.city) {
+      this.city = obj.city;
+    }
+
     if (obj.country) {
       this.country = obj.country;
+    }
+
+    if (obj.region) {
+      this.region = obj.region;
     }
   }
 }

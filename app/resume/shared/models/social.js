@@ -1,8 +1,8 @@
 export class SocialModel {
-  label = '';
   network = '';
   user = '';
   url = '';
+  label = '';
 
   constructor (obj) {
     if (obj) {
@@ -11,9 +11,6 @@ export class SocialModel {
   }
 
   init (obj) {
-    if (obj.label) {
-      this.label = obj.label;
-    }
 
     if (obj.network) {
       this.network = obj.network;
@@ -25,6 +22,10 @@ export class SocialModel {
 
     if (obj.url) {
       this.url = obj.url;
+    }
+
+    if (obj.label) {
+      this.label = obj.label;
     }
   }
 }

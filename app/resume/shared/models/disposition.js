@@ -31,17 +31,16 @@ export class DispositionModel {
     }
 
     if (obj.relocation) {
-      let tmp = {};
-
       if (obj.relocation.willing) {
-        tmp.willing = obj.relocation.willing;
+        this.relocation.willing = obj.relocation.willing;
       }
 
       if (obj.relocation.destinations) {
-        tmp.destinations = obj.relocation.destinations;
+        this.relocation.destinations = [];
+        obj.relocation.destinations.forEach((destination) => {
+          this.relocation.destinations.push(destination);
+        })
       }
-
-      this.relocation = tmp;
     }
   }
 }

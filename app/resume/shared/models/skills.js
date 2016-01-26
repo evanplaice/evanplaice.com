@@ -35,6 +35,7 @@ export class SkillsModel {
 
     if (set.skills) {
       tmp.skills = [];
+
       set.skills.forEach((skill) => {
         tmp.skills.push(skill);
       });
