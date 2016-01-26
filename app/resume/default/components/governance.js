@@ -18,6 +18,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
     </div>
     <!--<duration [start]="position.start" [end]="position.end"></duration>-->
     <!--<highlights [highlights]="position.highlights"></highlights>-->
+    <!-- <keywords [keywords]="position.keywords"></keywords> -->
   </section>
   </template>
   `,

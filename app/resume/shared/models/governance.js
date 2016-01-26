@@ -1,11 +1,12 @@
 export class GovernanceModel {
   summary = '';
-  flavor = '';
+  category = '';
   role = '';
   organization = '';
   start = '';
   end = '';
   highlights = [];
+  keywords = [];
 
   constructor (obj) {
     if (obj) {
@@ -18,8 +19,8 @@ export class GovernanceModel {
       this.summary = obj.summary;
     }
 
-    if (obj.flavor) {
-      this.flavor = obj.flavor;
+    if (obj.category) {
+      this.category = obj.category;
     }
 
     if (obj.role) {
@@ -41,6 +42,12 @@ export class GovernanceModel {
     if (obj.highlights) {
       obj.highlights.forEach((highlight) => {
         this.highlights.push(highlight);
+      });
+    }
+
+    if (obj.keywords) {
+      obj.keywords.forEach((keyword) => {
+        this.keywords.push(keyword);
       });
     }
   }
