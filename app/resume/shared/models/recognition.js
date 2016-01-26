@@ -1,5 +1,5 @@
 export class RecognitionModel {
-  flavor = '';
+  category = '';
   title = '';
   date = '';
   from = '';
@@ -13,8 +13,8 @@ export class RecognitionModel {
   }
 
   init (obj) {
-    if (obj.flavor) {
-      this.flavor = obj.flavor;
+    if (obj.category) {
+      this.category = obj.category;
     }
 
     if (obj.title) {
