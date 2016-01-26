@@ -8,7 +8,7 @@ import { Component, View } from 'angular2/core';
   template: `
   <template [ngIf]="contacts">
     <ul *ngFor="#contact of contacts">
-      <li>{{ contact.flavor }} - {{ contact.value }}</li>
+      <li>{{ contact.category }} - {{ contact.value }}</li>
     </ul>
   </template>
   `
