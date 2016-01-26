@@ -6,7 +6,15 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
   inputs: [ 'extracurricular' ]
 })
 @View({
-  template: ``, // TODO: implement this
+  template: `
+  <template [ngIf]="!empty()">
+  <hr>
+  <section id="extracurricular">
+    <header title="Extracurricular"></header>
+    // TODO: implement this
+  </section>
+  </template>
+  `,
   directives: [ TEMPLATE_DIRECTIVES ]
 })
 export class ExtracurricularComponent {
