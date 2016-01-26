@@ -3,6 +3,8 @@ export class SampleModel {
   summary = '';
   url = '';
   date = '';
+  highlights = [];
+  keywords = [];
 
   constructor (obj) {
     if (obj) {
@@ -25,6 +27,18 @@ export class SampleModel {
 
     if (obj.date) {
       this.date = obj.date;
+    }
+
+    if (obj.highlights) {
+      obj.highlights.forEach((highlight) => {
+        this.highlights.push(highlight);
+      });
+    }
+
+    if (obj.keywords) {
+      obj.keywords.forEach((keyword) => {
+        this.keywords.push(keyword);
+      });
     }
   }
 }

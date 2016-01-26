@@ -18,6 +18,8 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
       </h3>
       <duration [start]="sample.date"></duration>
       <p>{{ sample.summary }}</p>
+      <highlights [highlights]="sample.highlights"></highlights>
+      <keywords [keywords]="sample.keywords"></keywords>
     </div>
   </section>
   </template>
