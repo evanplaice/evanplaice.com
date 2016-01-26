@@ -2,7 +2,7 @@ export class ContactModel {
   email = '';
   phone = '';
   website = '';
-  other = {};
+  other = [];
 
   constructor (obj) {
     if (obj) {
@@ -24,19 +24,27 @@ export class ContactModel {
     }
 
     if (obj.other) {
-      let tmp = {};
-
-      if (obj.other.label) {
-        tmp.label = obj.other.label;
-      }
-
-      if (obj.other.flavor) {
-        tmp.flavor = obj.other.flavor;
-      }
-
-      if (obj.other.value) {
-        tmp.value = obj.other.value;
-      }
+      obj.other.forEach((contact) => {
+        this.addOther(contact);
+      });
     }
+  }
+
+  addOther(contact) {
+    let tmp = {};
+
+    if (contact.label) {
+      tmp.label = contact.label;
+    }
+
+    if (contact.category) {
+      tmp.category = contact.category;
+    }
+
+    if (contact.value) {
+      tmp.value = contact.value;
+    }
+
+    this.other.push(tmp);
   }
 }
