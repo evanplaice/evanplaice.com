@@ -23,8 +23,8 @@ export class ServiceModel {
   addRole (role) {
     let tmp = {};
 
-    if (role.flavor) {
-      tmp.flavor = role.flavor;
+    if (role.category) {
+      tmp.category = role.category;
     }
 
     if (role.organization) {
@@ -51,15 +51,24 @@ export class ServiceModel {
       tmp.summary = role.summary;
     }
 
+    if (role.location) {
+      tmp.location = role.location;
+    }
+
     if (role.highlights) {
       tmp.highlights = [];
+
       role.highlights.forEach((highlight) => {
         tmp.highlights.push(highlight);
       });
     }
 
-    if (role.location) {
-      tmp.location = role.location;
+    if (role.keywords) {
+      tmp.keywords = [];
+
+      role.keywords.forEach((keyword) => {
+        tmp.keywords.push(keyword);
+      });
     }
 
     this.history.push(tmp);

@@ -19,6 +19,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
       <duration [start]="role.start" [end]="role.end"></duration>
       <p>{{ role.summary }}</p>
       <highlights [highlights]="role.highlights"></highlights>
+      <keywords [keywords]="role.keywords"></keywords>
     </div>
   </section>
   </template>
