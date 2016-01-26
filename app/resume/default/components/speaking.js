@@ -17,7 +17,9 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
         {{ talk.event }}
       </h3>
       <duration [start]="talk.date"></duration>
+      <summary>{{ talk.summary }}</summary>
       <highlights [highlights]="talk.highlights"></highlights>
+      <keywords [keywords]="talk.keywords"></keywords>
     </div>
   </section>
   </template>

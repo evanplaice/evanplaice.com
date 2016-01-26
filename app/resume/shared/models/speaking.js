@@ -3,7 +3,9 @@ export class SpeakingModel {
   event = '';
   location = '';
   date = '';
+  summary = '';
   highlights = [];
+  keywords = [];
 
   constructor (obj) {
     if (obj) {
@@ -28,9 +30,19 @@ export class SpeakingModel {
       this.date = obj.date;
     }
 
+    if (obj.summary) {
+      this.summary = obj.summary;
+    }
+
     if (obj.highlights) {
       obj.highlights.forEach((highlight) => {
         this.highlights.push(highlight);
+      });
+    }
+
+    if (obj.keywords) {
+      obj.keywords.forEach((keyword) => {
+        this.keywords.push(keyword);
       });
     }
   }
