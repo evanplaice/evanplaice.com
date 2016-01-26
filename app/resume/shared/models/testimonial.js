@@ -1,7 +1,7 @@
 export class TestimonialModel {
   name = '';
   quote = '';
-  flavor = '';
+  category = '';
   private;
 
   constructor (obj) {
@@ -19,8 +19,8 @@ export class TestimonialModel {
       this.quote = obj.quote;
     }
 
-    if (obj.flavor) {
-      this.flavor = obj.flavor;
+    if (obj.category) {
+      this.category = obj.category;
     }
 
     if (obj.private !== undefined) {
