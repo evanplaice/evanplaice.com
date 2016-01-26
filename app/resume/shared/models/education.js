@@ -80,6 +80,22 @@ export class EducationModel {
       tmp.location = school.location;
     }
 
+    if (school.highlights) {
+      tmp.highlights = [];
+
+      school.highlights.forEach((highlight) => {
+        tmp.highlights.push(highlight);
+      });
+    }
+
+    if (school.keywords) {
+      tmp.keywords = [];
+
+      school.keywords.forEach((keyword) => {
+        tmp.keywords.push(keyword);
+      });
+    }
+
     this.history.push(tmp);
   }
 }

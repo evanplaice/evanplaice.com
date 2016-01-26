@@ -20,6 +20,8 @@ import 'font-awesome/css/font-awesome.min.css!css';
       <duration [start]="school.start" [end]="school.end"></duration>
       <p>{{ school.summary }}<p>
       <curriculum [curriculum]="school.curriculum"></curriculum>
+      <highlights [highlights]="school.highlights"></highlights>
+      <keywords [keywords]="school.keywords"></keywords>
     </div>
   </section>
   </template>
