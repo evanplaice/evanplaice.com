@@ -35,8 +35,26 @@ export class ReferenceModel {
 
     if (obj.contact) {
       obj.contact.forEach((contact) => {
-        this.contact.push(contact);
+        this.addContact(contact);
       });
     }
+  }
+
+  addContact (contact) {
+    let tmp = {};
+
+    if (contact.label) {
+      tmp.label = contact.label;
+    }
+
+    if (contact.category) {
+      tmp.category = contact.category;
+    }
+
+    if (contact.value) {
+      tmp.value = contact.value;
+    }
+
+    this.contact.push(tmp);
   }
 }
