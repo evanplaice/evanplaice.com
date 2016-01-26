@@ -45,8 +45,8 @@ export class ProjectModel {
     }
 
     if (obj.media) {
-      obj.media.forEach((ref) => {
-        this.media.push(ref);
+      obj.media.forEach((reference) => {
+        this.addMedia(reference);
       });
     }
 
@@ -77,5 +77,23 @@ export class ProjectModel {
         this.keywords.push(keyword);
       });
     }
+  }
+
+  addMedia(reference) {
+    let tmp = {};
+
+    if (reference.category) {
+      tmp.category = reference.category;
+    }
+
+    if (reference.name) {
+      tmp.name = reference.name;
+    }
+
+    if (reference.url) {
+      tmp.url = reference.url;
+    }
+
+    this.media.push(tmp);
   }
 }
