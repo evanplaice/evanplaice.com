@@ -6,7 +6,15 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
   inputs: [ 'languages' ]
 })
 @View({
-  template: ``, // TODO: implement this
+  template: `
+  <template [ngIf]="!empty()">
+  <hr>
+  <section id="languages">
+    <header title="Languages"></header>
+    // TODO: implement this
+  </section>
+  </template>
+  `,
   directives: [ TEMPLATE_DIRECTIVES ]
 })
 export class LanguagesComponent {
