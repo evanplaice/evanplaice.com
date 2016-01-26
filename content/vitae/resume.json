@@ -213,24 +213,24 @@
   "reading": [
     {
       "title": "Gödel, Escher, Bach: an Eternal Golden Braid",
-      "flavor": "book",
+      "category": "book",
       "url": "http://www.amazon.com/G%C3%B6del-Escher-Bach-Eternal-Golden/dp/0465026567",
       "author": "Douglas R. Hofstadter"
     },
     {
       "title": "Hacker News",
-      "flavor": "website",
+      "category": "website",
       "url": "https://news.ycombinator.com/"
     },
     {
       "title": "High Scalability",
-      "flavor": "website",
+      "category": "website",
       "url": "http://highscalability.com/"
     }
   ],
   "recognition": [
     {
-      "flavor": "Commendation",
+      "category": "Commendation",
       "from": "USMC",
       "title": "Commendation for Exemplary Performance",
       "event": "Desert Scimitar 14",
