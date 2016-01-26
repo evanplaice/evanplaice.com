@@ -32,6 +32,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class RecognitionComponent {
   empty () {
+    // has awards
     return this.recognition.length === 0;
   }
 }

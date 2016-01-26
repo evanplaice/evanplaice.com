@@ -33,6 +33,14 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class SkillsComponent {
   empty () {
-    return Object.keys(this.skills).length === 0;
+    // has sets
+    if (this.skills.sets && Object.keys(this.skills.sets).length !== 0) {
+      return false;
+    }
+    // has skills
+    if (this.skills.list && Object.keys(this.skills.list).length !== 0) {
+      return false;
+    }
+    return true
   }
 }

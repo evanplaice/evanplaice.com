@@ -26,6 +26,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class WritingComponent {
   empty () {
-    return Object.keys(this.writing).length === 0;
+    // has pieces
+    return this.writing.length === 0;
   }
 }

@@ -28,6 +28,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class SamplesComponent {
   empty () {
+    // has samples
     return this.samples.length === 0;
   }
 }

@@ -28,6 +28,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class GovernanceComponent {
   empty () {
+    // has positions
     return this.governance.length === 0;
   }
 }

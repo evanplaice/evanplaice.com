@@ -28,6 +28,10 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class ServiceComponent {
   empty () {
-    return Object.keys(this.service).length === 0;
+    // has history
+    if (this.service.history && Object.keys(this.service.history).length !== 0) {
+      return false;
+    }
+    return true
   }
 }

@@ -26,6 +26,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class ReferencesComponent {
   empty () {
+    // has references
     return this.references.length === 0;
   }
 }

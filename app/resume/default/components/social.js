@@ -11,6 +11,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class SocialComponent {
   empty () {
+    // has social info
     return this.social.length === 0;
   }
 }

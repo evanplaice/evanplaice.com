@@ -26,6 +26,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class ReadingComponent {
   empty () {
-    return Object.keys(this.reading).length === 0;
+    // has pieces
+    return this.reading.length === 0;
   }
 }

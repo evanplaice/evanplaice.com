@@ -28,6 +28,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class SpeakingComponent {
   empty () {
+    // has talks
     return this.speaking.length === 0;
   }
 }

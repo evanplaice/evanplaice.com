@@ -22,6 +22,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class TestimonialsComponent {
   empty () {
+    // has testimonials
     return this.testimonials.length === 0;
   }
 }

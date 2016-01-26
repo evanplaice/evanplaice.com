@@ -11,6 +11,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class ExtracurricularComponent {
   empty () {
+    // has activities
     return this.extracurricular.length === 0;
   }
 }

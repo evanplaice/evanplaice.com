@@ -30,6 +30,10 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class EmploymentComponent {
   empty () {
-    return Object.keys(this.employment).length === 0;
+    // has history
+    if (this.employment.history && Object.keys(this.employment.history).length !== 0) {
+      return false;
+    }
+    return true
   }
 }

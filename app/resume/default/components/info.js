@@ -19,6 +19,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class InfoComponent {
   empty () {
+    // has info
     return Object.keys(this.info).length === 0;
   }
 }

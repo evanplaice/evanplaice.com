@@ -28,6 +28,10 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class AffiliationsComponent {
   empty () {
-    return Object.keys(this.affiliations).length === 0;
+    // has history
+    if (this.affiliations.history && Object.keys(this.affiliations.history).length !== 0) {
+      return false;
+    }
+    return true
   }
 }

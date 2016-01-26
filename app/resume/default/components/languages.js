@@ -11,6 +11,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class LanguagesComponent {
   empty () {
+    // has languages
     return this.languages.length === 0;
   }
 }

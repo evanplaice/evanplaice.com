@@ -30,6 +30,10 @@ import 'font-awesome/css/font-awesome.min.css!css';
 })
 export class EducationComponent {
   empty () {
-    return Object.keys(this.education).length === 0;
+    // has history
+    if (this.education.history && Object.keys(this.education.history).length !== 0) {
+      return false;
+    }
+    return true
   }
 }

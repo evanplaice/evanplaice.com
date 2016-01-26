@@ -28,6 +28,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 })
 export class ProjectsComponent {
   empty () {
-    return Object.keys(this.projects).length === 0;
+    // has projects
+    return this.projects.length === 0;
   }
 }
