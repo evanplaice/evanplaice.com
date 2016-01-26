@@ -6,7 +6,15 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
   inputs: [ 'social' ]
 })
 @View({
-  template: ``, // TODO: implement this
+  template: `
+  <template [ngIf]="!empty()">
+  <hr>
+  <section id="social">
+    <header title="Social"></header>
+    // TODO: implement this
+  </section>
+  </template>
+  `,
   directives: [ TEMPLATE_DIRECTIVES ]
 })
 export class SocialComponent {
