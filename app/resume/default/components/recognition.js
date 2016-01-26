@@ -23,7 +23,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
         </template>
       </h3>
       <duration [start]="award.date"></duration>
-      <p>{{ award.summary }}</p>
+      <summary>{{ award.summary }}</summary>
     </div>
   </section>
   </template>

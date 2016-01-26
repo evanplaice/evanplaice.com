@@ -17,7 +17,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
         <template [ngIf]="!project.url">{{ project.title }}</template>
       </h3>
       <duration [start]="project.start" [end]="project.end"></duration>
-      <p>{{ project.summary }}<p>
+      <summary>{{ project.summary }}</summary>
       <highlights [highlights]="project.highlights"></highlights>
       <keywords [keywords]="project.keywords"></keywords>
     </div>

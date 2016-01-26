@@ -17,7 +17,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
         <template [ngIf]="reference.role"><em>{{ reference.name }}</em>, {{ reference.role }}</template>
       </h3>
       <contacts [contacts]="reference.contact"></contacts>
-      <p>{{ reference.summary }}</p>
+      <summary>{{ reference.summary }}</summary>
     </div>
   </section>
   </template>

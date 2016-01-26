@@ -18,7 +18,7 @@ import 'font-awesome/css/font-awesome.min.css!css';
         <template [ngIf]="school.title"><em>{{ school.title }}</em>, </template>{{ school.institution }}
       </h3>
       <duration [start]="school.start" [end]="school.end"></duration>
-      <p>{{ school.summary }}<p>
+      <summary>{{ school.summary }}</summary>
       <curriculum [curriculum]="school.curriculum"></curriculum>
       <highlights [highlights]="school.highlights"></highlights>
       <keywords [keywords]="school.keywords"></keywords>

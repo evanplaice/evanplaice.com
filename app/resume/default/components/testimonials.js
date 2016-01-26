@@ -13,7 +13,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
     <header title="Testimonials"><span class="fa fa-lg fa-thumbs-o-up"></span></header>
     <div *ngFor="#testimonial of testimonials">
       <h3><em>{{ testimonial.name }}</em></h3>
-      <p>{{ testimonial.quote }}</p>
+      <summary>{{ testimonial.quote }}</summary>
     </div>
   </section>
   </template>

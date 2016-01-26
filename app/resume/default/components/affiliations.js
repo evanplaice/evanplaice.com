@@ -17,7 +17,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
         <template [ngIf]="association.url"><em>{{ association.role }}</em>, <a href="{{ association.url}}">{{ association.organization }}</a></template>
       </h3>
       <duration [start]="association.start" [end]="association.end"></duration>
-      <p>{{ association.summary }}</p>
+      <summary>{{ association.summary }}</summary>
       <highlights [highlights]="association.highlights"></highlights>
       <keywords [keywords]="association.keywords"></keywords>
     </div>

@@ -18,7 +18,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
           <template [ngIf]="!job.url">{{ job.employer }}</template>
         </h3>
         <duration [start]="job.start" [end]="job.end"></duration>
-        <p>{{ job.summary }}</p>
+        <summary>{{ job.summary }}</summary>
         <highlights [highlights]="job.highlights"></highlights>
         <keywords [keywords]="job.keywords"></keywords>
       </div>
