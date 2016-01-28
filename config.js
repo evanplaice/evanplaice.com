@@ -21,6 +21,7 @@ System.config({
     "reflect-metadata": "npm:reflect-metadata@0.1.2",
     "rxjs": "npm:rxjs@5.0.0-beta.0",
     "semantic-ui": "github:Semantic-Org/Semantic-UI@2.1.7",
+    "text": "github:systemjs/plugin-text@0.0.4",
     "traceur": "github:jmcriffey/bower-traceur@0.0.92",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.92",
     "zone.js": "npm:zone.js@0.5.10",
