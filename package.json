@@ -18,7 +18,7 @@
     "grunt": "grunt",
     "checkstyle": "semistandard || true",
     "build:dev": "jspm bundle app/app app/app.dev.js --minify --inject",
-    "build:prod": "jspm bundle-sfx app/app dist/app.min.js --minify",
+    "build:prod": "jspm bundle-sfx app/app dist/app.min.js",
     "prepare": "npm run gzip:app & npm run gzip:map & npm run gzip:css",
     "sync:dev": "grunt development",
     "sync:prod": "grunt production",
