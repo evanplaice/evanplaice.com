@@ -1,7 +1,7 @@
 import { Injectable, Inject } from 'angular2/core';
 import { Http } from 'angular2/http';
 import { Observable } from 'rxjs/Observable';
-import { FreshModel } from 'app/resume/shared/models/fresh';
+import { FreshModel } from '../models/fresh';
 
 @Injectable()
 export class ResumeService {
