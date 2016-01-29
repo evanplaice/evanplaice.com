@@ -1,13 +1,16 @@
 import { Component, View, ViewEncapsulation } from 'angular2/core';
 import { BASIS_DIRECTIVES } from '../basis';
 
+import template from './basis.html!text';
+import style from './basis.css!text';
+
 @Component({
   selector: 'resume',
   inputs: [ 'resume' ]
 })
 @View({
-  templateUrl: 'app/resume/basis/components/basis.html',
-  styleUrls: [ 'app/resume/basis/components/basis.css' ],
+  template: template,
+  style: [ style ],
   directives: [ BASIS_DIRECTIVES ],
   encapsulation: ViewEncapsulation.Native
 })
