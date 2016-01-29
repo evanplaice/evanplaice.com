@@ -15,6 +15,6 @@ import { TEMPLATE_MODELS } from './shared/shared';
 export const FRESH_MODELS = TEMPLATE_MODELS;
 
 // -------------- FRESH service --------------
-import { ResumeService } from './shared/services/resume';
+import { ResumeService as Service } from './shared/services/resume';
 
-export const FreshService = ResumeService;
+export const ResumeService = Service;

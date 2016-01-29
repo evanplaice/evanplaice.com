@@ -8,7 +8,7 @@ import { HTTP_PROVIDERS } from 'angular2/http';
 import { MainComponent } from './main/components/main';
 import { DesignService } from './designs/services/design';
 import { ProjectService } from './projects/services/project';
-import { FreshService } from './resume/resume';
+import { ResumeService } from './resume/resume';
 
 enableProdMode();
 bootstrap(MainComponent, [
@@ -16,5 +16,5 @@ bootstrap(MainComponent, [
   HTTP_PROVIDERS,
   DesignService,
   ProjectService,
-  FreshService
+  ResumeService
 ]);
