@@ -8,7 +8,7 @@ import { HTTP_PROVIDERS } from 'angular2/http';
 import { MainComponent } from './main/components/main';
 import { DesignService } from './designs/services/design';
 import { ProjectService } from './projects/services/project';
-import { ResumeService } from './resume/resume';
+import { ResumeService } from 'evanplaice/ng2-resume/resume';
 
 enableProdMode();
 bootstrap(MainComponent, [

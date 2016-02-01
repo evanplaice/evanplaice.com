@@ -16,6 +16,7 @@ System.config({
     "angular2": "npm:angular2@2.0.0-beta.2",
     "clean-css": "npm:clean-css@3.4.8",
     "css": "github:systemjs/plugin-css@0.1.20",
+    "evanplaice/ng2-resume": "github:evanplaice/ng2-resume@0.0.3",
     "font-awesome": "npm:font-awesome@4.5.0",
     "ng2-markdown-component": "github:evanplaice/ng2-markdown-component@0.1.2",
     "reflect-metadata": "npm:reflect-metadata@0.1.2",
@@ -33,6 +34,9 @@ System.config({
       "css": "github:systemjs/plugin-css@0.1.20",
       "prism": "github:PrismJS/prism@gh-pages",
       "showdown": "github:showdownjs/showdown@0.3.4"
+    },
+    "github:evanplaice/ng2-resume@0.0.3": {
+      "text": "github:systemjs/plugin-text@0.0.4"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
