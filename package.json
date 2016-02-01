@@ -15,6 +15,7 @@
   "homepage": "https://github.com/evanplaice/evanplaice.com#readme",
   "scripts": {
     "start": "live-server",
+    "deploy": "npm run build:prod && npm run prepare && npm run sync:prod",
     "grunt": "grunt",
     "checkstyle": "semistandard || true",
     "build:dev": "jspm bundle app/app app/app.dev.js --minify --inject",
