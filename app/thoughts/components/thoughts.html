@@ -4,16 +4,21 @@
   <i class="bullseye icon large" style="margin-right: 0rem !important;"></i>
 </h4>
 
-<div class="ui center aligned container">
-  <h2>Hello Worl... oh never mind</h2>
-  <h3>2015.12.29 by Evan Plaice</h3>
-  <div class="ui divider"></div>
-</div>
+<div *ngFor="#thought of thoughts.posts; #last=last">
+  <template [ngIf]="!thought.draft">
+  <div>
+    <div class="ui center aligned container"></div>
+    <h2>{{ thought.title }}</h2>
+    <h3>{{ thought.date }} by {{ thought.author }}</h3>
+    <div class="ui divider"></div>
+  </div>
 
-<ng2-markdown [src]="src">
-</ng2-markdown>
+  <ng2-markdown [src]="thoughts.content + thought.content"></ng2-markdown>
 
-<div class="ui center aligned container">
-  <div class="ui divider"></div>
-  <h3>If you would like to comment and/or contribute head over to <a href="{{ gitHubLink }}" >GitHub</a></h3>  
+  <div class="ui center aligned container">
+    <h3>If you would like to comment and/or contribute head over to <a href="{{ thoughts.github + thought.content }}" >GitHub</a></h3>
+  </div>
+
+  <div *ngIf="!last" class="ui divider"></div>
+  </template>
 </div>
