@@ -1,4 +1,5 @@
-import { Component, View } from 'angular2/core';
+import { Component, View, Inject } from 'angular2/core';
+import { ThoughtsService } from '../services/thoughts';
 import { MarkdownComponent } from 'ng2-markdown-component';
 
 @Component({
@@ -9,9 +10,12 @@ import { MarkdownComponent } from 'ng2-markdown-component';
   directives: [ MarkdownComponent ]
 })
 export class ThoughtsComponent {
-  constructor () {
-    // console.log('thoughts');
-    this.src = 'content/thoughts/hello-world.md';
-    this.gitHubLink = 'http://github.com/evanplaice/evanplaice.com/blob/master/' + this.src;
+  constructor (@Inject(ThoughtsService) thoughtsService) {
+   console.log('thoughts');
+
+    // link to the thoughts data
+    thoughtsService.loadThoughts('content/thoughts/thoughts.json');
+    thoughtsService.thoughts$.subscribe(update => this.thoughts = update);
+    console.log(this.thoughts);
   }
 }
