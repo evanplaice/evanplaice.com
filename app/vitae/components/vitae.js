@@ -15,7 +15,7 @@ export class VitaeComponent {
     // console.log('vitae');
 
     // link to the vitae data
-    resumeService.loadResume('jspm_packages/github/evanplaice/resume@0.0.6/resume.json');
+    resumeService.loadResume('jspm_packages/github/evanplaice/resume@0.0.7/resume.json');
     resumeService.resume$.subscribe(update => this.resume = update);
   }
 }
