@@ -1,0 +1,411 @@
+{
+  "name": "Evan Plaice",
+  "meta": {
+    "format": "FRESH@0.3.0",
+    "version": "0.1.0"
+  },
+  "info": {
+    "label": "Full Stack Developer",
+    "brief": "Full-Stack developer, with 8+ years of experience. I live by a simple principle, 'leave it better than you found it'. I'm accustomed to wearing a lot of hats; including greenfield development, leading a team, implementing new techologies, interfacing with customers. I adapt to the domain and needs of business.",
+    "quote": "Leave it better than you found it"
+  },
+  "contact": {
+    "website": "http://evanplaice.com",
+    "phone": "",
+    "email": "evanplaice@gmail.com"
+  },
+  "location": {
+    "address": "2445 Torrejon Pl",
+    "city": "San Diego",
+    "region": "CA",
+    "code": "92009",
+    "country": "US"
+  },
+  "social": [
+    {
+      "network": "GitHub",
+      "user": "evanplaice",
+      "url": "https://github.com/evanplaice"
+    },
+    {
+      "network": "Twitter",
+      "user": "@evanplaice",
+      "url": "https://twitter.com/evanplaice"
+    },
+    {
+      "network": "StackOverflow",
+      "user": "evanplaice",
+      "url": "http://stackoverflow.com/users/290340/evan-plaice"
+    },
+    {
+      "network": "HackerNews",
+      "user": "evanplaice",
+      "url": "https://news.ycombinator.com/user?id=EvanPlaice"
+    },
+    {
+      "network": "HackerRank",
+      "user": "evanplaice",
+      "url": "https://www.hackerrank.com/evanplaice"
+    }
+  ],
+  "employment": {
+    "summary": "",
+    "history": [
+      {
+        "employer": "Strike Group LLC.",
+        "url": "http://strikegroup.org",
+        "position": "Field Service Representative",
+        "summary": "West Coast representative for MARCORSYSCOM Combat Camera. Providing logistics and support of the tactical systems.",
+        "start": "2011-04",
+        "end": "2015-05",
+        "highlights": [
+          "Field, track, support $5+ million in military hardware",
+          "Support 11 units across 6 military installations",
+          "Technical SME for the TIPS (Tactical Imagery Production System)",
+          "Onsite technical SME for 3 field exercises",
+          "Host of semi-annual traning evolutions for the TIPS",
+          "Certified Xerox MFD field technician",
+          "Setup S3 for monthly distribution of OS images",
+          "Author of automation tools for Excel->PDF form filling",
+          "Website redesign with dynamic templating and custom static html compliler"
+        ],
+        "keywords": [
+          "Military",
+          "Technical-SME",
+          "Logistics",
+          "Xerox-Technican",
+          "Training",
+          "Field-Support",
+          "Networking"
+        ]
+      },
+      {
+        "employer": "Joel Plaice & Associates Inc.",
+        "url": "http://jpasims.com",
+        "position": "Electrical Design Technician/Software Developer",
+        "summary": "Hacking on commercial full flight simulators for fun and profit.",
+        "start": "2004-07",
+        "end": "2010-02",
+        "highlights": [
+          "Design and imlement various avionics and aircraft systems updates",
+          "Full Stack development of a website + database backend using a LAMP stack",
+          "Full lifecycle product design/architecture/development of a turnkey system",
+          "Custom networking protocol design and implementation"
+        ],
+        "keywords": [
+          "Hardware",
+          "Electrical-Design",
+          "Web-Design",
+          "Web-Development",
+          "Systems-Design",
+          "Software-Architecture",
+          "Protocol-Design"
+        ]
+      },
+      {
+        "employer": "Spiral Aviation Training Company",
+        "position": "Flight Simulator Production Specialist",
+        "summary": "Build commercial full flight simulators. Avionics, cabling, instrument panels, I/O, and instrument calibrations.",
+        "start": "2003-12",
+        "end": "2004-07",
+        "keywords": [
+          "Electrical-Technician",
+          "Quality-Assurance",
+          "Systems-Engineering",
+          "Software-Architecture"
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "ng2-resume (OSS)",
+      "category": "Open Source",
+      "url": "https://github.com/evanplaice/ng2-resume",
+      "repo": "https://github.com/evanplaice/ng2-resume",
+      "role": "Author",
+      "summary": "Reusable Angular2 Resume component",
+      "highlights": [
+        "Uses the FRESH resume schema",
+        "Published to JSPM",
+        "JSON Resume support (coming soon)"
+      ],
+      "keywords": [
+        "Javascript",
+        "Angular2",
+        "Git"
+      ]
+    },
+    {
+      "title": "ng2-markdown (OSS)",
+      "category": "Open Source",
+      "url": "https://github.com/evanplaice/ng2-markdown-component",
+      "repo": "https://github.com/evanplaice/ng2-markdown-component",
+      "role": "Author",
+      "summary": "Reusable Angular2 Markdown component",
+      "highlights": [
+        "Published to JSPM"
+      ],
+      "keywords": [
+        "Javascript",
+        "Angular2",
+        "Git"
+      ]
+    },
+    {
+      "title": "node-ftpsync (OSS)",
+      "category": "Open Source",
+      "url": "https://github.com/evanplaice/node-ftpsync",
+      "repo": "https://github.com/evanplaice/node-ftpsync",
+      "role": "Author",
+      "summary": "Intelligent file syncronization over FTP",
+      "highlights": [
+        "One-command incremental synchronization",
+        "Published to NPM",
+        "Grunt plugin (grunt-ftpsync) available"
+      ],
+      "keywords": [
+        "Node.js",
+        "JsFtp",
+        "Mocha",
+        "Chai",
+        "Git"
+      ]
+    },
+    {
+      "title": "jquery-csv (OSS)",
+      "category": "Open Source",
+      "url": "https://github.com/evanplaice/jquery-csv",
+      "repo": "https://github.com/evanplaice/jquery-csv",
+      "role": "Author",
+      "summary": "The first RFC 4180 complete lexer/parser for Javascript. Migrated from Google Code.",
+      "highlights": [
+        "500K+ downloads",
+        "Published to Bower",
+        "Uses a hand-rolled and optimized DFA, single-pass parser"
+      ],
+      "keywords": [
+        "Javascript",
+        "QUnit",
+        "Mocha",
+        "Chai",
+        "Mercurial->Git"
+      ]
+    },
+    {
+      "title": "SharpPcap/Packet.Net (OSS)",
+      "category": "Open Source",
+      "url": "https://github.com/chmorgan/sharppcap",
+      "repo": "https://github.com/chmorgan/sharppcap",
+      "role": "Contributor",
+      "summary": "Fully managed, cross platform (Windows, Mac, Linux) .NET library for capturing packets",
+      "highlights": [
+        "Implemented/revised various networking protocols",
+        "Added additional unit and performance tests",
+        "Added additional examples",
+        "Updated documentation via CodePen"
+      ],
+      "keywords": [
+        "C#",
+        "Mono",
+        "WinPcap",
+        "LibPcap",
+        "NUnit",
+        "Subversion->Git"
+      ]
+    },
+    {
+      "title": "Replacement Instructor Operating Station",
+      "category": "Proprietary",
+      "role": "Co-Developer",
+      "summary": "A mission critical multi-touchscreen interface for commercial flight simulators.",
+      "highlights": [
+        "First full lifecycle greenfield product development",
+        "250K in revenue",
+        "Architect of all systems, components, IPC, and network communications",
+        "Specified, assembled, configured, custom hardware incl hot/cold spares for redundancy",
+        "First turnkey hardware product implementation",
+        "Successful acceptance - 90 days @ 99.9% uptime"
+      ],
+      "keywords": [
+        "Hardware",
+        "Networking",
+        "Architecture",
+        "Integration",
+        "C#",
+        "MSSQL",
+        "Subversion",
+        "MediaWiki"
+      ]
+    }
+  ],
+  "skills": {
+    "sets": [
+      {
+        "name": "Frontend",
+        "level": "advanced",
+        "skills": [
+          "Angular2",
+          "Angular.js",
+          "HTML5",
+          "CSS",
+          "jQuery",
+          "Bootstrap",
+          "Semantic-UI"
+        ]
+      },
+      {
+        "name": "Backend",
+        "level": "advanced",
+        "skills": [
+          "Javascript",
+          "Node.js",
+          "Python",
+          "WebApp2",
+          "PHP"
+        ]
+      },
+      {
+        "name": "Database",
+        "level": "intermediate",
+        "skills": [
+          "MongoDB",
+          "Mongoose",
+          "MySQL",
+          "MSSQL",
+          "DataStore",
+          "ORM"
+        ]
+      },
+      {
+        "name": "Desktop/Automation",
+        "level": "intermediate",
+        "skills": [
+          "Bash",
+          "Grunt",
+          "NPM",
+          "JSPM",
+          "FTP-Sync",
+          "S3-Sync"
+        ]
+      },
+      {
+        "name": "Cloud",
+        "level": "beginner",
+        "skills": [
+          "AWS EC2",
+          "AWS S3",
+          "AWS Route53",
+          "AWS IAM",
+          "AppEngine"
+        ]
+      },
+      {
+        "name": "Design",
+        "level": "beginner",
+        "skills": [
+          "Photoshop",
+          "Illustrator",
+          "Mockups",
+          "Logo Design"
+        ]
+      }
+    ],
+    "list": [
+      "Javascript (ES6)",
+      "Python",
+      "C#",
+      "Java",
+      "PHP",
+      "HTML5",
+      "CSS",
+      "Bash",
+      "Batch"
+    ]
+  },
+  "samples": [
+    {
+      "title": "EvanPlaice.com",
+      "summary": "Personal profile, journal, and dumping ground of interesting ideas.",
+      "url": "http://evanplaice.com",
+      "date": "2016",
+      "keywords": [
+        "Javascript",
+        "Angular2",
+        "Semantic-UI",
+        "ES6",
+        "Amazon S3"
+      ]
+    },
+    {
+      "title": "StrikeGroup.org",
+      "summary": "The online presence for Strike Group LLC.",
+      "url": "http://strikegrouptest.appspot.com",
+      "date": "2012-2015",
+      "keywords": [
+        "Python",
+        "AngularJS",
+        "Google App Engine",
+        "WebApp2",
+        "Jinja2",
+        "Node-Ftpsync"
+      ]
+    },
+    {
+      "title": "Joel Plaice and Associates Inc.",
+      "summary": "The online presence for JPA. Incl backend inventory database.",
+      "url": "http://jpasims.appspot.com",
+      "date": "2004-2010",
+      "keywords": [
+        "PHP",
+        "LAMP",
+        "MySQL",
+        "XML"
+      ]
+    }
+  ],
+  "reading": [
+    {
+      "title": "Gödel, Escher, Bach: an Eternal Golden Braid",
+      "flavor": "book",
+      "url": "http://www.amazon.com/G%C3%B6del-Escher-Bach-Eternal-Golden/dp/0465026567",
+      "author": "Douglas R. Hofstadter"
+    },
+    {
+      "title": "Hacker News",
+      "flavor": "website",
+      "url": "https://news.ycombinator.com/"
+    },
+    {
+      "title": "High Scalability",
+      "flavor": "website",
+      "url": "http://highscalability.com/"
+    }
+  ],
+  "recognition": [
+    {
+      "flavor": "Commendation",
+      "from": "USMC",
+      "title": "Commendation for Exemplary Performance",
+      "event": "Desert Scimitar 14",
+      "date": "2014",
+      "summary": "In regards to the role of technical SME during the first field deployment of the Tactical Imagery Production System V3.0."
+    }
+  ],
+  "interests": [
+    {
+      "name": "Open Source Software",
+      "summary": "Regular GitHub user, author/maintainer of many libraries"
+    },
+    {
+
+      "name": "Rock Climbing",
+      "summary": "Rock climb in local gyms, have been on trips to Holcomb Valley; Red Rocks, NV; and 29 Palms"
+    },
+    {
+
+      "name": "Snowboarding",
+      "summary": "Grew up snowboarding. Hoping to make it back home to CO soon to hit the slopes."
+    }
+  ]
+}
