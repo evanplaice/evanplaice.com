@@ -7,6 +7,7 @@ import { FooterComponent } from 'app/main/components/footer';
 
 // route components
 import { ThoughtsComponent } from 'app/thoughts/components/thoughts';
+import { ThoughtComponent } from 'app/thoughts/components/thought';
 import { DesignsComponent } from 'app/designs/components/designs';
 import { ProjectsComponent } from 'app/projects/components/projects';
 import { VitaeComponent } from 'app/vitae/components/vitae';
@@ -26,6 +27,11 @@ import { TypefacesComponent } from 'app/typefaces/components/typefaces';
     name: 'Thoughts',
     component: ThoughtsComponent,
     useAsDefault: true
+  },
+  {
+    path: '/thought/:post',
+    component: ThoughtComponent,
+    as: 'Thought'
   },
   {
     path: '/designs',
