@@ -13,9 +13,9 @@ import { MarkdownComponent } from 'ng2-markdown-component';
 
 export class ThoughtComponent {
   constructor (@Inject(ThoughtsService) thoughtsService, @Inject(RouteParams) params) {
-    console.log('thought');
+    // console.log('thought');
+    // extract the post id from the GET params
     this.param = params.get('post');
-    
     // link to the thoughts data
     thoughtsService.thoughts$.subscribe(update => this.set(update));
   }
