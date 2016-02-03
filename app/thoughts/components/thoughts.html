@@ -4,21 +4,13 @@
   <i class="bullseye icon large" style="margin-right: 0rem !important;"></i>
 </h4>
 
+<template [ngIf]="thoughts">
 <div *ngFor="#thought of thoughts.posts; #last=last">
   <template [ngIf]="!thought.draft">
-  <div>
-    <div class="ui center aligned container"></div>
-    <h2>{{ thought.title }}</h2>
-    <h3>{{ thought.date }} by {{ thought.author }}</h3>
-    <div class="ui divider"></div>
+  <div class="ui container">
+    <h2><a [routerLink]="['/Thought', { post: thought.url }]">{{ thought.title }}</a></h2>
   </div>
-
-  <ng2-markdown [src]="thoughts.content + thought.content"></ng2-markdown>
-
-  <div class="ui center aligned container">
-    <h3>If you would like to comment and/or contribute head over to <a href="{{ thoughts.github + thought.content }}" >GitHub</a></h3>
-  </div>
-
-  <div *ngIf="!last" class="ui divider"></div>
+  <p>{{ thought.summary }}</p>
   </template>
 </div>
+</template>
