@@ -1,6 +1,7 @@
 import { Injectable, Inject } from 'angular2/core';
 import { Http } from 'angular2/http';
 import { Observable } from 'rxjs/Observable';
+import { ThoughtsModel } from '../models/thoughts';
 
 @Injectable()
 export class ThoughtsService {
@@ -15,8 +16,8 @@ export class ThoughtsService {
   loadThoughts(path) {
     if (path || this.src) {
       return this.thoughts$ = this.http.get(path || this.src)
-      .map(res => res.json())
-      .startWith({ github:'', content:'', posts:[] });
+      .map(res => new ThoughtsModel(res.json()))
+      .startWith(new ThoughtsModel());
     }
   }
 }
