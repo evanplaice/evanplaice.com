@@ -7,6 +7,7 @@
       "author": "Evan Plaice",
       "date": "2015.2.1",
       "url": "its-alive",
+      "summary": "The birth of an abomination. Behold the horror, the monster!",
       "content": "its-alive.md",
       "draft": true
     },
@@ -15,6 +16,7 @@
       "author": "Evan Plaice",
       "date": "2015.12.29",
       "url": "hello-world",
+      "summary": "Hi there, not a lot to see here ¯\\_(ツ)_/¯ more coming soon...",
       "content": "hello-world.md",
       "draft": false
     }
