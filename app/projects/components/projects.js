@@ -1,21 +1,20 @@
 import { Component, View, Inject } from 'angular2/core';
 import { ProjectComponent } from 'app/projects/components/project';
-import { ProjectService } from 'app/projects/services/project';
+import { ProjectsService } from 'app/projects/services/projects';
 
 @Component({
   selector: 'projects',
-  injectables: [ ProjectService ]
+  injectables: [ ProjectsService ]
 })
 @View({
   templateUrl: 'app/projects/components/projects.html',
   directives: [ ProjectComponent ]
 })
 export class ProjectsComponent {
-  constructor (@Inject(ProjectService) projectService) {
+  constructor (@Inject(ProjectsService) projectsService) {
     // console.log('projects');
-
-    // observable provided by ProjectService
-    projectService.projects$.subscribe(update => this.projects = update);
-    projectService.getProjects();
+    // link to the projects data
+    projectsService.projects$.subscribe(update => this.projects = update);
+    projectsService.getProjects();
   }
 }

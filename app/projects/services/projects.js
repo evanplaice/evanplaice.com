@@ -1,11 +1,11 @@
 import { Injectable, Inject } from 'angular2/core';
 import { Http } from 'angular2/http';
 import { Observable } from 'rxjs/Observable';
-import { DesignModel } from 'app/designs/models/design';
+import { ProjectModel } from 'app/projects/models/project';
 
 @Injectable()
-export class DesignService {
-  designs$;
+export class ProjectsService {
+  projects$;
   data = [];
   _observer;
 
@@ -13,30 +13,30 @@ export class DesignService {
     // http bindings for a GET request
     this.http = http;
     // observer to load data asynchronously
-    this.designs$ = new Observable(observer => this._observer = observer);
+    this.projects$ = new Observable(observer => this._observer = observer);
     // pre-load the data
-    this.loadDesigns();
+    this.loadProjects();
   }
 
-  getDesigns() {
+  getProjects() {
     this._observer.next(this.data);
   }
 
-  loadDesigns () {
-    this.http.get('content/designs/designs.json')
+  loadProjects () {
+    this.http.get('content/projects/projects.json')
     .map(res => res.json())
     .subscribe(
       items => {
         // exclude hidden values
         items = items.filter(item => !item.hidden);
         // convert value to model
-        items = items.map(item => new DesignModel(item));
+        items = items.map(item => new ProjectModel(item));
         // update observers
         this._observer.next(this.data = items);
       },
       error => console.log(error),
       () => {
-        // console.log('Designs loaded successfully');
+        // console.log('Projects loaded successfully');
       }
     );
   }
