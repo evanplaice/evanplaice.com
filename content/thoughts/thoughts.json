@@ -6,6 +6,7 @@
       "title": "IT'S ALIVE!!!",
       "author": "Evan Plaice",
       "date": "2015.2.1",
+      "url": "its-alive",
       "content": "its-alive.md",
       "draft": true
     },
@@ -13,6 +14,7 @@
       "title": "Hello Worl... oh never mind",
       "author": "Evan Plaice",
       "date": "2015.12.29",
+      "url": "hello-world",
       "content": "hello-world.md",
       "draft": false
     }
