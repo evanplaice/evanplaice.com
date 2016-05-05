@@ -26,8 +26,8 @@ System.config({
     "rxjs": "npm:rxjs@5.0.0-beta.0",
     "semantic-ui": "github:Semantic-Org/Semantic-UI@2.1.7",
     "text": "github:systemjs/plugin-text@0.0.4",
-    "traceur": "github:jmcriffey/bower-traceur@0.0.92",
-    "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.92",
+    "traceur": "github:jmcriffey/bower-traceur@0.0.93",
+    "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.93",
     "zone.js": "npm:zone.js@0.5.10",
     "github:Semantic-Org/Semantic-UI@2.1.7": {
       "css": "github:systemjs/plugin-css@0.1.20",
