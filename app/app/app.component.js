@@ -10,7 +10,7 @@ import { ThoughtsComponent } from 'app/thoughts/thoughts.component';
 import { ThoughtComponent } from 'app/thoughts/thought.component';
 import { DesignsComponent } from 'app/designs/designs.component';
 import { ProjectsComponent } from 'app/projects/projects.component';
-import { VitaeComponent } from 'app/vitae/components/vitae';
+import { VitaeComponent } from 'app/vitae/vitae.component';
 import { NowComponent } from 'app/now/now.component';
 import { TypefacesComponent } from 'app/typefaces/typefaces.component';
 

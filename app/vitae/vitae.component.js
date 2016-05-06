@@ -4,7 +4,7 @@ import { MODERN_COMPONENT, ResumeService } from 'ng2-resume/resume';
 @Component({
   selector: 'vitae',
   injectables: [ ResumeService ],
-  templateUrl: 'app/vitae/components/vitae.html',
+  templateUrl: 'app/vitae/vitae.component.html',
   directives: [ MODERN_COMPONENT ]
 })
 export class VitaeComponent {
