@@ -6,7 +6,7 @@ import { enableProdMode } from 'angular2/core';
 import { bootstrap } from 'angular2/platform/browser';
 import { ROUTER_PROVIDERS } from 'angular2/router';
 import { HTTP_PROVIDERS } from 'angular2/http';
-import { AppComponent } from './app/components/app';
+import { AppComponent } from './app/app.component';
 import { ThoughtsService } from './thoughts/services/thoughts';
 import { DesignsService } from './designs/services/designs';
 import { ProjectsService } from './projects/services/projects';
