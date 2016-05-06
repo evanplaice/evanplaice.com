@@ -28,8 +28,8 @@ import { TypefacesComponent } from 'app/typefaces/components/typefaces';
   },
   {
     path: '/thought/:post',
-    component: ThoughtComponent,
-    as: 'Thought'
+    name: 'Thought',
+    component: ThoughtComponent
   },
   {
     path: '/designs',
