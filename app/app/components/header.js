@@ -3,7 +3,7 @@ import { ROUTER_DIRECTIVES, Location } from 'angular2/router';
 
 @Component({
   selector: 'header',
-  templateUrl: 'app/main/components/header.html',
+  templateUrl: 'app/app/components/header.html',
   directives: [ ROUTER_DIRECTIVES ]
 })
 export class HeaderComponent {

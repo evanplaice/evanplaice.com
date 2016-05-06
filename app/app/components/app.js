@@ -2,8 +2,8 @@ import { Component, View, Inject } from 'angular2/core';
 import { ROUTER_DIRECTIVES, RouteConfig, Location } from 'angular2/router';
 
 // layout components
-import { HeaderComponent } from 'app/main/components/header';
-import { FooterComponent } from 'app/main/components/footer';
+import { HeaderComponent } from 'app/app/components/header';
+import { FooterComponent } from 'app/app/components/footer';
 
 // route components
 import { ThoughtsComponent } from 'app/thoughts/components/thoughts';
@@ -16,7 +16,7 @@ import { TypefacesComponent } from 'app/typefaces/components/typefaces';
 
 @Component({
   selector: 'app',
-  templateUrl: 'app/main/components/main.html',
+  templateUrl: 'app/app/components/app.html',
   directives: [ ROUTER_DIRECTIVES, HeaderComponent, FooterComponent ]
 })
 @RouteConfig([
@@ -57,7 +57,7 @@ import { TypefacesComponent } from 'app/typefaces/components/typefaces';
     component: TypefacesComponent
   }
 ])
-export class MainComponent {
+export class AppComponent {
   constructor (@Inject(Location) location) {
     resolveHashURL(location);
   }
