@@ -66,10 +66,12 @@ export class MainComponent {
 // redirects in inbound HashURL to its corresponding route
 //  ex. evanplaice.com/#/designs => evanplaice.com/designs
 function resolveHashURL (location) {
-  let hash = location.platformStrategy._platformLocation.hash;
-  if (hash) {
-    let path = hash.substring(1);
-    // console.log('RedirectTo: ' + path);
-    location.go(path);
-  }
+  // TODO: Fix this
+  //let hash = location.platformStrategy._platformLocation.hash;
+  //if (hash) {
+  //  let path = hash.substring(1);
+  //  // console.log('RedirectTo: ' + path);
+  //  location.go(path);
+  //}
+  return;
 }
