@@ -2,9 +2,7 @@ import { Component, View, Inject } from 'angular2/core';
 import { ROUTER_DIRECTIVES, Location } from 'angular2/router';
 
 @Component({
-  selector: 'header'
-})
-@View({
+  selector: 'header',
   templateUrl: 'app/main/components/header.html',
   directives: [ ROUTER_DIRECTIVES ]
 })

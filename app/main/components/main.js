@@ -15,9 +15,7 @@ import { NowComponent } from 'app/now/components/now';
 import { TypefacesComponent } from 'app/typefaces/components/typefaces';
 
 @Component({
-  selector: 'app'
-})
-@View({
+  selector: 'app',
   templateUrl: 'app/main/components/main.html',
   directives: [ ROUTER_DIRECTIVES, HeaderComponent, FooterComponent ]
 })

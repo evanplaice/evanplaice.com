@@ -4,9 +4,7 @@ import { ThoughtsService } from '../services/thoughts';
 import { MarkdownComponent } from 'ng2-markdown-component';
 
 @Component({
-  selector: 'thought'
-})
-@View({
+  selector: 'thought',
   templateUrl: 'app/thoughts/components/thought.html',
   directives: [ MarkdownComponent ]
 })

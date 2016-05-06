@@ -4,9 +4,7 @@ import { DesignsService } from 'app/designs/services/designs';
 
 @Component({
   selector: 'designs',
-  injectables: [ DesignsService ]
-})
-@View({
+  injectables: [ DesignsService ],
   templateUrl: 'app/designs/components/designs.html',
   directives: [ DesignComponent ]
 })

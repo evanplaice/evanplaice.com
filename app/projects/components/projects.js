@@ -4,9 +4,7 @@ import { ProjectsService } from 'app/projects/services/projects';
 
 @Component({
   selector: 'projects',
-  injectables: [ ProjectsService ]
-})
-@View({
+  injectables: [ ProjectsService ],
   templateUrl: 'app/projects/components/projects.html',
   directives: [ ProjectComponent ]
 })

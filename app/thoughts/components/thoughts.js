@@ -3,9 +3,7 @@ import { ROUTER_DIRECTIVES } from 'angular2/router';
 import { ThoughtsService } from '../services/thoughts';
 
 @Component({
-  selector: 'thoughts'
-})
-@View({
+  selector: 'thoughts',
   templateUrl: 'app/thoughts/components/thoughts.html',
   directives: [ ROUTER_DIRECTIVES ]
 })

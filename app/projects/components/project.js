@@ -3,9 +3,7 @@ import { MarkdownComponent } from 'ng2-markdown-component';
 
 @Component({
   selector: 'project',
-  inputs: [ 'project', 'last' ]
-})
-@View({
+  inputs: [ 'project', 'last' ],
   templateUrl: 'app/projects/components/project.html',
   styles: [`
     h2, h3 {

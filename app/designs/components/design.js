@@ -3,9 +3,7 @@ import { MarkdownComponent } from 'ng2-markdown-component';
 
 @Component({
   selector: 'design',
-  inputs: [ 'design', 'last' ]
-})
-@View({
+  inputs: [ 'design', 'last' ],
   templateUrl: 'app/designs/components/design.html',
   directives: [ MarkdownComponent ]
 })
