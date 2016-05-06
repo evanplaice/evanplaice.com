@@ -4,7 +4,7 @@ import { MarkdownComponent } from 'ng2-markdown-component';
 @Component({
   selector: 'project',
   inputs: [ 'project', 'last' ],
-  templateUrl: 'app/projects/components/project.html',
+  templateUrl: 'app/projects/project.component.html',
   styles: [`
     h2, h3 {
       margin-bottom: 10px !important;
