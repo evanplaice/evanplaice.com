@@ -5,7 +5,7 @@
 </h4>
 
 <template [ngIf]="thoughts">
-<div *ngFor="#thought of thoughts.posts; #last=last">
+<div *ngFor="let thought of thoughts.posts; let last=last">
   <template [ngIf]="!thought.draft">
   <div class="ui container">
     <h2><a [routerLink]="['/Thought', { post: thought.url }]">{{ thought.title }}</a></h2>

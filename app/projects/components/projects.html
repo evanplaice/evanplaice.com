@@ -4,4 +4,4 @@
   <i class="fork icon large" style="margin-right: 0rem !important;"></i>
 </h4>
 
-<project *ngFor="#project of projects; #isLast=last" [project]="project" [last]="isLast"></project>
+<project *ngFor="let project of projects; let isLast=last" [project]="project" [last]="isLast"></project>
