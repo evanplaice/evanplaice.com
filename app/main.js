@@ -8,7 +8,7 @@ import { ROUTER_PROVIDERS } from 'angular2/router';
 import { HTTP_PROVIDERS } from 'angular2/http';
 import { AppComponent } from './app/app.component';
 import { ThoughtsService } from './thoughts/services/thoughts';
-import { DesignsService } from './designs/services/designs';
+import { DesignsService } from './designs/designs.service';
 import { ProjectsService } from './projects/services/projects';
 import { ResumeService } from 'evanplaice/ng2-resume/resume';
 

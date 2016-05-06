@@ -1,11 +1,11 @@
 import { Component, View, Inject } from 'angular2/core';
-import { DesignComponent } from 'app/designs/components/design';
-import { DesignsService } from 'app/designs/services/designs';
+import { DesignComponent } from 'app/designs/design.component';
+import { DesignsService } from 'app/designs/designs.service';
 
 @Component({
   selector: 'designs',
   injectables: [ DesignsService ],
-  templateUrl: 'app/designs/components/designs.html',
+  templateUrl: 'app/designs/designs.component.html',
   directives: [ DesignComponent ]
 })
 export class DesignsComponent {

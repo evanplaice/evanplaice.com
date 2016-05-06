@@ -8,7 +8,7 @@ import { FooterComponent } from 'app/app/footer.component';
 // route components
 import { ThoughtsComponent } from 'app/thoughts/components/thoughts';
 import { ThoughtComponent } from 'app/thoughts/components/thought';
-import { DesignsComponent } from 'app/designs/components/designs';
+import { DesignsComponent } from 'app/designs/designs.component';
 import { ProjectsComponent } from 'app/projects/components/projects';
 import { VitaeComponent } from 'app/vitae/components/vitae';
 import { NowComponent } from 'app/now/components/now';

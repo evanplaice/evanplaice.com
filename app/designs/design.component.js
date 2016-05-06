@@ -4,7 +4,7 @@ import { MarkdownComponent } from 'ng2-markdown-component';
 @Component({
   selector: 'design',
   inputs: [ 'design', 'last' ],
-  templateUrl: 'app/designs/components/design.html',
+  templateUrl: 'app/designs/design.component.html',
   directives: [ MarkdownComponent ]
 })
 
