@@ -12,7 +12,7 @@ import { DesignsComponent } from 'app/designs/designs.component';
 import { ProjectsComponent } from 'app/projects/projects.component';
 import { VitaeComponent } from 'app/vitae/components/vitae';
 import { NowComponent } from 'app/now/now.component';
-import { TypefacesComponent } from 'app/typefaces/components/typefaces';
+import { TypefacesComponent } from 'app/typefaces/typefaces.component';
 
 @Component({
   selector: 'app',
