@@ -1,4 +1,4 @@
-import { ThoughtModel } from './thought';
+import { ThoughtModel } from './thought.model';
 
 export class ThoughtsModel {
   github = '';

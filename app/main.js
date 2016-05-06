@@ -7,7 +7,7 @@ import { bootstrap } from 'angular2/platform/browser';
 import { ROUTER_PROVIDERS } from 'angular2/router';
 import { HTTP_PROVIDERS } from 'angular2/http';
 import { AppComponent } from './app/app.component';
-import { ThoughtsService } from './thoughts/services/thoughts';
+import { ThoughtsService } from './thoughts/thoughts.service';
 import { DesignsService } from './designs/designs.service';
 import { ProjectsService } from './projects/projects.service';
 import { ResumeService } from 'evanplaice/ng2-resume/resume';
