@@ -1,4 +1,4 @@
-import { Component, View, Inject } from 'angular2/core';
+import { Component, Inject } from 'angular2/core';
 import { MODERN_COMPONENT, ResumeService } from 'evanplaice/ng2-resume/resume';
 
 @Component({

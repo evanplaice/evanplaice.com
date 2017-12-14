@@ -1,4 +1,4 @@
-import { Component, View, Inject } from 'angular2/core';
+import { Component, Inject } from 'angular2/core';
 import { DesignComponent } from 'app/designs/design.component';
 import { DesignsService } from 'app/designs/designs.service';
 
