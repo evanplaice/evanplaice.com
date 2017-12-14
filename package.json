@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/evanplaice/evanplaice.com#readme",
   "scripts": {
+    "setup": "npm install && jspm install",
     "start": "live-server",
     "deploy": "npm run build:prod && npm run prepare && npm run sync:prod",
     "grunt": "grunt",
