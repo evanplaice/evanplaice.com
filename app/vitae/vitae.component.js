@@ -1,5 +1,5 @@
 import { Component, View, Inject } from 'angular2/core';
-import { MODERN_COMPONENT, ResumeService } from 'ng2-resume/resume';
+import { MODERN_COMPONENT, ResumeService } from 'evanplaice/ng2-resume/resume';
 
 @Component({
   selector: 'vitae',
