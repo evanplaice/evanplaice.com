@@ -20,41 +20,37 @@ import { TypefacesComponent } from 'app/typefaces/typefaces.component';
   templateUrl: 'app/app/app.component.html',
   directives: [ ROUTER_DIRECTIVES, HeaderComponent, FooterComponent ]
 })
-@RouteConfig([
+@Routes([
+  {
+    path: '/',
+    component: ThoughtsComponent,
+  },
   {
     path: '/thoughts',
-    name: 'Thoughts',
-    component: ThoughtsComponent,
-    useAsDefault: true
+    component: ThoughtsComponent
   },
   {
     path: '/thought/:post',
-    name: 'Thought',
     component: ThoughtComponent
   },
   {
     path: '/designs',
-    name: 'Designs',
     component: DesignsComponent
   },
   {
     path: '/projects',
-    name: 'Projects',
     component: ProjectsComponent
   },
   {
     path: '/vitae',
-    name: 'Vitae',
     component: VitaeComponent
   },
   {
     path: '/now',
-    name: 'Now',
     component: NowComponent
   },
   {
     path: '/_typefaces',
-    name: 'Typefaces',
     component: TypefacesComponent
   }
 ])
