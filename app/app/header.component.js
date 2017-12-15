@@ -1,6 +1,6 @@
-import { Component, Inject } from 'angular-core';
-import { Location } from 'angular-common';
-import { ROUTER_DIRECTIVES } from 'angular-router';
+import { Component, Inject } from '@angular/core';
+import { Location } from '@angular/common';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
   selector: 'header',

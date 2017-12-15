@@ -1,5 +1,5 @@
-import { Injectable, Inject } from 'angular-core';
-import { Http } from 'angular-http';
+import { Injectable, Inject } from '@angular/core';
+import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { ProjectModel } from 'app/projects/project.model';
 

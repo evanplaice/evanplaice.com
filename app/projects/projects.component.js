@@ -1,4 +1,4 @@
-import { Component, Inject } from 'angular-core';
+import { Component, Inject } from '@angular/core';
 import { ProjectComponent } from 'app/projects/project.component';
 import { ProjectsService } from 'app/projects/projects.service';
 

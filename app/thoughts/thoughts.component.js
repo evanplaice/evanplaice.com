@@ -1,5 +1,5 @@
-import { Component, Inject } from 'angular-core';
-import { ROUTER_DIRECTIVES } from 'angular-router';
+import { Component, Inject } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 import { ThoughtsService } from './thoughts.service';
 
 @Component({

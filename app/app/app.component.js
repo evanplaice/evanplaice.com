@@ -1,6 +1,6 @@
-import { Component, Inject } from 'angular-core';
-import { LocationStrategy } from 'angular-common';
-import { ROUTER_DIRECTIVES, Router, Routes } from 'angular-router';
+import { Component, Inject } from '@angular/core';
+import { LocationStrategy } from '@angular/common';
+import { ROUTER_DIRECTIVES, Router, Routes } from '@angular/router';
 
 // layout components
 import { HeaderComponent } from 'app/app/header.component';
