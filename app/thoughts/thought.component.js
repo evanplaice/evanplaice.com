@@ -1,5 +1,5 @@
-import { Component, Inject } from 'angular2/core';
-import { RouteParams } from 'angular2/router';
+import { Component, Inject } from 'angular-core';
+import { RouteSegment } from 'angular-router';
 import { ThoughtsService } from './thoughts.service';
 import { MarkdownComponent } from 'ng2-markdown-component';
 

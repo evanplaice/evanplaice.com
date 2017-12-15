@@ -1,4 +1,4 @@
-import { Component } from 'angular2/core';
+import { Component } from 'angular-core';
 import { MarkdownComponent } from 'ng2-markdown-component';
 
 @Component({
