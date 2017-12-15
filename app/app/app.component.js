@@ -1,5 +1,5 @@
 import { Component, Inject } from 'angular-core';
-import { Location } from 'angular-common';
+import { LocationStrategy } from 'angular-common';
 import { ROUTER_DIRECTIVES, Router, Routes } from 'angular-router';
 
 // layout components
@@ -55,19 +55,21 @@ import { TypefacesComponent } from 'app/typefaces/typefaces.component';
   }
 ])
 export class AppComponent {
-  constructor (@Inject(Location) location) {
-    resolveHashURL(location);
+  constructor(@Inject(LocationStrategy) url, @Inject(Router) router) {   
+    resolveHashURL(url, router)
   }
 }
 
 // redirects in inbound HashURL to its corresponding route
 //  ex. evanplaice.com/#/designs => evanplaice.com/designs
-function resolveHashURL (location) {
-  let hash = location.platformStrategy._platformLocation.hash;
+function resolveHashURL(url, router) {
+  let hash = url._platformLocation.hash;
   if (hash) {
-   let path = hash.substring(1);
-   // console.log('RedirectTo: ' + path);
-   location.go(path);
+    let path = '/' + hash.substring(1);
+    // console.log('RedirectTo: ' + path);
+    // setTimeout is a kludge required because navigate
+    //  can be cancelled if it takes too long to fire.
+    setTimeout(() => { router.navigate([path]); });
   }
   return;
 }
