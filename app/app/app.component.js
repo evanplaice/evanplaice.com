@@ -58,12 +58,6 @@ export class AppComponent {
   constructor (@Inject(Location) location) {
     resolveHashURL(location);
   }
-
-  // Determines which route is currently active
-  //  used to determine which link to highlight with the 'active' class
-  isActiveRoute(route: string) {
-      return this.router.serializeUrl(this.router.urlTree) == this.router.serializeUrl((this.router.createUrlTree([route])));
-  }
 }
 
 // redirects in inbound HashURL to its corresponding route

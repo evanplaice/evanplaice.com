@@ -15,8 +15,6 @@ export class HeaderComponent {
 
   // adds an 'active' class to the currently selected link
   isActive (path) {
-    // TODO: Fix this
-    //return this.location.path().indexOf(path) > -1;
-    return;
+    return this.location.path().indexOf(path) > -1;
   }
 }
