@@ -9,7 +9,6 @@ import { ROUTER_DIRECTIVES } from 'angular-router';
 })
 export class HeaderComponent {
   constructor (@Inject(Location) location) {
-    // console.log('header');
     this.location = location;
   }
 

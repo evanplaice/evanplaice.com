@@ -9,9 +9,7 @@ import { MarkdownComponent } from 'ng2-markdown-component';
 })
 
 export class DesignComponent {
-  constructor () {
-    // console.log('design');
-  }
+  constructor () {}
 
   descLink () {
     if (this.design.description) {

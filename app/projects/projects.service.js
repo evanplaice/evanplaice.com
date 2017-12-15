@@ -24,20 +24,19 @@ export class ProjectsService {
 
   loadProjects () {
     this.http.get('content/projects/projects.json')
-    .map(res => res.json())
-    .subscribe(
-      items => {
-        // exclude hidden values
-        items = items.filter(item => !item.hidden);
-        // convert value to model
-        items = items.map(item => new ProjectModel(item));
-        // update observers
-        this._observer.next(this.data = items);
-      },
-      error => console.log(error),
-      () => {
-        // console.log('Projects loaded successfully');
-      }
-    );
+      .map(res => res.json())
+      .subscribe(
+        items => {
+          // exclude hidden values
+          items = items.filter(item => !item.hidden);
+          // convert value to model
+          items = items.map(item => new ProjectModel(item));
+          // update observers
+          this._observer.next(this.data = items);
+        },
+          error => console.log(error),
+          () => {
+        }
+      );
   }
 }

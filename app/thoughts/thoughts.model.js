@@ -9,7 +9,6 @@ export class ThoughtsModel {
     if (thoughts) {
       this.init(thoughts);
     }
-    // console.log(this);
   }
 
   init(thoughts){

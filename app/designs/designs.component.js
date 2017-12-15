@@ -10,7 +10,6 @@ import { DesignsService } from 'app/designs/designs.service';
 })
 export class DesignsComponent {
   constructor (@Inject(DesignsService) designsService) {
-    // console.log('designs');
     // link to the designs data
     designsService.designs$.subscribe(update => this.designs = update);
     designsService.getDesigns();

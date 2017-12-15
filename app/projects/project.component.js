@@ -17,9 +17,7 @@ import { MarkdownComponent } from 'ng2-markdown-component';
   directives: [ MarkdownComponent ]
 })
 export class ProjectComponent {
-  constructor () {
-    // console.log('project');
-  }
+  constructor () {}
 
   descLink () {
     if (this.project.description) {

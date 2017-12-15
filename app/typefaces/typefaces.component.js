@@ -7,8 +7,6 @@ import { MarkdownComponent } from 'ng2-markdown-component';
   directives: [ MarkdownComponent ]
 })
 export class TypefacesComponent {
-  constructor () {
-    // console.log('typefaces');
-  }
+  constructor () {}
 }
 

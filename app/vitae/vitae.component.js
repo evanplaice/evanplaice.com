@@ -10,7 +10,6 @@ import { MODERN_COMPONENT, ResumeService } from 'evanplaice/ng2-resume/resume';
 export class VitaeComponent {
 
   constructor (@Inject(ResumeService) resumeService) {
-    // console.log('vitae');
     // link to the vitae data
     resumeService.loadResume('jspm_packages/github/evanplaice/resume@0.0.8/Evan.Plaice-Full.Stack.Dev.json');
     resumeService.resume$.subscribe(update => this.resume = update);

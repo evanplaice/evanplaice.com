@@ -7,7 +7,5 @@ import { ROUTER_DIRECTIVES } from 'router';
   directives: [ ROUTER_DIRECTIVES ]
 })
 export class FooterComponent {
-  constructor () {
-    // console.log('footer');
-  }
+  constructor () {}
 }

@@ -9,7 +9,6 @@ import { ThoughtsService } from './thoughts.service';
 })
 export class ThoughtsComponent {
   constructor (@Inject(ThoughtsService) thoughtsService) {
-    // console.log('thoughts');
     // link to the thoughts data
     thoughtsService.loadThoughts('content/thoughts/thoughts.json');
     thoughtsService.thoughts$.subscribe(update => this.thoughts = update);

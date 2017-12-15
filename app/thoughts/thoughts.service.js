@@ -14,9 +14,10 @@ export class ThoughtsService {
 
   loadThoughts(path) {
     if (path || this.src) {
-      return this.thoughts$ = this.http.get(path || this.src)
-      .map(res => new ThoughtsModel(res.json()))
-      .startWith(new ThoughtsModel());
+      return this.thoughts$ = this.http
+        .get(path || this.src)
+        .map(res => new ThoughtsModel(res.json()))
+        .startWith(new ThoughtsModel());
     }
   }
 }

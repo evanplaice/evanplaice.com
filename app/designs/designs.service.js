@@ -23,21 +23,21 @@ export class DesignsService {
   }
 
   loadDesigns () {
-    this.http.get('content/designs/designs.json')
-    .map(res => res.json())
-    .subscribe(
-      items => {
-        // exclude hidden values
-        items = items.filter(item => !item.hidden);
-        // convert value to model
-        items = items.map(item => new DesignModel(item));
-        // update observers
-        this._observer.next(this.data = items);
-      },
-      error => console.log(error),
-      () => {
-        // console.log('Designs loaded successfully');
-      }
-    );
+    this.http
+      .get('content/designs/designs.json')
+      .map(res => res.json())
+      .subscribe(
+        items => {
+          // exclude hidden values
+          items = items.filter(item => !item.hidden);
+          // convert value to model
+          items = items.map(item => new DesignModel(item));
+          // update observers
+          this._observer.next(this.data = items);
+        },
+          error => console.log(error),
+          () => {
+        }
+      );
   }
 }
