@@ -13,13 +13,13 @@ System.config({
   },
 
   map: {
-    "angular-common": "npm:@angular/common@2.0.0-rc.1",
-    "angular-compiler": "npm:@angular/compiler@2.0.0-rc.1",
-    "angular-core": "npm:@angular/core@2.0.0-rc.1",
-    "angular-http": "npm:@angular/http@2.0.0-rc.1",
-    "angular-platform-browser": "npm:@angular/platform-browser@2.0.0-rc.1",
-    "angular-platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@2.0.0-rc.1",
-    "angular-router": "npm:@angular/router@2.0.0-rc.1",
+    "angular-common": "npm:@angular/common@2.0.0-rc.2",
+    "angular-compiler": "npm:@angular/compiler@2.0.0-rc.2",
+    "angular-core": "npm:@angular/core@2.0.0-rc.2",
+    "angular-http": "npm:@angular/http@2.0.0-rc.2",
+    "angular-platform-browser": "npm:@angular/platform-browser@2.0.0-rc.2",
+    "angular-platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@2.0.0-rc.2",
+    "angular-router": "npm:@angular/router@2.0.0-rc.2",
     "clean-css": "npm:clean-css@3.4.8",
     "css": "github:systemjs/plugin-css@0.1.20",
     "evanplaice/ng2-resume": "github:evanplaice/ng2-resume@0.0.5",
@@ -28,7 +28,6 @@ System.config({
     "ng2-markdown-component": "github:evanplaice/ng2-markdown@0.2.3",
     "reflect-metadata": "npm:reflect-metadata@0.1.2",
     "resume": "github:evanplaice/resume@0.0.8",
-    "router": "npm:@angular/router@2.0.0-rc.1",
     "rxjs": "npm:rxjs@5.0.0-beta.6",
     "semantic-ui": "github:Semantic-Org/Semantic-UI@2.1.7",
     "text": "github:systemjs/plugin-text@0.0.11",
@@ -100,40 +99,41 @@ System.config({
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
     },
-    "npm:@angular/common@2.0.0-rc.1": {
-      "@angular/core": "npm:@angular/core@2.0.0-rc.1",
+    "npm:@angular/common@2.0.0-rc.2": {
+      "@angular/core": "npm:@angular/core@2.0.0-rc.2",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:@angular/compiler@2.0.0-rc.1": {
-      "@angular/core": "npm:@angular/core@2.0.0-rc.1",
+    "npm:@angular/compiler@2.0.0-rc.2": {
+      "@angular/core": "npm:@angular/core@2.0.0-rc.2",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:@angular/core@2.0.0-rc.1": {
+    "npm:@angular/core@2.0.0-rc.2": {
       "process": "github:jspm/nodelibs-process@0.1.2",
       "rxjs": "npm:rxjs@5.0.0-beta.6",
       "zone.js": "npm:zone.js@0.6.26"
     },
-    "npm:@angular/http@2.0.0-rc.1": {
-      "@angular/core": "npm:@angular/core@2.0.0-rc.1",
+    "npm:@angular/http@2.0.0-rc.2": {
+      "@angular/core": "npm:@angular/core@2.0.0-rc.2",
+      "@angular/platform-browser": "npm:@angular/platform-browser@2.0.0-rc.2",
       "rxjs": "npm:rxjs@5.0.0-beta.6"
     },
-    "npm:@angular/platform-browser-dynamic@2.0.0-rc.1": {
-      "@angular/common": "npm:@angular/common@2.0.0-rc.1",
-      "@angular/compiler": "npm:@angular/compiler@2.0.0-rc.1",
-      "@angular/core": "npm:@angular/core@2.0.0-rc.1",
-      "@angular/platform-browser": "npm:@angular/platform-browser@2.0.0-rc.1",
+    "npm:@angular/platform-browser-dynamic@2.0.0-rc.2": {
+      "@angular/common": "npm:@angular/common@2.0.0-rc.2",
+      "@angular/compiler": "npm:@angular/compiler@2.0.0-rc.2",
+      "@angular/core": "npm:@angular/core@2.0.0-rc.2",
+      "@angular/platform-browser": "npm:@angular/platform-browser@2.0.0-rc.2",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:@angular/platform-browser@2.0.0-rc.1": {
-      "@angular/common": "npm:@angular/common@2.0.0-rc.1",
-      "@angular/compiler": "npm:@angular/compiler@2.0.0-rc.1",
-      "@angular/core": "npm:@angular/core@2.0.0-rc.1",
+    "npm:@angular/platform-browser@2.0.0-rc.2": {
+      "@angular/common": "npm:@angular/common@2.0.0-rc.2",
+      "@angular/compiler": "npm:@angular/compiler@2.0.0-rc.2",
+      "@angular/core": "npm:@angular/core@2.0.0-rc.2",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:@angular/router@2.0.0-rc.1": {
-      "@angular/common": "npm:@angular/common@2.0.0-rc.1",
-      "@angular/core": "npm:@angular/core@2.0.0-rc.1",
-      "@angular/platform-browser": "npm:@angular/platform-browser@2.0.0-rc.1"
+    "npm:@angular/router@2.0.0-rc.2": {
+      "@angular/common": "npm:@angular/common@2.0.0-rc.2",
+      "@angular/core": "npm:@angular/core@2.0.0-rc.2",
+      "@angular/platform-browser": "npm:@angular/platform-browser@2.0.0-rc.2"
     },
     "npm:amdefine@1.0.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
