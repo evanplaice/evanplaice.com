@@ -1,4 +1,3 @@
-import { Observable } from 'rxjs/Observable';
 import { Injectable, Inject } from 'angular-core';
 import { Http } from 'angular-http';
 import { ThoughtsModel } from './thoughts.model';

@@ -1,6 +1,6 @@
 import 'zone.js';
 import 'reflect-metadata';
-import 'rxjs';
+import 'rxjs/Rx';
 import 'semantic-ui';
 import { enableProdMode } from 'angular-core';
 import { bootstrap } from 'angular-platform-browser-dynamic';
