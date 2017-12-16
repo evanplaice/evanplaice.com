@@ -1,8 +1,5 @@
 import { Component, Inject } from '@angular/core';
 import { LocationStrategy } from '@angular/common';
-// layout components
-import { HeaderComponent } from 'app/app/header.component';
-import { FooterComponent } from 'app/app/footer.component';
 import { Router, Routes } from '@angular/router';
 
 // route components

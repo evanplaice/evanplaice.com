@@ -6,6 +6,8 @@ import { BrowserModule } from '@angular/platform-browser';
 // directives & pipes
 import { ROUTER_DIRECTIVES } from '@angular/router';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header.component';
+import { FooterComponent } from './footer.component';
 
 // providers & services
 
@@ -16,6 +18,8 @@ import { AppComponent } from './app.component';
   declarations: [
     ROUTER_DIRECTIVES,
     AppComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   providers: [
   ],
