@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { MarkdownComponent } from 'ng2-markdown-component';
 
 @Component({
   selector: 'design',
   inputs: [ 'design', 'last' ],
-  templateUrl: 'app/designs/design.component.html',
-  directives: [ MarkdownComponent ]
+  templateUrl: 'app/designs/design.component.html'
 })
 
 export class DesignComponent {

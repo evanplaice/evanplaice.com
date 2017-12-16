@@ -1,12 +1,10 @@
 import { Component, Inject } from '@angular/core';
 import { RouteSegment } from '@angular/router';
 import { ThoughtsService } from './thoughts.service';
-import { MarkdownComponent } from 'ng2-markdown-component';
 
 @Component({
   selector: 'thought',
-  templateUrl: 'app/thoughts/thought.component.html',
-  directives: [ MarkdownComponent ]
+  templateUrl: 'app/thoughts/thought.component.html'
 })
 
 export class ThoughtComponent {

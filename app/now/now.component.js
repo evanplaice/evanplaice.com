@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
-import { MarkdownComponent } from 'ng2-markdown-component';
 
 @Component({
   selector: 'now',
-  templateUrl: 'app/now/now.component.html',
-  directives: [ MarkdownComponent ]
+  templateUrl: 'app/now/now.component.html'
 })
 export class NowComponent {
   constructor () {

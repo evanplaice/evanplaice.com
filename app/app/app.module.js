@@ -8,6 +8,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
+import { MarkdownComponent } from 'ng2-markdown-component';
 
 // providers & services
 
@@ -17,6 +18,7 @@ import { FooterComponent } from './footer.component';
   ],
   declarations: [
     ROUTER_DIRECTIVES,
+    MarkdownComponent,
     AppComponent,
     HeaderComponent,
     FooterComponent,

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MarkdownComponent } from 'ng2-markdown-component';
 
 @Component({
   selector: 'project',
@@ -13,8 +12,7 @@ import { MarkdownComponent } from 'ng2-markdown-component';
       margin-top: 10px;
 
     }
-  `],
-  directives: [ MarkdownComponent ]
+  `]
 })
 export class ProjectComponent {
   constructor () {}
