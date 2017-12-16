@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // directives & pipes
+import { AppComponent } from './app.component';
 
 // providers & services
 
@@ -12,6 +13,7 @@ import { BrowserModule } from '@angular/platform-browser';
     BrowserModule,
   ],
   declarations: [
+    AppComponent,
   ],
   providers: [
   ],
