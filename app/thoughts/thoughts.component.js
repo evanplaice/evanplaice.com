@@ -1,11 +1,9 @@
 import { Component, Inject } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
 import { ThoughtsService } from './thoughts.service';
 
 @Component({
   selector: 'thoughts',
-  templateUrl: 'app/thoughts/thoughts.component.html',
-  directives: [ ROUTER_DIRECTIVES ]
+  templateUrl: 'app/thoughts/thoughts.component.html'
 })
 export class ThoughtsComponent {
   constructor (@Inject(ThoughtsService) thoughtsService) {

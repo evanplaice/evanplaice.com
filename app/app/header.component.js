@@ -1,11 +1,10 @@
 import { Component, Inject } from '@angular/core';
 import { Location } from '@angular/common';
-import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
   selector: 'header',
-  templateUrl: 'app/app/header.component.html',
-  directives: [ ROUTER_DIRECTIVES ]
+  selector: 'heading',
+  templateUrl: 'app/app/header.component.html'
 })
 export class HeaderComponent {
   constructor (@Inject(Location) location) {

@@ -1,10 +1,9 @@
 import { Component, Inject } from '@angular/core';
 import { LocationStrategy } from '@angular/common';
-import { ROUTER_DIRECTIVES, Router, Routes } from '@angular/router';
-
 // layout components
 import { HeaderComponent } from 'app/app/header.component';
 import { FooterComponent } from 'app/app/footer.component';
+import { Router, Routes } from '@angular/router';
 
 // route components
 import { ThoughtsComponent } from 'app/thoughts/thoughts.component';
@@ -18,7 +17,7 @@ import { TypefacesComponent } from 'app/typefaces/typefaces.component';
 @Component({
   selector: 'app',
   templateUrl: 'app/app/app.component.html',
-  directives: [ ROUTER_DIRECTIVES, HeaderComponent, FooterComponent ]
+  directives: [ HeaderComponent, FooterComponent ]
 })
 @Routes([
   {
