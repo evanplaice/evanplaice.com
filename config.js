@@ -13,22 +13,22 @@ System.config({
   },
 
   map: {
-    "@angular/common": "npm:@angular/common@2.0.0-rc.7",
-    "@angular/compiler": "npm:@angular/compiler@2.0.0-rc.7",
-    "@angular/core": "npm:@angular/core@2.0.0-rc.7",
-    "@angular/http": "npm:@angular/http@2.0.0-rc.7",
-    "@angular/platform-browser": "npm:@angular/platform-browser@2.0.0-rc.7",
-    "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@2.0.0-rc.7",
-    "@angular/router": "npm:@angular/router@3.0.0-rc.2",
+    "@angular/common": "npm:@angular/common@2.4.10",
+    "@angular/compiler": "npm:@angular/compiler@2.4.10",
+    "@angular/core": "npm:@angular/core@2.4.10",
+    "@angular/http": "npm:@angular/http@2.4.10",
+    "@angular/platform-browser": "npm:@angular/platform-browser@2.4.10",
+    "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@2.4.10",
+    "@angular/router": "npm:@angular/router@3.4.10",
     "clean-css": "npm:clean-css@3.4.8",
     "css": "github:systemjs/plugin-css@0.1.20",
     "evanplaice/resume": "github:evanplaice/resume@0.0.8",
     "font-awesome": "npm:font-awesome@4.5.0",
     "ng2-markdown": "github:evanplaice/ng2-markdown@0.2.3",
     "ng2-resume": "github:evanplaice/ng2-resume@0.0.5",
-    "reflect-metadata": "npm:reflect-metadata@0.1.2",
+    "reflect-metadata": "npm:reflect-metadata@0.1.10",
     "resume": "github:evanplaice/resume@0.0.8",
-    "rxjs": "npm:rxjs@5.0.1",
+    "rxjs": "npm:rxjs@5.5.5",
     "semantic-ui": "github:Semantic-Org/Semantic-UI@2.1.7",
     "text": "github:systemjs/plugin-text@0.0.11",
     "traceur": "github:jmcriffey/bower-traceur@0.0.93",
@@ -99,40 +99,40 @@ System.config({
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
     },
-    "npm:@angular/common@2.0.0-rc.7": {
-      "@angular/core": "npm:@angular/core@2.0.0-rc.7"
+    "npm:@angular/common@2.4.10": {
+      "@angular/core": "npm:@angular/core@2.4.10"
     },
-    "npm:@angular/compiler@2.0.0-rc.7": {
-      "@angular/core": "npm:@angular/core@2.0.0-rc.7",
+    "npm:@angular/compiler@2.4.10": {
+      "@angular/core": "npm:@angular/core@2.4.10",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:@angular/core@2.0.0-rc.7": {
+    "npm:@angular/core@2.4.10": {
       "process": "github:jspm/nodelibs-process@0.1.2",
-      "rxjs": "npm:rxjs@5.0.1",
-      "zone.js": "npm:zone.js@0.6.26"
+      "rxjs": "npm:rxjs@5.5.5",
+      "zone.js": "npm:zone.js@0.7.8"
     },
-    "npm:@angular/http@2.0.0-rc.7": {
-      "@angular/core": "npm:@angular/core@2.0.0-rc.7",
-      "@angular/platform-browser": "npm:@angular/platform-browser@2.0.0-rc.7",
-      "rxjs": "npm:rxjs@5.0.1"
+    "npm:@angular/http@2.4.10": {
+      "@angular/core": "npm:@angular/core@2.4.10",
+      "@angular/platform-browser": "npm:@angular/platform-browser@2.4.10",
+      "rxjs": "npm:rxjs@5.5.5"
     },
-    "npm:@angular/platform-browser-dynamic@2.0.0-rc.7": {
-      "@angular/common": "npm:@angular/common@2.0.0-rc.7",
-      "@angular/compiler": "npm:@angular/compiler@2.0.0-rc.7",
-      "@angular/core": "npm:@angular/core@2.0.0-rc.7",
-      "@angular/platform-browser": "npm:@angular/platform-browser@2.0.0-rc.7"
+    "npm:@angular/platform-browser-dynamic@2.4.10": {
+      "@angular/common": "npm:@angular/common@2.4.10",
+      "@angular/compiler": "npm:@angular/compiler@2.4.10",
+      "@angular/core": "npm:@angular/core@2.4.10",
+      "@angular/platform-browser": "npm:@angular/platform-browser@2.4.10"
     },
-    "npm:@angular/platform-browser@2.0.0-rc.7": {
-      "@angular/common": "npm:@angular/common@2.0.0-rc.7",
-      "@angular/core": "npm:@angular/core@2.0.0-rc.7",
+    "npm:@angular/platform-browser@2.4.10": {
+      "@angular/common": "npm:@angular/common@2.4.10",
+      "@angular/core": "npm:@angular/core@2.4.10",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:@angular/router@3.0.0-rc.2": {
-      "@angular/common": "npm:@angular/common@2.0.0-rc.7",
-      "@angular/core": "npm:@angular/core@2.0.0-rc.7",
-      "@angular/platform-browser": "npm:@angular/platform-browser@2.0.0-rc.7",
+    "npm:@angular/router@3.4.10": {
+      "@angular/common": "npm:@angular/common@2.4.10",
+      "@angular/core": "npm:@angular/core@2.4.10",
+      "@angular/platform-browser": "npm:@angular/platform-browser@2.4.10",
       "process": "github:jspm/nodelibs-process@0.1.2",
-      "rxjs": "npm:rxjs@5.0.1"
+      "rxjs": "npm:rxjs@5.5.5"
     },
     "npm:amdefine@1.0.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -415,17 +415,14 @@ System.config({
       "stream-browserify": "npm:stream-browserify@1.0.0",
       "string_decoder": "npm:string_decoder@0.10.31"
     },
-    "npm:reflect-metadata@0.1.2": {
-      "assert": "github:jspm/nodelibs-assert@0.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.2"
-    },
     "npm:ripemd160@2.0.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.1",
       "hash-base": "npm:hash-base@2.0.2",
       "inherits": "npm:inherits@2.0.3"
     },
-    "npm:rxjs@5.0.1": {
+    "npm:rxjs@5.5.5": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.1",
+      "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "symbol-observable": "npm:symbol-observable@1.0.1"
     },
@@ -468,6 +465,13 @@ System.config({
       "indexof": "npm:indexof@0.0.1"
     },
     "npm:zone.js@0.6.26": {
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "events": "github:jspm/nodelibs-events@0.1.1",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "timers": "github:jspm/nodelibs-timers@0.1.0"
+    },
+    "npm:zone.js@0.7.8": {
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "events": "github:jspm/nodelibs-events@0.1.1",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
