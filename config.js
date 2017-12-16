@@ -22,7 +22,7 @@ System.config({
     "@angular/router": "npm:@angular/router@3.0.0-rc.2",
     "clean-css": "npm:clean-css@3.4.8",
     "css": "github:systemjs/plugin-css@0.1.20",
-    "evanplaice/ng2-resume": "github:evanplaice/ng2-resume@0.0.5",
+    "ng2-resume": "github:evanplaice/ng2-resume@0.0.5",
     "evanplaice/resume": "github:evanplaice/resume@0.0.8",
     "font-awesome": "npm:font-awesome@4.5.0",
     "ng2-markdown-component": "github:evanplaice/ng2-markdown@0.2.3",
