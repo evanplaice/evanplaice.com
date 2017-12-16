@@ -13,13 +13,13 @@ System.config({
   },
 
   map: {
-    "@angular/common": "npm:@angular/common@2.4.10",
-    "@angular/compiler": "npm:@angular/compiler@2.4.10",
-    "@angular/core": "npm:@angular/core@2.4.10",
-    "@angular/http": "npm:@angular/http@2.4.10",
-    "@angular/platform-browser": "npm:@angular/platform-browser@2.4.10",
-    "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@2.4.10",
-    "@angular/router": "npm:@angular/router@3.4.10",
+    "@angular/common": "npm:@angular/common@4.4.6",
+    "@angular/compiler": "npm:@angular/compiler@4.4.6",
+    "@angular/core": "npm:@angular/core@4.4.6",
+    "@angular/http": "npm:@angular/http@4.4.6",
+    "@angular/platform-browser": "npm:@angular/platform-browser@4.4.6",
+    "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@4.4.6",
+    "@angular/router": "npm:@angular/router@4.4.6",
     "clean-css": "npm:clean-css@3.4.8",
     "css": "github:systemjs/plugin-css@0.1.20",
     "evanplaice/resume": "github:evanplaice/resume@0.0.8",
@@ -99,40 +99,48 @@ System.config({
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
     },
-    "npm:@angular/common@2.4.10": {
-      "@angular/core": "npm:@angular/core@2.4.10"
+    "npm:@angular/common@4.4.6": {
+      "@angular/core": "npm:@angular/core@4.4.6",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "tslib": "npm:tslib@1.8.1"
     },
-    "npm:@angular/compiler@2.4.10": {
-      "@angular/core": "npm:@angular/core@2.4.10",
-      "process": "github:jspm/nodelibs-process@0.1.2"
+    "npm:@angular/compiler@4.4.6": {
+      "@angular/core": "npm:@angular/core@4.4.6",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "tslib": "npm:tslib@1.8.1"
     },
-    "npm:@angular/core@2.4.10": {
+    "npm:@angular/core@4.4.6": {
       "process": "github:jspm/nodelibs-process@0.1.2",
       "rxjs": "npm:rxjs@5.5.5",
-      "zone.js": "npm:zone.js@0.7.8"
+      "tslib": "npm:tslib@1.8.1",
+      "zone.js": "npm:zone.js@0.8.18"
     },
-    "npm:@angular/http@2.4.10": {
-      "@angular/core": "npm:@angular/core@2.4.10",
-      "@angular/platform-browser": "npm:@angular/platform-browser@2.4.10",
-      "rxjs": "npm:rxjs@5.5.5"
+    "npm:@angular/http@4.4.6": {
+      "@angular/core": "npm:@angular/core@4.4.6",
+      "@angular/platform-browser": "npm:@angular/platform-browser@4.4.6",
+      "rxjs": "npm:rxjs@5.5.5",
+      "tslib": "npm:tslib@1.8.1"
     },
-    "npm:@angular/platform-browser-dynamic@2.4.10": {
-      "@angular/common": "npm:@angular/common@2.4.10",
-      "@angular/compiler": "npm:@angular/compiler@2.4.10",
-      "@angular/core": "npm:@angular/core@2.4.10",
-      "@angular/platform-browser": "npm:@angular/platform-browser@2.4.10"
+    "npm:@angular/platform-browser-dynamic@4.4.6": {
+      "@angular/common": "npm:@angular/common@4.4.6",
+      "@angular/compiler": "npm:@angular/compiler@4.4.6",
+      "@angular/core": "npm:@angular/core@4.4.6",
+      "@angular/platform-browser": "npm:@angular/platform-browser@4.4.6",
+      "tslib": "npm:tslib@1.8.1"
     },
-    "npm:@angular/platform-browser@2.4.10": {
-      "@angular/common": "npm:@angular/common@2.4.10",
-      "@angular/core": "npm:@angular/core@2.4.10",
-      "process": "github:jspm/nodelibs-process@0.1.2"
-    },
-    "npm:@angular/router@3.4.10": {
-      "@angular/common": "npm:@angular/common@2.4.10",
-      "@angular/core": "npm:@angular/core@2.4.10",
-      "@angular/platform-browser": "npm:@angular/platform-browser@2.4.10",
+    "npm:@angular/platform-browser@4.4.6": {
+      "@angular/common": "npm:@angular/common@4.4.6",
+      "@angular/core": "npm:@angular/core@4.4.6",
       "process": "github:jspm/nodelibs-process@0.1.2",
-      "rxjs": "npm:rxjs@5.5.5"
+      "tslib": "npm:tslib@1.8.1"
+    },
+    "npm:@angular/router@4.4.6": {
+      "@angular/common": "npm:@angular/common@4.4.6",
+      "@angular/core": "npm:@angular/core@4.4.6",
+      "@angular/platform-browser": "npm:@angular/platform-browser@4.4.6",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "rxjs": "npm:rxjs@5.5.5",
+      "tslib": "npm:tslib@1.8.1"
     },
     "npm:amdefine@1.0.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -471,7 +479,7 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "timers": "github:jspm/nodelibs-timers@0.1.0"
     },
-    "npm:zone.js@0.7.8": {
+    "npm:zone.js@0.8.18": {
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "events": "github:jspm/nodelibs-events@0.1.1",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
