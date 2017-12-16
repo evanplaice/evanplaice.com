@@ -14,6 +14,12 @@ import { ProjectComponent } from '../projects/project.component';
 import { MODERN_COMPONENT } from 'evanplaice/ng2-resume/resume';
 
 // providers & services
+import { ROUTER_PROVIDERS } from '@angular/router';
+import { HTTP_PROVIDERS } from '@angular/http';
+import { ThoughtsService } from '../thoughts/thoughts.service';
+import { DesignsService } from '../designs/designs.service';
+import { ProjectsService } from '../projects/projects.service';
+import { ResumeService } from 'evanplaice/ng2-resume/resume';
 
 @NgModule({
   imports: [
@@ -30,6 +36,12 @@ import { MODERN_COMPONENT } from 'evanplaice/ng2-resume/resume';
     MODERN_COMPONENT
   ],
   providers: [
+    ROUTER_PROVIDERS,
+    HTTP_PROVIDERS,,
+    ThoughtsService,
+    DesignsService,
+    ProjectsService,
+    ResumeService
   ],
   bootstrap: [ AppComponent ]
 })
