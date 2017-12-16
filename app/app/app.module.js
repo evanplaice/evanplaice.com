@@ -10,6 +10,7 @@ import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
 import { MarkdownComponent } from 'ng2-markdown-component';
 import { DesignComponent } from '../designs/design.component';
+import { ProjectComponent } from '../projects/project.component';
 
 // providers & services
 
@@ -24,6 +25,7 @@ import { DesignComponent } from '../designs/design.component';
     HeaderComponent,
     FooterComponent,
     DesignComponent,
+    ProjectComponent,
   ],
   providers: [
   ],
