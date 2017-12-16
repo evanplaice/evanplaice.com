@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: 'app/typefaces/typefaces.component.html'
 })
 export class TypefacesComponent {
-  constructor () {}
+  constructor () {
+    this.src = 'content/typefaces/typefaces.md';
+  }
 }
 
