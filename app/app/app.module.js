@@ -7,10 +7,10 @@ import { PositiveModule as ResumeModule } from 'ng2-resume';
 import { routing } from './app.routes';
 
 // directives & pipes
+import { MarkdownModule } from 'ng2-markdown';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
-import { MarkdownComponent } from 'ng2-markdown-component';
 import { ThoughtsComponent } from '../thoughts/thoughts.component';
 import { ThoughtComponent } from '../thoughts/thought.component';
 import { DesignsComponent } from '../designs/designs.component';
@@ -31,10 +31,10 @@ import { ProjectsService } from '../projects/projects.service';
     BrowserModule,
     HttpModule,
     ResumeModule,
+    MarkdownModule,
     routing
   ],
   declarations: [
-    MarkdownComponent,
     AppComponent,
     HeaderComponent,
     FooterComponent,
