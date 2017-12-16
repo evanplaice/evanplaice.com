@@ -4,13 +4,13 @@
   <i class="bullseye icon large" style="margin-right: 0rem !important;"></i>
 </h4>
 
-<template [ngIf]="thoughts">
+<ng-template [ngIf]="thoughts">
 <div *ngFor="let thought of thoughts.posts; let last=last">
-  <template [ngIf]="!thought.draft">
+  <ng-template [ngIf]="!thought.draft">
   <div class="ui container">
     <h2><a [routerLink]="['/thought/', thought.url]">{{ thought.title }}</a></h2>
   </div>
   <p>{{ thought.summary }}</p>
-  </template>
+  </ng-template>
 </div>
-</template>
+</ng-template>
