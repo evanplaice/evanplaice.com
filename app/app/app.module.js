@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
 import { MarkdownComponent } from 'ng2-markdown-component';
+import { DesignComponent } from '../designs/design.component';
 
 // providers & services
 
@@ -22,6 +23,7 @@ import { MarkdownComponent } from 'ng2-markdown-component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    DesignComponent,
   ],
   providers: [
   ],
