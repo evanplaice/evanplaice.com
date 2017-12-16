@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { RouteSegment } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { ThoughtsService } from './thoughts.service';
 
 @Component({
@@ -8,9 +8,10 @@ import { ThoughtsService } from './thoughts.service';
 })
 
 export class ThoughtComponent {
-  constructor (@Inject(ThoughtsService) thoughtsService, @Inject(RouteSegment) segment) {
+  constructor (@Inject(ThoughtsService) thoughtsService, @Inject(ActivatedRoute) route) {
     // extract the post id from the GET params
-    this.param = segment.getParam('post');
+    this.param = route.snapshot.params['post'];
+
     // link to the thoughts data
     thoughtsService.thoughts$.subscribe(update => this.set(update));
   }
