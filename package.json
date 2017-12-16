@@ -32,12 +32,12 @@
   },
   "jspm": {
     "dependencies": {
-      "@angular/common": "npm:@angular/common@2.0.0-rc.6",
-      "@angular/compiler": "npm:@angular/compiler@2.0.0-rc.6",
-      "@angular/core": "npm:@angular/core@2.0.0-rc.6",
-      "@angular/http": "npm:@angular/http@2.0.0-rc.6",
-      "@angular/platform-browser": "npm:@angular/platform-browser@2.0.0-rc.6",
-      "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@2.0.0-rc.6",
+      "@angular/common": "npm:@angular/common@2.0.0-rc.7",
+      "@angular/compiler": "npm:@angular/compiler@2.0.0-rc.7",
+      "@angular/core": "npm:@angular/core@2.0.0-rc.7",
+      "@angular/http": "npm:@angular/http@2.0.0-rc.7",
+      "@angular/platform-browser": "npm:@angular/platform-browser@2.0.0-rc.7",
+      "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@2.0.0-rc.7",
       "@angular/router": "npm:@angular/router@3.0.0-rc.2",
       "css": "github:systemjs/plugin-css@^0.1.20",
       "evanplaice/ng2-resume": "github:evanplaice/ng2-resume@^0.0.5",
