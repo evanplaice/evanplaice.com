@@ -19,15 +19,15 @@
     "deploy": "npm run build:prod && npm run prepare && npm run sync:prod",
     "grunt": "grunt",
     "checkstyle": "semistandard || true",
-    "build:dev": "jspm bundle app/app app/app.dev.js --minify --inject",
-    "build:prod": "jspm bundle-sfx app/app dist/app.min.js",
+    "build:dev": "jspm bundle app/main app/app.dev.js --minify --inject",
+    "build:prod": "jspm bundle-sfx app/main dist/app.min.js",
     "prepare": "npm run gzip:app & npm run gzip:map & npm run gzip:css",
     "sync:dev": "grunt development",
     "sync:prod": "grunt production",
     "sync:content": "grunt content",
     "gzip:app": "gzip -9 dist/app.min.js && mv dist/app.min.js.gz dist/app.min.js",
     "gzip:map": "gzip -9 dist/app.min.js.map && mv dist/app.min.js.map.gz dist/app.min.js.map",
-    "gzip:css": "cp app/app.css dist/app.css && gzip -9 dist/app.css && mv dist/app.css.gz dist/app.css",
+    "gzip:css": "cp app/main.css dist/app.css && gzip -9 dist/app.css && mv dist/app.css.gz dist/app.css",
     "stats": "git diff --stat `git hash-object -t tree /dev/null`"
   },
   "jspm": {
