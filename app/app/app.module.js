@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 // imports
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
-import { ResumeModule } from 'ng2-resume/modern.module';
+import { PositiveModule as ResumeModule } from 'ng2-resume';
 import { routing } from './app.routes';
 
 // directives & pipes
