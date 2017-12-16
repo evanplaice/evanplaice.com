@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 
 // imports
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
 
 // directives & pipes
 import { ROUTER_DIRECTIVES } from '@angular/router';
@@ -24,6 +25,7 @@ import { ResumeService } from 'evanplaice/ng2-resume/resume';
 @NgModule({
   imports: [
     BrowserModule,
+    HttpModule
   ],
   declarations: [
     ROUTER_DIRECTIVES,
