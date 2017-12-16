@@ -11,6 +11,7 @@ import { FooterComponent } from './footer.component';
 import { MarkdownComponent } from 'ng2-markdown-component';
 import { DesignComponent } from '../designs/design.component';
 import { ProjectComponent } from '../projects/project.component';
+import { MODERN_COMPONENT } from 'evanplaice/ng2-resume/resume';
 
 // providers & services
 
@@ -26,6 +27,7 @@ import { ProjectComponent } from '../projects/project.component';
     FooterComponent,
     DesignComponent,
     ProjectComponent,
+    MODERN_COMPONENT
   ],
   providers: [
   ],

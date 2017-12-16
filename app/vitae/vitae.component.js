@@ -1,11 +1,10 @@
 import { Component, Inject } from '@angular/core';
-import { MODERN_COMPONENT, ResumeService } from 'evanplaice/ng2-resume/resume';
+import { ResumeService } from 'evanplaice/ng2-resume/resume';
 
 @Component({
   selector: 'vitae',
   injectables: [ ResumeService ],
-  templateUrl: 'app/vitae/vitae.component.html',
-  directives: [ MODERN_COMPONENT ]
+  templateUrl: 'app/vitae/vitae.component.html'
 })
 export class VitaeComponent {
 
