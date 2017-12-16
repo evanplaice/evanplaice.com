@@ -13,8 +13,7 @@ import { TypefacesComponent } from 'app/typefaces/typefaces.component';
 
 @Component({
   selector: 'app',
-  templateUrl: 'app/app/app.component.html',
-  directives: [ HeaderComponent, FooterComponent ]
+  templateUrl: 'app/app/app.component.html'
 })
 @Routes([
   {
