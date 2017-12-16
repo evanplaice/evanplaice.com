@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 // imports
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
+import { ResumeModule } from 'ng2-resume/modern.module';
 import { routing } from './app.routes';
 
 // directives & pipes
@@ -28,7 +29,8 @@ import { ProjectsService } from '../projects/projects.service';
 @NgModule({
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    ResumeModule,
     routing
   ],
   declarations: [
