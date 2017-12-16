@@ -2,7 +2,6 @@ import { Component, Inject } from '@angular/core';
 import { Location } from '@angular/common';
 
 @Component({
-  selector: 'header',
   selector: 'heading',
   templateUrl: 'app/app/header.component.html'
 })
