@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 // imports
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
+import { routing } from './app.routes';
 
 // directives & pipes
-import { ROUTER_DIRECTIVES } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
@@ -26,9 +26,9 @@ import { ResumeService } from 'evanplaice/ng2-resume/resume';
   imports: [
     BrowserModule,
     HttpModule
+    routing
   ],
   declarations: [
-    ROUTER_DIRECTIVES,
     MarkdownComponent,
     AppComponent,
     HeaderComponent,
@@ -38,7 +38,6 @@ import { ResumeService } from 'evanplaice/ng2-resume/resume';
     MODERN_COMPONENT
   ],
   providers: [
-    ROUTER_PROVIDERS,
     HTTP_PROVIDERS,,
     ThoughtsService,
     DesignsService,

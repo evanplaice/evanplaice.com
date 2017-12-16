@@ -1,54 +1,11 @@
 import { Component, Inject } from '@angular/core';
 import { LocationStrategy } from '@angular/common';
-import { Router, Routes } from '@angular/router';
-
-// route components
-import { ThoughtsComponent } from 'app/thoughts/thoughts.component';
-import { ThoughtComponent } from 'app/thoughts/thought.component';
-import { DesignsComponent } from 'app/designs/designs.component';
-import { ProjectsComponent } from 'app/projects/projects.component';
-import { VitaeComponent } from 'app/vitae/vitae.component';
-import { NowComponent } from 'app/now/now.component';
-import { TypefacesComponent } from 'app/typefaces/typefaces.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app',
   templateUrl: 'app/app/app.component.html'
 })
-@Routes([
-  {
-    path: '/',
-    component: ThoughtsComponent,
-  },
-  {
-    path: '/thoughts',
-    component: ThoughtsComponent
-  },
-  {
-    path: '/thought/:post',
-    component: ThoughtComponent
-  },
-  {
-    path: '/designs',
-    component: DesignsComponent
-  },
-  {
-    path: '/projects',
-    component: ProjectsComponent
-  },
-  {
-    path: '/vitae',
-    component: VitaeComponent
-  },
-  {
-    path: '/now',
-    component: NowComponent
-  },
-  {
-    path: '/_typefaces',
-    component: TypefacesComponent
-  }
-])
 export class AppComponent {
   constructor(@Inject(LocationStrategy) url, @Inject(Router) router) {   
     resolveHashURL(url, router)
