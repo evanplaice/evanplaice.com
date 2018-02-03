@@ -1,0 +1,23 @@
+import 'zone.js';
+import 'reflect-metadata';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/startWith';
+//import 'rxjs/Rx';
+import './main.css';
+import 'semantic-ui/dist/components/reset.css';
+import 'semantic-ui/dist/components/container.css';
+import 'semantic-ui/dist/components/divider.css';
+import 'semantic-ui/dist/components/icon.css';
+import 'semantic-ui/dist/components/image.css';
+import 'semantic-ui/dist/components/item.css';
+import 'semantic-ui/dist/components/menu.css';
+import 'semantic-ui/dist/components/grid.css';
+import 'semantic-ui/dist/components/segment.css';
+import 'semantic-ui/dist/components/site.css';
+//import 'semantic-ui/dist/semantic.css';
+import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app/app.module';
+
+enableProdMode();
+platformBrowserDynamic().bootstrapModule(AppModule);

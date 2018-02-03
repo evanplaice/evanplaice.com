@@ -12,6 +12,33 @@
       "draft": true
     },
     {
+      "title": "What's the Worst Bug You've Ever Written",
+      "author": "Evan Plaice",
+      "date": "2018.2.1",
+      "url": "worst-bug",
+      "summary": "From 'I think I'm going to have a panic attack' to 'I AM INVINCIBLE!'",
+      "content": "worst-bug.md",
+      "draft": false
+    },
+    {
+      "title": "Can CSV Be Parsed By Regex?",
+      "author": "Evan Plaice",
+      "date": "2013.10.21",
+      "url": "csv-regex",
+      "summary": "There are times when you're holding a hammer and everything looks like a nail.",
+      "content": "csv-regex.md",
+      "draft": false
+    },
+    {
+      "title": "How to Start in Open Source",
+      "author": "Evan Plaice",
+      "date": "2010.9.12",
+      "url": "open-source",
+      "summary": "An anecdote on how I started contributing to OSS",
+      "content": "open-source.md",
+      "draft": false
+    },
+    {
       "title": "Hello Worl... oh never mind",
       "author": "Evan Plaice",
       "date": "2015.12.29",

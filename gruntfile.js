@@ -21,12 +21,9 @@ module.exports = function (grunt) {
           gzipRename: 'ext'
         },
         files: [
-          { expand: true, cwd: 'jspm_packages/', src: ['**'], dest: '/jspm_packages' },
-          { expand: true, cwd: 'app/', src: ['**'], dest: '/app' },
           { expand: true, cwd: 'content/', src: ['**'], dest: '/content' },
-          { expand: true, src: 'index.html', dest: '/' },
-          { expand: true, src: 'config.js', dest: '/' },
-          { dest: '/', cwd: './', action: 'delete' }
+          { expand: true, cwd: 'dist/', src: ['**'], dest: '/' },
+          //{ dest: '/', cwd: './', action: 'delete' }
         ]
       },
       production: {
@@ -37,19 +34,8 @@ module.exports = function (grunt) {
           gzipRename: 'ext'
         },
         files: [
-
-          { expand: true, cwd: 'jspm_packages/', src: ['**'], dest: '/jspm_packages' },
-          { expand: true, cwd: 'app/', src: ['**'], dest: '/app' },
           { expand: true, cwd: 'content/', src: ['**'], dest: '/content' },
-          { dest: 'dist/app.css', cwd: './', action: 'delete' },
-          { dest: 'dist/app.min.js', cwd: './', action: 'delete' },
-          { dest: 'dist/app.min.map', cwd: './', action: 'delete' },
-          { expand: true, cwd: 'dist/', src: ['**'], dest: '/dist', params: { ContentEncoding: 'gzip' } },
-          { src: 'index.html', dest: '/' },
-          { src: 'config.js', dest: '/' },
-          { src: 'sitemap.xml', dest: '/' },
-          { src: 'google8178f9c6a9119ad1.html', dest: '/' },
-          { dest: '/', cwd: './', action: 'delete' }
+          { expand: true, cwd: 'dist/', src: ['**'], dest: '/' }
         ]
       },
       content: {

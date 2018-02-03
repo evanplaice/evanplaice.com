@@ -6,19 +6,19 @@
   },
   "info": {
     "label": "Full Stack Developer",
-    "brief": "Full-Stack developer, with 8+ years of experience. I live by a simple principle, 'leave it better than you found it'. I'm accustomed to wearing a lot of hats; including greenfield development, leading a team, implementing new techologies, interfacing with customers. I adapt to the domain and needs of business.",
+    "brief": "Full-Stack developer w/ 5+ years of experience. Flight Simulator IO specialist, and Military Contractor 'go-to guy' in a past life. Open Source Software Ninja. Problem solver. Leader when necessary. Accustomed to, working on small specialized teams, interfacing with customers, quickly adapting to a new technologies, and working on the bleeding-edge.",
     "quote": "Leave it better than you found it"
   },
   "contact": {
     "website": "http://evanplaice.com",
-    "phone": "",
+    "phone": "7203152863",
     "email": "evanplaice@gmail.com"
   },
   "location": {
-    "address": "2445 Torrejon Pl",
-    "city": "San Diego",
-    "region": "CA",
-    "code": "92009",
+    "address": "10200 Park Meadows Dr APT 2612",
+    "city": "Littleton",
+    "region": "C0",
+    "code": "80124",
     "country": "US"
   },
   "social": [
@@ -52,67 +52,116 @@
     "summary": "",
     "history": [
       {
+        "employer": "WiseConnect Inc.",
+        "url": "http://wiseconnectinc.com/",
+        "position": "Lead Installation and Repair Field Technician",
+        "summary": "High speed, low drag copper specialist. Installing Century Link DSL and POTS services.",
+        "start": "2017-07",
+        "end": "2017-10",
+        "highlights": [
+          "Provided leadership, training, and QA for the field techs",
+          "Served 1K+ customers"
+        ],
+        "keywords": [
+          "Installation",
+          "Repair",
+          "Troubleshooting",
+          "Quality Asssurance",
+          "Training",
+          "Leadership",
+          "Customer Service"
+        ]
+      },
+      {
+        "employer": "24 Hour Alert Systems",
+        "url": "http://www.somesite.com",
+        "position": "DISH Field Technician",
+        "summary": "DISH Field Technician. Performing satellite installations, repairs, upgrades, and migrations.",
+        "start": "2016-09",
+        "end": "2017-06",
+        "highlights": [
+          "Served 1.5+ customers"
+        ],
+        "keywords": [
+          "Installation",
+          "Repair",
+          "Troubleshooting",
+          "Quality Asssurance",
+          "Customer Service",
+          "Sales"
+        ]
+      },
+      {
         "employer": "Strike Group LLC.",
         "url": "http://strikegroup.org",
         "position": "Field Service Representative",
-        "summary": "West Coast representative for MARCORSYSCOM Combat Camera. Providing logistics and support of the tactical systems.",
+        "summary": "West Coast representative for MARCORSYSCOM Combat Camera. Providing logistics and support.",
         "start": "2011-04",
         "end": "2015-05",
         "highlights": [
-          "Field, track, support $5+ million in military hardware",
-          "Support 11 units across 6 military installations",
-          "Technical SME for the TIPS (Tactical Imagery Production System)",
-          "Onsite technical SME for 3 field exercises",
-          "Host of semi-annual traning evolutions for the TIPS",
+          "Fielded, tracked, and supported $5+ million in military hardware",
+          "Support 11 Combat Camera units across 6 military installations",
+          "Acted as regional SME for the TIPS (Tactical Imagery Production System)",
+          "Provided onsite support 3 field exercises",
+          "Hosted of semi-annual traning evolutions for the TIPS",
           "Certified Xerox MFD field technician",
-          "Setup S3 for monthly distribution of OS images",
-          "Author of automation tools for Excel->PDF form filling",
-          "Website redesign with dynamic templating and custom static html compliler"
+          "Setup and trained coworkers to use S3 for monthly distribution of OS images",
+          "Authored an automation suite for Excel->PDF form filling",
+          "Designed and maintained company website"
         ],
         "keywords": [
           "Military",
-          "Technical-SME",
           "Logistics",
-          "Xerox-Technican",
           "Training",
+          "Networking",
           "Field-Support",
-          "Networking"
+          "Xerox-Certified"
         ]
       },
       {
         "employer": "Joel Plaice & Associates Inc.",
         "url": "http://jpasims.com",
         "position": "Electrical Design Technician/Software Developer",
-        "summary": "Hacking on commercial full flight simulators for fun and profit.",
+        "summary": "Hacking on commercial full flight aircraft simulators for fun and profit.",
         "start": "2004-07",
         "end": "2010-02",
         "highlights": [
-          "Design and imlement various avionics and aircraft systems updates",
-          "Full Stack development of a website + database backend using a LAMP stack",
-          "Full lifecycle product design/architecture/development of a turnkey system",
-          "Custom networking protocol design and implementation"
+          "Design/implement various avionics and aircraft systems updates incl, EGPWS, TCAS, TAWS, glass, analog, etc",
+          "Full Stack development of a website + inventory DB using a LAMP stack",
+          "Full lifecycle product design/architecture/development of milti-touchscreen interface using C#/MSSQL",
+          "Designed and implemented a custom layer2 networking protocol",
+          "Partnered on many projects with Rotran Ltd, packing/installing/relocating and FAA certifying various Full Flight Simulators"
         ],
         "keywords": [
           "Hardware",
-          "Electrical-Design",
-          "Web-Design",
-          "Web-Development",
-          "Systems-Design",
-          "Software-Architecture",
-          "Protocol-Design"
+          "Electrical",
+          "Design",
+          "Implementation",
+          "Rigging",
+          "Installation",
+          "Software",
+          "Development",
+          "Architecture",
+          "Integration"
         ]
       },
       {
         "employer": "Spiral Aviation Training Company",
+        "url": "http://www.somesite.com",
         "position": "Flight Simulator Production Specialist",
         "summary": "Build commercial full flight simulators. Avionics, cabling, instrument panels, I/O, and instrument calibrations.",
         "start": "2003-12",
         "end": "2004-07",
+        "highlights": [
+          "Built cabling and installed/calibrated avionics and aircraft systems"
+        ],
         "keywords": [
-          "Electrical-Technician",
+          "Hardware",
+          "Electrical",
+          "Implementation",
           "Quality-Assurance",
-          "Systems-Engineering",
-          "Software-Architecture"
+          "Integration",
+          "Calibration"
         ]
       }
     ]
@@ -124,15 +173,11 @@
       "url": "https://github.com/evanplaice/ng2-resume",
       "repo": "https://github.com/evanplaice/ng2-resume",
       "role": "Author",
-      "summary": "Reusable Angular2 Resume component",
-      "highlights": [
-        "Uses the FRESH resume schema",
-        "Published to JSPM",
-        "JSON Resume support (coming soon)"
-      ],
+      "summary": "Reusable Angular Resume component using the FRESCA format",
+      "start": "2016",
       "keywords": [
         "Javascript",
-        "Angular2",
+        "Angular",
         "Git"
       ]
     },
@@ -142,14 +187,16 @@
       "url": "https://github.com/evanplaice/ng2-markdown-component",
       "repo": "https://github.com/evanplaice/ng2-markdown-component",
       "role": "Author",
-      "summary": "Reusable Angular2 Markdown component",
+      "summary": "Reusable Angular Markdown component with syntax highlighting",
+      "start": "2015",
       "highlights": [
         "Published to JSPM"
       ],
       "keywords": [
         "Javascript",
-        "Angular2",
-        "Git"
+        "Angular",
+        "Git",
+        "Webpack"
       ]
     },
     {
@@ -159,10 +206,11 @@
       "repo": "https://github.com/evanplaice/node-ftpsync",
       "role": "Author",
       "summary": "Intelligent file syncronization over FTP",
+      "start": "2013",
       "highlights": [
         "One-command incremental synchronization",
-        "Published to NPM",
-        "Grunt plugin (grunt-ftpsync) available"
+        "Grunt wrapper (grunt-ftpsync) available",
+        "Published to NPM"
       ],
       "keywords": [
         "Node.js",
@@ -179,17 +227,19 @@
       "repo": "https://github.com/evanplaice/jquery-csv",
       "role": "Author",
       "summary": "The first RFC 4180 complete lexer/parser for Javascript. Migrated from Google Code.",
+      "start": "2012",
       "highlights": [
         "500K+ downloads",
-        "Published to Bower",
-        "Uses a hand-rolled and optimized DFA, single-pass parser"
+        "Efficient hand-rolled DFA parser",
+        "Published to NPM, Bower, CDNJS, Maven, Ruby Gems"
       ],
       "keywords": [
         "Javascript",
         "QUnit",
         "Mocha",
         "Chai",
-        "Mercurial->Git"
+        "Mercurial",
+        "Git"
       ]
     },
     {
@@ -199,6 +249,8 @@
       "repo": "https://github.com/chmorgan/sharppcap",
       "role": "Contributor",
       "summary": "Fully managed, cross platform (Windows, Mac, Linux) .NET library for capturing packets",
+      "start": "2010",
+      "end": "2011",
       "highlights": [
         "Implemented/revised various networking protocols",
         "Added additional unit and performance tests",
@@ -211,14 +263,17 @@
         "WinPcap",
         "LibPcap",
         "NUnit",
-        "Subversion->Git"
+        "Git",
+        "Subversion"
       ]
     },
     {
-      "title": "Replacement Instructor Operating Station",
+      "title": "Replacement Instructor Operating Station (Proprietary)",
       "category": "Proprietary",
       "role": "Co-Developer",
       "summary": "A mission critical multi-touchscreen interface for commercial flight simulators.",
+      "start": "2008",
+      "end": "2009",
       "highlights": [
         "First full lifecycle greenfield product development",
         "250K in revenue",
@@ -229,6 +284,8 @@
       ],
       "keywords": [
         "Hardware",
+        "Software",
+        "Design",
         "Networking",
         "Architecture",
         "Integration",
@@ -242,13 +299,26 @@
   "skills": {
     "sets": [
       {
+        "name": "Languages",
+        "level": "advanced",
+        "skills": [
+          "HTML5",
+          "CSS",
+          "Javscript",
+          "ES+",
+          "Python",
+          "C#",
+          "PHP",
+          "BASIC",
+          "Profanity"
+        ]
+      },
+      {
         "name": "Frontend",
         "level": "advanced",
         "skills": [
-          "Angular2",
+          "Angular",
           "Angular.js",
-          "HTML5",
-          "CSS",
           "jQuery",
           "Bootstrap",
           "Semantic-UI"
@@ -258,69 +328,134 @@
         "name": "Backend",
         "level": "advanced",
         "skills": [
-          "Javascript",
           "Node.js",
-          "Python",
-          "WebApp2",
-          "PHP"
+          "Express",
+          "Symfony",
+          "BoltCMS",
+          "WebApp2"
         ]
       },
       {
         "name": "Database",
         "level": "intermediate",
         "skills": [
+          "SQL",
+          "MSSQL",
+          "MySQL",
+          "Doctrine",
+          "NoSQL",
           "MongoDB",
           "Mongoose",
-          "MySQL",
-          "MSSQL",
-          "DataStore",
-          "ORM"
+          "DataStore"
         ]
       },
       {
-        "name": "Desktop/Automation",
+        "name": "DevOps",
         "level": "intermediate",
         "skills": [
-          "Bash",
-          "Grunt",
-          "NPM",
-          "JSPM",
-          "FTP-Sync",
-          "S3-Sync"
+          "Vagrant",
+          "Puppet",
+          "AWS",
+          "Bash"
         ]
       },
       {
-        "name": "Cloud",
-        "level": "beginner",
+        "name": "Automation",
+        "level": "intermediate",
         "skills": [
-          "AWS EC2",
-          "AWS S3",
-          "AWS Route53",
-          "AWS IAM",
-          "AppEngine"
+          "NPM",
+          "JSPM",
+          "Webpack",
+          "System.js",
+          "FTP-Sync",
+          "S3-Sync",
+          "Grunt"
+        ]
+      },
+      {
+        "name": "QA/Testing",
+        "level": "intermediate",
+        "skills": [
+          "NUnit",
+          "JSUnit",
+          "JUnit",
+          "Mocha",
+          "Chai"
         ]
       },
       {
         "name": "Design",
-        "level": "beginner",
+        "level": "intermediate",
         "skills": [
           "Photoshop",
           "Illustrator",
           "Mockups",
-          "Logo Design"
+          "Logo-Design"
+        ]
+      },
+      {
+        "name": "Cloud",
+        "level": "intermediate",
+        "skills": [
+          "AWS",
+          "EC2",
+          "S3",
+          "Route53",
+          "IAM",
+          "gCloud",
+          "AppEngine"
         ]
       }
     ],
     "list": [
-      "Javascript (ES6)",
-      "Python",
-      "C#",
-      "Java",
-      "PHP",
-      "HTML5",
-      "CSS",
-      "Bash",
-      "Batch"
+      {
+        "name": "HTML",
+        "level": "Advanced",
+        "summary": "Declarative language for content on the front-end",
+        "years": "10+"
+      },
+      {
+        "name": "CSS",
+        "level": "Advanced",
+        "summary": "Declarative language for design/layout on the front-end",
+        "years": "10+"
+      },
+      {
+        "name": "Javascript (ES6+)",
+        "level": "Advanced",
+        "summary": "The latest ECMA Script standard + future proposals.",
+        "years": "5+"
+      },
+      {
+        "name": "Python",
+        "level": "Intermediate",
+        "summary": "Dynamically typed OOP language",
+        "years": "2"
+      },
+      {
+        "name": "C#",
+        "level": "Intermediate",
+        "summary": "Statically typed OOP language",
+        "years": "2"
+      },
+      {
+        "name": "PHP",
+        "level": "Intermediate",
+        "summary": "Dynamically typed back-end scripting language.",
+        "years": "2"
+      },
+      {
+        "name": "Java",
+        "level": "Beginner",
+        "summary": "Statically typed OOP language",
+        "years": "1"
+      },
+      {
+        "name": "Bash",
+        "level": "Intermediate",
+        "summary": "Automation scripting for Linux/Unix systems",
+        "years": "5+"
+      }
     ]
   },
   "samples": [
@@ -331,7 +466,7 @@
       "date": "2016",
       "keywords": [
         "Javascript",
-        "Angular2",
+        "Angular",
         "Semantic-UI",
         "ES6",
         "Amazon S3"
@@ -341,7 +476,7 @@
       "title": "StrikeGroup.org",
       "summary": "The online presence for Strike Group LLC.",
       "url": "http://strikegrouptest.appspot.com",
-      "date": "2012-2015",
+      "date": "2012",
       "keywords": [
         "Python",
         "AngularJS",
@@ -355,7 +490,7 @@
       "title": "Joel Plaice and Associates Inc.",
       "summary": "The online presence for JPA. Incl backend inventory database.",
       "url": "http://jpasims.appspot.com",
-      "date": "2004-2010",
+      "date": "2004",
       "keywords": [
         "PHP",
         "LAMP",
@@ -398,12 +533,10 @@
       "summary": "Regular GitHub user, author/maintainer of many libraries"
     },
     {
-
       "name": "Rock Climbing",
-      "summary": "Rock climb in local gyms, have been on trips to Holcomb Valley; Red Rocks, NV; and 29 Palms"
+      "summary": "Rock climb in local gyms, have been on trips to Holcomb Valley; Red Rocks, NV; and Joshua Tree"
     },
     {
-
       "name": "Snowboarding",
       "summary": "Grew up snowboarding. Hoping to make it back home to CO soon to hit the slopes."
     }

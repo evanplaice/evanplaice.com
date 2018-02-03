@@ -14,66 +14,54 @@
   },
   "homepage": "https://github.com/evanplaice/evanplaice.com#readme",
   "scripts": {
-    "setup": "npm install && jspm install",
-    "start": "live-server",
-    "deploy": "npm run build:prod && npm run prepare && npm run sync:prod",
+    "start": "webpack-dev-server",
+    "deploy": "npm run build:prod && npm run sync:prod",
     "grunt": "grunt",
     "checkstyle": "semistandard || true",
-    "build:dev": "jspm bundle app/main app/app.dev.js --minify --inject",
-    "build:prod": "jspm bundle-sfx app/main dist/app.min.js",
-    "prepare": "npm run gzip:app & npm run gzip:map & npm run gzip:css",
+    "build:dev": "npx webpack",
+    "build:prod": "npx webpack --config webpack.prod.js",
     "sync:dev": "grunt development",
     "sync:prod": "grunt production",
     "sync:content": "grunt content",
-    "gzip:app": "gzip -9 dist/app.min.js && mv dist/app.min.js.gz dist/app.min.js",
-    "gzip:map": "gzip -9 dist/app.min.js.map && mv dist/app.min.js.map.gz dist/app.min.js.map",
-    "gzip:css": "cp app/main.css dist/app.css && gzip -9 dist/app.css && mv dist/app.css.gz dist/app.css",
-    "stats": "git diff --stat `git hash-object -t tree /dev/null`"
+    "stats": "git diff --stat `git hash-object -t tree /dev/null`",
+    "analyze": "webpack --config webpack.analyze.js"
   },
-  "jspm": {
-    "dependencies": {
-      "@angular/common": "npm:@angular/common@^4.0.0",
-      "@angular/compiler": "npm:@angular/compiler@^4.0.0",
-      "@angular/core": "npm:@angular/core@^4.0.0",
-      "@angular/http": "npm:@angular/http@^4.0.0",
-      "@angular/platform-browser": "npm:@angular/platform-browser@^4.0.0",
-      "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@^4.0.0",
-      "@angular/router": "npm:@angular/router@^4.0.0",
-      "css": "github:systemjs/plugin-css@^0.1.20",
-      "evanplaice/ng2-resume": "github:evanplaice/ng2-resume@^0.0.5",
-      "evanplaice/resume": "github:evanplaice/resume@^0.0.8",
-      "font-awesome": "npm:font-awesome@^4.5.0",
-      "ng2-markdown": "npm:ng2-markdown@^0.3.1",
-      "ng2-markdown-component": "github:evanplaice/ng2-markdown@^0.2.3",
-      "prismjs": "npm:prismjs@^1.9.0",
-      "reflect-metadata": "npm:reflect-metadata@^0.1.2",
-      "resume": "github:evanplaice/resume@^0.0.8",
-      "rxjs": "npm:rxjs@^5.0.0",
-      "semantic-ui": "github:Semantic-Org/Semantic-UI@^2.1.7",
-      "showdown": "npm:showdown@^1.8.5",
-      "text": "github:systemjs/plugin-text@^0.0.11",
-      "zone.js": "npm:zone.js@^0.6.26"
-    },
-    "devDependencies": {
-      "clean-css": "npm:clean-css@^3.4.8",
-      "traceur": "github:jmcriffey/bower-traceur@0.0.93",
-      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.93"
-    }
+  "dependencies": {
+    "@angular/common": "^4.0",
+    "@angular/compiler": "^4.0",
+    "@angular/core": "^4.0",
+    "@angular/http": "^4.0",
+    "@angular/platform-browser": "^4.0",
+    "@angular/platform-browser-dynamic": "^4.0",
+    "@angular/router": "^4.0",
+    "ng2-markdown": "^0.4.2",
+    "ngx-freshresume": "^0.2.0",
+    "prismjs": "^1.10.0",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^5.5.6",
+    "semantic-ui": "^2.2.14",
+    "zone.js": "^0.8.20"
   },
   "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
     "babel-eslint": "^4.1.6",
+    "babel-loader": "^7.1.2",
+    "babel-preset-angular2": "0.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.9",
     "dotenv": "^1.2.0",
+    "file-loader": "^1.1.6",
     "grunt": "^0.4.5",
     "grunt-aws-s3": "^0.14.3",
     "grunt-cli": "^0.1.13",
-    "jspm": "^0.16.53",
-    "live-server": "^0.8.2",
-    "semistandard": "^7.0.4"
-  },
-  "semistandard": {
-    "parser": "babel-eslint",
-    "ignore": [
-      "config.js"
-    ]
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.20.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-bundle-analyzer": "^2.9.2",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.1"
   }
 }
