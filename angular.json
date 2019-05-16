@@ -27,7 +27,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/fomantic-ui/dist/components/reset.min.css",
+              "node_modules/fomantic-ui/dist/components/container.min.css",
+              "node_modules/fomantic-ui/dist/components/divider.min.css",
+              "node_modules/fomantic-ui/dist/components/icon.min.css",
+              "node_modules/fomantic-ui/dist/components/image.min.css",
+              "node_modules/fomantic-ui/dist/components/item.min.css",
+              "node_modules/fomantic-ui/dist/components/menu.min.css",
+              "node_modules/fomantic-ui/dist/components/grid.min.css",
+              "node_modules/fomantic-ui/dist/components/segment.min.css",
+              "node_modules/fomantic-ui/dist/components/site.min.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true

@@ -15,9 +15,8 @@
     },
     "clean": "dist/"
   },
-  "permission": 744,
+  "permission": false,
   "autoInstall": false,
   "rtl": false,
-  "components": ["reset", "site", "container", "divider", "icon", "image", "segment", "grid", "menu", "item"],
   "version": "2.7.5"
 }
