@@ -1,1 +1,181 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css?family=Orbitron:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);
+
+/* Layout
+-------------------------------------- */
+
+main {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#social > a {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+/* TODO: make the masthead responsive */
+#masthead {
+  height: 365px;
+  background-image: url('http://content.evanplaice.com/sailboatraces.png');
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  box-shadow: rgba(0,0,0,0.20) 0 5px 10px;
+}
+
+.project {
+  margin-top: 20px !important;
+}
+
+.design > div > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 3px 3px 3px #777;
+}
+
+/* Typeography
+-------------------------------------- */
+
+/* Document level adjustments */
+html {
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+/* Type will scale with document */
+h1, h2, h3 {
+  font-family: 'Orbitron', Helvetica, sans-serif !important;
+}
+
+h1 {
+  font-size: 4.5rem !important;
+}
+h2 {
+  font-size: 2rem !important;
+}
+h3 {
+  font-size: 1rem !important;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;;
+  font-size: 1.25rem;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace !important;
+}
+
+p, code, pre {
+  line-height: 1.5 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+ng2-markdown > h1, ng2-markdown > h2, ng2-markdown > h3 {
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
+}
+
+ng2-markdown > h1 {
+  font-size: 2.5rem !important;
+}
+
+ng2-markdown > h2 {
+  font-size: 2rem !important;
+}
+
+ng2-markdown > h3 {
+  font-size: 1.75rem !important;
+}
+
+ng2-markdown  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 3px 3px 3px #777;
+}
+
+/* Responsive
+-------------------------------------- */
+
+/* Not Huge Desktop */
+@media (max-width: 900px) {
+  html { font-size: 15px; }
+}
+
+/* Mobile */
+@media (max-width: 414px) {
+  html { font-size: 13px; }
+}
+
+/*Not Mobile*/
+@media screen and (min-width: 414px) and (max-width: 1024px) {
+  /*ui fixed large menu*/
+  #topnav{
+    /* display: flex; */
+    /* position: fixed; */
+    /* flex-direction: row; */
+    /* -webkit-box-orient: horizontal; */
+  }
+}
+
+/*Mobile*/
+@media screen and (min-width: 0px) and (max-width: 414px) {
+  /* layout adjustments
+     ---------------------- */
+
+  /*ui fluid vertical menu */
+  #topnav {
+    display: block;
+    position: relative;
+    flex-direction: column;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+  }
+
+  /* center links on mobile */
+  #topnav > .item {
+    display: block;
+    text-align: center;
+  }
+
+  /* space out social links to look nicer */
+  #social a {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  /* typography adjustments
+     ---------------------- */
+
+  h1 {
+    font-size: 3.5rem !important;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  h3 {
+    font-size: 1rem !important;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  code, pre {
+    font-size: .8rem !important;
+  }
+
+  ng2-markdown  img {
+    width: 80%;
+  }
+}
