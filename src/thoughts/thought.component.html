@@ -1,0 +1,16 @@
+<h1>thoughts</h1>
+
+<h4 class="ui horizontal divider header">
+  <i class="bullseye icon large" style="margin-right: 0rem !important;"></i>
+</h4>
+
+<ng-template [ngIf]="thoughts && thought">
+<div class="ui center aligned container">
+  <h2>{{ thought.title }}</h2>
+  <h3>{{ thought.date }} by {{ thought.author }}</h3>
+  <div class="ui divider"></div>
+</div>
+
+<markdown [src]="thought.content" lineHighlight></markdown>
+
+</ng-template>
