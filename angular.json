@@ -37,10 +37,13 @@
               "node_modules/fomantic-ui/dist/components/menu.min.css",
               "node_modules/fomantic-ui/dist/components/grid.min.css",
               "node_modules/fomantic-ui/dist/components/segment.min.css",
-              "node_modules/fomantic-ui/dist/components/site.min.css"
+              "node_modules/fomantic-ui/dist/components/site.min.css",
+              "node_modules/prismjs/themes/prism-okaidia.css"
             ],
             "scripts": [
-              "node_modules/ng2-markdown/dist/ng2-markdown.js"
+              "node_modules/marked/lib/marked.js",
+              "node_modules/prismjs/prism.js",
+              "node_modules/prismjs/components/prism-python.min.js"
             ],
             "es5BrowserSupport": true
           },
