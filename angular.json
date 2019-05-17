@@ -39,7 +39,9 @@
               "node_modules/fomantic-ui/dist/components/segment.min.css",
               "node_modules/fomantic-ui/dist/components/site.min.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/ng2-markdown/dist/ng2-markdown.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
