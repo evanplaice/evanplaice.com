@@ -23,6 +23,7 @@
     "core-js": "^2.5.4",
     "fomantic-ui": "^2.7.5",
     "ng2-markdown": "^0.4.2",
+    "ngx-markdown": "^7.1.5",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
