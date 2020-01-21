@@ -79,23 +79,23 @@ p, code, pre {
   margin-bottom: 1.5rem !important;
 }
 
-markdown > h1, markdown > h2, markdown > h3 {
+wc-markdown > h1, wc-markdown > h2, wc-markdown > h3 {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
 }
 
-markdown > h1 {
+wc-markdown > h1 {
   font-size: 2.5rem !important;
 }
 
-markdown > h2 {
+wc-markdown > h2 {
   font-size: 2rem !important;
 }
 
-markdown > h3 {
+wc-markdown > h3 {
   font-size: 1.75rem !important;
 }
 
-markdown  img {
+wc-markdown  img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -175,7 +175,7 @@ markdown  img {
     font-size: .8rem !important;
   }
 
-  markdown  img {
+  wc-markdown  img {
     width: 80%;
   }
 }

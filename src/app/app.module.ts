@@ -4,8 +4,6 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-import { MarkdownModule } from 'ngx-markdown';
-
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
@@ -25,13 +23,11 @@ import { ThoughtsModule } from '../thoughts/thoughts.module';
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
-    MarkdownModule.forRoot(),
     ThoughtsModule
   ],
   exports: [
     CommonModule,
-    RouterModule,
-    MarkdownModule
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
