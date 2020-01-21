@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 import { ThoughtsComponent } from '../thoughts/thoughts.component';
 import { ThoughtComponent } from '../thoughts/thought.component';
+import { DesignsComponent } from '../designs/designs.component';
+import { DesignComponent } from '../designs/design.component';
 
 const routes: Routes = [
   {
@@ -16,10 +19,17 @@ const routes: Routes = [
     path: 'thought/:post',
     component: ThoughtComponent
   },
+  {
+    path: 'designs',
+    component: DesignsComponent
+  },
+  {
+    path: 'design/:post',
+    component: DesignComponent
+  },
 ];
 
 @NgModule({
-
   imports: [
     RouterModule.forRoot(routes)
   ],

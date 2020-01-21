@@ -10,6 +10,7 @@ import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
 
 import { ThoughtsModule } from '../thoughts/thoughts.module';
+import { DesignsModule } from '../designs/designs.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ThoughtsModule } from '../thoughts/thoughts.module';
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
-    ThoughtsModule
+    ThoughtsModule,
+    DesignsModule
   ],
   exports: [
     CommonModule,

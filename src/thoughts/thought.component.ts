@@ -8,7 +8,6 @@ import { ThoughtsService } from './thoughts.service';
   selector: 'thought',
   templateUrl: './thought.component.html',
 })
-
 export class ThoughtComponent {
   param: string;
   thoughts: ThoughtsModel;
