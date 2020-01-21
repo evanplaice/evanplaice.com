@@ -5,6 +5,8 @@ import { ThoughtsComponent } from '../thoughts/thoughts.component';
 import { ThoughtComponent } from '../thoughts/thought.component';
 import { DesignsComponent } from '../designs/designs.component';
 import { DesignComponent } from '../designs/design.component';
+import { ProjectsComponent } from '../projects/projects.component';
+import { ProjectComponent } from '../projects/project.component';
 
 const routes: Routes = [
   {
@@ -27,6 +29,14 @@ const routes: Routes = [
     path: 'design/:post',
     component: DesignComponent
   },
+  {
+    path: 'projects',
+    component: ProjectsComponent
+  },
+  {
+    path: 'project/:post',
+    component: ProjectComponent
+  }
 ];
 
 @NgModule({

@@ -11,6 +11,7 @@ import { FooterComponent } from './footer.component';
 
 import { ThoughtsModule } from '../thoughts/thoughts.module';
 import { DesignsModule } from '../designs/designs.module';
+import { ProjectsModule } from '../projects/projects.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DesignsModule } from '../designs/designs.module';
     RouterModule,
     AppRoutingModule,
     ThoughtsModule,
-    DesignsModule
+    DesignsModule,
+    ProjectsModule
   ],
   exports: [
     CommonModule,
