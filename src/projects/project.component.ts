@@ -22,7 +22,7 @@ export class ProjectComponent {
 
   descLink() {
     if (this.project.description) {
-      return 'http://content.evanplaice.com/projects/' + this.project.description;
+      return 'https://content.evanplaice.com/projects/' + this.project.description;
     }
   }
 }
