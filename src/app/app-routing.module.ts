@@ -8,6 +8,7 @@ import { DesignComponent } from '../designs/design.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { ProjectComponent } from '../projects/project.component';
 import { VitaeComponent } from '../vitae/vitae.component';
+import { NowComponent } from '../now/now.component';
 import { TypefacesComponent } from '../typefaces/typefaces.component';
 
 const routes: Routes = [
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'vitae',
     component: VitaeComponent
+  },
+  {
+    path: 'now',
+    component: NowComponent
   },
   {
     path: '_typefaces',

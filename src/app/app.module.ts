@@ -13,6 +13,7 @@ import { ThoughtsModule } from '../thoughts/thoughts.module';
 import { DesignsModule } from '../designs/designs.module';
 import { ProjectsModule } from '../projects/projects.module';
 import { VitaeModule } from '../vitae/vitae.module';
+import { NowModule } from '../now/now.module';
 import { TypefacesModule } from '../typefaces/typefaces.module';
 
 @NgModule({
@@ -31,6 +32,7 @@ import { TypefacesModule } from '../typefaces/typefaces.module';
     DesignsModule,
     ProjectsModule,
     VitaeModule,
+    NowModule,
     TypefacesModule
   ],
   exports: [
