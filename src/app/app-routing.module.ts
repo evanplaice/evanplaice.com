@@ -14,7 +14,8 @@ import { TypefacesComponent } from '../typefaces/typefaces.component';
 const routes: Routes = [
   {
     path: '',
-    component: ThoughtsComponent,
+    redirectTo: '/thoughts',
+    pathMatch: 'full'
   },
   {
     path: 'thoughts',
