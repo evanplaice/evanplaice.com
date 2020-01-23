@@ -15,20 +15,13 @@ export class ProjectsService {
   http;
 
   constructor(@Inject(HttpClient) http) {
-    // http bindings for a GET request
     this.http = http;
-    // observer to load data asynchronously
     this.projects$ = new Observable(observer => this.observer = observer);
-    // pre-load the data
-    this.loadProjects();
+    this.setup();
   }
 
-  getProjects() {
-    this.observer.next(this.data);
-  }
-
-  loadProjects() {
-    this.http.get('http://content.evanplaice.com/projects/projects.json')
+  setup() {
+    this.http.get('https://content.evanplaice.com/projects/projects.json')
       .subscribe(
         items => {
           // exclude hidden values
@@ -42,5 +35,9 @@ export class ProjectsService {
           () => {
         }
       );
+  }
+
+  load() {
+    this.observer.next(this.data);
   }
 }

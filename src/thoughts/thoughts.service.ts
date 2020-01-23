@@ -18,7 +18,7 @@ export class ThoughtsService {
     this.http = http;
   }
 
-  loadThoughts(path) {
+  load(path) {
     if (path || this.src) {
       return this.thoughts$ = this.http.get(path || this.src)
         .pipe(

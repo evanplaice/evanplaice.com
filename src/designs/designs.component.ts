@@ -11,6 +11,6 @@ export class DesignsComponent {
 
   constructor(private designsService: DesignsService) {
     designsService.designs$.subscribe(update => this.designs = update);
-    designsService.getDesigns();
+    designsService.load();
   }
 }

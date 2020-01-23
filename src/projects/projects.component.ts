@@ -10,8 +10,7 @@ export class ProjectsComponent {
   projects: ProjectModel[];
 
   constructor(private projectsService: ProjectsService) {
-    // link to the projects data
     projectsService.projects$.subscribe(update => this.projects = update);
-    projectsService.getProjects();
+    projectsService.load();
   }
 }
