@@ -7,8 +7,8 @@
     "build": "ng build --prod=true",
     "test": "ng test",
     "lint": "ng lint",
-    "sync:stage": "aws --profile evanplaice.com s3 sync ./dist s3://staging.evanplaice.com --delete || true",
-    "sync:prod": "aws --profile evanplaice.com s3 sync ./dist s3://evanplaice.com --delete || true"
+    "stage": "aws --profile evanplaice.com s3 sync ./dist s3://staging.evanplaice.com --delete || true",
+    "publish": "aws --profile evanplaice.com s3 sync ./dist s3://evanplaice.com --delete || true"
   },
   "private": true,
   "dependencies": {
