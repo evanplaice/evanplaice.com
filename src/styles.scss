@@ -1,7 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
-@import url(https://fonts.googleapis.com/css?family=Orbitron:700);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);
+@font-face {
+  font-family: "Open Sans";
+  src: url(assets/fonts/OpenSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url(assets/fonts/Orbitron-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(assets/fonts/Lato-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url(assets/fonts/SourceCodePro-Medium.ttf) format("truetype");
+}
 
 /* Layout
 -------------------------------------- */
