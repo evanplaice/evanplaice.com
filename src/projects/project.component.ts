@@ -16,6 +16,7 @@ import { Component } from '@angular/core';
 })
 export class ProjectComponent {
   project;
+  last;
 
   constructor () {}
 
