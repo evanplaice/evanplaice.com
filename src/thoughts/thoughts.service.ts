@@ -22,11 +22,8 @@ export class ThoughtsService {
     if (path || this.src) {
       return this.thoughts$ = this.http.get(path || this.src)
         .pipe(
-          map(res => {
-            const thoughts = new ThoughtsModel(res);
-            return thoughts
-          }),
-          startWith(new ThoughtsModel())
+          map((thoughts: []) => thoughts.map(value => new ThoughtModel(value))),
+          startWith([new ThoughtModel()])
         );
     }
   }

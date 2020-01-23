@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ThoughtModel } from './thought.model';
-import { ThoughtsModel } from './thoughts.model';
 import { ThoughtsService } from './thoughts.service';
 
 @Component({
@@ -10,7 +9,7 @@ import { ThoughtsService } from './thoughts.service';
 })
 export class ThoughtComponent {
   param: string;
-  thoughts: ThoughtsModel;
+  thoughts: ThoughtModel[];
   thought: ThoughtModel;
 
   constructor (private thoughtsService: ThoughtsService, private route: ActivatedRoute) {
@@ -23,12 +22,9 @@ export class ThoughtComponent {
     }
   }
 
-  set(thoughts){
-    this.thoughts = thoughts;
-    this.thought = thoughts.posts
-    .filter((post) => {
-      return post.url === this.param;
-    })
-    .pop();
+  set(thoughts) {
+    this.thoughts
+      .filter((post) => post.url === this.param)
+      .pop();
   }
 }
