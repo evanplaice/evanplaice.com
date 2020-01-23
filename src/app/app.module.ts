@@ -13,6 +13,7 @@ import { ThoughtsModule } from '../thoughts/thoughts.module';
 import { DesignsModule } from '../designs/designs.module';
 import { ProjectsModule } from '../projects/projects.module';
 import { VitaeModule } from '../vitae/vitae.module';
+import { TypefacesModule } from '../typefaces/typefaces.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { VitaeModule } from '../vitae/vitae.module';
     ThoughtsModule,
     DesignsModule,
     ProjectsModule,
-    VitaeModule
+    VitaeModule,
+    TypefacesModule
   ],
   exports: [
     CommonModule,
