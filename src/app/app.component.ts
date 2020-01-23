@@ -3,7 +3,7 @@ import { LocationStrategy } from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app',
+  selector: 'app-main',
   templateUrl: './app.component.html',
 })
 export class AppComponent {
@@ -17,14 +17,14 @@ export class AppComponent {
   //  ex. evanplaice.com/#/designs => evanplaice.com/designs
   resolveHashURL(url, router) {
     if (!url._platformLocation) { return; }
-    let hash: string = url._platformLocation.hash;
+    const hash: string = url._platformLocation.hash;
     if (hash) {
-      let path = '/' + hash.substring(1);
+      const path = '/' + hash.substring(1);
       // console.log('RedirectTo: ' + path);
       // setTimeout is a kludge required because navigate
       //  can be cancelled if it takes too long to fire.
       setTimeout(() => { router.navigate([path]); });
     }
     return;
-  };
+  }
 }

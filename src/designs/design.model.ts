@@ -3,10 +3,10 @@ export class DesignModel {
   title = '';
   link = '';
   styleguide = '';
-  description ='';
+  description = '';
   images = [];
 
-  constructor (design) {
+  constructor(design) {
     if (design) {
       this.init(design);
     }

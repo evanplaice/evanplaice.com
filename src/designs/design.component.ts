@@ -1,21 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { DesignModel } from './design.model';
 
 @Component({
-  selector: 'design',
-  inputs: [ 'design', 'last' ],
+  selector: 'app-design',
   templateUrl: './design.component.html',
 })
 export class DesignComponent {
-  design;
-  last;
+  @Input() design: DesignModel;
+  @Input() last: boolean;
 
-  constructor () {}
+  constructor() {}
 
-  descLink () {
+  descLink() {
     return 'http://content.evanplaice.com/designs/' + this.design.name + '/description.md' ;
   }
 
-  thumbLink (i) {
+  thumbLink(i) {
     if (this.design.images[i]) {
       return 'http://content.evanplaice.com/designs/' + this.design.name + '/thumbs/' + this.design.images[i];
     }

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http'
-import { ThoughtsModel } from './thoughts.model';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { ThoughtModel } from './thought.model';
 import { map, startWith } from 'rxjs/operators';
 
 const httpOptions = {
@@ -13,7 +13,7 @@ export class ThoughtsService {
   src;
   http;
 
-  constructor (http: HttpClient) {
+  constructor(http: HttpClient) {
     // http bindings for a GET request
     this.http = http;
   }

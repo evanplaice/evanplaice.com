@@ -1,5 +1,5 @@
 import { Injectable, Inject } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http'
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ProjectModel } from './project.model';
 import { Observable } from 'rxjs';
 
@@ -11,23 +11,23 @@ const httpOptions = {
 export class ProjectsService {
   projects$;
   data = [];
-  _observer;
+  observer;
   http;
 
-  constructor (@Inject(HttpClient) http) {
+  constructor(@Inject(HttpClient) http) {
     // http bindings for a GET request
     this.http = http;
     // observer to load data asynchronously
-    this.projects$ = new Observable(observer => this._observer = observer);
+    this.projects$ = new Observable(observer => this.observer = observer);
     // pre-load the data
     this.loadProjects();
   }
 
   getProjects() {
-    this._observer.next(this.data);
+    this.observer.next(this.data);
   }
 
-  loadProjects () {
+  loadProjects() {
     this.http.get('http://content.evanplaice.com/projects/projects.json')
       .subscribe(
         items => {
@@ -36,7 +36,7 @@ export class ProjectsService {
           // convert value to model
           items = items.map(item => new ProjectModel(item));
           // update observers
-          this._observer.next(this.data = items);
+          this.observer.next(this.data = items);
         },
           error => console.log(error),
           () => {

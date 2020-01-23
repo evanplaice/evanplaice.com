@@ -4,17 +4,16 @@ import { ThoughtModel } from './thought.model';
 import { ThoughtsService } from './thoughts.service';
 
 @Component({
-  selector: 'thought',
+  selector: 'app-thought',
   templateUrl: './thought.component.html',
 })
 export class ThoughtComponent {
   param: string;
   thoughts: ThoughtModel[];
-  thought: ThoughtModel;
 
-  constructor (private thoughtsService: ThoughtsService, private route: ActivatedRoute) {
+  constructor(private thoughtsService: ThoughtsService, private route: ActivatedRoute) {
     // extract the post id from the GET params
-    this.param = route.snapshot.params['post'];
+    this.param = route.snapshot.params.post;
 
     // link to the thoughts data
     if (thoughtsService.thoughts$) {

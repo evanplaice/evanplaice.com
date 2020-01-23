@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'typefaces',
+  selector: 'app-typefaces',
   templateUrl: './typefaces.component.html'
 })
 export class TypefacesComponent {}

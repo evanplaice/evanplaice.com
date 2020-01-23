@@ -4,9 +4,9 @@ export class ProjectModel {
   category = '';
   role = '';
   link = '';
-  description ='';
+  description = '';
 
-  constructor (project) {
+  constructor(project) {
     if (project) {
       this.init(project);
     }

@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
+import { DesignModel } from './design.model';
 import { DesignsService } from './designs.service';
 
 @Component({
-  selector: 'designs',
+  selector: 'app-designs',
   templateUrl: './designs.component.html',
 })
 export class DesignsComponent {
-  designs;
+  designs: DesignModel[];
 
-  constructor (private designsService: DesignsService) {
+  constructor(private designsService: DesignsService) {
     designsService.designs$.subscribe(update => this.designs = update);
     designsService.getDesigns();
   }

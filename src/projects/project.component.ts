@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ProjectModel } from './project.model';
 
 @Component({
-  selector: 'project',
-  inputs: [ 'project', 'last' ],
+  selector: 'app-project',
   templateUrl: './project.component.html',
   styles: [`
     h2, h3 {
@@ -15,12 +15,12 @@ import { Component } from '@angular/core';
   `]
 })
 export class ProjectComponent {
-  project;
-  last;
+  @Input() project: ProjectModel;
+  @Input() last: boolean;
 
-  constructor () {}
+  constructor() {}
 
-  descLink () {
+  descLink() {
     if (this.project.description) {
       return 'http://content.evanplaice.com/projects/' + this.project.description;
     }
