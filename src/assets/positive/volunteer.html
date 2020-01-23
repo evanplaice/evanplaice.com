@@ -1,0 +1,22 @@
+<div><i class="fa fa-lg fa-mortar-board"></i><h2>Volunteer</h2></div>
+<section>
+  ${roles.map(role => `
+    <div class="header">
+      <div class="name">
+        <h3>
+        ${role.position ? `<span>${role.position} - </span>` : ''}
+        <span><a href="${role.url}">${role.organization}</a></span>
+      </h3>
+      </div>
+      <div class="dates">${role.startDate} - ${role.endDate}</div>
+    </div>
+    ${role.highlights ? `
+      <ul class="highlights">
+        ${role.highlights.map(highlight => `
+          <li>${highlight}</li>
+        `).join('\n')}
+      </ul>
+    ` : ''}
+  </div>
+  `).join('\n')}
+</section>

@@ -1,0 +1,118 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+html, body, main, section, header, blockquote, ul, p, h1, h2, h3 {
+  font-family: Open-Sans, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+a {
+  color: #0064BD;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #7B0796;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #B3B3B3;
+}
+
+li {
+  margin-left: 2em;
+}
+
+p, li {
+  text-align: justify;
+  clear: both;
+}
+
+.fa {
+  margin-right: 3px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.name {
+  display: flex;
+  flex: 2;
+}
+
+.dates {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.keywords {
+  color: #444;
+}
+
+wc-contact {
+  display: flex;
+  margin-bottom: 3px;
+}
+
+wc-contact .name {
+  display: flex;
+  flex: 1;
+}
+
+wc-contact .contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex: 3;
+}
+
+wc-contact .contacts > div {
+  margin-left: 10px;
+}
+
+wc-profiles {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+wc-profiles div {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: center;
+  flex: 1;
+}
+
+wc-skills table {
+  width: 100%;
+}
+
+wc-skills td:first-child {
+  width: 25%;
+}

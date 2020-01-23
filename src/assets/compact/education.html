@@ -1,0 +1,21 @@
+<hr>
+<h2><i class="fa fa-lg fa-mortar-board"></i>Education</h2>
+${schools.map(school => `
+  <div class="header">
+    <div class="name">
+      <h3>
+      <span>${school.area}, ${school.institution}</span>
+      ${school.studyType ? `<span> (${school.studyType})</span>` : ''}
+    </h3>
+    </div>
+    <div class="dates">${school.startDate} - ${school.endDate}</div>
+  </div>
+  ${school.courses ? `
+    <ul class="highlights">
+      ${school.courses.map(course => `
+        <li>${course}</li>
+      `).join('\n')}
+    </ul>
+  ` : ''}
+</div>
+`).join('\n')}

@@ -1,0 +1,208 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px 15px 15px 40px;
+}
+
+html, body, main, section, table, header, ul, p, h1, h2, h3 {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  color: #fff;
+  background: #e48a8a; /* WebKit/Blink Browsers */
+}
+
+a {
+  color: #C00000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #7B0796;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #898989;
+  font-size: 2em;
+  font-weight: 300;
+  display: inline-block;
+}
+
+h3, .tenure {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+ul {
+  margin: 1em;
+}
+
+li {
+  margin-left: 2em;
+}
+
+table {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+td {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+td:first-child {
+  width: 30%;
+  letter-spacing: 2px;
+  color: #bd5b5b;
+  font-size: 1.3em;
+}
+
+td:last-child {
+  text-align: justify;
+}
+
+hr {
+  display: none;
+}
+
+.fa {
+  width: 40px;
+  font-size: 2.5em;
+  margin-left: -50px;
+  margin-right: 10px;
+  color: #DADADA;
+  vertical-align: baseline;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+.name {
+  display: flex;
+  flex: 5;
+}
+
+.dates {
+  display: flex;
+  justify-content: flex-end;
+  flex: 2;
+  color: #6F6F6F;
+  padding: 4px 6px;
+  font-size: 85%;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+.keywords {
+  font-size: 12px;
+  color: #B16666;
+}
+
+wc-about,
+wc-profiles,
+wc-skills,
+wc-work,
+wc-projects,
+wc-education,
+wc-publications,
+wc-awards,
+wc-volunteer,
+wc-languages,
+wc-interests,
+wc-references
+{
+  margin-top: 2em;
+}
+
+section {
+  margin-top: 1.5em;
+}
+
+wc-contact {
+  display: flex;
+}
+
+wc-contact .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+wc-contact .name span {
+  color: #C00000;
+}
+
+wc-contact .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2;
+}
+
+wc-contact .label {
+  display: flex;
+  flex-direction: column;
+}
+
+wc-contact .label > h2 {
+  color: #DADADA;
+}
+
+wc-contact .details {
+  display: flex;
+  flex-direction: column;
+}
+
+wc-contact div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+wc-about {
+  color: #717171;
+  font-size: 1.25em;
+}
+
+wc-profiles section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+wc-profiles section div {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: center;
+  flex: 1;
+}
+
+wc-skills {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}

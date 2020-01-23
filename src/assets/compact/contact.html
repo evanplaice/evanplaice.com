@@ -1,0 +1,6 @@
+<div class="name"><h1>${name}</h1></div>
+<div class="contacts">
+  ${ email ? `<div><a href="mailto:${email}">${email}</a></div>` : '' }
+  ${ phone ? `<div>${phone}</div>` : '' }
+  ${ url ? `<div><a href="${url}">${url}</a></div>` : '' }
+</div>

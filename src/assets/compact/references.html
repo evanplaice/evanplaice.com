@@ -1,0 +1,8 @@
+<hr>
+<h2><i class="fa fa-lg fa-thumbs-o-up"></i>References</h2>
+${references.map(reference => `
+  <blockquote>
+    <p>${reference.reference}</p>
+    <footer>— <cite>${reference.name}</cite></footer>
+  </blockquote>
+`).join('\n')}

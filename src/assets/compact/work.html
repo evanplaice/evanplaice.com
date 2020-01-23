@@ -1,0 +1,16 @@
+<hr>
+<h2><i class="fa fa-lg fa-building"></i>Employment</h2>
+${jobs.map(job => `
+  <div class="header">
+    <div class="name">
+      <h3>${job.position ? `${job.position}, ` : ''}<a href="${job.url}">${job.name}</a></h3>
+    </div>
+    <div class="dates">${job.startDate} - ${job.endDate}</div>
+  </div>
+  ${job.description ? `<div>${job.description}</div>` : ''}
+  ${job.highlights ? `
+    <ul class="highlights">
+      ${job.highlights.map(highlight => `<li>${highlight}</li>`).join('\n')}
+    </ul>
+  ` : ''}
+`).join('\n')}

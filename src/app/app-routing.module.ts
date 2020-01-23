@@ -7,6 +7,7 @@ import { DesignsComponent } from '../designs/designs.component';
 import { DesignComponent } from '../designs/design.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { ProjectComponent } from '../projects/project.component';
+import { VitaeComponent } from '../vitae/vitae.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'project/:post',
     component: ProjectComponent
+  },
+  {
+    path: 'vitae',
+    component: VitaeComponent
   }
 ];
 

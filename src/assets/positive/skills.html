@@ -1,0 +1,9 @@
+<div><i class="fa fa-lg fa-code"></i><h2>Skills</h2></div>
+<table>
+  ${skills.map(skill => `
+    <tr>
+      <td>${skill.name}</td>
+      ${skill.keywords ? `<td>${skill.keywords.join('  ')}</td>` : ''}
+    </tr>
+  `).join('\n')}
+</table>

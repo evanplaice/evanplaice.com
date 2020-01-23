@@ -1,0 +1,7 @@
+${profiles.map(profile => `
+  <div>
+    <i class="fa fa-lg fa-${profile.network.toLowerCase()}"></i>
+    ${profile.url ? `<span><a href="${profile.url}">${profile.username}</a></span>` : ''}
+    ${!profile.url ? `<span>${profile.username}</span>` : ''}
+  </div>
+`).join('\n')}

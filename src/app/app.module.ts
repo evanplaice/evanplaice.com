@@ -12,6 +12,7 @@ import { FooterComponent } from './footer.component';
 import { ThoughtsModule } from '../thoughts/thoughts.module';
 import { DesignsModule } from '../designs/designs.module';
 import { ProjectsModule } from '../projects/projects.module';
+import { VitaeModule } from '../vitae/vitae.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ProjectsModule } from '../projects/projects.module';
     AppRoutingModule,
     ThoughtsModule,
     DesignsModule,
-    ProjectsModule
+    ProjectsModule,
+    VitaeModule
   ],
   exports: [
     CommonModule,

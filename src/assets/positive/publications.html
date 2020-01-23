@@ -1,0 +1,15 @@
+<div><i class="fa fa-lg fa-pencil"></i><h2>Publications</h2></div>
+<section>
+  ${publications.map(publication => `
+    <div class="header">
+      <div class="name">
+        <h3>
+        <span><a href="${publication.url}">${publication.name}</a></span>
+        ${publication.publisher ? `<span> - ${publication.publisher}</span>` : ''}
+      </h3>
+      </div>
+      ${publication.releaseDate ? `<div class="dates">${publication.releaseDate}</div>` : ''}
+    </div>
+    ${publication.summary ? `<div>${publication.summary}</div>` : ''}
+  `).join('\n')}
+</section>

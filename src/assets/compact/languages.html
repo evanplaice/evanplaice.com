@@ -1,0 +1,8 @@
+<hr>
+<h2><i class="fa fa-lg fa-language"></i>Languages</h2>
+${languages.map(language => `
+  <div>
+    <span>${language.language}</span>
+    <span>${language.fluency ? `- ${language.fluency}` : ''}</span>
+  </div>
+`).join('\n')}

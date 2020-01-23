@@ -1,0 +1,14 @@
+<hr>
+<h2><i class="fa fa-lg fa-trophy"></i>Awards</h2>
+${awards.map(award => `
+  <div class="header">
+    <div class="name">
+      <h3>
+      <span>${award.title}</a></span>
+      ${award.awarder ? `<span> - ${award.awarder}</span>` : ''}
+    </h3>
+    </div>
+    ${award.date ? `<div class="dates">${award.date}</div>` : ''}
+  </div>
+  ${award.summary ? `<div>${award.summary}</div>` : ''}
+`).join('\n')}

@@ -1,0 +1,13 @@
+<div class="name"><h1>${name.split(' ')[0]} <span>${name.split(' ')[1]}</span></h1></div>
+<div class="contacts">
+  ${label ? `
+    <div class="label">
+      <h2>${label}</h2>
+    </div>
+  ` : ''}
+  <div class="details"
+    ${ email ? `<div><a href="mailto:${email}">${email}</a></div>` : '' }
+    ${ phone ? `<div>${phone}</div>` : '' }
+    ${ url ? `<div><a href="${url}">${url}</a></div>` : '' }
+  </div>
+</div>

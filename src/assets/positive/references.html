@@ -1,0 +1,9 @@
+<div><i class="fa fa-lg fa-thumbs-o-up"></i><h2>References</h2></div>
+<section>
+  ${references.map(reference => `
+    <blockquote>
+      <p>${reference.reference}</p>
+      <footer>— <cite>${reference.name}</cite></footer>
+    </blockquote>
+  `).join('\n')}
+</section>
