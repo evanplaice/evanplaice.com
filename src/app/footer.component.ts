@@ -4,13 +4,10 @@ import { Component } from '@angular/core';
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styles: [`
-    a {
-      font-size: 1.2rem;
-      font-weight: bolder;
-    }
-
     nav {
-      margin-top: 5px;
+      font-size: 1.3rem;
+      font-weight: bolder;
+      margin-top: 10px;
     }
   `]
 })
