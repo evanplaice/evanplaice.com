@@ -3,7 +3,31 @@ import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  templateUrl: './header.component.html'
+  templateUrl: './header.component.html',
+  styles: [`
+    #social > a {
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 1.2rem;
+    }
+
+    #masthead {
+      max-height: 320px;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    picture {
+      margin: 0 auto;
+    }
+
+    picture img, picture source {
+      width: 100%;
+      object-fit: contain;
+    }
+  `]
 })
 export class HeaderComponent {
   constructor(private location: Location) {
