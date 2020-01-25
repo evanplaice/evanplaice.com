@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ThoughtModel } from './thought.model';
-import { map, startWith } from 'rxjs/operators';
+import { map, tap, skip } from 'rxjs/operators';
+import { BehaviorSubject } from 'rxjs';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -9,22 +10,29 @@ const httpOptions = {
 
 @Injectable({ providedIn: 'root' })
 export class ThoughtsService {
-  thoughts$;
-  src;
-  http;
+  public thoughts$: BehaviorSubject<[ThoughtModel]> = new BehaviorSubject([new ThoughtModel()]);
+
+  http: HttpClient;
+  path;
 
   constructor(http: HttpClient) {
-    // http bindings for a GET request
     this.http = http;
+    const path = 'https://content.evanplaice.com/thoughts/thoughts.json';
+
+    this.load(path);
   }
 
-  load(path) {
-    if (path || this.src) {
-      return this.thoughts$ = this.http.get(path || this.src)
-        .pipe(
-          map((thoughts: []) => thoughts.map(value => new ThoughtModel(value))),
-          startWith([new ThoughtModel()])
-        );
-    }
+  public load(path) {
+    this.http.get(path)
+      .pipe(
+       map((thoughts: []) => thoughts.map(thought => new ThoughtModel(thought))),
+       tap({
+         next: (data: any) => {
+           this.thoughts$.next(data);
+         },
+         error: (e) => { console.error(e); }
+        })
+      )
+      .subscribe();
   }
 }

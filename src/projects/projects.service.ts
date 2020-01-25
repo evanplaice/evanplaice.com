@@ -31,9 +31,7 @@ export class ProjectsService {
           // update observers
           this.observer.next(this.data = items);
         },
-          error => console.log(error),
-          () => {
-        }
+        error => console.log(error)
       );
   }
 

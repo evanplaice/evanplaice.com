@@ -9,20 +9,15 @@ import { ThoughtsService } from './thoughts.service';
 })
 export class ThoughtComponent {
   param: string;
-  thoughts: ThoughtModel[];
+  thought: ThoughtModel = new ThoughtModel();
 
   constructor(private thoughtsService: ThoughtsService, private route: ActivatedRoute) {
-    // extract the post id from the GET params
     this.param = route.snapshot.params.post;
-
-    // link to the thoughts data
-    if (thoughtsService.thoughts$) {
-      thoughtsService.thoughts$.subscribe(update => this.set(update));
-    }
+    thoughtsService.thoughts$.subscribe(update => this.thought = this.set(update));
   }
 
   set(thoughts) {
-    this.thoughts
+    return thoughts
       .filter((post) => post.url === this.param)
       .pop();
   }

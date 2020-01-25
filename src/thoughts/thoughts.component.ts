@@ -10,7 +10,6 @@ export class ThoughtsComponent {
   thoughts: ThoughtModel[];
 
   constructor(private thoughtsService: ThoughtsService) {
-    thoughtsService.load('https://content.evanplaice.com/thoughts/thoughts.json');
     thoughtsService.thoughts$.subscribe(update => this.thoughts = update);
   }
 }
