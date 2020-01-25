@@ -5,11 +5,21 @@
     <a class="item" [class.active]="isActive('/projects')" [routerLink]="['/projects']">Projects</a>
     <a class="item" [class.active]="isActive('/vitae')" [routerLink]="['/vitae']">Vitae</a>
     <div id="social" class="item large right">
-      <a href="https://gitlab.com/evanplaice"><i class="gitlab icon"></i></a>
-      <a href="https://github.com/evanplaice"><i class="github icon"></i></a>
-      <a href="https://stackoverflow.com/users/290340/evan-plaice"><i class="stack overflow icon"></i></a>
-      <a href="https://twitter.com/evanplaice"><i class="twitter icon"></i></a>
-      <a href="mailto:evanplaice@gmail.com"><i class="mail icon"></i></a>
+      <a href="https://gitlab.com/evanplaice" aria-label="GitLab Link">
+        <i class="gitlab icon"></i>
+      </a>
+      <a href="https://github.com/evanplaice" aria-label="GitHub Link">
+        <i class="github icon"></i>
+      </a>
+      <a href="https://stackoverflow.com/users/290340/evan-plaice" aria-label="Stack Overflow Link">
+        <i class="stack overflow icon"></i>
+      </a>
+      <a href="https://twitter.com/evanplaice" aria-label="Twitter Link">
+        <i class="twitter icon"></i>
+      </a>
+      <a href="mailto:evanplaice@gmail.com" aria-label="Email Link">
+        <i class="mail icon"></i>
+      </a>
     </div>
   </nav>
 
