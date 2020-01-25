@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod=true",
+    "build": "ng build --prod --aot=true",
     "test": "ng test",
     "lint": "ng lint",
     "stage": "aws --profile evanplaice.com s3 sync ./dist s3://staging.evanplaice.com --delete || true",
