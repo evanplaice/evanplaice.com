@@ -5,7 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './footer.component.html',
   styles: [`
     a {
+      font-size: 1.2rem;
       font-weight: bolder;
+    }
+
+    nav {
+      margin-top: 5px;
     }
   `]
 })
