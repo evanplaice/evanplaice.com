@@ -2,11 +2,11 @@
   <h2><a [href]="design.link">{{ design.title }}</a></h2>
   <a [href]="design.styleguide">Design Guide</a>
 </div>
-<div class="ui divider"></div>
+<hr>
 <wc-markdown [src]="descLink()"></wc-markdown>
 <div *ngIf="design.images.length > 0"class="gallery">
-  <div class="ui divider"></div>
-  <div  class="ui three column grid design">
+  <hr>
+  <div class="ui three column grid design">
     <div class="column">
       <img *ngIf="design.images[0]" class="ui small image" src="{{ thumbLink(0) }}">
     </div>
@@ -62,4 +62,4 @@
     </div>
   </div>
 </div>
-<div *ngIf="!last" class="ui divider"></div>
+<hr *ngIf="!last">

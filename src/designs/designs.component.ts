@@ -4,7 +4,7 @@ import { DesignsService } from './designs.service';
 
 @Component({
   selector: 'app-designs',
-  templateUrl: './designs.component.html',
+  templateUrl: './designs.component.html'
 })
 export class DesignsComponent {
   designs: DesignModel[];

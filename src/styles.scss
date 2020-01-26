@@ -37,6 +37,15 @@ main {
   box-shadow: 3px 3px 3px #777;
 }
 
+#resume {
+  border: 1px solid #ddd;
+  padding: 1.5em 3em 1.5em 3em;
+}
+
+#resume hr {
+  display: none;
+}
+
 /* Typeography
 -------------------------------------- */
 
@@ -73,6 +82,17 @@ code {
 p, code, pre {
   line-height: 1.5 !important;
   margin-bottom: 1.5rem !important;
+}
+
+hr {
+  color: #ddd;
+  border-color: #ddd;
+  border-bottom: none;
+  border-style: solid;
+  border-top: none;
+  border-width: 1px;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
 }
 
 wc-icon-rule {
@@ -157,6 +177,18 @@ wc-resume {
     margin-right: 15px;
   }
 
+  #resume hr {
+    display: block;
+  }
+
+  wc-markdown  img {
+    width: 80%;
+  }
+
+  wc-resume {
+    display: none;
+  }
+
   /* typography adjustments
      ---------------------- */
 
@@ -178,13 +210,5 @@ wc-resume {
 
   code, pre {
     font-size: .8rem !important;
-  }
-
-  wc-markdown  img {
-    width: 80%;
-  }
-
-  wc-resume {
-    display: none;
   }
 }

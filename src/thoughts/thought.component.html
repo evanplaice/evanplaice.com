@@ -8,7 +8,7 @@
   <div class="ui center aligned container">
     <h2>{{ thought.title }}</h2>
     <h3>{{ thought.date }} by {{ thought.author }}</h3>
-    <div class="ui divider"></div>
+    <hr>
   </div>
   <wc-markdown [src]="thought.content" highlight></wc-markdown>
 </ng-template>
