@@ -4,6 +4,13 @@ import { Component } from '@angular/core';
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styles: [`
+    #footer {
+      display: flex;
+      justify-content: center;
+      padding: 1em;
+      border-top: 1px solid #ddd;
+    }
+
     nav {
       display: flex;
       justify-content: center;
@@ -21,6 +28,7 @@ import { Component } from '@angular/core';
       content: '|';
       margin-left: 5px;
       margin-right: 5px;
+      color: #666;
     }
 
     span:last-child::after {
