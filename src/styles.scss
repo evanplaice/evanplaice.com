@@ -98,6 +98,10 @@ wc-markdown  img {
   box-shadow: 3px 3px 3px #777;
 }
 
+wc-resume {
+  width: 800px;
+}
+
 /* Responsive
 -------------------------------------- */
 
@@ -173,5 +177,9 @@ wc-markdown  img {
 
   wc-markdown  img {
     width: 80%;
+  }
+
+  wc-resume {
+    display: none;
   }
 }
