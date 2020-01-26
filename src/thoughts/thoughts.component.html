@@ -9,8 +9,8 @@
   <ng-template [ngIf]="!thought.draft">
   <div class="ui container">
     <h2><a [routerLink]="['/thought/', thought.url]">{{ thought.title }}</a></h2>
+    <p>{{ thought.summary }}</p>
   </div>
-  <p>{{ thought.summary }}</p>
   </ng-template>
 </div>
 </ng-template>

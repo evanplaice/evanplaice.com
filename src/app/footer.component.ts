@@ -34,6 +34,14 @@ import { Component } from '@angular/core';
     span:last-child::after {
       content: none;
     }
+
+    @media screen and (min-width: 0px) and (max-width: 414px) {
+      #footer {
+        font-size: .8rem;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
   `]
 })
 export class FooterComponent {
