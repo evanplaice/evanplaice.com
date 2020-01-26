@@ -75,6 +75,11 @@ p, code, pre {
   margin-bottom: 1.5rem !important;
 }
 
+wc-icon-rule {
+  --hr-color: #ddd;
+  margin-bottom: 1em;
+}
+
 wc-markdown > h1, wc-markdown > h2, wc-markdown > h3 {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
 }

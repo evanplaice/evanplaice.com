@@ -20,6 +20,7 @@
     "@angular/platform-browser": "^8.2.14",
     "@angular/platform-browser-dynamic": "^8.2.14",
     "@angular/router": "^8.2.14",
+    "@vanillawc/wc-icon-rule": "^1.0.1",
     "@vanillawc/wc-markdown": "^1.4.1",
     "@vanillawc/wc-resume": "^2.0.18",
     "core-js": "^2.5.4",
