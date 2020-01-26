@@ -12,7 +12,7 @@ import { Location } from '@angular/common';
     }
 
     #masthead {
-      max-height: 320px;
+      max-height: 365px;
     }
 
     .container {
@@ -25,7 +25,7 @@ import { Location } from '@angular/common';
 
     picture img, picture source {
       width: 100%;
-      object-fit: contain;
+      object-fit: cover;
     }
   `]
 })
