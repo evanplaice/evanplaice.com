@@ -11,7 +11,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "ES2018",
+    "target": "ESNext",
     "allowJs": true,
     "typeRoots": [
       "node_modules/@types"
