@@ -11,6 +11,15 @@ import { Component } from '@angular/core';
       border-top: 1px solid #ddd;
     }
 
+    svg {
+      width: 15px;
+      height: 15px;
+      fill: #4183c4;
+      vertical-align: sub;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+
     nav {
       display: flex;
       justify-content: center;

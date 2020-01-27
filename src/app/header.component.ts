@@ -6,9 +6,16 @@ import { Location } from '@angular/common';
   templateUrl: './header.component.html',
   styles: [`
     #social > a {
-      margin-left: 5px;
-      margin-right: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
       font-size: 1.2rem;
+    }
+
+    #social svg {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      fill: #4183c4;
     }
 
     #masthead {
