@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { TypefacesComponent } from './typefaces.component';
 
@@ -11,8 +11,7 @@ import { TypefacesComponent } from './typefaces.component';
   ],
   providers: [],
   schemas: [
-    CUSTOM_ELEMENTS_SCHEMA,
-    NO_ERRORS_SCHEMA
+    CUSTOM_ELEMENTS_SCHEMA
   ]
 })
 export class TypefacesModule { }

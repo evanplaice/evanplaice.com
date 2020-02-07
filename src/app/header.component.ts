@@ -5,25 +5,20 @@ import { Location } from '@angular/common';
   selector: 'app-header',
   templateUrl: './header.component.html',
   styles: [`
-    #social > a {
-      margin-left: 10px;
-      margin-right: 10px;
-      font-size: 1.2rem;
-    }
-
-    #social svg {
-      width: 20px;
-      height: 20px;
-      vertical-align: middle;
-      fill: #4183c4;
-    }
-
     wc-social-link {
       --width: 20px;
       --height: 20px;
       --color: #4183c4;
       margin-left: 10px;
       margin-right: 10px;
+    }
+
+    /*Mobile*/
+    @media screen and (min-width: 0px) and (max-width: 414px) {
+      wc-social-link {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
     }
 
     #masthead {
