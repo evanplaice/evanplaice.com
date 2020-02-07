@@ -107,6 +107,19 @@ hr {
   margin-bottom: 1.25em;
 }
 
+nav {
+  display: flex !important;
+  position: fixed;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1em;
+}
+
 main {
   width: auto;
   margin-left: 1em;
