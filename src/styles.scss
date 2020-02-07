@@ -1,9 +1,4 @@
 @font-face {
-  font-family: "Open Sans";
-  src: url(assets/fonts/OpenSans-Regular.ttf) format("truetype");
-}
-
-@font-face {
   font-family: "Orbitron";
   src: url(assets/fonts/Orbitron-Bold.ttf) format("truetype");
 }
@@ -46,7 +41,7 @@ main {
   display: none;
 }
 
-/* Typeography
+/* Typography
 -------------------------------------- */
 
 /* Document level adjustments */
@@ -71,7 +66,6 @@ h3 {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;;
   font-size: 1.25rem;
 }
 
