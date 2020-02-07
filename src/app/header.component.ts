@@ -18,6 +18,14 @@ import { Location } from '@angular/common';
       fill: #4183c4;
     }
 
+    wc-social-link {
+      --width: 20px;
+      --height: 20px;
+      --color: #4183c4;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
     #masthead {
       max-height: 365px;
     }

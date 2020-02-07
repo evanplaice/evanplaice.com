@@ -5,6 +5,7 @@ import { AppModule } from './app/app.module';
 import '@vanillawc/wc-icon-rule/index.js';
 import '@vanillawc/wc-markdown/index.js';
 import '@vanillawc/wc-resume/index.js';
+import '@vanillawc/wc-social-link/index.js';
 
 enableProdMode();
 platformBrowserDynamic().bootstrapModule(AppModule)

@@ -5,31 +5,11 @@
     <a class="item" [class.active]="isActive('/projects')" [routerLink]="['/projects']">Projects</a>
     <a class="item" [class.active]="isActive('/vitae')" [routerLink]="['/vitae']">Vitae</a>
     <div id="social" class="item large right">
-      <a href="https://gitlab.com/evanplaice" aria-label="GitLab Link">
-        <svg viewBox="0 0 512 512">
-          <use href="assets/fontawesome/svgs/brands/gitlab.svg#gitlab"></use>
-        </svg>
-      </a>
-      <a href="https://github.com/evanplaice" aria-label="GitHub Link">
-        <svg viewBox="0 0 512 512">
-          <use href="assets/fontawesome/svgs/brands/github.svg#github"></use>
-        </svg>
-      </a>
-      <a href="https://stackoverflow.com/users/290340/evan-plaice" aria-label="Stack Overflow Link">
-        <svg viewBox="0 0 512 512">
-          <use href="assets/fontawesome/svgs/brands/stack-overflow.svg#stack-overflow"></use>
-        </svg>
-      </a>
-      <a href="https://twitter.com/evanplaice" aria-label="Twitter Link">
-        <svg viewBox="0 0 512 512">
-          <use href="assets/fontawesome/svgs/brands/twitter.svg#twitter"></use>
-        </svg>
-      </a>
-      <a href="mailto:evanplaice@gmail.com" aria-label="Email Link">
-        <svg viewBox="0 0 512 512">
-          <use href="assets/fontawesome/svgs/solid/envelope.svg#envelope"></use>
-        </svg>
-      </a>
+      <wc-social-link network="gitlab" handle="evanplaice"></wc-social-link>
+      <wc-social-link network="github" handle="evanplaice"></wc-social-link>
+      <wc-social-link network="stackoverflow" handle="290340"></wc-social-link>
+      <wc-social-link network="twitter" handle="evanplaice"></wc-social-link>
+      <wc-social-link network="email" handle="evanplaice@gmail.com"></wc-social-link>
     </div>
   </nav>
 
