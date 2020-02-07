@@ -1,8 +1,6 @@
-<div class="ui center aligned container">
-  <h2><a [href]="project.link">{{ project.title }}</a></h2>
-  <h3>{{ project.category }}</h3>
-  <h3>Role: {{ project.role }}</h3>
-</div>
-<hr *ngIf="!last">
+<h3><a [href]="project.link">{{ project.title }}</a></h3>
+<h4>{{ project.category }}</h4>
+<h4>Role: {{ project.role }}</h4>
+<hr>
 <wc-markdown [src]="descLink()" highlight></wc-markdown>
 <hr *ngIf="!last">

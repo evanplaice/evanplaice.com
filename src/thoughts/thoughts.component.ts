@@ -5,6 +5,11 @@ import { ThoughtsService } from './thoughts.service';
 @Component({
   selector: 'app-thoughts',
   templateUrl: './thoughts.component.html',
+  styles: [`
+    h3 {
+      text-align: left;
+    }
+  `]
 })
 export class ThoughtsComponent {
   thoughts: ThoughtModel[];

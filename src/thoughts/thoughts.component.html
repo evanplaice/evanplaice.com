@@ -1,16 +1,12 @@
-<h1>thoughts</h1>
+<h2>thoughts</h2>
 
 <wc-icon-rule>
   <img src="assets/fontawesome/bullseye.svg" role="presentation">
 </wc-icon-rule>
 
-<ng-template [ngIf]="thoughts">
-<div *ngFor="let thought of thoughts; let last=last">
+<ng-template [ngIf]="thoughts" *ngFor="let thought of thoughts; let last=last">
   <ng-template [ngIf]="!thought.draft">
-  <div class="ui container">
-    <h2><a [routerLink]="['/thought/', thought.url]">{{ thought.title }}</a></h2>
+    <h3><a [routerLink]="['/thought/', thought.url]">{{ thought.title }}</a></h3>
     <p>{{ thought.summary }}</p>
-  </div>
   </ng-template>
-</div>
 </ng-template>

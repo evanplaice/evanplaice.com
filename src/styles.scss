@@ -54,26 +54,37 @@ main {
 /* Document level adjustments */
 body {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 17px;
+  font-size: 16px;
 }
 
-/* Type will scale with document */
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Orbitron', Helvetica, sans-serif !important;
 }
 
 h1 {
-  font-size: 4.5rem !important;
-}
-h2 {
-  font-size: 2rem !important;
-}
-h3 {
   font-size: 1rem !important;
 }
 
+h2 {
+  font-size: 4.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+h3 {
+  font-size: 2rem !important;
+  margin-top: none !important;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.2rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  text-align: center;
+}
+
 p {
-  font-size: 1.25rem;
+  font-size: 1.25rem !important;
 }
 
 code {
@@ -209,14 +220,19 @@ wc-resume {
      ---------------------- */
 
   h1 {
+    font-size: 1rem !important;
+  }
+
+  h2 {
     font-size: 3.5rem !important;
     text-align: center;
   }
 
-  h2 {
+  h3 {
     font-size: 1.5rem !important;
   }
-  h3 {
+
+  h4 {
     font-size: 1rem !important;
   }
 

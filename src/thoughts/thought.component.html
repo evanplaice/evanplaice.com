@@ -1,4 +1,4 @@
-<h1>thoughts</h1>
+<h2>thoughts</h2>
 
 <wc-icon-rule>
   <img src="assets/fontawesome/bullseye.svg" />
@@ -6,8 +6,8 @@
 
 <ng-template [ngIf]="thought">
   <div class="ui center aligned container">
-    <h2>{{ thought.title }}</h2>
-    <h3>{{ thought.date }} by {{ thought.author }}</h3>
+    <h3>{{ thought.title }}</h3>
+    <h4>{{ thought.date }} by {{ thought.author }}</h4>
     <hr>
   </div>
   <wc-markdown [src]="thought.content" highlight></wc-markdown>

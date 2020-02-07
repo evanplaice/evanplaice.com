@@ -1,7 +1,5 @@
-<div class="ui center aligned container">
-  <h2><a [href]="design.link">{{ design.title }}</a></h2>
-  <a [href]="design.styleguide">Design Guide</a>
-</div>
+<h3><a [href]="design.link">{{ design.title }}</a></h3>
+<h4><a [href]="design.styleguide">Design Guide</a></h4>
 <hr>
 <wc-markdown [src]="descLink()"></wc-markdown>
 <div *ngIf="design.images.length > 0"class="gallery">
