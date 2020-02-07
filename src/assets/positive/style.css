@@ -35,14 +35,14 @@ a:hover {
 h1 {
   text-transform: uppercase;
   font-size: 2.5em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h2 {
   text-transform: uppercase;
   color: #898989;
   font-size: 2em;
-  font-weight: 300;
+  font-weight: 400;
   display: inline-block;
 }
 
