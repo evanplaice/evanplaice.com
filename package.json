@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "stage": "aws --profile evanplaice.com s3 sync ./dist s3://staging.evanplaice.com --delete || true",
-    "publish": "aws --profile evanplaice.com s3 sync ./dist s3://evanplaice.com --delete --cache-control max-age=3600 || true"
+    "publish": "aws --profile evanplaice.com s3 sync ./dist s3://evanplaice.com --delete --cache-control max-age=86400 || true"
   },
   "private": true,
   "dependencies": {
