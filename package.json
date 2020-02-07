@@ -37,6 +37,7 @@
     "@angular/compiler-cli": "^9.0.0",
     "@angular/language-service": "^9.0.0",
     "@types/node": "^12.11.1",
+    "@vanillawc/wc-social-link": "^1.2.3",
     "codelyzer": "^5.1.2",
     "ts-node": "^7.0.0",
     "tslint": "^5.11.0",
