@@ -19,6 +19,10 @@
 /* Layout
 -------------------------------------- */
 
+* {
+  box-sizing: border-box;
+}
+
 main {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -92,6 +96,12 @@ hr {
   margin-bottom: 1.25em;
 }
 
+main {
+  width: auto;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 wc-icon-rule {
   --hr-color: #ddd;
   margin-bottom: 1em;
@@ -137,8 +147,25 @@ wc-resume {
   html { font-size: 13px; }
 }
 
+/* HD */
+@media screen and (min-width: 992px) {
+  main {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  main {
+    width: 723px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /*Not Mobile*/
-@media screen and (min-width: 414px) and (max-width: 1024px) {
+@media screen and (min-width: 414px) {
   /*ui fixed large menu*/
   #topnav{
     /* display: flex; */
@@ -158,8 +185,6 @@ wc-resume {
     display: block;
     position: relative;
     flex-direction: column;
-    -webkit-box-direction: normal;
-    -webkit-box-orient: vertical;
   }
 
   /* center links on mobile */
