@@ -5,10 +5,8 @@
 </wc-icon-rule>
 
 <ng-template [ngIf]="thought">
-  <div class="ui center aligned container">
-    <h3>{{ thought.title }}</h3>
-    <h4>{{ thought.date }} by {{ thought.author }}</h4>
-    <hr>
-  </div>
+  <h3>{{ thought.title }}</h3>
+  <h4>{{ thought.date }} by {{ thought.author }}</h4>
+  <hr>
   <wc-markdown [src]="thought.content" highlight></wc-markdown>
 </ng-template>

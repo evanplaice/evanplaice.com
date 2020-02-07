@@ -125,12 +125,18 @@ wc-resume {
 }
 
 #resume {
-  border: 1px solid #ddd;
+  width: auto;
   padding: 1.5em 3em 1.5em 3em;
+  border: 1px solid #ddd;
 }
 
-#resume hr {
-  display: none;
+#resume div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#resume a {
+  display: flex;
 }
 
 /* Typography
@@ -242,6 +248,10 @@ wc-markdown > h3 {
   nav {
     flex-direction: row;
   }
+
+  #resume hr {
+    display: none;
+  }
 }
 
 /*Mobile*/
@@ -267,6 +277,14 @@ wc-markdown > h3 {
 
   .nav-item {
     border: none;
+  }
+
+  #resume div {
+    flex-direction: column;
+  }
+
+  #resume a {
+    justify-content: center;
   }
 
   #resume hr {
