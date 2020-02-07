@@ -24,8 +24,93 @@
 }
 
 main {
+  width: auto;
   margin-top: 2em;
   margin-bottom: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+}
+
+nav {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+hr {
+  color: #ddd;
+  border-color: #ddd;
+  border-bottom: none;
+  border-style: solid;
+  border-top: none;
+  border-width: 1px;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+wc-icon-rule {
+  --hr-color: #ddd;
+  margin-bottom: 1em;
+}
+
+wc-markdown  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 3px 3px 3px #777;
+}
+
+wc-resume {
+  width: 800px;
+}
+
+.nav-item {
+  display: inline-block;
+  font-size: 1.15rem !important;
+  margin-top: 0 !important;
+  text-align: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-left: 1px solid rgba(0, 0, 0, .1);
+  color: black;
+}
+
+.nav-item:last-child {
+  border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.nav-item:hover {
+  color: black;
+  background-color: rgba(0, 0, 0, .03);
+}
+
+.active {
+  background-color: rgba(0, 0, 0, .05);
+}
+
+#pages {
+  display: flex;
+}
+
+#social {
+  display: flex;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .project {
@@ -54,7 +139,7 @@ main {
 /* Document level adjustments */
 body {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 h1, h2, h3, h4 {
@@ -62,7 +147,12 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
+  margin: 0 !important;
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
 }
 
 h2 {
@@ -72,7 +162,7 @@ h2 {
 
 h3 {
   font-size: 2rem !important;
-  margin-top: none !important;
+  margin-top: 0 !important;
   text-align: center;
 }
 
@@ -96,41 +186,6 @@ p, code, pre {
   margin-bottom: 1.5rem !important;
 }
 
-hr {
-  color: #ddd;
-  border-color: #ddd;
-  border-bottom: none;
-  border-style: solid;
-  border-top: none;
-  border-width: 1px;
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
-}
-
-nav {
-  display: flex !important;
-  position: fixed;
-  width: 100%;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 1em;
-}
-
-main {
-  width: auto;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-wc-icon-rule {
-  --hr-color: #ddd;
-  margin-bottom: 1em;
-}
-
 wc-markdown > h1, wc-markdown > h2, wc-markdown > h3 {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
 }
@@ -147,40 +202,30 @@ wc-markdown > h3 {
   font-size: 1.75rem !important;
 }
 
-wc-markdown  img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 3px 3px 3px #777;
-}
-
-wc-resume {
-  width: 800px;
-}
 
 /* Responsive
 -------------------------------------- */
 
 /* Not Huge Desktop */
-@media (max-width: 900px) {
+@media screen and (max-width: 992px) {
   html { font-size: 15px; }
 }
 
 /* Mobile */
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   html { font-size: 13px; }
 }
 
 /* HD */
 @media screen and (min-width: 992px) {
   main {
-    width: 900px;
+    width: 933px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-@media only screen and (max-width: 991px) and (min-width: 768px) {
+@media screen and (max-width: 991px) and (min-width: 768px) {
   main {
     width: 723px;
     margin-left: auto;
@@ -189,32 +234,39 @@ wc-resume {
 }
 
 /*Not Mobile*/
-@media screen and (min-width: 414px) {
-  /*ui fixed large menu*/
-  #topnav{
-    /* display: flex; */
-    /* position: fixed; */
-    /* flex-direction: row; */
-    /* -webkit-box-orient: horizontal; */
+@media screen and (min-width: 500px) {
+  header {
+    flex-direction: row;
+  }
+
+  nav {
+    flex-direction: row;
   }
 }
 
 /*Mobile*/
-@media screen and (min-width: 0px) and (max-width: 414px) {
-  /* layout adjustments
-     ---------------------- */
-
-  /*ui fluid vertical menu */
-  #topnav {
-    display: block;
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  header {
+    flex-direction: column;
     position: relative;
+  }
+
+  h1 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  header nav {
     flex-direction: column;
   }
 
-  /* center links on mobile */
-  #topnav > .item {
-    display: block;
-    text-align: center;
+  #pages {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-item {
+    border: none;
   }
 
   #resume hr {

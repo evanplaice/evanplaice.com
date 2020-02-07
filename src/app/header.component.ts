@@ -22,11 +22,8 @@ import { Location } from '@angular/common';
     }
 
     #masthead {
-      max-height: 365px;
-    }
-
-    .container {
       display: flex;
+      max-height: 365px;
     }
 
     picture {

@@ -1,12 +1,14 @@
-  <nav id="topnav" class="ui fixed large menu">
-    <header>
-      <h1>EvanPlaice.com</h1>
-    </header>
-    <a class="item" [class.active]="isActive('/thoughts')" [routerLink]="['/thoughts']">Thoughts</a>
-    <a class="item" [class.active]="isActive('/designs')" [routerLink]="['/designs']">Designs</a>
-    <a class="item" [class.active]="isActive('/projects')" [routerLink]="['/projects']">Projects</a>
-    <a class="item" [class.active]="isActive('/vitae')" [routerLink]="['/vitae']">Vitae</a>
-    <div id="social" class="item large right">
+
+<header>
+  <h1>EvanPlaice.com</h1>
+  <nav>
+    <div id="pages">
+      <a class="nav-item" [class.active]="isActive('/thoughts')" [routerLink]="['/thoughts']">Thoughts</a>
+      <a class="nav-item" [class.active]="isActive('/designs')" [routerLink]="['/designs']">Designs</a>
+      <a class="nav-item" [class.active]="isActive('/projects')" [routerLink]="['/projects']">Projects</a>
+      <a class="nav-item" [class.active]="isActive('/vitae')" [routerLink]="['/vitae']">Vitae</a>
+    </div>
+    <div id="social">
       <wc-social-link network="gitlab" handle="evanplaice"></wc-social-link>
       <wc-social-link network="github" handle="evanplaice"></wc-social-link>
       <wc-social-link network="stackoverflow" handle="290340"></wc-social-link>
@@ -14,10 +16,11 @@
       <wc-social-link network="email" handle="evanplaice@gmail.com"></wc-social-link>
     </div>
   </nav>
+</header>
 
-  <div id="masthead" class="container">
-    <picture>
-      <source srcset="https://content.evanplaice.com/sailboatraces.webp" type="image/webp">
-      <img src="https://content.evanplaice.com/sailboatraces.png" alt="Beautiful Panoramic Picture of Sailboats Racing">
-    </picture>
-  </div>
+<div id="masthead">
+  <picture>
+    <source srcset="https://content.evanplaice.com/sailboatraces.webp" type="image/webp">
+    <img src="https://content.evanplaice.com/sailboatraces.png" alt="Beautiful Panoramic Picture of Sailboats Racing">
+  </picture>
+</div>
