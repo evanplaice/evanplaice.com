@@ -44,7 +44,8 @@ import { Component } from '@angular/core';
       content: none;
     }
 
-    @media screen and (min-width: 0px) and (max-width: 414px) {
+    /* Mobile */
+    @media screen and (min-width: 0px) and (max-width: 480px) {
       footer {
         font-size: .8rem;
         font-weight: bold;
