@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styles: [`
-    #footer {
+    footer {
       display: flex;
       justify-content: center;
       padding: 1em;
@@ -45,7 +45,7 @@ import { Component } from '@angular/core';
     }
 
     @media screen and (min-width: 0px) and (max-width: 414px) {
-      #footer {
+      footer {
         font-size: .8rem;
         font-weight: bold;
         text-align: center;

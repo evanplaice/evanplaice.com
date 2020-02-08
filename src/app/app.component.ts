@@ -5,6 +5,21 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-main',
   templateUrl: './app.component.html',
+  styles: [`
+    #masthead {
+      display: flex;
+      max-height: 365px;
+    }
+
+    picture {
+      margin: 0 auto;
+    }
+
+    picture img, picture source {
+      width: 100%;
+      object-fit: cover;
+    }
+  `]
 })
 export class AppComponent {
   title = 'Thoughts and Works by Evan Plaice';

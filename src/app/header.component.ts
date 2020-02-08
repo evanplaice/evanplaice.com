@@ -20,20 +20,6 @@ import { Location } from '@angular/common';
         margin-right: 15px;
       }
     }
-
-    #masthead {
-      display: flex;
-      max-height: 365px;
-    }
-
-    picture {
-      margin: 0 auto;
-    }
-
-    picture img, picture source {
-      width: 100%;
-      object-fit: cover;
-    }
   `]
 })
 export class HeaderComponent {
