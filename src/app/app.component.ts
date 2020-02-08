@@ -17,14 +17,10 @@ export class AppComponent {
   //  ex. evanplaice.com/#/designs => evanplaice.com/designs
   resolveHashURL(url, router) {
     if (!url._platformLocation) { return; }
-    const hash: string = url._platformLocation.hash;
-    if (hash) {
-      const path = '/' + hash.substring(1);
-      // console.log('RedirectTo: ' + path);
-      // setTimeout is a kludge required because navigate
-      //  can be cancelled if it takes too long to fire.
-      setTimeout(() => { router.navigate([path]); });
+    const hashURL: string = url._platformLocation.hash;
+    if (hashURL) {
+      const url = '/' + hashURL.substring(1);
+      setTimeout(() => { router.navigate([url]); });
     }
-    return;
   }
 }
