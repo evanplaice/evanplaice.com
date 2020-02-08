@@ -31,7 +31,6 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/fomantic-ui/dist/components/reset.min.css",
               "node_modules/fomantic-ui/dist/components/image.min.css",
               "node_modules/fomantic-ui/dist/components/grid.min.css",
               "node_modules/fomantic-ui/dist/components/site.min.css",
