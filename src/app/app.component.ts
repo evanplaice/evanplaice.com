@@ -34,8 +34,8 @@ export class AppComponent {
     if (!url._platformLocation) { return; }
     const hashURL: string = url._platformLocation.hash;
     if (hashURL) {
-      const url = '/' + hashURL.substring(1);
-      setTimeout(() => { router.navigate([url]); });
+      const pathURL = '/' + hashURL.substring(1);
+      setTimeout(() => { router.navigate([pathURL]); });
     }
   }
 }
