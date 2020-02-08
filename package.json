@@ -20,7 +20,7 @@
     "@angular/platform-browser": "^9.0.0",
     "@angular/platform-browser-dynamic": "^9.0.0",
     "@angular/router": "^9.0.0",
-    "@vanillawc/wc-icon-rule": "^1.0.5",
+    "@vanillawc/wc-icon-rule": "^1.0.6",
     "@vanillawc/wc-markdown": "^1.4.1",
     "@vanillawc/wc-resume": "^2.0.18",
     "@vanillawc/wc-social-link": "github:vanillawc/wc-social-link#master",
