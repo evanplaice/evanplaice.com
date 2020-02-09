@@ -1,12 +1,10 @@
 <h3><a [href]="design.link">{{ design.title }}</a></h3>
 <h4><a [href]="design.styleguide">Design Guide</a></h4>
-
 <hr>
-
 <wc-markdown [src]="descLink()"></wc-markdown>
-
 <div *ngIf="design.images.length > 0" class="gallery">
   <ng-template [ngIf]="design.images" *ngFor="let image of design.images">
     <img src="{{ thumbLink(image) }}" alt="{{ altText(image) }}">
   </ng-template>
 </div>
+<hr *ngIf="!last">
