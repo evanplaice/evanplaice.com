@@ -30,7 +30,6 @@ main {
   margin-bottom: 2em;
   margin-left: 1em;
   margin-right: 1em;
-
 }
 
 header {
@@ -45,7 +44,7 @@ header {
 }
 
 nav {
-  display: flex !important;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -92,73 +91,87 @@ wc-resume {
 
 #resume a {
   display: flex;
+  font-weight: 600;
 }
 
 /* Typography
 -------------------------------------- */
 body {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 15px !important;
+  font-size: 16px;
+  color: rgba(0,0,0,.85);
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Orbitron', Helvetica, sans-serif !important;
+  font-family: 'Orbitron', Helvetica, sans-serif;
 }
 
 h1 {
-  font-size: 1.1rem !important;
-  margin: 0 !important;
-  padding-top: 1.25rem !important;
-  padding-bottom: 1.25rem !important;
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
+  font-size: 1rem;
+  margin: 0;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 h2 {
-  font-size: 4.5rem !important;
-  margin-bottom: 1rem !important;
+  font-size: 3.75rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
-  font-size: 2rem !important;
-  margin-top: 0 !important;
+  font-size: 1.75rem;
+  margin-top: 0;
   text-align: center;
 }
 
 h4 {
-  font-size: 1.2rem !important;
-  margin-top: 1rem !important;
-  margin-bottom: 1rem !important;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
 p {
-  font-size: 1.25rem !important;
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #4183c4;
+}
+
+ol, ul {
+  font-size: 1.1rem;
+  padding-left: 2em;
+  padding-bottom: 1em;
 }
 
 code {
-  font-family: 'Source Code Pro', monospace !important;
+  font-family: 'Source Code Pro', monospace;
 }
 
 p, code, pre {
-  line-height: 1.5 !important;
-  margin-bottom: 1.5rem !important;
+  line-height: 1.5;
+  margin-bottom: 1em;
 }
 
 wc-markdown > h1, wc-markdown > h2, wc-markdown > h3 {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
 wc-markdown > h1 {
-  font-size: 2.5rem !important;
+  font-size: 2.25rem;
 }
 
 wc-markdown > h2 {
-  font-size: 2rem !important;
+  font-size: 1.75rem;
 }
 
 wc-markdown > h3 {
-  font-size: 1.75rem !important;
+  font-size: 1.5rem;
+  margin-bottom: .5em;
 }
 
 
@@ -166,10 +179,6 @@ wc-markdown > h3 {
 -------------------------------------- */
 /* HD */
 @media screen and (min-width: 1280px) {
-  body {
-    font-size: 19px !important;
-  }
-
   main {
     width: 1200px;
     margin-left: auto;
@@ -179,10 +188,6 @@ wc-markdown > h3 {
 
 /* Desktop */
 @media screen and (max-width: 1280px) and (min-width: 980px) {
-  body {
-    font-size: 17px !important;
-  }
-
   main {
     width: 933px;
     margin-left: auto;
@@ -216,32 +221,28 @@ wc-markdown > h3 {
 
 /* Mobile */
 @media screen and (min-width: 0px) and (max-width: 480px) {
-  html {
-    font-size: 13px;
-  }
-
   header {
     flex-direction: column;
     position: relative;
   }
 
   h1 {
-    font-size: 1rem !important;
+    font-size: 1rem;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
 
   h2 {
-    font-size: 3.5rem !important;
+    font-size: 3rem;
     text-align: center;
   }
 
   h3 {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
   }
 
   h4 {
-    font-size: 1rem !important;
+    font-size: 1rem;
   }
 
   p {
@@ -249,7 +250,7 @@ wc-markdown > h3 {
   }
 
   code, pre {
-    font-size: .8rem !important;
+    font-size: .8rem;
   }
 
   header nav {

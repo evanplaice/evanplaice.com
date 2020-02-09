@@ -11,34 +11,36 @@ import { Location } from '@angular/common';
 
     .nav-item {
       display: inline-block;
-      font-size: 1.15rem !important;
-      margin-top: 0 !important;
+      font-size: 1rem;
+      margin-top: 0;
       text-align: center;
       padding-left: 1.25rem;
       padding-right: 1.25rem;
-      padding-top: 1.25rem;
-      padding-bottom: 1.25rem;
-      border-left: 1px solid rgba(0, 0, 0, .1);
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
       color: black;
     }
-    
+
+    .nav-item {
+      border-left: 1px solid #ddd;
+    }
+
     .nav-item:last-child {
-      border-right: 1px solid rgba(0, 0, 0, .1);
+      border-right: 1px solid #ddd;
     }
-    
+
     .nav-item:hover {
-      color: black;
-      background-color: rgba(0, 0, 0, .03);
+      background-color: rgba(0, 0, 0, .075);
     }
-    
+
     .active {
-      background-color: rgba(0, 0, 0, .05);
+      background-color: rgba(0, 0, 0, .1);
     }
 
     #social {
       display: flex;
-      padding-top: 1.25rem;
-      padding-bottom: 1.25rem;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
       margin-right: 10px;
     }
 

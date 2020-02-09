@@ -14,7 +14,7 @@ import { DesignModel } from './design.model';
       justify-content: center;
       align-items: start;
     }
-    
+
     .gallery img {
       box-shadow: 3px 3px 3px #777;
     }

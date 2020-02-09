@@ -25,7 +25,6 @@
     "@vanillawc/wc-resume": "^2.0.21",
     "@vanillawc/wc-social-link": "github:vanillawc/wc-social-link#master",
     "core-js": "^2.5.4",
-    "fomantic-ui": "^2.7.5",
     "ng": "0.0.0",
     "regenerator-runtime": "^0.13.3",
     "rxjs": "^6.5.4",

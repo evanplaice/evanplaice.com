@@ -23,7 +23,7 @@ import { Component } from '@angular/core';
     nav {
       display: flex;
       justify-content: center;
-      font-size: 1.4rem;
+      font-size: 1.25rem;
       font-weight: bolder;
       margin-top: 10px;
       margin-bottom: 10px;
