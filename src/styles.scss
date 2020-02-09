@@ -66,32 +66,11 @@ wc-icon-rule {
   margin-bottom: 1em;
 }
 
-wc-markdown  img {
+wc-markdown img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 3px 3px 3px #777;
-}
-
-wc-resume {
-  width: 800px;
-  margin: 0 auto;
-}
-
-#resume {
-  width: auto;
-  padding: 1.5em 3em 1.5em 3em;
-  border: 1px solid #ddd;
-}
-
-#resume div {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#resume a {
-  display: flex;
-  font-weight: 600;
 }
 
 /* Typography
@@ -218,10 +197,6 @@ wc-markdown > h3 {
   nav {
     flex-direction: row;
   }
-
-  #resume hr {
-    display: none;
-  }
 }
 
 /* Mobile */
@@ -262,23 +237,7 @@ wc-markdown > h3 {
     flex-direction: column;
   }
 
-  #resume div {
-    flex-direction: column;
-  }
-
-  #resume a {
-    justify-content: center;
-  }
-
-  #resume hr {
-    display: block;
-  }
-
   wc-markdown  img {
     width: 80%;
-  }
-
-  wc-resume {
-    display: none;
   }
 }
