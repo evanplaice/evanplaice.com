@@ -6,7 +6,7 @@ import { ProjectModel } from './project.model';
   templateUrl: './project.component.html',
   styles: [`
     h2, h3 {
-      margin-bottom: 10px !important;
+      margin-bottom: 10px;
     }
     h3 {
       margin-top: 10px;
