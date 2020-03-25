@@ -24,7 +24,6 @@
     "@vanillawc/wc-markdown": "^1.5.0",
     "@vanillawc/wc-resume": "^2.0.21",
     "@vanillawc/wc-social-link": "^1.3.0",
-    "core-js": "^2.5.4",
     "ng": "0.0.0",
     "regenerator-runtime": "^0.13.3",
     "rxjs": "^6.5.4",
